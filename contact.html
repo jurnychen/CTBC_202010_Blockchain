@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-tw">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>聯絡我們</title>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="contact.css">
+</head>
+<body class="page-service">
+	
+<input type="checkbox" name="" id="menu-check">
+
+<div class="main-header">
+	<div class="container">
+		<div class="logo CTBC-logo">
+			<a href="index.html">
+				<img src="pic/CTBC_logo_green.png" alt="LOGO">
+			</a>
+			<label for="menu-check" class="hb">
+				<span class="sr-only">手機選單切換</span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</label>
+		</div>	
+		<nav class="main-nav">
+			<!-- <div class="logo marketplace-logo">
+				<img src="pic/CTBC_logo_Blockchain.png" alt="">
+			</div> -->
+			<label for="menu-check" class="hb">
+				<span class="sr-only">手機選單切換</span>
+				<span></span>
+				<span></span>
+			</label>
+			<ul class="nav-list">
+				<li class="link-marketplace">
+					<a href="#">Marketplace首頁</a>
+				</li>
+				<li>
+					<a href="#">解決方案</a>
+					<ul class="sub-menu">
+						<li>
+							<a href="#">供應鏈</a>
+						</li>
+						<li>
+							<a href="#">電商零售</a>
+						</li>
+						<li>
+							<a href="#">醫療健康</a>
+						</li>
+						<li>
+							<a href="#">客製化服務</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">媒體報導</a>
+				</li>
+				<li>
+					<a href="#">常見問題</a>
+				</li>
+				<li class="link-contact">
+					<a href="#">聯絡我們</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+
+
+</div>
+
+
+<!-- KV -->
+<div class="section kv">
+	<div class="slider-kv">
+	  <div class="full slider-kv-item">
+	  	<img src="pic/contact/banner_bgimage_contact-lg.jpg" alt="">
+	  	<img src="pic/contact/banner_bgimage_contact-xs.jpg" alt="">
+	  	<div class="container">
+			<div class="kv-title">
+				<span>聯絡我們</span>
+			</div>
+			<div class="kv-txt">
+				透過中國信託區塊鏈生態圈合作，加入改變全球產業的創新者行列
+			</div>
+		</div>
+	  </div>
+	</div>
+</div>
+
+
+
+
+
+
+<!-- 專人與您聯繫 -->
+<section class="section contact">
+	<article class="container">
+		<!-- 主標題 -->
+		<div class="main-title">
+			<h1>專人<span>與您聯繫</span></h1>
+			<p>進一步瞭解您的需求，<br>並說明如何運用區塊鏈實踐創新</p>
+		</div>
+		<!-- 章節主內容 -->
+		<div class="main-content">
+			<form id="contact__form" action="post">
+				<div class="form__box">
+					<div class="form__box-title">
+						<h2>關於您</h2>
+					</div>
+					<div class="form__box-items">
+						<div class="form__box-item">
+							<label name="name" class="required inputtitle">姓名</label>
+							<input type="text" id="name" placeholder="請輸入您的姓名">
+							<span class="reminder__message" data-inputid="name">請輸入您的姓名</span>
+						</div>
+						<div class="form__box-item">
+							<label name="companyname" class="required inputtitle">公司名稱</label>
+							<input type="text" id="companyname" placeholder="請輸入您的公司名稱">
+							<span class="reminder__message" data-inputid="companyname">請輸入您的公司名稱</span>
+						</div>
+						<div class="form__box-item">
+							<label name="companydept" class="inputtitle">部門及職稱</label>
+							<input type="text" id="companydept" placeholder="請輸入您的部門及職稱">
+							<span class="reminder__message" data-inputid="companydept">請輸入您的部門及職稱</span>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="form__box">
+					<div class="form__box-title">
+						<h2>聯絡資訊</h2>
+					</div>
+					<div class="form__box-items">
+						<div class="form__box-item">
+							<label name="companyphone" class="required inputtitle">聯絡電話</label>
+							<input type="text" class="companyphone" id="companyphone" placeholder="請輸入您的聯絡電話">
+							<span class="reminder__message" data-inputid="companyphone">請輸入您的聯絡電話</span>
+						</div>
+
+						<div class="form__box-item">
+							<label name="email" class="required inputtitle">聯絡信箱</label>
+							<input type="text" id="email" placeholder="請輸入您的聯絡信箱">
+							<span class="reminder__message" data-inputid="email">請輸入您的聯絡信箱/您輸入的聯絡信箱格式有誤</span>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="form__box">
+					<div class="form__box-title">
+						<h2>需求說明</h2>
+					</div>
+					<div class="form__box-items">
+						<div class="selectservice form__box-item" id="selectservice">
+							<p class="required inputtitle">您感興趣的區塊鍊解決方案(可複選)</p>
+							<div class="checkbox__items">
+								<label class="checkbox__item">供應鏈金融服務
+									<input type="checkbox" id="menes" name="selectservice">
+									<span class="checkmark"></span>
+								</label>
+								<label class="checkbox__item">電商零售
+									<input type="checkbox" id="shaman" name="selectservice">
+									<span class="checkmark"></span>
+								</label>
+								<label class="checkbox__item">醫療健康
+									<input type="checkbox" id="eclaim" name="selectservice">
+									<span class="checkmark"></span>
+								</label>
+								<label class="checkbox__item">客製化服務
+									<input type="checkbox" id="customservice" name="selectservice">
+									<span class="checkmark"></span>
+								</label>
+								<label class="checkbox__item">其他
+									<input type="checkbox" id="other" name="selectservice">
+									<span class="checkmark"></span>
+								</label>
+							</div>
+							<span class="reminder__message" data-inputid="selectservice">請選擇你感興趣的區塊鏈服務</span>
+						</div>
+						<div class="form__box-item">
+							<label name="message" class="inputtitle">需求說明</label>
+							<textarea name="message" id="message" maxlength="600" rows="5" placeholder="*請留下訊息，專人將儘速與您聯繫。(600字以內)"></textarea>
+							<span class="reminder__message" data-inputid="message">請輸入您的需求說明</span>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="final__box form__box">
+					<div class="form__box-items">
+						<div class="form__box-item">
+							<label name="captcha" class="inputtitle">驗證碼</label>
+							<input type="text" id="captcha" placeholder="請填寫驗證碼" maxlength="4">
+							<span class="reminder__message" data-inputid="captcha">請輸入驗證碼/請輸入四位數字</span>
+						</div>
+						<label class="agree__box checkbox__item form__box-item">
+							<input type="checkbox" id="agree">
+							<span class="checkmark"></span>
+							<span class="agree__box-text">本人已詳閱<a href="#" data-action-target="#popupTips" title="個人資料運用告知聲明">個人資料運用告知聲明</a>，並同意其規定。</span>
+							<span class="reminder__message" data-inputid="agree">請先同意條款</span>
+						</label>
+						<label class="agree__box checkbox__item form__box-item">
+							<input type="checkbox" id="agreereceivemail">
+							<span class="checkmark"></span>
+							<span class="agree__box-text">我同意收到相關資訊的電子郵件。</span>
+							<span class="reminder__message" data-inputid="agreereceivemail">尚未勾選同意收到電子郵件</span>
+						</label>
+						<a id="sendBtn" class="sendBtn" href="javascript:;"><span>確定送出</span></a>
+					</div>
+				</div>
+
+
+				<div id="popupTips" class="extralink__popup extralink__popup-md fancybox-content" style="display: none;">
+					<div class="extralink__popup-title">個人資料運用告知聲明</div>
+					<div class="extralink__popup-content">
+						<p>中信銀茲依據【銀行法】及【個人資料保護法】等相關法令之規定，說明中信銀蒐集、處理、利用及/或國際傳輸台端個人資料之管理方針，以及台端所享有之權利或服務如下：</p>
+						<p>
+							<a class="privacylink" href="https://www.ctbcbank.com/content/twrbo/zh_tw/index/privacy_announce.html" target="_blank">個人資料運用告知聲明</a>
+						</p>
+						<p class="highlight">台端如對前述告知內容確已知悉、瞭解與同意，再請繼續執行交易</u>
+						</p>
+					</div>
+				</div>
+			</form>
+		</div>
+	</article>
+</section>
+
+
+
+
+
+
+<!-- 頁尾 -->
+<footer class="main-footer">
+	<div class="container">
+		<div class="subscribe">
+			<h2>免費訂閱電子報<span>，</span>掌握技術應用的第一手訊息</h2>
+			<p>將不定期收到CTBC Blockchain Marketplace最新資訊</p>
+			<form action="">
+				<input type="email" class="input-subscribe" id="subscribe-email" placeholder="請輸入您的聯絡郵件">
+				<div class="check-accept">
+					<input type="checkbox" name="" id="">
+					我已詳閱並同意<a href="#">隱私權保護政策</a>
+				</div>
+				<button class="btn-subscribe">確定</button>
+			</form>
+		</div>
+		<ul class="footer-list">
+			<li>
+				<a href="#">隱私權保護政策</a>
+			</li>
+			<li>
+				<a href="#">資料保密承諾</a>
+			</li>
+			<li>
+				<a href="#">網站權力聲明</a>
+			</li>
+		</ul>
+		<div class="copyright">
+			&copy;中國信託 版權所有
+		</div>
+	</div>
+</footer>
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.1/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script type="text/javascript" src="myjs.js"></script>
+<!--contact用到的檔案-->
+<script type="text/javascript" src="form.js"></script>
+<link rel="stylesheet" href="fancybox/jquery.fancybox.min.css">
+<script type="text/javascript" src="fancybox/jquery.fancybox.min.js"></script>
+<link rel="stylesheet" href="fancybox/extralink.css">
+
+<script>
+$(function(){
+	$('.slider-kv').slick({
+		dots: false,
+		infinite: false,
+		speed: 0,
+		slidesToShow: 1
+	})
+	$('.slider-advantage').slick({
+	  centerMode: true,
+	  slidesToShow: 3,
+      arrows: true,
+      dots: false,
+	  responsive: [
+	   
+	    {
+	      breakpoint: 767,
+	      settings: {
+	      	infinite: true,
+	        centerMode: false,
+	        arrows: true,
+      		dots: true,
+	        slidesToShow: 1
+	      }
+	    }
+	  ]
+	});
+	$('.thubnail-list li').click(function(){
+		// let li_index = $(this).index();
+		$(this).addClass('active').siblings('.active').removeClass('active');
+		$('.slider-kv .slick-dots li').eq($(this).index()).click();
+	})
+})
+</script>
+</body>
+</html>

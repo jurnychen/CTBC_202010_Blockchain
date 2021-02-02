@@ -1,0 +1,340 @@
+@import 'color';
+$contact-input-border-color: #D9D9D9;
+
+.contact {
+  .main-content {
+    @media screen and (max-width: 767px) {
+      padding: 0 15px;
+    }
+  }
+}
+
+.main-title {
+  h1 span {
+    @media screen and (max-width: 767px) {
+      display: inline;
+    }
+  }
+  p br{
+    @media screen and (min-width: 768px){
+      display: none;
+    }
+  }
+}
+
+.form {
+  padding-bottom: 75px;
+
+  input:focus {
+    outline-color: $main-color1D;
+  }
+
+  input:disabled,
+  textarea:disabled,
+  .disabled {
+    cursor: not-allowed !important;
+  }
+
+  form {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  @media only screen and (min-width: 768px) {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0 25px;
+  }
+  @media only screen and (min-width: 768px) {
+    .form .wrap {
+      max-width: 1300px;
+    }
+  }
+}
+
+.reminder__message {
+  display: none;
+  color: $main-color3;
+  font-size: 14px;
+  font-weight: bold;
+
+  &.show {
+    display: block;
+    padding-bottom: 10px;
+  }
+}
+
+.form__box {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px 15px;
+  &:not([class^="final__box"]) {
+    border-bottom: 2px solid $contact-input-border-color;
+  }
+  @media only screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+  }
+
+  h2 {
+    color: $main-color1;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0 0 15px 0;
+  }
+
+  .form__box-title {
+    flex: 0 0 100%;
+    padding: 0 0 15px 0;
+    @media only screen and (min-width: 768px) {
+      flex: 0 0 15%;
+    }
+  }
+
+  .sendBtn {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 1000px;
+    outline: none;
+    background-color: $main-color1;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    @media only screen and (min-width: 768px) {
+      margin: 20px 0;
+    }
+    span{
+      font-size: 22px;
+      font-weight: bold;
+      color: #FFFFFF;
+      position: relative;
+      z-index: 10;
+    }
+    &:before{
+      content:'';
+      position: absolute;
+      left: -60px;
+      top: 0;
+      width: 50px;
+      height: 100%;
+      background-color: $main-color3;
+      border-radius: 100px;
+      transition: .3s;
+      z-index: 1;
+    }
+    &:hover:before{
+      width: 100%;
+      left: 0;
+    }
+  }
+
+  .form__box-items {
+    flex: 0 0 100%;
+    padding: 0 0 30px 0;
+    @media only screen and (min-width: 768px) {
+      flex: 1 0 0;
+    }
+
+    .form__box-item {
+      width: 100%;
+      margin-bottom: 25px;
+
+      .inputtitle {
+        display: block;
+        width: 100%;
+        color: $txt-main-color;
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0 0 10px 0;
+      }
+
+      input[type='text'] {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 8px;
+        color: $txt-main-color;
+        font-size: 16px;
+        border: 1px solid $contact-input-border-color;
+        border-radius: 0.3em;
+
+        &.valid__error {
+          border: 2px solid $main-color3;
+        }
+      }
+
+      .valid__error ~ .checkmark {
+        border: 2px solid $main-color3;
+      }
+
+      //&.valid__error{
+      //  .checkbox__item .checkmark{
+      //    border: 2px solid $main-color3;
+      //  }
+      //}
+      input[type='text']::placeholder,
+      textarea::placeholder {
+        color: $contact-input-border-color;
+        font-size: 16px;
+      }
+
+      textarea {
+        resize: none;
+        box-sizing: border-box;
+        border: 1px solid $contact-input-border-color;
+        border-radius: 0.3em;
+        width: 100%;
+        padding: 15px 20px;
+        font-size: 16px;
+      }
+
+      .required::after {
+        content: '*';
+        color: $main-color3;
+        padding-left: 0.2em;
+      }
+
+    }
+
+    & + & {
+      margin-top: 20px;
+    }
+  }
+
+  .checkbox__items {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 15px 0 0 0;
+  }
+
+  .checkbox__item {
+    box-sizing: border-box;
+    flex: 0 0 50%;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+
+    .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 18px;
+      width: 18px;
+      border-radius: 50%;
+      border: 2px solid #EEEEEE;
+      background-color: transparent;
+
+      &:after {
+        content: "";
+        position: absolute;
+        display: none;
+        left: 5px;
+        top: 1px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    }
+
+    &:hover input ~ .checkmark {
+      background-color: #EEEEEE;
+    }
+
+    input:checked ~ .checkmark {
+      border: 2px solid $main-color1D;
+      background-color: $main-color1D;
+    }
+
+    input:checked ~ .checkmark:after {
+      display: block;
+    }
+  }
+}
+
+.selectservice.form__box-item {
+  padding-bottom: 15px;
+}
+
+.agree__box {
+  &.checkbox__item {
+    display: inline-block;
+  }
+
+  &.checkbox__item .checkmark {
+    border-radius: 0;
+  }
+
+  .agree__box-text {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 2em);
+    font-size: 18px;
+    line-height: 1.5;
+    padding-left: 0;
+  }
+
+  a {
+    display: inline-block;
+    color: $main-color1;
+    border-bottom: 1px solid $main-color1;
+    text-decoration: none;
+  }
+}
+
+#popupTips {
+  .privacylink {
+    color: #20a09a;
+    padding: 15px 0;
+  }
+
+  .highlight {
+    color: rgb(255, 0, 0);
+    text-decoration: underline;
+    text-decoration-color: #000000;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .companyphone__box {
+    display: flex;
+
+    .companyphonenum {
+      flex: 1 0 0;
+    }
+
+    .companyphoneext {
+      margin-left: 1em;
+      flex: 0 0 9em;
+    }
+  }
+  .final__box {
+    margin-left: 15%;
+  }
+}
