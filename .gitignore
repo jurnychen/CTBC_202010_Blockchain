@@ -70,3 +70,12 @@ fabric.properties
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
 .idea
+
+
+# 忽略的檔案類型
+*.mp4
+*.mov
+.DS_Store
+Thumbs.db
+prepros-6.config
+
