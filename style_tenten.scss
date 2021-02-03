@@ -380,6 +380,166 @@ body {
 
 
 
+// =========================
+// Footer
+// =========================
+.main-footer{
+
+
+// 文字的字級、顏色
+    .subscribe {
+        // 訂閱區-標題
+        h2{
+            font-size: 5.3333333vw;
+            padding-left: 2px;
+            // 20 / 375 = 0.053333333
+            @media screen and (min-width:768px){
+                line-height: 0.7;
+                text-align: left;
+                font-size: 1.4285714vw;
+                // 20 / 1400 = 0.014285714
+            }
+            @media screen and (min-width:1400px){
+                font-size: 20px;
+            }
+        }
+        // 訂閱區-內文、勾選說明
+        p,
+        .check-accept,
+        .input-subscribe{
+            font-size: 4.8vw;
+            padding-left: 2px;
+            // 18 / 375 = 0.048
+            @media screen and (min-width:768px){
+                line-height: 0.7;
+                text-align: left;
+                font-size: 1.2857143vw;
+                // 18 / 1400 = 0.012857143
+            }
+            @media screen and (min-width:1400px){
+                font-size: 18px;
+            }
+        }
+        // 訂閱區-按紐文字
+        .btn-subscribe{
+            font-size: 5.8666667vw;
+            // 22 / 375 = 0.058666667
+            @media screen and (min-width:768px){
+                font-size: 1.5714286vw;
+                // 22 / 1400 = 0.015714286
+            }
+            @media screen and (min-width:1400px){
+                font-size: 22px;
+            }
+        }
+    }
+
+    // 條款區-項目文字
+    .footer-list,
+    .copyright{
+        color: rgba(255, 255,255, 0.5);
+        font-size: 3.2vw;
+        // 12 / 375 = 0.032
+        @media screen and (min-width:768px){
+            font-size: 1.1428571vw;
+            // 16 / 1400 = 0.011428571
+        }
+        @media screen and (min-width:1400px){
+            font-size: 16px;
+        }
+    }
+    .footer-list a,
+    .footer-list a:hover,
+    .footer-list a:active,
+    .copyright{
+        color: rgba(255, 255,255, 0.5);
+    }
+
+// 區塊細節
+    .container{
+        max-width: 1200px;
+        padding: 0 8vw;
+        @media screen and (min-width:768px){
+            padding: 0 10.7142857vw;
+        }
+        @media screen and (min-width:1200px){
+            padding: 0 150px;
+        }
+    }
+    .subscribe{
+
+        // 填寫欄
+        .input-subscribe{
+            padding: 2% 5%;
+            @media screen and (min-width:768px){
+                padding: 1% 1%;
+                width: calc(100% - 17%);
+            }
+            @media screen and (min-width:996px){
+                width: calc(100% - 17%);
+            }
+            @media screen and (min-width:1400px){
+                width: calc(100% - 175px);
+            }
+        }
+        // 訂閱區-勾選說明
+        .check-accept{
+            padding-top: 5px;
+            @media screen and (min-width:768px){
+            }
+            @media screen and (min-width:1400px){
+            }
+        }
+        // 訂閱區-按紐
+        .btn-subscribe{
+            width: auto;
+            padding: 4% 15%;
+            margin-top: 5%;
+            @media screen and (min-width:768px){
+                padding: 1% 1%;
+                margin-top: 0;
+                width: 50%;
+                max-width: 100px;
+            }
+            @media screen and (min-width:996px){
+                max-width: 130px;
+            }
+            @media screen and (min-width:1400px){
+                max-width: 170px;
+            }
+        }
+    }
+    // 條款區
+    .footer-list{
+        padding-top: 7%;
+        @media screen and (min-width:768px){
+            width: 80%;
+            padding-top: 0;
+        }
+        @media screen and (min-width:1400px){
+        }
+    }
+    .footer-list li,
+    .footer-list a{
+        // outline: 1px solid #f00;
+        @media screen and (max-width:767px){
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .copyright{
+        border-top: 1px solid rgba(255,255,255,0.5);
+        padding-top: 2%;
+        @media screen and (min-width:768px){
+            border-top:0;
+            padding-top: 0;
+        }
+        @media screen and (min-width:1400px){
+        }
+    }
+
+}
+
 
 
 
