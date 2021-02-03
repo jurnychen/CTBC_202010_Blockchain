@@ -548,6 +548,89 @@ body {
 
 
 
+// =========================
+// 進一步諮詢解決方案 section advisory
+// =========================
+.section.advisory{
+    background: url('pic/bgimage_actionbox.jpg') no-repeat center center/ auto 100%, #164D83;
+    *{
+        box-sizing: border-box;
+    }
+
+// 文字的字級、顏色
+    .txt a{
+        font-size: 6.9333333vw;
+        // 26 / 375 = 0.069333333
+        @media screen and (min-width:768px){
+            font-size: 2.5vw;
+            // 35 / 1400 = 0.025
+        }
+        @media screen and (min-width:1400px){
+            font-size: 35px;
+        }
+    }
+    .txt a:hover,
+    .txt a:active{
+        color: $main-color1L;
+    }
+
+// 區塊細節
+    .container{
+        max-width: 1200px;
+        padding: 0 8vw;
+
+        @media screen and (min-width:768px){
+            padding: 0 10.7142857vw;
+        }
+        @media screen and (min-width:1200px){
+            padding: 0 150px;
+        }
+    }
+    .txt a{
+        position: relative;
+        width: 100%;
+        padding: 5% 0 5% 5%;
+        margin:0 auto;
+        @media screen and (min-width:768px){
+            padding: 0% 0 0% 5%;
+        }
+        @media screen and (min-width:1200px){
+            padding: 0 0 0 55px;
+        }
+
+    }
+    .txt span::before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 45%;
+        left: 0;
+        transform: translateY(-40%) translateX(-110%);
+        width: 8vw;
+        height: 8vw;
+        background: url('pic/icon_arrow_green.png') no-repeat center center / 100% auto;
+        @media screen and (min-width:768px){
+            width: 4vw;
+            height: 4vw;
+        }
+        @media screen and (min-width:1400px){
+            width: 50px;
+            height: 50px;
+        }
+    }
+    .txt a:hover :after {
+        width: 85%;
+        max-width: 350px;
+    }
+
+
+
+
+
+
+}
+
+
 
 // =========================
 // 解決方案 service
