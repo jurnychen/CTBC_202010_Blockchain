@@ -1,0 +1,31 @@
+.regulation {
+  padding: 0 30px; }
+  @media screen and (max-width: 767px) {
+    .regulation .main-content {
+      padding: 0 15px; } }
+  .regulation .summary {
+    padding: 75px 0;
+    font-weight: bold; }
+  .regulation h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5; }
+  .regulation p {
+    margin: 10px 0;
+    color: #1A1A1A;
+    font-size: 16px;
+    line-height: 1.5;
+    word-break: normal; }
+  .regulation .regulation__part {
+    margin-bottom: 20px; }
+  .regulation ul {
+    margin: 0; }
+  .regulation li {
+    list-style: disc;
+    margin: 5px 0;
+    color: #1A1A1A;
+    line-height: 1.5; }
+  .regulation a {
+    color: #068080; }
+
+/*# sourceMappingURL=regulation.css.map */

@@ -1,0 +1,42 @@
+@import 'color';
+.regulation {
+  padding: 0 30px;
+  .main-content {
+    @media screen and (max-width: 767px) {
+      padding: 0 15px;
+    }
+  }
+  .summary {
+    padding: 75px 0;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+
+  p {
+    margin: 10px 0;
+    color: $txt-main-color;
+    font-size: 16px;
+    line-height: 1.5;
+    word-break: normal;
+  }
+  .regulation__part{
+    margin-bottom: 20px;
+  }
+  ul{
+    margin: 0;
+  }
+  li{
+    list-style: disc;
+    margin: 5px 0;
+    color: $txt-main-color;
+    line-height: 1.5;
+  }
+  a{
+    color: $main-color1D;
+  }
+}
