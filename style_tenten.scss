@@ -14,6 +14,10 @@ body {
 // 置頂選單 Nav
 // =========================
 .main-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     line-height: 20px;
 }
 .logo.CTBC-logo{
@@ -68,12 +72,13 @@ body {
 // 選單第二層 細節
 .nav-list {
     margin: 13px 0;
-}
-.nav-list .link-marketplace a{
-    border: 0;
-}
-.nav-list li a{
-    // padding: 5px 20px;
+
+    .link-marketplace a{
+        border: 0;
+    }
+    li a{
+        // padding: 5px 20px;
+    }
 }
 
 // 選單第二層 標示目前頁面在結構中的分類
@@ -127,37 +132,6 @@ body {
             padding: 9px 20px 11px;
 
         }
-        .nav-list li.dropdown::before,
-        .nav-list li.dropdown::after {
-            content: "";
-            top: 20px;
-            position: absolute;
-            width: 8px;
-            height: 2px;
-            background-color: #fff;
-            display: inline-block;
-            -webkit-transition: all 0.2s ease;
-            transition: all 0.2s ease;
-            border-radius: 3px;
-        }
-        .nav-list li.dropdown::after {
-            right: 40px;
-            transform: rotate(-45deg);
-        }
-        .nav-list li.dropdown::before {
-            right: 35px;
-            transform: rotate(45deg);
-        }
-        .nav-list li.dropdown:hover::after,
-        .nav-list li.dropdown:active::after  {
-            right: 40px;
-            transform: rotate(45deg);
-        }
-        .nav-list li.dropdown:hover::before,
-        .nav-list li.dropdown:active::before  {
-            right: 35px;
-            transform: rotate(-45deg);
-        }
 
         // 原本桌機會顯示的按紐「聯絡我們」
         .link-contact{
@@ -165,7 +139,55 @@ body {
         }
     }
 
-    // 選單下拉
+    // 選單第二層的指引ICON
+    .nav-list li.dropdown::before,
+    .nav-list li.dropdown::after {
+        content: "";
+        top: 20px;
+        position: absolute;
+        width: 8px;
+        height: 2px;
+        background-color: #fff;
+        display: inline-block;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+        border-radius: 3px;
+        @media screen and (min-width:768px){
+            top: 17px;
+        }
+    }
+    .nav-list li.dropdown::after {
+        right: 40px;
+        transform: rotate(-45deg);
+        @media screen and (min-width:768px){
+            right: 30px;
+        }
+    }
+    .nav-list li.dropdown::before {
+        right: 35px;
+        transform: rotate(45deg);
+        @media screen and (min-width:768px){
+            right: 25px;
+        }
+    }
+    .nav-list li.dropdown:hover::after,
+    .nav-list li.dropdown:active::after  {
+        right: 40px;
+        transform: rotate(45deg);
+        @media screen and (min-width:768px){
+            right: 30px;
+        }
+    }
+    .nav-list li.dropdown:hover::before,
+    .nav-list li.dropdown:active::before  {
+        right: 35px;
+        transform: rotate(-45deg);
+        @media screen and (min-width:768px){
+            right: 25px;
+        }
+    }
+
+    // 選單的下拉內容
     .nav-list .sub-menu{
         width: 90%;
         margin: 10px auto 0;
@@ -226,8 +248,144 @@ body {
 
 
 
+// =========================
+// 內頁的Kv-Banner 
+// =========================
+
+.page-service .section.kv{
+    background-color: #1A1A1A;
+    height: 133.3333333vw;
+    @media screen and (min-width:450px){
+        height: 90vw;
+    }
+    @media screen and (min-width:768px){
+        height: 50vw;
+    }
+    @media screen and (min-width:1400px){
+        height: 700px;
+    }
+    &::before,
+    &::after{
+        display: none;
+    }
+
+    // 調整圖形的層級、位置，不要干擾文字區
+    .container::before,
+    .container::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        height: 100%;
+        z-index: -1;
+    }
+    .container:before {
+        @media screen and (min-width:768px){
+            background-image: url(pic/banner_bgimage_right.png);
+            transform: translateX(85%);
+            background-position: center left;
+        }
+    }
+    .container:after {
+        background-image: url(pic/banner_bgimage_left.png);
+        transform: translateX(-75%);
+        background-position: center right;
+        @media screen and (min-width:768px){
+            transform: translateX(-85%);
+        }
+
+    }
+
+    // 控制Banner圖的位置、尺寸
+    .kv-group-image{
+        width: 100%;
+        max-width: 1920px;
+        margin: 0 auto;
+        overflow: hidden;
+        img{
+            @media screen and (min-width:768px){
+                width: 120%;
+                margin-left: -9%;
+            }
+            @media screen and (min-width:1200px){
+                width: 112%;
+                margin-left: -7%;
+            }
+            @media screen and (min-width:1400px){
+                width: 105%;
+                margin-left: -5%;
+            }
+            @media screen and (min-width:1920px){
+                width: 100%;
+                margin-left:0%;
+            }
+        }
+    }
+
+
+    // 控制文字區的區域寬度、字級
+    .container{
+        padding: 0 8vw;
+        @media screen and (min-width:768px){
+            padding: 0 10.7142857vw;
+        }
+        @media screen and (min-width:1400px){
+            padding: 0 150px;
+        }
+    }
+    .kv-group-text{
+        padding-top: 60px;
+        @media screen and (min-width:768px){
+            padding-top: 120px;
+        }
+    }
+
+    // 控制Banner文字區的字級
+    .kv-title{
+        text-shadow: 2px 2px 5px rgba(0,0,0,0.75);
+        font-weight: 700;
+        font-size: 10.1333333vw;
+        // 38 / 375 = 0.101333333
+        @media screen and (min-width:768px){
+            font-size: 5vw;
+            // 70 / 1400 = 0.05
+        }
+        @media screen and (min-width:1400px){
+            font-size: 70px;
+        }
+    }
+
+    .kv-txt{
+        font-size: 5.3333333vw;
+        // 20 / 375 = 0.053333333
+        @media screen and (min-width:768px){
+            font-size: 2.1428571vw;
+            // 30 / 1400 = 0.021428571
+        }
+        @media screen and (min-width:1400px){
+            font-size: 30px;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 // =========================
 // 解決方案 service
 // =========================
+
