@@ -8,6 +8,11 @@ body {
     margin: 0;
 }
 
+*:focus {
+    outline: none;
+    ;
+}
+
 img {
     vertical-align: middle;
 }
@@ -25,7 +30,11 @@ p {
 }
 
 .main-header {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    line-height: 20px;
     z-index: 5;
     background-color: $main-color1D;
     @media screen and (min-width: 768px) {
@@ -34,8 +43,50 @@ p {
 }
 
 .CTBC-logo {
+    &.logo {
+        height: 60px;
+    }
+    .link-contact {
+        @media screen and (max-width: 767px) {
+            width: 30%;
+            max-width: 100px;
+            position: absolute;
+            top: 3px;
+            left: 0;
+            right: 0;
+            padding: 0;
+            margin: 0 55px 0 auto;
+        }
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+    .link-contact a {
+        @media screen and (max-width: 767px) {
+            width: 100%;
+            padding: 5px;
+            margin: 12px 0 7px;
+            text-align: center;
+            background-color: #1cbfa5;
+            border-radius: 50px;
+        }
+    }
+    .link-contact a,
+    .link-contact a:hover,
+    .link-contact a:active,
+    .link-contact a:focus,
+    .link-contact a:visited {
+        text-decoration: none;
+        @media screen and (max-width: 767px) {
+            color: #fff;
+        }
+    }
     a {
         display: block;
+        width: 40%;
+        max-width: 170px;
+        margin-right: auto;
+        margin-left: 0;
         @media screen and (max-width: 767px) {
             width: 45.333333%;
             margin: auto;
@@ -44,19 +95,29 @@ p {
             width: 12.1429%;
         }
     }
+    >a {
+        @media screen and (max-width: 767px) {
+            margin-left: 0;
+            margin-right: auto;
+        }
+    }
     img {
         width: 100%;
     }
     .hb {
         position: absolute;
-        width: 40px;
-        height: 40px;
-        left: 20px;
-        top: 10px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-content: center;
+        @media screen and (max-width: 767px) {
+            $hb-size: 30px;
+            width: $hb-size;
+            height: $hb-size;
+            right: 10px;
+            top: 15px;
+            margin-left: auto;
+        }
         @media screen and (min-width: 768px) {
             display: none;
         }
@@ -83,10 +144,13 @@ p {
 .main-nav {
     @media screen and (max-width: 767px) {
         position: fixed;
+        z-index: 2;
         top: 0%;
+        font-size: 18px;
         left: -100%;
-        width: 76%;
+        width: 82%;
         height: 100%;
+        padding-top: 50px;
         background-color: $main-color2DD;
         transition: .5s;
     }
@@ -100,7 +164,8 @@ p {
         height: 40px;
         top: 10px;
         right: -50px;
-        background-color: #f00;
+        background-color: $main-color1;
+        z-index: 2;
         border-radius: 50%;
         @media screen and (min-width: 768px) {
             display: none;
@@ -126,10 +191,14 @@ p {
 }
 
 .nav-list {
-    margin: 10px 0;
     padding: 0;
+    @media screen and (max-width: 767px) {
+        width: 80%;
+        margin: 0 auto;
+    }
     @media screen and (min-width: 768px) {
         width: 100%;
+        margin: 13px 0;
         display: flex;
         justify-content: flex-end;
     }
@@ -141,37 +210,132 @@ p {
             margin: 10px 0;
         }
     }
+    li.dropdown>a {
+        @media screen and (min-width: 768px) {
+            padding-right: 2em;
+        }
+    }
+    li.dropdown::before,
+    li.dropdown::after {
+        content: "";
+        top: 20px;
+        position: absolute;
+        width: 8px;
+        height: 2px;
+        background-color: #fff;
+        display: inline-block;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+        border-radius: 3px;
+        @media screen and (min-width: 768px) {
+            top: 17px;
+        }
+    }
+    li.dropdown::after {
+        right: 40px;
+        transform: rotate(45deg);
+        @media screen and (min-width: 768px) {
+            right: 40px;
+        }
+    }
+    li.dropdown::before {
+        right: 35px;
+        transform: rotate(-45deg);
+        @media screen and (min-width: 768px) {
+            right: 35px;
+        }
+    }
+    li.dropdown:hover::after,
+    li.dropdown:active::after {
+        transform: rotate(-45deg);
+    }
+    li.dropdown:hover::before,
+    li.dropdown:active::before {
+        transform: rotate(45deg);
+    }
     li a {
         display: block;
         color: #fff;
         text-decoration: none;
         padding: 6px 20px;
+        @media screen and (max-width: 767px) {
+            padding: 9px 20px 11px;
+        }
+    }
+    li a.active {
+        border-radius: 100px;
+        border: 1px solid #fff;
     }
     .link-marketplace a {
-        border: 1px solid #fff;
-        border-radius: 100px;
+        // border: 1px solid #fff;
+        // border-radius: 100px;
+    }
+    // 選單「聯絡我們」 外觀
+    .link-contact {
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
     }
     .link-contact a {
         background-color: $main-color1;
         border-radius: 100px;
         display: inline-block;
     }
+    .link-contact a span {
+        position: relative;
+        display: inline-block;
+        z-index: 1;
+    }
+    .link-contact a::after {
+        content: '';
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        width: 15px;
+        height: 15px;
+        background: url('pic/icon_flow_arrow_right_white.png') no-repeat center / 100% auto;
+    }
+    li a.active {
+        border-radius: 100px;
+        border: 1px solid #fff;
+    }
     .sub-menu {
         display: none;
+        margin: 10px auto 0;
         padding: 0;
         background-color: #fff;
+        margin: 10px auto 0;
         @media screen and (max-width: 767px) {
-            width: 80%;
+            width: 90%;
             border-radius: 6px;
         }
         @media screen and (min-width:768px) {
             position: absolute;
-            top: 100%;
+            top: 99%;
             left: 0;
+            border-radius: 5px;
+            margin-top: 2px;
+            width: 100%;
+        }
+    }
+    .sub-menu li {
+        padding: 5px 20px;
+        margin: 0;
+        @media screen and (min-width: 768px) {
+            padding: 5px 15px;
         }
     }
     .sub-menu a {
+        background: rgba(239, 49, 57, 0);
+        border-radius: 5px;
         color: $main-color2DD;
+        padding-left: 0px;
+        transition: all 0.3s ease-in-out;
+    }
+    .sub-menu a:hover {
+        background: rgba(239, 49, 57, 0.1);
+        padding-left: 15px;
+        color: $main-color3;
     }
     .active>.sub-menu {
         @media screen and (max-width: 767px) {
@@ -299,31 +463,43 @@ p {
     }
 }
 
+// 背景點點點
+.section.awards,
+.section.advantage,
+.solution {
+    $dot-color: #a9e7dd;
+    background-image: radial-gradient(circle at 2px, rgba($dot-color, .8) 2px, transparent 2px);
+    background-size: 14px 14px;
+}
+
 // 又上左下三角背景圖
 .awards,
 .solution,
+.advantage,
 .news-list {
+    overflow: hidden;
     &:before,
     &:after {
         content: '';
         position: absolute;
         width: 50px;
-        height: 100px;
+        height: 100%;
         @media screen and (min-width: 768px) {
-            width: 150px;
+            width: 130px;
             height: 300px;
         }
     }
     &:before {
         right: 0;
         top: 0;
-        background: url('pic/index/banner_bgimage_index_right.png') no-repeat left top / cover;
+        // background: url('pic/index/banner_bgimage_index_right.png') no-repeat left top / cover;
+        background: url('pic/section_bgimage_big.svg') no-repeat left top / cover;
     }
     &:after {
         left: 0;
         bottom: 0;
-        background: url('pic/index/banner_bgimage_index_right.png') no-repeat left top / cover;
-        transform: scale(-1, -1);
+        // background: url('pic/index/banner_bgimage_index_right.png') no-repeat left top / cover;
+        background: url('pic/section_bgimage_small.svg') no-repeat right top / cover;
     }
 }
 
@@ -467,7 +643,7 @@ p {
     .main-content {
         display: flex;
         flex-wrap: wrap;
-        align-items: flex-start;
+        // align-items: flex-start;
         @media screen and (max-width: 767px) {
             margin: 0 15px;
         }
@@ -488,9 +664,16 @@ p {
         }
         @media screen and (min-width: 768px) {
             width: 40%;
+            display: flex;
+            flex-direction: column;
         }
     }
-    .step-group {}
+    .step-group {
+        padding-bottom: 2em;
+        @media screen and (min-width: 768px) {
+            flex-grow: 1;
+        }
+    }
     .step-item {
         display: none;
     }
@@ -498,7 +681,7 @@ p {
         display: block;
     }
     .step-item h3 {
-        margin: 0;
+        margin: 0 0 1em;
         font-size: 22px;
         color: $main-color1;
         @media screen and (max-width: 767px) {
@@ -510,14 +693,22 @@ p {
     }
     .step-item-list {
         padding: 0;
+        font-size: 0;
     }
     .step-item-list li {
         position: relative;
         display: inline-block;
-        margin-bottom: 10px;
         border: 1px solid #000;
         border-radius: 100px;
         overflow: hidden;
+        @media screen and (max-width: 767px) {
+            min-width: calc(100% / 3 - 10px);
+            margin: 0 4px 10px;
+        }
+        @media screen and (min-width: 768px) {
+            min-width: calc(100% / 4 - 20px);
+            margin: 0 10px 10px;
+        }
     }
     .step-item-list li:before {
         content: '';
@@ -535,8 +726,9 @@ p {
         position: relative;
         z-index: 1;
         color: $main-color1D;
-        padding: 6px 20px 10px;
+        padding: 6px 1em;
         font-size: 20px;
+        text-align: center;
         text-decoration: none;
         @media screen and (min-width: 768px) {
             font-size: 26px;
@@ -762,6 +954,32 @@ p {
     }
 }
 
+// 按紐-滑動效果
+.btn-round {
+    position: relative;
+}
+
+.btn-round:before {
+    content: '';
+    width: 0px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    z-index: 0;
+    opacity: 1;
+}
+
+.btn-round:hover:before {
+    width: 100%;
+}
+
+.btn-round:before {
+    background-color: $main-color3;
+}
+
 // 幻燈片區
 .slick-dots {
     li {
@@ -792,11 +1010,14 @@ p {
             display: flex;
             flex-direction: column;
             text-align: center;
+            transform: translateY(0em);
+            transition: .5s;
             p {
                 order: -1;
                 font-size: 30px;
                 color: $txt-main-color;
-                margin: 0 0 .8em 0;
+                margin: 0 0 .3em 0;
+                color: $main-color3;
             }
             h3 {
                 font-size: 18px;
@@ -809,28 +1030,28 @@ p {
         }
         .pic {
             position: relative;
-            img {
-                fill: $main-color1D;
-                opacity: .5;
-            }
-            span {
-                $span-margin: 16.7%;
-                position: absolute;
-                top: $span-margin;
-                right: $span-margin;
-                bottom: $span-margin;
-                left: $span-margin;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                font-size: 30px;
-                color: #fff;
-                border-radius: 50%;
-                background-color: $main-color1D;
-                transition: .5s;
-                line-height: 1.5;
-            }
+        }
+        .pic span {
+            $span-margin: 16.7%;
+            position: absolute;
+            top: $span-margin;
+            right: $span-margin;
+            bottom: $span-margin;
+            left: $span-margin;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 30px;
+            color: #fff;
+            border-radius: 50%;
+            background-color: $main-color1D;
+            transition: .5s;
+            line-height: 1.5;
+        }
+        .pic img {
+            fill: $main-color1D;
+            opacity: .5;
         }
         &:hover {
             .pic span {
@@ -841,6 +1062,9 @@ p {
                 left: $span-margin;
                 background-color: $main-color3;
             }
+            .txt {
+                transform: translateY(-1em);
+            }
         }
     }
 }
@@ -848,63 +1072,123 @@ p {
 // =============================================
 .kv {
     position: relative;
-    // background: url('pic/index/banner_bgimage_index-lg.jpg') center center / cover;
-    overflow: hidden;
+    // overflow: hidden;
     padding: 0;
-    @media screen and (max-width: 767px) {
-        height: 440px;
+    background-color: #1A1A1A;
+    height: 133.3333333vw;
+    @media screen and (min-width: 450px) {
+        height: 90vw;
     }
-    @media screen and (min-width: 768px) {
-        height: 580px;
+    @media screen and (min-width:768px) {
+        height: 50vw;
     }
-    &:before,
-    &:after {
-        content: '';
-        position: absolute;
-        top: 0;
-        z-index: 1;
-        background-size: auto 100%;
-        background-repeat: no-repeat;
-        height: 100%;
-        @media screen and (max-width: 767px) {
-            width: 30%;
-        }
-        @media screen and (min-width: 768px) {
-            width: 300px;
-        }
+    @media screen and (min-width:1400px) {
+        height: 700px;
     }
-    &:before {
-        right: 0;
-        background-image: url('pic/banner_bgimage_right.png');
-        background-position: left center;
-        @media screen and (max-width: 767px) {
-            display: none;
-        }
-    }
-    &:after {
-        left: 0;
-        background-image: url('pic/banner_bgimage_left.png');
-        background-position: right center;
-    }
+    // @media screen and (max-width: 767px) {
+    //     height: 440px;
+    // }
+    // @media screen and (min-width: 768px) {
+    //     height: 580px;
+    // }
     .container {
         box-sizing: border-box;
+        padding: 0 8vw;
         @media screen and (max-width: 767px) {
             $pd_value: 10vw;
             padding-left: $pd_value;
             padding-right: $pd_value;
         }
-        @media screen and (min-width: 768px) {}
+        @media screen and (min-width:768px) {
+            padding: 0 10.7142857vw;
+        }
+        @media screen and (min-width:1400px) {
+            padding: 0 150px;
+        }
     }
+    .container:before,
+    .container:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        height: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: -1;
+        @media screen and (max-width: 767px) {
+            width: 30%;
+        }
+    }
+    .container:before {
+        // right: 0;
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+        @media screen and (min-width: 768px) {
+            background-image: url('pic/banner_bgimage_right.png');
+            transform: translateX(90%);
+            background-position: center left;
+        }
+    }
+    .container:after {
+        left: 0;
+        background-image: url('pic/banner_bgimage_left.png');
+        transform: translateX(-75%);
+        background-position: right center;
+        @media screen and (min-width: 768px) {
+            transform: translateX(-90%);
+        }
+    }
+    .slick-arrow {
+        @media screen and (max-width: 767px) {
+            display: none!important;
+        }
+    }
+    // 控制Banner圖的位置、尺寸
+    .kv-group-image {
+        width: 100%;
+        max-width: 1920px;
+        margin: 0 auto;
+        overflow: hidden;
+        img {
+            @media screen and (min-width: 768px) {
+                width: 120%;
+                margin-left: -9%;
+            }
+            @media screen and (min-width:1200px) {
+                width: 112%;
+                margin-left: -7%;
+            }
+            @media screen and (min-width:1400px) {
+                width: 105%;
+                margin-left: -5%;
+            }
+            @media screen and (min-width:1920px) {
+                width: 100%;
+                margin-left: 0%;
+            }
+        }
+    }
+    // 輪播下方小點 縮圖
     .thubnail-list {
         position: absolute;
         bottom: 30px;
         width: 100%;
-        max-width: 1200px;
+        max-width: 1000px;
         left: 0;
         right: 0;
         margin: auto;
         padding: 0;
         display: flex;
+        @media screen and (min-width: 768px) {
+            padding: 0 10.7142857vw;
+        }
+        @media screen and (min-width:1400px) {
+            padding: 0 150px;
+        }
     }
     .thubnail-list li {
         list-style: none;
@@ -951,16 +1235,37 @@ p {
         background-image: url('pic/index/banner_bgimage_index_left.png');
         background-position: right center;
     }
+    @media screen and (min-width: 450px) {
+        height: 90vw;
+    }
+    @media screen and (min-width:768px) {
+        height: 60vw;
+    }
+    @media screen and (min-width:1400px) {
+        height: 41.6vw;
+        max-height: 900px;
+    }
+}
+
+.kv-title,
+.kv-txt {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
 }
 
 .kv-title {
-    font-size: 38px;
+    font-weight: 500;
+    font-size: 10.1333333vw;
+    // 38 / 375 = 0.101333333
     color: #fff;
     margin-bottom: 20px;
     span {
         display: block;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width:768px) {
+        font-size: 5vw;
+        // 70 / 1400 = 0.05
+    }
+    @media screen and (min-width:1400px) {
         font-size: 70px;
     }
 }
@@ -1032,10 +1337,15 @@ p {
 }
 
 .kv-txt {
-    font-size: 20px;
     color: $main-color1L;
     line-height: 1.5;
+    font-size: 5.3333333vw;
+    // 20 / 375 = 0.053333333
     @media screen and (min-width: 768px) {
+        font-size: 2.1428571vw;
+        // 30 / 1400 = 0.021428571
+    }
+    @media screen and (min-width:1400px) {
         font-size: 30px;
     }
 }
@@ -1050,8 +1360,6 @@ p {
 
 // =============================================
 .solution {
-    background-image: radial-gradient(circle at 2px, #8ddfd2 2px, transparent 2px);
-    background-size: 20px 20px;
     .main-content {
         @media screen and (min-width: 768px) {
             display: flex;
@@ -1079,11 +1387,39 @@ p {
         content: '';
         position: absolute;
         top: 0;
-        left: calc(100% - 80px);
-        border-top: 40px solid #000;
+        left: calc(100% - 100px);
+        $arrow-color: #068080;
+        border-top: 40px solid rgba($arrow-color, .6);
         border-left: 40px solid transparent;
         border-right: 40px solid transparent;
         transition: left .5s;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        width: 4px;
+        height: 50px;
+        top: 0px;
+        left: calc(100% - 4px);
+        transform: rotate(45deg);
+        transform-origin: center top;
+        $arrow-color: #59BCA6;
+        background-color: rgba($arrow-color, .6);
+        transition: left .5s;
+    }
+    &:hover {
+        .txt {
+            max-height: 100%;
+        }
+        h2 {
+            color: $main-color1L;
+        }
+    }
+    &:hover::before {
+        left: 0;
+    }
+    &:hover::after {
+        left: 96px;
     }
     .pic {
         img {
@@ -1112,17 +1448,6 @@ p {
         p {
             color: #fff;
         }
-    }
-    &:hover {
-        .txt {
-            max-height: 100%;
-        }
-        h2 {
-            color: $main-color1L;
-        }
-    }
-    &:hover::before {
-        left: 0;
     }
 }
 
@@ -1576,6 +1901,24 @@ p {
             flex-direction: column;
             width: calc(100% / 4 - 30px);
         }
+        // 右下角三角型
+        &::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            right: 0;
+            bottom: 0;
+            $arrow-color: #59BCA6;
+            border-top: 60px solid transparent;
+            border-right: 60px solid rgba($arrow-color, .5);
+            border-bottom: 60px solid transparent;
+            transform: translateY(70%);
+            transition: transform 1s;
+        }
+        &:hover::after {
+            transform: translateY(0%);
+        }
     }
     .pic {
         @media screen and (max-width: 767px) {
@@ -1733,6 +2076,7 @@ p {
         }
     }
     .pic {
+        position: relative;
         width: 100%;
         @media screen and (max-width: 767px) {
             display: none;
@@ -1745,6 +2089,37 @@ p {
             left: 15px;
             top: 0;
         }
+    }
+    .pic:before {
+        content: '';
+        position: absolute;
+        left: 40px;
+        width: 0;
+        height: 0;
+        border-top: 50px solid #22ddab;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+    }
+    .pic:after {
+        content: '';
+        position: absolute;
+        width: 4px;
+        height: 50px;
+        background-color: #22ddab;
+        left: 160px;
+        transform-origin: center top;
+        transform: rotate(45deg);
+    }
+    .pic .number {
+        position: absolute;
+        top: 0;
+        left: 40px;
+        width: 100px;
+        text-align: center;
+        color: #fff;
+        line-height: 36px;
+        z-index: 2;
+        font-size: 30px;
     }
     .active .pic {
         display: block;
@@ -1998,6 +2373,7 @@ p {
     stroke: #000;
     stroke-width: 1px;
     fill: transparent;
+    // fill: #fff;
 }
 
 .svg-icon.play {
@@ -2014,7 +2390,7 @@ p {
 
 @keyframes svg_draw {
     0% {
-        stroke-dashoffset: 1000;
+        // stroke-dashoffset: 1000;
         stroke-opacity: 0;
         fill: transparent;
     }
@@ -2032,7 +2408,8 @@ p {
 
 @keyframes svg_draw2 {
     0% {
-        stroke-dashoffset: 213;
+        // stroke-dashoffset: 213;
+        fill: transparent;
     }
     90% {
         stroke-dashoffset: 0;

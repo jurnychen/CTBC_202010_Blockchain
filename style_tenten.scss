@@ -13,46 +13,46 @@ body {
 // =========================
 // 置頂選單 Nav
 // =========================
-.main-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    line-height: 20px;
-}
-.logo.CTBC-logo{
-    height: 60px;
-}
+// .main-header{
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     line-height: 20px;
+// }
+// .logo.CTBC-logo{
+//     height: 60px;
+// }
 // 改寫手機選單的物件位置
 .logo.CTBC-logo a{
-    width: 40%;
-    max-width: 170px;
-    margin-right: auto;
-    margin-left: 0;
+    // width: 40%;
+    // max-width: 170px;
+    // margin-right: auto;
+    // margin-left: 0;
 }
 @media screen and (max-width:767px){
     .logo.CTBC-logo .hb {
-        width: 30px;
-        height: 30px;
-        top: 15px;
-        right: 10px;
-        margin-left: auto;
+        // width: 30px;
+        // height: 30px;
+        // top: 15px;
+        // right: 10px;
+        // margin-left: auto;
     }
     .logo.CTBC-logo .link-contact{
-        width: 30%;
-        max-width: 100px;
-        position: absolute;
-        top: 3px;
-        left: 0;
-        right: 0;
-        padding: 0;
-        margin: 0 55px 0 auto; 
+        // width: 30%;
+        // max-width: 100px;
+        // position: absolute;
+        // top: 3px;
+        // left: 0;
+        // right: 0;
+        // padding: 0;
+        // margin: 0 55px 0 auto; 
     }
     .logo.CTBC-logo .link-contact a{
-        width: 100%;
-        padding: 5px;
-        margin: 12px 0 7px;
-        text-align: center; 
+        // width: 100%;
+        // padding: 5px;
+        // margin: 12px 0 7px;
+        // text-align: center; 
     }
     .link-contact a,
     .link-contact a:hover,
@@ -62,19 +62,19 @@ body {
         color:#fff;
     }
 }
-@media screen and (min-width:768px){
-    .logo.CTBC-logo .link-contact{
-        display: none;
-    }
-}
+// @media screen and (min-width:768px){
+//     .logo.CTBC-logo .link-contact{
+//         display: none;
+//     }
+// }
 
 
 // 選單第二層 細節
 .nav-list {
-    margin: 13px 0;
+    // margin: 13px 0;
 
     .link-marketplace a{
-        border: 0;
+        // border: 0;
     }
     li a{
         // padding: 5px 20px;
@@ -82,139 +82,139 @@ body {
 }
 
 // 選單第二層 標示目前頁面在結構中的分類
-.nav-list li a.active{
-    border-radius: 100px;
-    border: 1px solid #fff;
-}
+// .nav-list li a.active{
+//     border-radius: 100px;
+//     border: 1px solid #fff;
+// }
 
 // 選單「聯絡我們」 外觀
-.link-contact a {
-    background-color: $main-color1;
-    border-radius: 100px;
-    display: inline-block;
-}
-.link-contact a span{
-    position: relative;
-    display: inline-block;
-    z-index: 1;
-}
-.link-contact a::after{
-    content:'';
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    width: 15px;
-    height: 15px;
-    background: url('pic/icon_flow_arrow_right_white.png') no-repeat center / 100% auto;
-}
+// .link-contact a {
+//     background-color: $main-color1;
+//     border-radius: 100px;
+//     display: inline-block;
+// }
+// .link-contact a span{
+//     position: relative;
+//     display: inline-block;
+//     z-index: 1;
+// }
+// .link-contact a::after{
+//     content:'';
+//     display: inline-block;
+//     position: relative;
+//     z-index: 1;
+//     width: 15px;
+//     height: 15px;
+//     background: url('pic/icon_flow_arrow_right_white.png') no-repeat center / 100% auto;
+// }
 
 
 
 
 // 選單-展開後的外觀
 .main-nav .hb{
-    background-color: $main-color1;
-    z-index: 2; 
+    // background-color: $main-color1;
+    // z-index: 2; 
 }
 
 .main-nav {
     @media screen and (max-width: 767px){
-        width: 82%;
-        z-index: 2; 
-        padding-top: 50px;
+        // width: 82%;
+        // z-index: 2; 
+        // padding-top: 50px;
 
-        font-size: 18px;
+        // font-size: 18px;
         .nav-list{
-            width: 80%;
-            margin: 0 auto; 
+            // width: 80%;
+            // margin: 0 auto; 
         }
         .nav-list li a{
-            padding: 9px 20px 11px;
+            // padding: 9px 20px 11px;
 
         }
 
         // 原本桌機會顯示的按紐「聯絡我們」
         .link-contact{
-            display: none;
+        //     display: none;
         }
     }
 
     // 選單第二層的指引ICON
     .nav-list li.dropdown::before,
     .nav-list li.dropdown::after {
-        content: "";
-        top: 20px;
-        position: absolute;
-        width: 8px;
-        height: 2px;
-        background-color: #fff;
-        display: inline-block;
-        -webkit-transition: all 0.2s ease;
-        transition: all 0.2s ease;
-        border-radius: 3px;
+        // content: "";
+        // top: 20px;
+        // position: absolute;
+        // width: 8px;
+        // height: 2px;
+        // background-color: #fff;
+        // display: inline-block;
+        // -webkit-transition: all 0.2s ease;
+        // transition: all 0.2s ease;
+        // border-radius: 3px;
         @media screen and (min-width:768px){
-            top: 17px;
+            // top: 17px;
         }
     }
     .nav-list li.dropdown::after {
-        right: 40px;
-        transform: rotate(-45deg);
+        // right: 40px;
+        // transform: rotate(-45deg);
         @media screen and (min-width:768px){
-            right: 30px;
+            // right: 30px;
         }
     }
     .nav-list li.dropdown::before {
-        right: 35px;
-        transform: rotate(45deg);
+        // right: 35px;
+        // transform: rotate(45deg);
         @media screen and (min-width:768px){
-            right: 25px;
+            // right: 25px;
         }
     }
     .nav-list li.dropdown:hover::after,
     .nav-list li.dropdown:active::after  {
-        right: 40px;
-        transform: rotate(45deg);
+        // right: 40px;
+        // transform: rotate(45deg);
         @media screen and (min-width:768px){
-            right: 30px;
+            // right: 30px;
         }
     }
     .nav-list li.dropdown:hover::before,
     .nav-list li.dropdown:active::before  {
-        right: 35px;
-        transform: rotate(-45deg);
+        // right: 35px;
+        // transform: rotate(-45deg);
         @media screen and (min-width:768px){
-            right: 25px;
+            // right: 25px;
         }
     }
 
     // 選單的下拉內容
     .nav-list .sub-menu{
-        width: 90%;
-        margin: 10px auto 0;
+        // width: 90%;
+        // margin: 10px auto 0;
         @media screen and (min-width:768px){
-            border-radius: 5px;
-            margin-top: 2px;
-            width: 100%;
+            // border-radius: 5px;
+            // margin-top: 2px;
+            // width: 100%;
         }
     }
     .nav-list .sub-menu li{
-        padding: 5px 20px;
-        margin:0;
+        // padding: 5px 20px;
+        // margin:0;
         @media screen and (min-width:768px){
-            padding: 5px 15px;
+            // padding: 5px 15px;
         }
     }
     .sub-menu li > a{
-        background: rgba(239, 49, 57, 0);
-        border-radius: 5px;
-        color: $main-color2DD;
-        padding-left: 0px;
-        transition: all 0.3s ease-in-out;
+        // background: rgba(239, 49, 57, 0);
+        // border-radius: 5px;
+        // color: $main-color2DD;
+        // padding-left: 0px;
+        // transition: all 0.3s ease-in-out;
     }
     .sub-menu li > a:hover {
-        background: rgba(239, 49, 57, 0.1);
-        padding-left: 15px;
-        color: $main-color3;
+        // background: rgba(239, 49, 57, 0.1);
+        // padding-left: 15px;
+        // color: $main-color3;
     }
 }
 
@@ -222,26 +222,26 @@ body {
 
 // 按紐-滑動效果
 .btn-round{
-    position: relative;
+    // position: relative;
 }
 .btn-round:before {
-    content: '';
-    width: 0px;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    border-radius: 50px;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    z-index: 0;
-    opacity: 1;
+    // content: '';
+    // width: 0px;
+    // height: 100%;
+    // position: absolute;
+    // left: 0;
+    // top: 0;
+    // border-radius: 50px;
+    // -webkit-transition: all 0.3s ease-in-out;
+    // transition: all 0.3s ease-in-out;
+    // z-index: 0;
+    // opacity: 1;
 }
 .btn-round:hover:before {
-    width: 100%;
+    // width: 100%;
 }
 .btn-round:before{
-    background-color: $main-color3;
+    // background-color: $main-color3;
 }
 
 
@@ -253,75 +253,75 @@ body {
 // =========================
 
 .page-service .section.kv{
-    background-color: #1A1A1A;
-    height: 133.3333333vw;
-    @media screen and (min-width:450px){
-        height: 90vw;
-    }
-    @media screen and (min-width:768px){
-        height: 50vw;
-    }
-    @media screen and (min-width:1400px){
-        height: 700px;
-    }
-    &::before,
-    &::after{
-        display: none;
-    }
+    // background-color: #1A1A1A;
+    // height: 133.3333333vw;
+    // @media screen and (min-width:450px){
+    //     height: 90vw;
+    // }
+    // @media screen and (min-width:768px){
+    //     height: 50vw;
+    // }
+    // @media screen and (min-width:1400px){
+    //     height: 700px;
+    // }
+    // &::before,
+    // &::after{
+    //     display: none;
+    // }
 
     // 調整圖形的層級、位置，不要干擾文字區
     .container::before,
     .container::after{
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        background-size: auto 100%;
-        background-repeat: no-repeat;
-        height: 100%;
-        z-index: -1;
+        // content: '';
+        // position: absolute;
+        // top: 0;
+        // left: 0;
+        // right: 0;
+        // width: 100%;
+        // background-size: auto 100%;
+        // background-repeat: no-repeat;
+        // height: 100%;
+        // z-index: -1;
     }
     .container:before {
         @media screen and (min-width:768px){
-            background-image: url(pic/banner_bgimage_right.png);
-            transform: translateX(90%);
-            background-position: center left;
+            // background-image: url(pic/banner_bgimage_right.png);
+            // transform: translateX(90%);
+            // background-position: center left;
         }
     }
     .container:after {
-        background-image: url(pic/banner_bgimage_left.png);
-        transform: translateX(-75%);
-        background-position: center right;
+        // background-image: url(pic/banner_bgimage_left.png);
+        // transform: translateX(-75%);
+        // background-position: center right;
         @media screen and (min-width:768px){
-            transform: translateX(-90%);
+            // transform: translateX(-90%);
         }
 
     }
 
     // 控制Banner圖的位置、尺寸
     .kv-group-image{
-        width: 100%;
-        max-width: 1920px;
-        margin: 0 auto;
-        overflow: hidden;
+        // width: 100%;
+        // max-width: 1920px;
+        // margin: 0 auto;
+        // overflow: hidden;
         img{
             @media screen and (min-width:768px){
-                width: 120%;
-                margin-left: -9%;
+                // width: 120%;
+                // margin-left: -9%;
             }
             @media screen and (min-width:1200px){
-                width: 112%;
-                margin-left: -7%;
+                // width: 112%;
+                // margin-left: -7%;
             }
             @media screen and (min-width:1400px){
-                width: 105%;
-                margin-left: -5%;
+                // width: 105%;
+                // margin-left: -5%;
             }
             @media screen and (min-width:1920px){
-                width: 100%;
-                margin-left:0%;
+                // width: 100%;
+                // margin-left:0%;
             }
         }
     }
@@ -329,12 +329,12 @@ body {
 
     // 控制文字區的區域寬度
     .container{
-        padding: 0 8vw;
+        // padding: 0 8vw;
         @media screen and (min-width:768px){
-            padding: 0 10.7142857vw;
+            // padding: 0 10.7142857vw;
         }
         @media screen and (min-width:1400px){
-            padding: 0 150px;
+            // padding: 0 150px;
         }
     }
     .kv-group-text{
@@ -348,31 +348,31 @@ body {
 
     .kv-title,
     .kv-txt{
-        text-shadow: 2px 2px 5px rgba(0,0,0,0.75);
+        // text-shadow: 2px 2px 5px rgba(0,0,0,0.75);
     }
     .kv-title{
-        font-weight: 500;
-        font-size: 10.1333333vw;
+        // font-weight: 500;
+        // font-size: 10.1333333vw;
         // 38 / 375 = 0.101333333
         @media screen and (min-width:768px){
-            font-size: 5vw;
+            // font-size: 5vw;
             // 70 / 1400 = 0.05
         }
         @media screen and (min-width:1400px){
-            font-size: 70px;
+            // font-size: 70px;
         }
     }
 
     .kv-txt{
-        font-size: 5.3333333vw;
-        // 20 / 375 = 0.053333333
-        @media screen and (min-width:768px){
-            font-size: 2.1428571vw;
-            // 30 / 1400 = 0.021428571
-        }
-        @media screen and (min-width:1400px){
-            font-size: 30px;
-        }
+        // font-size: 5.3333333vw;
+        // // 20 / 375 = 0.053333333
+        // @media screen and (min-width:768px){
+        //     font-size: 2.1428571vw;
+        //     // 30 / 1400 = 0.021428571
+        // }
+        // @media screen and (min-width:1400px){
+        //     font-size: 30px;
+        // }
     }
 
 }
