@@ -470,3 +470,62 @@ body {
       padding-top: 0; } }
 
 /*# sourceMappingURL=style_tenten.css.map */
+.section.advisory {
+  background: url("pic/bgimage_actionbox.jpg") no-repeat center center/auto 100%, #164D83; }
+  .section.advisory * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  .section.advisory .txt a {
+    font-size: 6.9333333vw; }
+    @media screen and (min-width: 768px) {
+      .section.advisory .txt a {
+        font-size: 2.5vw; } }
+    @media screen and (min-width: 1400px) {
+      .section.advisory .txt a {
+        font-size: 35px; } }
+  .section.advisory .txt a:hover,
+  .section.advisory .txt a:active {
+    color: #46ffc0; }
+  .section.advisory .container {
+    max-width: 1200px;
+    padding: 0 8vw; }
+    @media screen and (min-width: 768px) {
+      .section.advisory .container {
+        padding: 0 10.7142857vw; } }
+    @media screen and (min-width: 1200px) {
+      .section.advisory .container {
+        padding: 0 150px; } }
+  .section.advisory .txt a {
+    position: relative;
+    width: 100%;
+    padding: 5% 0 5% 5%;
+    margin: 0 auto; }
+    @media screen and (min-width: 768px) {
+      .section.advisory .txt a {
+        padding: 0% 0 0% 5%; } }
+    @media screen and (min-width: 1200px) {
+      .section.advisory .txt a {
+        padding: 0 0 0 55px; } }
+  .section.advisory .txt span::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    -webkit-transform: translateY(-40%) translateX(-110%);
+    -ms-transform: translateY(-40%) translateX(-110%);
+    transform: translateY(-40%) translateX(-110%);
+    width: 8vw;
+    height: 8vw;
+    background: url("pic/icon_arrow_green.png") no-repeat center center/100% auto; }
+    @media screen and (min-width: 768px) {
+      .section.advisory .txt span::before {
+        width: 4vw;
+        height: 4vw; } }
+    @media screen and (min-width: 1400px) {
+      .section.advisory .txt span::before {
+        width: 50px;
+        height: 50px; } }
+  .section.advisory .txt a:hover :after {
+    width: 85%;
+    max-width: 350px; }
