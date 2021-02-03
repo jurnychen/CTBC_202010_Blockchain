@@ -1,53 +1,3 @@
-.nnaOOlNL_0 {
-  stroke-dasharray: 237 239;
-  stroke-dashoffset: 238;
-  animation: nnaOOlNL_draw 2000ms linear 0ms forwards; }
-
-.nnaOOlNL_1 {
-  stroke-dasharray: 79 81;
-  stroke-dashoffset: 80;
-  animation: nnaOOlNL_draw 2000ms linear 142ms forwards; }
-
-.nnaOOlNL_2 {
-  stroke-dasharray: 448 450;
-  stroke-dashoffset: 449;
-  animation: nnaOOlNL_draw 2000ms linear 285ms forwards; }
-
-.nnaOOlNL_3 {
-  stroke-dasharray: 375 377;
-  stroke-dashoffset: 376;
-  animation: nnaOOlNL_draw 2000ms linear 428ms forwards; }
-
-.nnaOOlNL_4 {
-  stroke-dasharray: 197 199;
-  stroke-dashoffset: 198;
-  animation: nnaOOlNL_draw 2000ms linear 571ms forwards; }
-
-.nnaOOlNL_5 {
-  stroke-dasharray: 122 124;
-  stroke-dashoffset: 123;
-  animation: nnaOOlNL_draw 2000ms linear 714ms forwards; }
-
-.nnaOOlNL_6 {
-  stroke-dasharray: 381 383;
-  stroke-dashoffset: 382;
-  animation: nnaOOlNL_draw 2000ms linear 857ms forwards; }
-
-.nnaOOlNL_7 {
-  stroke-dasharray: 212 214;
-  stroke-dashoffset: 213;
-  animation: nnaOOlNL_draw 2000ms linear 1000ms forwards; }
-
-@keyframes nnaOOlNL_draw {
-  100% {
-    stroke-dashoffset: 0; } }
-@keyframes nnaOOlNL_fade {
-  0% {
-    stroke-opacity: 1; }
-  94.44444444444444% {
-    stroke-opacity: 1; }
-  100% {
-    stroke-opacity: 0; } }
 @media screen and (max-width: 767px) {
   .contact .main-content {
     padding: 0 15px; } }
@@ -55,6 +5,7 @@
 @media screen and (max-width: 767px) {
   .main-title h1 span {
     display: inline; } }
+
 @media screen and (min-width: 768px) {
   .main-title p br {
     display: none; } }
@@ -91,15 +42,25 @@
     padding-bottom: 10px; }
 
 .form__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
   padding: 20px 15px; }
   .form__box:not([class^="final__box"]) {
     border-bottom: 2px solid #D9D9D9; }
   @media only screen and (min-width: 768px) {
     .form__box {
+      -ms-flex-wrap: nowrap;
       flex-wrap: nowrap; } }
   .form__box h2 {
     color: #1cbfa5;
@@ -108,10 +69,14 @@
     margin: 0;
     padding: 0 0 15px 0; }
   .form__box .form__box-title {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     padding: 0 0 15px 0; }
     @media only screen and (min-width: 768px) {
       .form__box .form__box-title {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 15%;
         flex: 0 0 15%; } }
   .form__box .sendBtn {
     display: inline-block;
@@ -142,16 +107,22 @@
       height: 100%;
       background-color: #e03757;
       border-radius: 100px;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
       transition: .3s;
       z-index: 1; }
     .form__box .sendBtn:hover:before {
       width: 100%;
       left: 0; }
   .form__box .form__box-items {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     padding: 0 0 30px 0; }
     @media only screen and (min-width: 768px) {
       .form__box .form__box-items {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 0 0px;
         flex: 1 0 0; } }
     .form__box .form__box-items .form__box-item {
       width: 100%;
@@ -164,6 +135,7 @@
         font-weight: bold;
         margin: 0 0 10px 0; }
       .form__box .form__box-items .form__box-item input[type='text'] {
+        -webkit-box-sizing: border-box;
         box-sizing: border-box;
         display: block;
         width: 100%;
@@ -177,12 +149,25 @@
           border: 2px solid #e03757; }
       .form__box .form__box-items .form__box-item .valid__error ~ .checkmark {
         border: 2px solid #e03757; }
+      .form__box .form__box-items .form__box-item input[type='text']::-webkit-input-placeholder,
+      .form__box .form__box-items .form__box-item textarea::-webkit-input-placeholder {
+        color: #D9D9D9;
+        font-size: 16px; }
+      .form__box .form__box-items .form__box-item input[type='text']:-ms-input-placeholder,
+      .form__box .form__box-items .form__box-item textarea:-ms-input-placeholder {
+        color: #D9D9D9;
+        font-size: 16px; }
+      .form__box .form__box-items .form__box-item input[type='text']::-ms-input-placeholder,
+      .form__box .form__box-items .form__box-item textarea::-ms-input-placeholder {
+        color: #D9D9D9;
+        font-size: 16px; }
       .form__box .form__box-items .form__box-item input[type='text']::placeholder,
       .form__box .form__box-items .form__box-item textarea::placeholder {
         color: #D9D9D9;
         font-size: 16px; }
       .form__box .form__box-items .form__box-item textarea {
         resize: none;
+        -webkit-box-sizing: border-box;
         box-sizing: border-box;
         border: 1px solid #D9D9D9;
         border-radius: 0.3em;
@@ -196,13 +181,25 @@
     .form__box .form__box-items + .form__box .form__box-items {
       margin-top: 20px; }
   .form__box .checkbox__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
     padding: 15px 0 0 0; }
   .form__box .checkbox__item {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     position: relative;
     padding-left: 30px;
@@ -254,8 +251,10 @@
 
 .agree__box.checkbox__item {
   display: inline-block; }
+
 .agree__box.checkbox__item .checkmark {
   border-radius: 0; }
+
 .agree__box .agree__box-text {
   display: inline-block;
   vertical-align: top;
@@ -263,6 +262,7 @@
   font-size: 18px;
   line-height: 1.5;
   padding-left: 0; }
+
 .agree__box a {
   display: inline-block;
   color: #1cbfa5;
@@ -272,21 +272,26 @@
 #popupTips .privacylink {
   color: #20a09a;
   padding: 15px 0; }
+
 #popupTips .highlight {
   color: red;
   text-decoration: underline;
+  -webkit-text-decoration-color: #000000;
   text-decoration-color: #000000; }
 
 @media only screen and (min-width: 768px) {
   .companyphone__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex; }
     .companyphone__box .companyphonenum {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
       flex: 1 0 0; }
     .companyphone__box .companyphoneext {
       margin-left: 1em;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 9em;
       flex: 0 0 9em; }
-
   .final__box {
     margin-left: 15%; } }
-
-/*# sourceMappingURL=contact.css.map */

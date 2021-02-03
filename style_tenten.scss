@@ -1,5 +1,5 @@
 @import 'color';
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap');
 
 // 共用設定
 body {
@@ -286,7 +286,7 @@ body {
     .container:before {
         @media screen and (min-width:768px){
             background-image: url(pic/banner_bgimage_right.png);
-            transform: translateX(85%);
+            transform: translateX(90%);
             background-position: center left;
         }
     }
@@ -295,7 +295,7 @@ body {
         transform: translateX(-75%);
         background-position: center right;
         @media screen and (min-width:768px){
-            transform: translateX(-85%);
+            transform: translateX(-90%);
         }
 
     }
@@ -327,7 +327,7 @@ body {
     }
 
 
-    // 控制文字區的區域寬度、字級
+    // 控制文字區的區域寬度
     .container{
         padding: 0 8vw;
         @media screen and (min-width:768px){
@@ -338,16 +338,20 @@ body {
         }
     }
     .kv-group-text{
-        padding-top: 60px;
+        // padding-top: 60px;
         @media screen and (min-width:768px){
-            padding-top: 120px;
+            // border: 1px solid #ff0;
         }
     }
 
-    // 控制Banner文字區的字級
-    .kv-title{
+    // 控制Banner文字區的字級、效果
+
+    .kv-title,
+    .kv-txt{
         text-shadow: 2px 2px 5px rgba(0,0,0,0.75);
-        font-weight: 700;
+    }
+    .kv-title{
+        font-weight: 500;
         font-size: 10.1333333vw;
         // 38 / 375 = 0.101333333
         @media screen and (min-width:768px){

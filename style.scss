@@ -1991,3 +1991,57 @@ p {
         line-height: 1.6;
     }
 }
+
+// SVG 描圖動畫控制===========
+.svg-icon {
+    opacity: 0;
+    stroke: #000;
+    stroke-width: 1px;
+    fill: transparent;
+}
+
+.svg-icon.play {
+    opacity: 1;
+}
+
+.svg-icon.paused * {
+    animation-play-state: paused;
+}
+
+.svg-icon.play * {
+    animation-play-state: running;
+}
+
+@keyframes svg_draw {
+    0% {
+        stroke-dashoffset: 1000;
+        stroke-opacity: 0;
+        fill: transparent;
+    }
+    90% {
+        stroke-dashoffset: 0;
+        stroke-opacity: 1;
+        fill: transparent;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke-opacity: 0;
+        fill: #1c3e57;
+    }
+}
+
+@keyframes svg_draw2 {
+    0% {
+        stroke-dashoffset: 213;
+    }
+    90% {
+        stroke-dashoffset: 0;
+        stroke-opacity: 1;
+        fill: transparent;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke-opacity: 0;
+        fill: #1cbfa5;
+    }
+}
