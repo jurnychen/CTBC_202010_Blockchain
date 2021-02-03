@@ -285,12 +285,12 @@
 		<div class="subscribe">
 			<h2>免費訂閱電子報<span>，</span>掌握技術應用的第一手訊息</h2>
 			<p>將不定期收到CTBC Blockchain Marketplace最新資訊</p>
-			<form action="">
+			<form>
 				<input type="email" class="input-subscribe" id="subscribe-email" placeholder="請輸入您的聯絡郵件">
-				<div class="check-accept">
-					<input type="checkbox" name="" id="">
-					我已詳閱並同意<a href="privacypolicy.html">隱私權保護政策</a>
-				</div>
+				<label for="accept-subscribe" class="check-accept">我已詳閱並同意<a href="privacypolicy.html">隱私權保護政策</a>
+					<input type="checkbox" name="accept-subscribe" id="accept-subscribe">
+					<span class="checkmark"></span>
+				</label>
 				<button class="btn-subscribe">確定送出</button>
 			</form>
 		</div>
@@ -321,6 +321,7 @@
 
 <script>
 $(function(){
+
 	$('.slider-kv').slick({
 		dots: false,
 		infinite: false,

@@ -388,6 +388,7 @@ body {
 
 // 文字的字級、顏色
     .subscribe {
+        position: relative;
         // 訂閱區-標題
         h2{
             font-size: 5.3333333vw;
@@ -430,6 +431,42 @@ body {
             }
             @media screen and (min-width:1400px){
                 font-size: 22px;
+            }
+        }
+        // 訂閱成功的視窗
+        .box-success{
+            max-width: 315px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            margin: 0 auto;
+            background-color: #FFFFFF;
+            padding: 20px;
+            border: 2px solid $main-color1;
+            border-radius: 1em;
+            p {
+                color: $txt-main-color;
+                font-size: 20px;
+                font-weight: bold;
+                text-align: left;
+                margin: 0;
+                padding: 15px 0;
+            }
+            button{
+                display: block;
+                cursor: pointer;
+                margin-left: auto;
+                -webkit-appearance: none;
+                outline: none;
+                border: none;
+                border-radius: 0.25em;
+                background-color: $main-color1;
+                color: #FFF;
+                font-size: 22px;
+                font-weight: bold;
+                padding: 10px 15px;
             }
         }
     }
@@ -481,17 +518,72 @@ body {
             @media screen and (min-width:1400px){
                 width: calc(100% - 175px);
             }
+            &:focus{
+                border: 2px solid $main-color3;
+                outline: none;
+            }
         }
         // 訂閱區-勾選說明
         .check-accept{
-            padding-top: 5px;
+            display: block;
+            margin: 5px 0 0 10px;
+            padding-left: 30px;
+            position: relative;
             @media screen and (min-width:768px){
+                margin-top: 15px;
             }
             @media screen and (min-width:1400px){
+            }
+            input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+            }
+            .checkmark {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                margin: auto 0;
+                height: 18px;
+                width: 18px;
+                border: 2px solid #EEEEEE;
+                background-color: transparent;
+                &:after{
+                    content: "";
+                    position: absolute;
+                    display: none;
+                    left: 5px;
+                    top: 1px;
+                    width: 5px;
+                    height: 10px;
+                    border-style: solid;
+                    border-color: white;
+                    border-width: 0 3px 3px 0;
+                    -webkit-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                }
+            }
+            &:hover input ~ .checkmark {
+                background-color: #EEEEEE;
+            }
+
+            input:checked ~ .checkmark {
+                border: 2px solid $main-color1D;
+                background-color: $main-color1D;
+            }
+
+            input:checked ~ .checkmark:after {
+                display: block;
             }
         }
         // 訂閱區-按紐
         .btn-subscribe{
+            outline: none;
+            border: none;
             width: auto;
             padding: 4% 15%;
             margin-top: 5%;
