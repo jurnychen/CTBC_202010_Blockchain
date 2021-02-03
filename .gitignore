@@ -37,6 +37,9 @@
 # *.iml
 # *.ipr
 
+# SCSS Cache Folder
+.sass-cache/
+
 # CMake
 cmake-build-*/
 
