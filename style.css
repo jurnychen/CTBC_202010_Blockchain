@@ -1,10 +1,11 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap");
 body {
   font-family: "Noto Sans TC", "Microsoft JhengHei", PingFang, STHeiti, sans-serif, serif;
   overflow-x: hidden;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  font-weight: 400; }
 
 *:focus {
   outline: none; }
@@ -2355,7 +2356,6 @@ p {
     -webkit-transition: .5s;
     -o-transition: .5s;
     transition: .5s; }
-  .headline-list .item:hover .count,
   .headline-list .active .count {
     opacity: 0; }
   .headline-list .txt img,
@@ -2365,14 +2365,10 @@ p {
     top: -5px;
     width: 80%;
     opacity: 0; }
-  .headline-list .item:hover .txt img,
-  .headline-list .item:hover .txt svg,
   .headline-list .active .txt img,
   .headline-list .active .txt svg {
     opacity: 1; }
     @media screen and (max-width: 767px) {
-      .headline-list .item:hover .txt img,
-      .headline-list .item:hover .txt svg,
       .headline-list .active .txt img,
       .headline-list .active .txt svg {
         -webkit-transform: rotate(90deg);
@@ -2560,6 +2556,56 @@ p {
   .awards-content .award {
     color: #136098;
     line-height: 1.6; }
+
+.issue-result-item .btn-more {
+  color: #fff;
+  text-decoration: none;
+  padding: 6px 20px;
+  overflow: hidden;
+  background-color: #1cbfa5;
+  border-radius: 100px;
+  display: inline-block; }
+
+.issue-result-item .btn-more:before {
+  content: '';
+  width: 0px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #e03757;
+  border-radius: 50px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 0;
+  opacity: 1; }
+
+.issue-result-item .btn-more:hover:before {
+  width: 100%; }
+
+.issue-result-item .btn-more:after {
+  content: '';
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  width: 15px;
+  height: 15px;
+  background: url(pic/icon_flow_arrow_right_white.png) no-repeat center/100% auto; }
+
+.issue-result-item .btn-more span {
+  position: relative;
+  display: inline-block;
+  z-index: 1; }
+
+.main-more .btn-more:after {
+  content: '';
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  width: 15px;
+  height: 15px;
+  background: url(pic/icon_flow_arrow_right_black.png) no-repeat center/100% auto; }
 
 .svg-icon {
   opacity: 0;
