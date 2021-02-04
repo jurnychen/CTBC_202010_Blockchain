@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap");
+body {
+  font-family: "Noto Sans TC", "Microsoft JhengHei", PingFang, STHeiti, sans-serif, serif;
+  font-weight: 400; }
+
+@media screen and (max-width: 767px) {
+  .link-contact a,
+  .link-contact a:hover,
+  .link-contact a:active,
+  .link-contact a:focus,
+  .link-contact a:visited {
+    color: #fff; } }
