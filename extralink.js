@@ -100,14 +100,12 @@ var handleOpenLeaveMessage = function (callback) {
 }
 
 var handleOpenLightBox = function (href, e) {
-
     // check if the link is in CBK
     if (isInsideCBK(href)) {
         top.window.location.href = href;
 
         // check if the link is in AEM
     } else if (isInsideAEM(href)) {
-
         // check if postfix has .html
         if (!hasString(href, '.html') && !hasString(href, '.pdf')) {
             href = href + '.html';
@@ -115,11 +113,13 @@ var handleOpenLightBox = function (href, e) {
 
         // check if the link is in external link list
         var isOpenBlank = false;
-        var whitelistUrl = [{"url":"/content/twrbo/zh_tw/inv_index/inv_fund/inv_fund_search.html?prodNo"},{"url":"/content/twrbo/zh_tw/inv_index/inv_investmentproducts/inv_investmentproducts_SNoverview/inv_investmentproducts_SNsearch/inv_investmentproducts_SNsearch_SNdetail.html?prodNo"},{"url":"/content/twrbo/zh_tw/inv_index/inv_etf/inv_etf_search.html?prodNo"}];
+        var whitelistUrl = [{"url":"www.tentenplus.com.tw"},{"url":"ctbcbank.com"}];
         if (whitelistUrl != null) {
             for (var i in whitelistUrl) {
                 if (hasString(href, whitelistUrl[i]['url'])) {
-                    isOpenBlank = true;
+                    console.log('this');
+                    isOpenBlank = false;
+
                 }
             }
         }
@@ -130,14 +130,13 @@ var handleOpenLightBox = function (href, e) {
         }
 
         if (isOpenBlank) {
-            window.open(href);
+            console.log('135');
+            //window.open(href);
         } else {
-
             // check if the page is in iframe
             if (window.self != window.top && !(window.frameElement && window.frameElement.id == 'ContentFrame')) {
                 href = href.replace("\/content\/twrbo\/", "/web/content/twrbo/");
             }
-
             window.location.href = href;
         }
 
@@ -154,9 +153,8 @@ var handleOpenLightBox = function (href, e) {
         }
     } else {
         var isSkipLightBox = false;
-
         // check if the link is in external link list
-        var whitelistUrl = [{"url":"localhost"},{"url":"mailto"},{"url":"/content/dam/ctbc-ib/zh_rb/structural-products/sn-products/"},{"url":"ctbcbank.com"},{"url":"ctbc-mortgage.com"},{"url":"ctbcbank.moneydj.com"},{"url":"www.ctbc-retirement.com/support"},{"url":"ctbcbank.talk.tw"},{"url":"ecorp.chinatrust.com.tw"},{"url":"www.ctbcholding.com"},{"url":"www.ctbcfoundation.org"},{"url":"ecash.ctbcbank.com"},{"url":"corporate.ctbcbank.com"},{"url":"m.ctbcbank.com"},{"url":"ctbc.tw"}];
+        var whitelistUrl = [{"url":"localhost"},{"url":"www.tentenplus.com.tw"},{"url":"mailto"},{"url":"ctbcbank.com"}];
         if (whitelistUrl != null) {
             for (var i in whitelistUrl) {
                 if (hasString(href, whitelistUrl[i]['url'])) {
@@ -166,7 +164,9 @@ var handleOpenLightBox = function (href, e) {
         }
 
         if (isSkipLightBox) {
-            window.open(href);
+            //console.log('170');
+            //window.open(href);
+            window.location.href = href;
         } else {
             $("#outlink a:first-child").attr("exturl", href);
             $.fancybox.open({
