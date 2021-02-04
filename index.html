@@ -826,9 +826,9 @@
         </div>
     </div>
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.1/jquery-migrate.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="slick.min.js"></script>
     <script type="text/javascript" src="myjs.js"></script>
     <!--privacypolicy用到的檔案-->
     <link rel="stylesheet" href="fancybox/jquery.fancybox.min.css">
@@ -842,11 +842,11 @@
             $('.slider-kv').slick({
                 dots: true,
                 infinite: true,
-                speed: 300,
+                speed: 1000,
                 slidesToShow: 1,
+                autoplay: true,
                 adaptiveHeight: false
             })
-
             $('.slider-client').slick({
                 dots: true,
                 infinite: true,
@@ -881,17 +881,34 @@
             });
 
             // 讓幻燈片拖拉後也能改變縮圖
+            // 並計算放了幾張
+            let kvCount = 0;
+            let kvLength = $('.slider-kv .slick-dots li').length;
             $('.slider-kv').on('afterChange', function(event, slick, direction) {
                 let dotIndex = $('.slider-kv .slick-active').index();
+
                 $('.thubnail-list li').eq(dotIndex - 1).addClass('active').siblings('.active').removeClass('active');
+
+                if (kvCount < kvLength - 1) {
+                    kvCount++;
+                } else {
+                    $('.slider-kv').slick('slickPause');
+                }
             });
-            // KV幻燈片被點擊後要更換幻燈片
+            // KV幻燈片下方標題被點擊後要更換幻燈片
             $('.thubnail-list li').click(function() {
                 // let li_index = $(this).index();
                 $(this).addClass('active').siblings('.active').removeClass('active');
                 $('.slider-kv .slick-dots li').eq($(this).index()).click();
                 return false;
             })
+
+            // KV幻燈片被點擊後停止播放
+            $('.slider-kv').on('click', function() {
+                kvCount = 100;
+                $('.slider-kv').slick('slickPause')
+            });
+
 
             $('.issue .mv').click(function() {
                 $('.light-box')

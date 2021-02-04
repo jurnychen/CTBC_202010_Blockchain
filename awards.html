@@ -160,7 +160,7 @@
                                 </div>
                             </li>
                             <li>
-                                <h2 class="title">2018國際創新獎  </h2>
+                                <h2 class="title">2018國際創新獎 </h2>
                                 <div class="award">
                                     亞洲企業商會<br>Enterprise Asia
                                 </div>
@@ -169,7 +169,7 @@
                                 <h2 class="title">最佳數位創新科技</h2>
                                 <p>Most Innovative Emerging Digital Technologies Project</p>
                                 <div class="award">
-                                    財資雜誌<br>The Asset 
+                                    財資雜誌<br>The Asset
                                 </div>
                             </li>
                         </ul>
@@ -269,11 +269,10 @@
     </footer>
 
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.1/jquery-migrate.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="slick.min.js"></script>
     <script type="text/javascript" src="myjs.js"></script>
-    <!-- <script type="text/javascript" src="vivus.min.js"></script> -->
 
 
     <script>
@@ -285,7 +284,6 @@
                 slidesToShow: 1
             })
             $('.thubnail-list li').click(function() {
-                // let li_index = $(this).index();
                 $(this).addClass('active').siblings('.active').removeClass('active');
                 $('.slider-kv .slick-dots li').eq($(this).index()).click();
             })
@@ -295,6 +293,7 @@
             $('.tab-years li').click(function() {
                 _tab_year_index = $(this).index();
                 changeAward();
+                return false;
             })
             $('.prev').click(function() {
                 if (_tab_year_index !== 0) {
@@ -310,6 +309,7 @@
                 changeAward();
                 return false;
             })
+
             function changeAward() {
                 $('.tab-years li')
                     .eq(_tab_year_index)
@@ -326,4 +326,5 @@
         })
     </script>
 </body>
+
 </html>

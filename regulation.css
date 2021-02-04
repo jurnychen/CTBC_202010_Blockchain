@@ -18,6 +18,46 @@
     word-break: normal; }
   .regulation .regulation__part {
     margin-bottom: 20px; }
+    .regulation .regulation__part .regulation__table {
+      border-spacing: 2px;
+      border-color: grey;
+      table-layout: fixed;
+      width: 100%;
+      border-collapse: collapse; }
+      @media only screen and (max-width: 767px) {
+        .regulation .regulation__part .regulation__table thead {
+          display: none; } }
+      .regulation .regulation__part .regulation__table thead th {
+        vertical-align: middle;
+        word-break: break-word;
+        font-weight: normal; }
+      .regulation .regulation__part .regulation__table th, .regulation .regulation__part .regulation__table td {
+        padding: 15px;
+        border: solid 1px #d8dfe3;
+        vertical-align: top; }
+      .regulation .regulation__part .regulation__table th {
+        background-color: #f2ffff;
+        text-align: center; }
+      @media only screen and (max-width: 767px) {
+        .regulation .regulation__part .regulation__table td {
+          display: table;
+          padding: 0;
+          width: 100%; } }
+      @media only screen and (max-width: 767px) {
+        .regulation .regulation__part .regulation__table td + td {
+          border-top: none; } }
+      @media only screen and (max-width: 767px) {
+        .regulation .regulation__part .regulation__table td:before {
+          content: attr(data-title);
+          display: table-cell;
+          vertical-align: middle;
+          width: 30%;
+          min-width: 100px;
+          padding: 15px;
+          margin-right: 1rem;
+          background-color: #f2ffff;
+          border-right: solid 1px #d8dfe3;
+          white-space: normal; } }
   .regulation ul {
     margin: 0; }
   .regulation li {
@@ -27,3 +67,5 @@
     line-height: 1.5; }
   .regulation a {
     color: #068080; }
+
+/*# sourceMappingURL=regulation.css.map */

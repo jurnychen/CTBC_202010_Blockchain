@@ -24,8 +24,60 @@
     line-height: 1.5;
     word-break: normal;
   }
-  .regulation__part{
+  .regulation__part {
     margin-bottom: 20px;
+    .regulation__table {
+      border-spacing: 2px;
+      border-color: grey;
+      table-layout: fixed;
+      width: 100%;
+      border-collapse: collapse;
+      thead{
+        @media only screen and (max-width: 767px) {
+          display: none;
+        }
+      }
+      thead th {
+        vertical-align: middle;
+        word-break: break-word;
+        font-weight: normal;
+      }
+      th, td{
+          padding: 15px;
+          border: solid 1px #d8dfe3;
+          vertical-align: top;
+      }
+      th {
+        background-color: #f2ffff;
+        text-align: center;
+      }
+      td{
+        @media only screen and (max-width: 767px) {
+          display: table;
+          padding: 0;
+          width: 100%;
+        }
+      }
+      td + td {
+        @media only screen and (max-width: 767px) {
+          border-top: none;
+        }
+      }
+      td:before {
+        @media only screen and (max-width: 767px) {
+          content: attr(data-title);
+          display: table-cell;
+          vertical-align: middle;
+          width: 30%;
+          min-width: 100px;
+          padding: 15px;
+          margin-right: 1rem;
+          background-color: #f2ffff;
+          border-right: solid 1px #d8dfe3;
+          white-space: normal;
+        }
+      }
+    }
   }
   ul{
     margin: 0;
