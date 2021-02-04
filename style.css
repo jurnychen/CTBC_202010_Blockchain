@@ -574,15 +574,43 @@ p {
         font-size: 16px; } }
   .main-footer .subscribe {
     width: 100%;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    position: relative; }
     .main-footer .subscribe h2 {
       color: #46ffc0;
-      line-height: 1.5; }
+      line-height: 1.5;
+      font-size: 5.3333333vw;
+      padding-left: 2px; }
+      @media screen and (min-width: 768px) {
+        .main-footer .subscribe h2 {
+          line-height: 0.7;
+          text-align: left;
+          font-size: 1.4285714vw; } }
+      @media screen and (min-width: 1400px) {
+        .main-footer .subscribe h2 {
+          font-size: 20px; } }
     @media screen and (max-width: 767px) {
       .main-footer .subscribe h2 span {
         display: block;
         font-size: 0;
         height: 0; } }
+    .main-footer .subscribe p,
+    .main-footer .subscribe .check-accept,
+    .main-footer .subscribe .input-subscribe {
+      font-size: 4.8vw;
+      padding-left: 2px; }
+      @media screen and (min-width: 768px) {
+        .main-footer .subscribe p,
+        .main-footer .subscribe .check-accept,
+        .main-footer .subscribe .input-subscribe {
+          line-height: 0.7;
+          text-align: left;
+          font-size: 1.2857143vw; } }
+      @media screen and (min-width: 1400px) {
+        .main-footer .subscribe p,
+        .main-footer .subscribe .check-accept,
+        .main-footer .subscribe .input-subscribe {
+          font-size: 18px; } }
     .main-footer .subscribe form {
       width: 100%; }
       @media screen and (min-width: 768px) {
@@ -596,7 +624,7 @@ p {
       display: block;
       line-height: 2em;
       border-radius: 6px;
-      padding: 10px;
+      padding: 2% 5%;
       -webkit-box-sizing: border-box;
       box-sizing: border-box; }
       @media screen and (max-width: 767px) {
@@ -604,24 +632,122 @@ p {
           width: 100%; } }
       @media screen and (min-width: 768px) {
         .main-footer .subscribe .input-subscribe {
-          width: calc(100% - 110px); } }
+          padding: 1% 1%;
+          width: calc(100% - 105px); } }
+      @media screen and (min-width: 996px) {
+        .main-footer .subscribe .input-subscribe {
+          width: calc(100% - 135px); } }
+      @media screen and (min-width: 1400px) {
+        .main-footer .subscribe .input-subscribe {
+          width: calc(100% - 175px); } }
     .main-footer .subscribe .btn-subscribe {
       color: #fff;
       background-color: #1cbfa5;
       border: none;
+      outline: none;
       width: 100px;
       margin-left: auto;
-      font-size: 22px;
       border-radius: 100px;
-      padding: 8px 1em 10px; }
+      padding: 4% 15%;
+      font-size: 5.8666667vw;
+      width: auto;
+      margin-top: 5%; }
       @media screen and (min-width: 768px) {
         .main-footer .subscribe .btn-subscribe {
-          border-radius: 6px; } }
+          border-radius: 6px;
+          font-size: 1.5714286vw;
+          padding: 1% 1%;
+          margin-top: 0;
+          width: 50%;
+          max-width: 100px; } }
+      @media screen and (min-width: 996px) {
+        .main-footer .subscribe .btn-subscribe {
+          max-width: 130px; } }
+      @media screen and (min-width: 1400px) {
+        .main-footer .subscribe .btn-subscribe {
+          max-width: 170px;
+          font-size: 22px; } }
+    .main-footer .subscribe .box-success {
+      max-width: 315px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      margin: 0 auto;
+      background-color: #FFFFFF;
+      padding: 20px;
+      border: 2px solid #1cbfa5;
+      border-radius: 1em; }
+      .main-footer .subscribe .box-success p {
+        color: #1A1A1A;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: left;
+        margin: 0;
+        padding: 15px 0; }
+      .main-footer .subscribe .box-success button {
+        display: block;
+        cursor: pointer;
+        margin-left: auto;
+        -webkit-appearance: none;
+        outline: none;
+        border: none;
+        border-radius: 0.25em;
+        background-color: #1cbfa5;
+        color: #FFF;
+        font-size: 22px;
+        font-weight: bold;
+        padding: 10px 15px; }
     .main-footer .subscribe .check-accept {
       text-align: left;
-      margin-bottom: 10px; }
+      display: block;
+      margin: 5px 0 0 10px;
+      padding-left: 30px;
+      position: relative; }
+      @media screen and (min-width: 768px) {
+        .main-footer .subscribe .check-accept {
+          margin-top: 15px; } }
       .main-footer .subscribe .check-accept input {
-        margin-right: 0.3em; }
+        margin-right: 0.3em;
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0; }
+      .main-footer .subscribe .check-accept .checkmark {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto 0;
+        height: 18px;
+        width: 18px;
+        border: 2px solid #EEEEEE;
+        background-color: transparent; }
+        .main-footer .subscribe .check-accept .checkmark:after {
+          content: "";
+          position: absolute;
+          display: none;
+          left: 5px;
+          top: 1px;
+          width: 5px;
+          height: 10px;
+          border-style: solid;
+          border-color: white;
+          border-width: 0 3px 3px 0;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg); }
+      .main-footer .subscribe .check-accept:hover input ~ .checkmark {
+        background-color: #EEEEEE; }
+      .main-footer .subscribe .check-accept input:checked ~ .checkmark {
+        border: 2px solid #068080;
+        background-color: #068080; }
+      .main-footer .subscribe .check-accept input:checked ~ .checkmark:after {
+        display: block; }
       .main-footer .subscribe .check-accept a {
         color: #fff; }
       @media screen and (min-width: 768px) {
@@ -909,6 +1035,19 @@ p {
 .issue-result-item .txt p {
   margin-top: 0; }
 
+.footer-list,
+.copyright {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 3.2vw; }
+  @media screen and (min-width: 768px) {
+    .footer-list,
+    .copyright {
+      font-size: 1.1428571vw; } }
+  @media screen and (min-width: 1400px) {
+    .footer-list,
+    .copyright {
+      font-size: 16px; } }
+
 .copyright {
   padding-left: 1em; }
   @media screen and (min-width: 768px) {
@@ -929,6 +1068,12 @@ p {
     text-decoration: underline; }
   .footer-list li:first-child a {
     margin-left: 0; }
+
+.footer-list a,
+.footer-list a:hover,
+.footer-list a:active,
+.copyright {
+  color: rgba(255, 255, 255, 0.5); }
 
 .awards .main-more {
   display: -webkit-box;
@@ -1581,43 +1726,83 @@ p {
     transform: translate(-50%, -50%); }
 
 .advisory {
-  background: url("pic/index/banner_bgimage_index_03-lg.jpg") no-repeat center center/cover; }
+  background: url("pic/bgimage_actionbox.jpg") no-repeat center center/auto 100%, #164D83; }
+  .advisory * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
   .advisory .txt {
     text-align: center; }
+  .advisory .txt span:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    -webkit-transform: translateY(-40%) translateX(-110%);
+    -ms-transform: translateY(-40%) translateX(-110%);
+    transform: translateY(-40%) translateX(-110%);
+    width: 8vw;
+    height: 8vw;
+    background: url("pic/icon_arrow_green.png") no-repeat center center/100% auto; }
+    @media screen and (min-width: 768px) {
+      .advisory .txt span:before {
+        width: 4vw;
+        height: 4vw; } }
+    @media screen and (min-width: 1400px) {
+      .advisory .txt span:before {
+        width: 50px;
+        height: 50px; } }
   .advisory .txt span {
     position: relative; }
     .advisory .txt span:after {
       content: '';
+      position: relative;
+      left: .75em;
       display: block;
       width: 1.5em;
       height: 2px;
       background-color: #fff;
       margin: 10px auto 0;
-      -webkit-transition: width .5s;
-      -o-transition: width .5s;
-      transition: width .5s; }
+      -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+      transform: scaleX(1);
+      -webkit-transition: -webkit-transform .5s;
+      transition: -webkit-transform .5s;
+      -o-transition: transform .5s;
+      transition: transform .5s;
+      transition: transform .5s, -webkit-transform .5s; }
   .advisory .txt a {
-    font-size: 26px;
-    display: inline-block;
+    font-size: 6.9333333vw;
     text-decoration: none;
     color: #fff;
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
-    -webkit-transition: -webkit-transform .5s;
-    transition: -webkit-transform .5s;
-    -o-transition: transform .5s;
-    transition: transform .5s;
-    transition: transform .5s, -webkit-transform .5s; }
+    position: relative;
+    width: 100%;
+    padding: 5% 0 5% 5%;
+    margin: 0 auto; }
     @media screen and (min-width: 768px) {
       .advisory .txt a {
+        font-size: 2.5vw;
+        padding: 0% 0 0% 5%; } }
+    @media screen and (min-width: 1200px) {
+      .advisory .txt a {
+        padding: 0 0 0 55px; } }
+    @media screen and (min-width: 1400px) {
+      .advisory .txt a {
         font-size: 35px; } }
-  .advisory .txt a:hover {
-    -webkit-transform: scale(1.0857);
-    -ms-transform: scale(1.0857);
-    transform: scale(1.0857); }
-    .advisory .txt a:hover :after {
-      width: 100%; }
+  .advisory .txt a:hover,
+  .advisory .txt a:active {
+    color: #46ffc0; }
+  .advisory .txt a:hover span:after {
+    -webkit-transform: scaleX(6.6);
+    -ms-transform: scaleX(6.6);
+    transform: scaleX(6.6); }
+  .advisory .txt a img {
+    vertical-align: middle;
+    position: relative;
+    top: -3px; }
 
 .slider-advantage .slider-item {
   text-align: center;
@@ -1709,6 +1894,7 @@ p {
     width: 50%;
     display: block;
     margin: auto;
+    background-color: #fff;
     position: absolute;
     bottom: 0;
     left: 0;
