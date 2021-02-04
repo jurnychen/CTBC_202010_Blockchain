@@ -113,8 +113,12 @@
                         <span>2019年WTO區塊鏈報告</span>
                         <span>區塊鏈貿易應用受國際認可</span>
                     </div>
-                    <div class="kv-txt">
+                    <div class="kv-txt ly2">
                         本行持續推動創新落地應用，<br>並衍伸供應鏈解決方案
+                    </div>
+                    <div class="btn-group">
+                        <a href="#" class="kv-btn"><span>報告原檔</span></a>
+                        <a href="#" class="kv-btn kv-btn-arrow"><span>供應鏈解決方案</span></a>
                     </div>
                 </div>
             </div>
@@ -128,8 +132,12 @@
                         <span>2019年倫敦金融研究院</span>
                         <span>企業解決方案首獎</span>
                     </div>
-                    <div class="kv-txt">
+                    <div class="kv-txt ly2">
                         本行持續協助各產業創新，<br>電商零售解決方案獲國際肯定
+                    </div>
+                    <div class="btn-group">
+                        <a href="#" class="kv-btn"><span>報告原檔</span></a>
+                        <a href="#" class="kv-btn kv-btn-arrow"><span>供應鏈解決方案</span></a>
                     </div>
                 </div>
             </div>
@@ -761,7 +769,17 @@
 
 
 
-
+    <!-- 外連URL提示 -->
+    <div id="outlink" class="extralink__popup extralink__popup--md">
+        <div class="extralink__popup-title">確認訊息</div>
+        <div class="extralink__popup-content" data-element="scrollbar">
+            <p>您即將離開中國信託官網/網路銀行，請確認是否執行？</p>
+        </div>
+        <div class="extralink__popup-actions">
+            <a exturl="" onclick="toggleExternalLink(event)" target="_blank" href="#" class="actions__btn actions__btn-primary">確認</a>
+            <button onclick="closeFancybox()" class="actions__btn actions__btn-secondary">取消</button>
+        </div>
+    </div>
 
 
 
@@ -812,7 +830,11 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.1/jquery-migrate.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script type="text/javascript" src="myjs.js"></script>
-
+    <!--privacypolicy用到的檔案-->
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.min.css">
+    <script type="text/javascript" src="fancybox/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="fancybox/extralink.css">
+    <script type="text/javascript" src="extralink.js"></script>
 
     <!-- <script src="myjs.js"></script> -->
     <script>
@@ -868,6 +890,7 @@
                 // let li_index = $(this).index();
                 $(this).addClass('active').siblings('.active').removeClass('active');
                 $('.slider-kv .slick-dots li').eq($(this).index()).click();
+                return false;
             })
 
             $('.issue .mv').click(function() {

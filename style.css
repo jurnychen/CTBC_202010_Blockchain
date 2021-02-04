@@ -55,14 +55,16 @@ p {
   .CTBC-logo .link-contact {
     display: none; } }
 
-@media screen and (max-width: 767px) {
-  .CTBC-logo .link-contact a {
-    width: 100%;
-    padding: 5px;
-    margin: 12px 0 7px;
-    text-align: center;
-    background-color: #1cbfa5;
-    border-radius: 50px; } }
+.CTBC-logo .link-contact a {
+  overflow: hidden; }
+  @media screen and (max-width: 767px) {
+    .CTBC-logo .link-contact a {
+      width: 100%;
+      padding: 5px;
+      margin: 12px 0 7px;
+      text-align: center;
+      background-color: #1cbfa5;
+      border-radius: 50px; } }
 
 .CTBC-logo .link-contact a,
 .CTBC-logo .link-contact a:hover,
@@ -269,7 +271,8 @@ p {
     display: block;
     color: #fff;
     text-decoration: none;
-    padding: 6px 20px; }
+    padding: 6px 20px;
+    overflow: hidden; }
     @media screen and (max-width: 767px) {
       .nav-list li a {
         padding: 9px 20px 11px; } }
@@ -1367,6 +1370,49 @@ p {
     width: 100%; }
   .kv .thubnail-list .active span:before {
     width: 100%; }
+  .kv .btn-group {
+    margin-top: 2em; }
+  .kv .kv-btn {
+    position: relative;
+    background-color: #1cbfa5;
+    border-radius: 100px;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    overflow: hidden; }
+  .kv .kv-btn span {
+    position: relative;
+    z-index: 2; }
+  .kv .kv-btn:before {
+    background-color: #e03757;
+    content: '';
+    width: 0px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50px;
+    z-index: 0;
+    opacity: 1;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+  .kv .kv-btn:hover:before {
+    width: 100%; }
+  .kv .kv-btn-arrow span {
+    display: block;
+    background-image: url("pic/icon_flow_arrow_right_white.png");
+    background-repeat: no-repeat;
+    background-size: 1em auto;
+    background-position: right center;
+    padding-right: 1.5em; }
+  .kv .kv-btn + .kv-btn {
+    margin-top: 10px; }
+    @media screen and (min-width: 768px) {
+      .kv .kv-btn + .kv-btn {
+        margin-left: 1em;
+        margin-top: 0; } }
 
 .page-index .kv:before {
   right: 0;
@@ -1486,6 +1532,13 @@ p {
   @media screen and (min-width: 768px) {
     .page-index .kv-txt {
       font-size: 40px; } }
+
+.kv-txt.ly2 {
+  color: #46ffc0;
+  font-size: 20px; }
+  @media screen and (min-width: 768px) {
+    .kv-txt.ly2 {
+      font-size: 2vw; } }
 
 @media screen and (min-width: 768px) {
   .solution .main-content {
