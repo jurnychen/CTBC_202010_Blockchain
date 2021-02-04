@@ -218,9 +218,11 @@
 
                     <div class="final__box form__box">
                         <div class="form__box-items">
-                            <div class="form__box-item">
-                                <label name="captcha" class="inputtitle">驗證碼</label>
-                                <input type="text" id="captcha" placeholder="請填寫驗證碼" maxlength="4">
+                            <div class="form__box-item captcha-item">
+                                <label name="captcha" class="inputtitle label-captcha">驗證碼</label>
+                                <img src="pic/captcha.jpg" alt="驗證碼" class="pic-captcha">
+                                <button type="button" class="btn-refreshcaptcha"><img src="pic/reload.png" alt="更新驗證碼"></button>
+                                <input type="text" id="captcha" placeholder="請填寫驗證碼" maxlength="4" class="input-captcha">
                                 <span class="reminder__message" data-inputid="captcha">請輸入驗證碼/請輸入四位數字</span>
                             </div>
                             <label class="agree__box checkbox__item form__box-item">

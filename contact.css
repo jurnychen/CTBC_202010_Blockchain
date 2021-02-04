@@ -73,10 +73,14 @@
     background-color: #1cbfa5;
     text-decoration: none;
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+    left: 50%;
+    transform: translateX(-50%); }
     @media only screen and (min-width: 768px) {
       .form__box .sendBtn {
-        margin: 20px 0; } }
+        margin: 20px 0;
+        left: 0;
+        transform: none; } }
     .form__box .sendBtn span {
       font-size: 22px;
       font-weight: bold;
@@ -143,6 +147,38 @@
         content: '*';
         color: #e03757;
         padding-left: 0.2em; }
+      .form__box .form__box-items .form__box-item.captcha-item {
+        width: 50%;
+        display: flex;
+        flex-flow: row wrap;
+        align-content: center; }
+        @media only screen and (min-width: 768px) {
+          .form__box .form__box-items .form__box-item.captcha-item {
+            flex-wrap: nowrap;
+            align-items: center; } }
+        .form__box .form__box-items .form__box-item.captcha-item .inputtitle.label-captcha {
+          width: 4em;
+          margin: 0; }
+        .form__box .form__box-items .form__box-item.captcha-item .pic-captcha {
+          flex: 0 0 auto;
+          height: 29px;
+          margin-right: 5px; }
+        .form__box .form__box-items .form__box-item.captcha-item .btn-refreshcaptcha {
+          flex: 0 0 auto;
+          padding: 0 5px;
+          -webkit-appearance: none;
+          border: none;
+          outline: none;
+          background-color: transparent;
+          cursor: pointer; }
+        .form__box .form__box-items .form__box-item.captcha-item .input-captcha {
+          margin-top: 5px;
+          margin-left: 4.5em;
+          max-width: 8em; }
+          @media only screen and (min-width: 768px) {
+            .form__box .form__box-items .form__box-item.captcha-item .input-captcha {
+              flex: 1 0 0;
+              margin: 0; } }
     .form__box .form__box-items + .form__box .form__box-items {
       margin-top: 20px; }
   .form__box .checkbox__items {
