@@ -845,21 +845,6 @@ p {
     position: absolute;
     top: 30px;
     right: 0; }
-  .issue-result .main-more + .block-more {
-    margin-top: 40px;
-    width: 100%;
-    text-align: center; }
-  .issue-result .main-more + .block-more .btn-more {
-    border: 1px solid #1cbfa5;
-    background-color: #fff;
-    color: #1cbfa5; }
-  .issue-result .main-more + .block-more .btn-more:before {
-    background-color: rgba(28, 191, 165, 0.1); }
-  .issue-result .main-more + .block-more .btn-more img {
-    height: 1.5em;
-    vertical-align: middle;
-    position: relative;
-    top: -2px; }
 
 @media screen and (min-width: 768px) {
   .issue-result-item {
@@ -930,20 +915,13 @@ p {
   .footer-list li:first-child a {
     margin-left: 0; }
 
-.awards .main-more {
+.awards .block-more {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
-
-.main-more .btn-more {
-  background-color: transparent;
-  color: #000; }
-
-.main-more .btn-more::before {
-  left: 0; }
 
 .btn-more {
   background-color: #1cbfa5;

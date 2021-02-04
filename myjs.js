@@ -17,6 +17,7 @@ $(function(){
 		if ( _pIndex < _pLength) {
 			// 跳到下一個頁簽
 			$('.issue-step .step-dot li').eq(_pIndex + 1).click();
+			return false;
 		}
 	})
 	$('.issue-step .step-dot li').click(function(){
@@ -74,7 +75,7 @@ $(function(){
 			$ir = '.ir-5';
 			irShow($ir);
 		}
-		
+		return false;
 	})
 	function irShow($ir){
 		$('.issue-step').addClass('hide');
@@ -95,20 +96,24 @@ $(function(){
 
 
 	// SVG 圖示撥放控制
-	let icon_top = $('.slider-advantage').offset().top;
-	let winTop = 0;
-	let winH = $(window).height();
-	$(window).scroll(function(){
-		winTop = $(this).scrollTop();
-		icon_top = $('.slider-advantage').offset().top;
-		// console.log(winTop);
-		// console.log(icon_top);
-		if(winTop >= icon_top - winH / 3 * 2){
-			$('.svg-icon').addClass('play').removeClass('paused');
+	function svgAni(){
+		if($('.slider-advantage').length != 0){
+			let icon_top = $('.slider-advantage').offset().top;
+			let winTop = 0;
+			let winH = $(window).height();
+			$(window).scroll(function(){
+				winTop = $(this).scrollTop();
+				icon_top = $('.slider-advantage').offset().top;
+				// console.log(winTop);
+				// console.log(icon_top);
+				if(winTop >= icon_top - winH / 3 * 2){
+					$('.svg-icon').addClass('play').removeClass('paused');
+				}
+			})
 		}
-
-		
-	})
+	}
+	svgAni();
+	
 })
 
 // 訂閱成功視窗-了解按鈕

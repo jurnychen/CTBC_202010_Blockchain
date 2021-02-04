@@ -845,6 +845,25 @@ p {
         top: 30px;
         right: 0;
     }
+    .main-more+.block-more {
+        margin-top: 40px;
+        width: 100%;
+        text-align: center;
+    }
+    .main-more+.block-more .btn-more {
+        border: 1px solid $main-color1;
+        background-color: #fff;
+        color: $main-color1;
+    }
+    .main-more+.block-more .btn-more:before {
+        background-color: rgba($main-color1, .1);
+    }
+    .main-more+.block-more .btn-more img {
+        height: 1.5em;
+        vertical-align: middle;
+        position: relative;
+        top: -2px;
+    }
 }
 
 .issue-result-item {
@@ -914,9 +933,19 @@ p {
     }
 }
 
-.awards .block-more {
+.awards .main-more {
     display: flex;
     justify-content: center;
+}
+
+.main-more {
+    .btn-more {
+        background-color: transparent;
+        color: #000;
+    }
+    .btn-more::before {
+        left: 0;
+    }
 }
 
 .btn-more {
