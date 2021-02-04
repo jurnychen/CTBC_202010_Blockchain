@@ -156,7 +156,7 @@ var handleOpenLightBox = function (href, e) {
         var isSkipLightBox = false;
 
         // check if the link is in external link list
-        var whitelistUrl = [{"url":"localhost"},{"url":"mailto"},{"url":"/content/dam/ctbc-ib/zh_rb/structural-products/sn-products/"},{"url":"ctbcbank.com"},{"url":"ctbc-mortgage.com"},{"url":"ctbcbank.moneydj.com"},{"url":"www.ctbc-retirement.com/support"},{"url":"ctbcbank.talk.tw"},{"url":"ecorp.chinatrust.com.tw"},{"url":"www.ctbcholding.com"},{"url":"www.ctbcfoundation.org"},{"url":"ecash.ctbcbank.com"},{"url":"corporate.ctbcbank.com"},{"url":"m.ctbcbank.com"},{"url":"ctbc.tw"}];
+        var whitelistUrl = [{"url":"localhost"},{"url":"mailto"},{"url":"ctbcbank.com"}];
         if (whitelistUrl != null) {
             for (var i in whitelistUrl) {
                 if (hasString(href, whitelistUrl[i]['url'])) {
