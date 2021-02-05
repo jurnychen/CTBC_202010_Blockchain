@@ -1,5 +1,8 @@
 @import 'color';
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap');
+body {
+    font-weight: 400;
+}
 
 // 共用設定 - 各種文字
 // 手機 38px / 桌機70px  ======================
@@ -370,6 +373,182 @@
 
 
 
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+// 大區塊-主要間距
+.section{
+	padding: 20vw 0;
+	// 75 / 375 = 0.2
+	@media screen and (min-width:768px){
+	    padding: 7.1428571vw 0;
+	    // 100 / 1400 = 0.071428571
+	}
+	@media screen and (min-width:1400px){
+	    padding: 100px 0;
+	}
+
+	// 控制內容寬度內距
+	> .container{
+		width: calc(100% - 4vw);
+		// 15 / 375 = 0.04
+		max-width: 1400px;
+		@media screen and (min-width:768px){
+		    width: 90%;
+		}
+	}
+}
+
+// 特調-消除
+.section.kv{
+	padding: 0;
+}
+
+
+// 大區塊-主要標題
+.main-title{
+	margin-bottom:  6.6666667vw;
+	// 25 / 375 = 0.066666667
+	@media screen and (min-width:768px){
+	    margin-bottom:  3.5714286vw;
+	    // 50 / 1400 = 0.035714286
+	}
+	@media screen and (min-width:1400px){
+	    margin-bottom:  50px;
+	}
+}
+
+
+
+// 點點背景
+.section.awards,
+.section.advantage,
+.solution {
+  background-image: radial-gradient(circle at 1.5px, rgba(169, 231, 221, 0.8) 1.5px, transparent 1.5px);
+  background-size: 14px 14px; 
+}
+
+
+
+
+// 按紐-滑動效果
+.btn-round{
+    position: relative;
+}
+.btn-round:before {
+    content: '';
+    width: 0px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    z-index: 0;
+    opacity: 1;
+}
+.btn-round:hover:before {
+    width: 100%;
+}
+.btn-round:before{
+    background-color: $main-color3;
+}
+
+
+
+
+
+
+
+
+
+// 按紐-小型
+.btn-more{
+	line-height: 1;
+	height: 10.6666667vw;
+	// 40 / 375 = 0.106666667
+	@media screen and (min-width:768px){
+	    height: 2.8571429vw;
+	    // 40 / 1400 = 0.028571429
+	}
+	@media screen and (min-width:1400px){
+	    height: 40px;
+	}
+
+	span{
+		margin-top: 5px;
+		display: inline-block;
+	}
+}
+.btn-more::before{
+	background-color: $main-color1;
+	height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// 白色箭頭 - 小型15px
+.solution-item .txt h2::after{
+	content: '';
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    width: 4.2666667vw;
+    height: 4.2666667vw;
+    background: url(pic/icon_flow_arrow_right_white.png) no-repeat center/100% auto;
+    // 16 / 375 ＝ 0.042666667
+    @media screen and (min-width:768px){
+	    width: 1.1428571vw;
+	    height: 1.1428571vw;
+    	// 16 / 1400 ＝ 0.011428571
+    }
+    @media screen and (min-width:1400px){
+	    width: 16px;
+	    height: 16px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // =========================
 // 置頂選單 Nav
 // =========================
@@ -386,28 +565,39 @@
 
 
 
-// 大區塊
-.section{
 
-	padding: 20vw;
-	// 75 / 375 = 0.2
+
+
+// Footer區域
+.main-footer{
+	border-top:10px solid $main-color1D;
+	padding: 6.6666667vw 0 13.3333333vw;
+	// 25 / 375 = 0.066666667
+	// 50 / 375 = 0.133333333
 	@media screen and (min-width:768px){
-	    padding: 1.1428571vw;
-	    // 100 / 1400 = 0.071428571
+	    padding: 1.7857143vw 0 3.5714286vw;
+	    // 25 / 1400 = 0.017857143
+	    // 50 / 1400 = 0.035714286
 	}
 	@media screen and (min-width:1400px){
-	    padding: 100px;
+	    padding: 25px 0 50px;
 	}
+
+	.subscribe p{
+		margin-top: -4vw;
+		@media screen and (min-width:768px){
+		    margin-top: 1.0714286vw;
+		    // 15 / 1400 = 0.010714286
+		}
+		@media screen and (min-width:1400px){
+		    margin-top: -15px;
+		}
+	}
+
+
 }
 
 
-// 點點背景
-.section.awards,
-.section.advantage,
-.solution {
-  background-image: radial-gradient(circle at 1.5px, rgba(169, 231, 221, 0.8) 1.5px, transparent 1.5px);
-  background-size: 14px 14px; 
-}
 
 
 
@@ -418,17 +608,13 @@
 
 
 
-
-
-
-
-
-
-// ----------------------------------------------------------------------------
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // =========================
 // 首頁
 // =========================
 .page-index {
+
+	// Banner區
 	.onlyfirst{
 		// 首頁-Banner- 第一則 標題文字
 		.kv-title,
@@ -472,6 +658,114 @@
 			    font-size: 40px;
 			}
 		}
+	}
+
+
+
+	// 問卷區
+	.mv img{
+		border-radius: 10px;
+	}
+	.issue .main-content{
+		@media screen and (min-width:768px){
+		    margin-top:  -5.7142857vw;
+		    // 80 / 1400 = 0.057142857
+		}
+		@media screen and (min-width:1400px){
+		    margin-top:  -80px;
+		}
+	}
+	.issue .step-group{
+		@media screen and (min-width:768px){
+		    padding: 0 1.0714286vw;
+		    // 15 / 1400 = 0.010714286
+		}
+		@media screen and (min-width:1400px){
+		    padding: 0 15px;
+		}
+	}
+	.issue .step-item-list{
+		@media screen and (min-width:768px){
+		    margin-top: -.07142857vw;
+		    // 10 / 1400 = 0.007142857
+		}
+		@media screen and (min-width:1400px){
+		    margin-top: -10px;
+		}		
+	}
+	.issue .step-item-list li{
+		@media screen and (min-width:768px){
+		    margin: 0 .07142857vw .07142857vw 0;
+		    // 10 / 1400 = 0.007142857
+		}
+		@media screen and (min-width:1400px){
+		    margin: 0 10px 10px 0;
+		}
+	}
+
+
+
+
+	// 結果區
+	.issue-result {
+
+		.issue-result-item{
+			.btn-more{
+				background-color: $main-color3;
+			}
+		}
+		.main-more .btn-more::before{
+			background-color: $main-color1;
+		}
+		.main-more{
+			@media screen and (max-width:767px){
+				position: relative;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+	}
+
+	// 解決方案
+	.solution .main-content .col:nth-child(odd){
+		@media screen and (min-width:768px){
+		    padding-top:  7.1428571vw;
+		    // 100 / 1400 = 0.057142857
+		}
+		@media screen and (min-width:1400px){
+		    padding-top:  100px;
+		}
+	}
+	.solution-item .txt{ 
+		max-height: 9.0666667vw;
+		// 34 / 375 = 0.090666667
+		@media screen and (min-width:768px){
+		    max-height: 3.5714286vw;
+		    // 50 / 1400 = 0.035714286
+		}
+		@media screen and (min-width:1400px){
+		    max-height: 50px;
+		}
+	}
+	.solution-item:hover .txt{
+		max-height: 100%;
+	}
+
+	.solution-item h2::after{
+	    @media screen and (min-width:768px){
+		    width: 1.4285714vw;
+		    height: 1.4285714vw;
+	    	// 20 / 1400 ＝ 0.014285714
+	    }
+	    @media screen and (min-width:1400px){
+		    width: 20px;
+		    height: 20px;
+	    }
+	}
+
+	.solution-item:hover h2::after,
+	.solution-item:active h2::after{
+		display: none;
 	}
 
 }

@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap");
+body {
+  font-weight: 400; }
+
 .main-title h1 {
   line-height: 1.5;
   font-size: 10.1333333vw; }
@@ -301,19 +304,32 @@
     .copyright {
       font-size: 16px; } }
 
-@media screen and (min-width: 768px) {
-  .CTBC-logo a {
-    width: auto;
-    height: 60px; } }
-
 .section {
-  padding: 20vw; }
+  padding: 20vw 0; }
   @media screen and (min-width: 768px) {
     .section {
-      padding: 1.1428571vw; } }
+      padding: 7.1428571vw 0; } }
   @media screen and (min-width: 1400px) {
     .section {
-      padding: 100px; } }
+      padding: 100px 0; } }
+  .section > .container {
+    width: calc(100% - 4vw);
+    max-width: 1400px; }
+    @media screen and (min-width: 768px) {
+      .section > .container {
+        width: 90%; } }
+
+.section.kv {
+  padding: 0; }
+
+.main-title {
+  margin-bottom: 6.6666667vw; }
+  @media screen and (min-width: 768px) {
+    .main-title {
+      margin-bottom: 3.5714286vw; } }
+  @media screen and (min-width: 1400px) {
+    .main-title {
+      margin-bottom: 50px; } }
 
 .section.awards,
 .section.advantage,
@@ -322,6 +338,86 @@
   background-image: -o-radial-gradient(1.5px, circle, rgba(169, 231, 221, 0.8) 1.5px, transparent 1.5px);
   background-image: radial-gradient(circle at 1.5px, rgba(169, 231, 221, 0.8) 1.5px, transparent 1.5px);
   background-size: 14px 14px; }
+
+.btn-round {
+  position: relative; }
+
+.btn-round:before {
+  content: '';
+  width: 0px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 0;
+  opacity: 1; }
+
+.btn-round:hover:before {
+  width: 100%; }
+
+.btn-round:before {
+  background-color: #e03757; }
+
+.btn-more {
+  line-height: 1;
+  height: 10.6666667vw; }
+  @media screen and (min-width: 768px) {
+    .btn-more {
+      height: 2.8571429vw; } }
+  @media screen and (min-width: 1400px) {
+    .btn-more {
+      height: 40px; } }
+  .btn-more span {
+    margin-top: 5px;
+    display: inline-block; }
+
+.btn-more::before {
+  background-color: #1cbfa5;
+  height: 100%; }
+
+.solution-item .txt h2::after {
+  content: '';
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  width: 4.2666667vw;
+  height: 4.2666667vw;
+  background: url(pic/icon_flow_arrow_right_white.png) no-repeat center/100% auto; }
+  @media screen and (min-width: 768px) {
+    .solution-item .txt h2::after {
+      width: 1.1428571vw;
+      height: 1.1428571vw; } }
+  @media screen and (min-width: 1400px) {
+    .solution-item .txt h2::after {
+      width: 16px;
+      height: 16px; } }
+
+@media screen and (min-width: 768px) {
+  .CTBC-logo a {
+    width: auto;
+    height: 60px; } }
+
+.main-footer {
+  border-top: 10px solid #068080;
+  padding: 6.6666667vw 0 13.3333333vw; }
+  @media screen and (min-width: 768px) {
+    .main-footer {
+      padding: 1.7857143vw 0 3.5714286vw; } }
+  @media screen and (min-width: 1400px) {
+    .main-footer {
+      padding: 25px 0 50px; } }
+  .main-footer .subscribe p {
+    margin-top: -4vw; }
+    @media screen and (min-width: 768px) {
+      .main-footer .subscribe p {
+        margin-top: 1.0714286vw; } }
+    @media screen and (min-width: 1400px) {
+      .main-footer .subscribe p {
+        margin-top: -15px; } }
 
 .page-index .onlyfirst .kv-title,
 .page-index .onlyfirst .kv-title span:first-child {
@@ -356,6 +452,87 @@
   @media screen and (min-width: 1400px) {
     .page-index .onlyfirst .kv-txt {
       font-size: 40px; } }
+
+.page-index .mv img {
+  border-radius: 10px; }
+
+@media screen and (min-width: 768px) {
+  .page-index .issue .main-content {
+    margin-top: -5.7142857vw; } }
+
+@media screen and (min-width: 1400px) {
+  .page-index .issue .main-content {
+    margin-top: -80px; } }
+
+@media screen and (min-width: 768px) {
+  .page-index .issue .step-group {
+    padding: 0 1.0714286vw; } }
+
+@media screen and (min-width: 1400px) {
+  .page-index .issue .step-group {
+    padding: 0 15px; } }
+
+@media screen and (min-width: 768px) {
+  .page-index .issue .step-item-list {
+    margin-top: -.07142857vw; } }
+
+@media screen and (min-width: 1400px) {
+  .page-index .issue .step-item-list {
+    margin-top: -10px; } }
+
+@media screen and (min-width: 768px) {
+  .page-index .issue .step-item-list li {
+    margin: 0 .07142857vw .07142857vw 0; } }
+
+@media screen and (min-width: 1400px) {
+  .page-index .issue .step-item-list li {
+    margin: 0 10px 10px 0; } }
+
+.page-index .issue-result .issue-result-item .btn-more {
+  background-color: #e03757; }
+
+.page-index .issue-result .main-more .btn-more::before {
+  background-color: #1cbfa5; }
+
+@media screen and (max-width: 767px) {
+  .page-index .issue-result .main-more {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto; } }
+
+@media screen and (min-width: 768px) {
+  .page-index .solution .main-content .col:nth-child(odd) {
+    padding-top: 7.1428571vw; } }
+
+@media screen and (min-width: 1400px) {
+  .page-index .solution .main-content .col:nth-child(odd) {
+    padding-top: 100px; } }
+
+.page-index .solution-item .txt {
+  max-height: 9.0666667vw; }
+  @media screen and (min-width: 768px) {
+    .page-index .solution-item .txt {
+      max-height: 3.5714286vw; } }
+  @media screen and (min-width: 1400px) {
+    .page-index .solution-item .txt {
+      max-height: 50px; } }
+
+.page-index .solution-item:hover .txt {
+  max-height: 100%; }
+
+@media screen and (min-width: 768px) {
+  .page-index .solution-item h2::after {
+    width: 1.4285714vw;
+    height: 1.4285714vw; } }
+
+@media screen and (min-width: 1400px) {
+  .page-index .solution-item h2::after {
+    width: 20px;
+    height: 20px; } }
+
+.page-index .solution-item:hover h2::after,
+.page-index .solution-item:active h2::after {
+  display: none; }
 
 @media screen and (max-width: 767px) {
   .kv .container {
