@@ -83,6 +83,10 @@ p {
             color: #fff;
         }
     }
+    .link-contact a span{
+        position: relative;
+        z-index: 2;
+    }
     a {
         display: block;
         width: 40%;
@@ -172,6 +176,9 @@ p {
         @media screen and (min-width: 768px) {
             display: none;
         }
+    }
+    .hb:hover {
+        background-color: $main-color3;
     }
     .hb span {
         position: absolute;
@@ -1188,7 +1195,10 @@ p {
 .btn-round:before {
     background-color: $main-color3;
 }
-
+.btn-round span{
+    position: relative;
+    z-index: 2;
+}
 // 幻燈片區
 .slick-dots {
     li {
@@ -1512,7 +1522,7 @@ p {
 
 .kv-title {
     font-weight: 500;
-    font-size: 10.1333333vw;
+    font-size: 10.001vw;
     // 38 / 375 = 0.101333333
     color: #fff;
     margin-bottom: 20px;
