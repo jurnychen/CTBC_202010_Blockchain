@@ -88,7 +88,7 @@ $(function() {
     }
 
     function irHide($ir) {
-        $('.issue-result .main-more .btn-more').click(function() {
+        $('.issue-result .main-more .btn-basic').click(function() {
             $('.issue-step').removeClass('hide');
             $('.issue .mv').removeClass('hide');
             $($ir).removeClass('show');

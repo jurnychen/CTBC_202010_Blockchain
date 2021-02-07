@@ -1,395 +1,14 @@
 @import 'color';
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap');
+@import 'font';
+@import 'vw.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
 body {
     font-weight: 400;
 }
 
-// 共用設定 - 各種文字
-// 手機 38px / 桌機70px  ======================
-.main-title h1{// 各區主標題
-	line-height: 1.5;
-	font-size: 10.1333333vw;
-	// 38 / 375 = 0.101333333
-	@media screen and (min-width:768px){
-	    font-size: 5vw;
-	    // 70 / 1400 = 0.05
-	}
-	@media screen and (min-width:1400px){
-	    font-size: 70px;
-	}
-}
-
-// 手機 28px / 桌機50px  ======================
-.main-title h1// 各區主標題
-{
-	line-height: 1.5;
-	font-size: 7.4666667vw;
-	// 28 / 375 = 0.074666667
-	@media screen and (min-width:768px){
-	    font-size: 3.5714286vw;
-	    // 50 / 1400 = 0.035714286
-	}
-	@media screen and (min-width:1400px){
-	    font-size: 50px;
-	}
-}
-
-// 手機 22px / 桌機40px  ===================
-.page-index .kv-title span // 首頁-Banner-次級標題
-{	
-	line-height: 1.5;
-	font-size: 5.5vw;
-	// 22 / 375 = 0.058666667
-	@media screen and (min-width:768px){
-	    font-size: 2.8571429vw;
-	    // 40 / 1400 = 0.028571429
-	}
-	@media screen and (min-width:1400px){
-	    font-size: 40px;
-	}
-}
-
-
-
-// 手機 24px / 桌機36px  ===================
-.issue .main-content h2  // 首頁-數位浪潮-次標題文字(問題說明)
-{
-	line-height: 1.5;
-	font-size: 6.4vw;
-	// 24 / 375 = 0.064
-	@media screen and (min-width:768px){
-	    font-size: 2.5714286vw;
-	    // 36 / 1400 = 0.025714286
-	}
-	@media screen and (min-width:1400px){
-	    font-size: 36px;
-	}
-}
-
-
-// 手機 22px / 桌機30px  ===================
-.issue .step-item h3 // 首頁-數位浪潮-問題項目文字
-{
-	line-height: 1.5;
-	font-size: 5.5vw;
-	// 22 / 375 = 0.058666667
-	@media screen and (min-width:768px){
-	    font-size: 2.1428571vw;
-	    // 30 / 1400 = 0.021428571
-	}
-	@media screen and (min-width:1400px){
-	    font-size: 30px;
-	}
-}
-
-
-// 手機 20px / 桌機30px  ===================
-.page-index .kv-txt.ly2 // 首頁-Banner-綠色說明文字
-{
-	line-height: 1.5;
-	font-size: 5.3333333vw;
-	// 20 / 375 = 0.053333333
-	@media screen and (min-width:768px){
-	    font-size: 2.1428571vw;
-	    // 30 / 1400 = 0.021428571
-	}
-	@media screen and (min-width:1400px){
-	    font-size: 30px;
-	}
-}
-
-// 手機 30px / 桌機30px  ===================
-.practice-item h2, // 服務-創新-ICON標題
-.slider-awards .slider-item .pic span,  // 首頁-獎項-獎項名稱
-.slider-awards .slider-item .txt p  // 首頁-獎項-年度數字
-{
-	line-height: 1.5;
-	font-size: 8vw;
-	// 30 / 375 = 0.08
-	@media screen and (min-width:768px){
-	    font-size: 2.1428571vw;
-	    // 30 / 1400 = 0.021428571
-	}
-	@media screen and (min-width:1400px){
-	    font-size: 30px;
-	}
-}
-
-
-// 手機 22px / 桌機30px  ======================
-.case h2,// 服務-案例-章節小標題
-.feedback h3,// 服務-案例-客戶回饋
-.awards-content .title,// 獎項-列表-中文名稱文字
-.form__box h2,// 表單頁-資訊分區標題
-.issue-result h3,  // 首頁-數位浪潮-結果標題
-.issue-result-item h4 span,  // 首頁-數位浪潮-結果-方案名稱
-.solution-item .txt h2  // 首頁-解決方案-方案名稱
-{
-	line-height: 1.5;
-	font-size: 5.8666667vw;
-	// 22 / 375 = 0.058666667
-	@media screen and (min-width:768px){
-	    font-size: 2.1428571vw;
-	    // 30 / 1400 = 0.021428571
-	}
-	@media screen and (min-width:1400px){
-	    font-size: 30px;
-	}
-}
-
-
-// 手機 20px / 桌機26px  ======================
-.issue .step-item-list a  // 首頁-數位浪潮-答案項目文字
-{
-	line-height: 1.5;
-	font-size: 5.1vw;
-	// 20 / 375 = 0.053333333
-	@media screen and (min-width:768px){
-	    font-size: 1.8571429vw;
-	    // 26 / 1400 = 0.018571429
-	}
-	@media screen and (min-width:1400px){
-	    font-size: 26px;
-	}
-}
-
-
-
-
-// 手機 22px / 桌機22px  ===================
-.form__box .sendBtn span,// 表單頁-按紐文字
-.issue-result .main-more + .block-more .btn-more // // 首頁-數位浪潮-答案-按紐-專人諮詢解決方案
-{
-	line-height: 1.5;
-	font-size: 5.8666667vw;
-	// 22 / 375 = 0.058666667
-	@media screen and (min-width:768px){
-	    font-size: 1.5714286vw;
-	    // 22 / 1400 = 0.015714286
-	}
-	@media screen and (min-width:1400px){
-	    font-size: 22px;
-	}
-}
-
-
-
-
-// 手機 18px / 桌機22px  ===================
-.main-title p, // 各區標題下方說明文字
-.case h3,// 服務-案例-章節次標題
-.case p,// 服務-案例-章節說明文
-.feedback blockquote p, // 服務-案例-客戶回饋說明文
-.feedback blockquote cite,// 服務-案例-客戶抬頭文字
-.slider-advantage .slider-item, // 服務-好處-ICON說明文字
-.practice-item p, // 服務-創新-ICON說明文字
-.headline-list .txt, // 媒體-熱門-項目說明文字
-.news-list .item-group .txt h3, // 媒體-卡片-標題文字
-.form__box .form__box-items .form__box-item .inputtitle, // 表單頁-欄位名稱文字
-.solution-item .txt p  // 首頁-解決方案-方案說明文字
-{
-	line-height: 1.5;
-	font-size: 4.8vw;
-	// 18 / 375 = 0.048
-	@media screen and (min-width:768px){
-	    font-size: 1.5714286vw;
-	    // 22 / 1400 = 0.015714286
-	}
-	@media screen and (min-width:1400px){
-	    font-size: 22px;
-	}
-}
-
-
-// 手機 16px / 桌機22px  ===================
-.tab-group a// 媒體-列表-按紐項目文字
-{
-	line-height: 1.5;
-	font-size: 4.2666667vw;
-	// 16 / 375 = 0.042666667
-	@media screen and (min-width:768px){
-	    font-size: 1.5714286vw;
-	    // 22 / 1400 = 0.015714286
-	}
-	@media screen and (min-width:1400px){
-	    font-size: 22px;
-	}
-}
-
-
-// 手機 14px / 桌機22px  ===================
-.kv .thubnail-list a// 首頁-Banner-Dots標題
-{
-	line-height: 1.5;
-	font-size: 3.7333333vw;
-	// 14 / 375 = 0.037333333
-	@media screen and (min-width:768px){
-	    font-size: 1.5714286vw;
-	    // 22 / 1400 = 0.015714286
-	}
-	@media screen and (min-width:1400px){
-	    font-size: 22px;
-	}
-}
-
-
-
-
-// 手機 20px / 桌機20px  ===================
-.main-footer .subscribe h2 // Footer-標題(訂閱)
-{
-	line-height: 1.5;
-	font-size: 5.3333333vw;
-	// 20 / 375 = 0.053333333
-	@media screen and (min-width:768px){
-	    font-size: 1.4285714vw;
-	    // 20 / 1400 = 0.014285714
-	}
-	@media screen and (min-width:1400px){
-	    font-size: 20px;
-	}
-}
-
-
-// 手機 16px / 桌機20px  ===================
-.awards-content .award // 獎項-列表-機構名稱
-{
-	line-height: 1.5;
-	font-size: 4.2666667vw;
-	// 16 / 375 = 0.042666667
-	@media screen and (min-width:768px){
-	    font-size: 1.4285714vw;
-	    // 20 / 1400 = 0.014285714
-	}
-	@media screen and (min-width:1400px){
-	    font-size: 20px;
-	}
-}
-
-
-// 手機 14px / 桌機20px  ===================
-.awards-content p // 獎項-列表-英文名稱文字
-{
-	line-height: 1.5;
-	font-size: 3.7333333vw;
-	// 14 / 375 = 0.037333333
-	@media screen and (min-width:768px){
-	    font-size: 1.4285714vw;
-	    // 20 / 1400 = 0.014285714
-	}
-	@media screen and (min-width:1400px){
-	    font-size: 20px;
-	}
-}
-
-
-
-// 手機 18px / 桌機18px  ===================
-.kv .kv-btn, // 首頁-Banner-按紐文字
-.main-footer .subscribe p, // Footer-文字(訂閱)
-.main-footer .subscribe .check-accept,  // Footer-文字(勾選說明)
-.main-footer .subscribe .input-subscribe,  // Footer-文字(填寫欄)
-.pagination a,   // 媒體-分頁按紐文字
-.form__box .checkbox__item, // 表單頁-欄位勾選項目文字
-.agree__box .agree__box-text,  // 表單頁-勾選項目文字(條款型)
-.issue-result-item .txt p,   // 首頁-數位浪潮-結果-方案說明文字
-.issue-result-item .btn-more,   // 首頁-數位浪潮-結果-按紐文字
-.main-more .btn-more,   // 按紐-按紐文字-小-瞭解更多
-.solution-item .btn-more,   // 首頁-解決方案-按紐文字
-.slider-client-item li p,   // 首頁-客戶夥伴-說明文字
-.slider-awards .slider-item .txt h3   // 首頁-獎項-項目說明文字
-{
-	line-height: 1.5;
-	font-size: 4.8vw;
-	// 18 / 375 = 0.048
-	@media screen and (min-width:768px){
-	    font-size: 1.2857143vw;
-	    // 18 / 1400 = 0.012857143
-	}
-	@media screen and (min-width:1400px){
-	    font-size: 18px;
-	}
-}
-
-
-
-
-
-
-// 手機 16px / 桌機16px  ===================
-.news-list .item-group .txt p,  // 媒體-卡片-說明文字
-.form__box .form__box-items .form__box-item input[type='text']// 表單頁-欄位本體文字
-{
-	line-height: 1.5;
-	font-size: 4.2666667vw;
-	// 16 / 375 = 0.042666667
-	@media screen and (min-width:768px){
-	    font-size: 1.1428571vw;
-	    // 16 / 1400 = 0.011428571
-	}
-	@media screen and (min-width:1400px){
-	    font-size: 16px;
-	}
-}
-
-// 手機 14px / 桌機14px  ===================
-.news-list .category,
-.news-list .date  // 媒體-卡片-Tag、Time
-{
-	line-height: 1.5;
-	font-size: 3.7333333vw;
-	// 14 / 375 = 0.037333333
-	@media screen and (min-width:768px){
-	    font-size: 1vw;
-	    // 14 / 1400 = 0.01
-	}
-	@media screen and (min-width:1400px){
-	    font-size: 14px;
-	}
-}
-
-
-// 手機 12px / 桌機16px  ===================
-.footer-list,  // Footer-條款文字
-.copyright // Footer-copyright
-{
-	line-height: 1.5;
-	font-size: 3.2vw;
-	// 12 / 375 = 0.032
-	@media screen and (min-width:768px){
-	    font-size: 1.1428571vw;
-	    // 16 / 1400 = 0.011428571
-	}
-	@media screen and (min-width:1400px){
-	    font-size: 16px;
-	}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
-
-
-
 // 大區塊-主要間距
 .section{
 	padding: 20vw 0;
@@ -413,10 +32,12 @@ body {
 	}
 }
 
-// 特調-消除
+// 大區塊-特調-消除
 .section.kv{
 	padding: 0;
 }
+
+
 
 
 // 大區塊-主要標題
@@ -431,10 +52,13 @@ body {
 	    margin-bottom:  50px;
 	}
 }
+.kv-title {
+    // font-weight: 700;
+ }
 
 
 
-// 點點背景
+// 背景-點點
 .section.awards,
 .section.advantage,
 .solution {
@@ -445,29 +69,6 @@ body {
 
 
 
-// 按紐-滑動效果
-.btn-round{
-    position: relative;
-}
-.btn-round:before {
-    content: '';
-    width: 0px;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    border-radius: 50px;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    z-index: 0;
-    opacity: 1;
-}
-.btn-round:hover:before {
-    width: 100%;
-}
-.btn-round:before{
-    background-color: $main-color3;
-}
 
 
 
@@ -477,28 +78,394 @@ body {
 
 
 
-// 按紐-小型
-.btn-more{
-	line-height: 1;
-	height: 10.6666667vw;
-	// 40 / 375 = 0.106666667
-	@media screen and (min-width:768px){
-	    height: 2.8571429vw;
-	    // 40 / 1400 = 0.028571429
-	}
-	@media screen and (min-width:1400px){
-	    height: 40px;
-	}
 
-	span{
-		margin-top: 5px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 按紐 設定
+// 01-外型-基本實心  .btn-basic
+// 01-外型-外框   .btn-outline
+// 01-外型-箭頭-無   .btn-arrow-not
+// 02-尺寸-小型:h40 .btn-small
+// 02-尺寸-大型:h55 .btn-big
+// 02-尺寸-變型:桌h55 /手h30 .btn-size3
+// 02-尺寸-變型:桌h55 /手h40 .btn-size4
+// 03-範圍-半型 .btn-half
+// 04-色彩配置-full色塊第二種：綠變紅 .btn-full-bgcolor2
+// 04-色彩配置-half色塊第二種：綠變紅 .btn-half-bgcolor2
+// 04-色彩配置-文字顏色第二種：黑色 .btn-text-color2
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// 按紐-01-外型-基本實心 
+	.btn-basic
+	{
+		position: relative;
 		display: inline-block;
+		overflow: hidden;
+		border-radius:999px;
+		text-decoration: none;
+		text-align: left;
+		color: #fff;
+		background-color: $main-color1;
+		span{
+			position: relative;
+			display: inline-block;
+			top: -1px;
+		}
+		&::before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 0;
+	    	height: 100%;
+			border-radius:999px;
+			background-color: $main-color3;
+	    	transition: width .5s, left .5s;
+		}
+		&::after{ // 箭頭 - 小型15px
+		    content: '';
+		    display: inline-block;
+		    position: relative;
+		    z-index: 1;
+		    background: url(pic/icon_flow_arrow_right_white.png) no-repeat center/100% auto;
+		}
+		&:hover::before{
+			width: 100%;
+		}
 	}
-}
-.btn-more::before{
-	background-color: $main-color1;
-	height: 100%;
-}
+
+// 按紐-01-外型-外框
+	.btn-outline
+	{
+		position: relative;
+		display: inline-block;
+		overflow: hidden;
+		border-radius:999px;
+		border: 1px solid $main-color1DD;
+		text-decoration: none;
+		text-align: left;
+		color: $main-color1DD;
+		background-color: #fff;
+		span{
+			position: relative;
+			display: inline-block;
+			top: -1px;
+		}
+		&::before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 0;
+	    	height: 100%;
+			border-radius:999px;
+			background-color: $main-color3;
+	    	transition: width .5s, left .5s;
+		}
+		&:hover{
+			border: 1px solid $main-color3;
+		}
+		&:hover::before{
+			width: 100%;
+		}
+		&:hover span{
+			color: #fff;
+		}
+	}
+
+// 按紐-01-外型-箭頭-無
+	.btn-arrow-not
+	{
+		&::after{
+			display:none;
+		}
+	}
+
+
+
+// 按紐-02-尺寸-小型:h40
+	.btn-small
+	{
+		height: 10.6666667vw;
+		// 40 / 375 = 0.106666667
+		padding: 0 6.6666667vw;
+		// 25 / 375 = 0.066666667
+		margin: 1.3333333vw 4vw 1.3333333vw 0;
+		// 5 / 375 = 0.013333333
+		@media screen and (min-width:768px){
+		    height: 2.8571429vw;
+		    // 40 / 1400 = 0.028571429
+			padding: 0 1.7857143vw;
+			// 25 / 1400 = 0.017857143
+			margin: 0.3571429vw 1.0714286vw 0.3571429vw 0;
+			// 5 / 1400 = 0.003571429
+
+		}
+		@media screen and (min-width:1400px){
+		    height: 40px;
+			padding: 0 25px;
+			margin: 5px 15px 5px 0;
+		}
+
+		// 箭頭的尺寸
+		&::after{
+		    width: 4vw;
+		    height: 4vw;
+		    // 15 / 375 = 0.04
+			top: -0.4vw;
+		    // 1 / 375 = 0.002666667
+		    @media screen and (min-width:768px){
+			    width: 1.0714286vw;
+			    height: 1.0714286vw;
+			    // 15 / 1400 = 0.010714286
+				top: -0.0714286vw;
+			    // 1 / 1400 = 0.000714286
+		    }
+		    @media screen and (min-width:1400px){
+			    width: 15px;
+			    height: 15px;
+				top: -1px;
+		    }
+		}
+
+		// 內容
+		span{
+			line-height: 10.6666667vw;
+			// 40 / 375 = 0.106666667
+			font-size: 4.8vw;
+			// 18 / 375 = 0.048
+			@media screen and (min-width:768px){
+			    line-height: 2.8571429vw;
+			    // 40 / 1400 = 0.028571429
+		    	font-size: 1.2857143vw;
+		    	// 18 / 1400 = 0.012857143
+			}
+			@media screen and (min-width:1400px){
+			    line-height: 40px;
+		    	font-size: 18px;
+			}
+		}
+	}
+
+
+// 按紐-02-尺寸
+	.btn-big, // 大型:h55
+	.btn-size3, // 變型:桌h55 /手h30
+	.btn-size4 // 變型:桌h55 /手h40
+	{	
+		height: 14.6666667vw;
+		// 55 / 375 = 0.146666667
+		padding: 0 13.3333333vw;
+		// 50 / 375 = 0.133333333
+		margin: 1vw 1.3vw 1vw 0;
+		// 5 / 375 = 0.013333333
+		@media screen and (min-width:768px){
+		    height: 3.9285714vw;
+		    // 55 / 1400 = 0.039285714
+			padding: 0 3.5714286vw;
+			// 50 / 1400 = 0.035714286
+			margin: 0.3571429vw 1.0714286vw 0.3571429vw 0;
+			// 5 / 1400 = 0.003571429
+		}
+		@media screen and (min-width:1400px){
+		    height: 55px;
+			padding: 0 50px;
+			margin: 5px 15px 5px 0;
+		}
+		&::after{
+			display: none;
+		}
+
+		span{
+			line-height: 14.6666667vw;
+			// 55 / 375 = 0.146666667
+			font-size: 5.8666667vw;
+			// 22 / 375 = 0.058666667
+			@media screen and (min-width:768px){
+			    line-height: 3.9285714vw;
+			    // 55 / 1400 = 0.039285714
+			    font-size: 1.5714286vw;
+			    // 22 / 1400 = 0.015714286
+			}
+			@media screen and (min-width:1400px){
+			    line-height: 55px;
+			    font-size: 22px;
+			}
+		}
+	}
+
+
+// 按紐-02-尺寸-變型:桌h55 /手h30  / 文字22/16
+	.btn-size3
+	{	
+		@media screen and (max-width:767px){
+			height: 8vw;
+			// 30 / 375 = 0.08
+			padding: 0 2.6666667vw;
+			// 10 / 375 = 0.026666667
+		}
+		@media screen and (min-width:768px){
+			padding: 0 1.7857143vw;
+			// 25 / 1400 = 0.017857143
+		}
+		@media screen and (min-width:1400px){
+			padding: 0 25px;
+		}
+		span{
+			@media screen and (max-width:767px){
+				line-height: 8vw;
+				// 30 / 375 = 0.08
+				font-size: 4.2666667vw;
+				// 16 / 375 = 0.042666667
+			}
+		}
+	}
+
+
+
+
+// 按紐-02-尺寸-變型:桌h55 /手h40  / 文字26/20
+	.btn-size4
+	{	
+		height: 10.6666667vw;
+		// 40 / 375 = 0.106666667
+		padding: 0 4vw;
+		// 15 / 375 = 0.04
+		@media screen and (min-width:768px){
+			height: 3.9285714vw;
+			// 55 / 1400 = 0.039285714
+			padding: 0 1.7857143vw;
+			// 25 / 1400 = 0.017857143
+		}
+		@media screen and (min-width:1400px){
+			height: 55px;
+			padding: 0 25px;
+		}
+		span{
+			line-height: 10.6666667vw;
+			// 40 / 375 = 0.106666667
+			font-size: 4.55vw;
+			// 20 / 375 = 0.053333333
+			@media screen and (min-width:768px){
+			    line-height: 3.9285714vw;
+			    // 55 / 1400 = 0.039285714
+			    font-size: 1.8571429vw;
+			    // 26 / 1400 = 0.018571429
+			}
+			@media screen and (min-width:1400px){
+			    line-height: 55px;
+			    font-size: 26px;
+			}
+		}
+	}
+
+
+// 按紐-03-範圍-半型
+	.button-half
+	{
+		color: $txt-main-color;
+		background-color: transparent;
+		&::before{
+			width: 40%;
+			background-color: $main-color1;
+		}
+		&:after{
+		    background: url(pic/icon_flow_arrow_right_black.png) no-repeat center/100% auto;
+		}
+		&:hover{
+			color:#fff;
+		}
+		&:hover::before{
+			background-color: $main-color3;
+		}
+		&:hover:after{
+			background: url(pic/icon_flow_arrow_right_white.png) no-repeat center/100% auto;
+		}
+	}
+
+
+
+// 按紐-04-色彩配置-full色塊第二種：紅變綠
+	.btn-full-bgcolor2{
+		background-color: $main-color3;
+		&::before{
+			background-color: $main-color1;
+		}
+		&:hover::before{
+			background-color: $main-color1;
+		}
+	} 
+// 按紐-04-色彩配置-falf色塊第二種：紅變綠
+	.btn-falf-bgcolor2{
+		&::before{
+			background-color: $main-color3;
+		}
+		&:hover::before{
+			background-color: $main-color1;
+		}
+	} 
+
+
+// 按紐-04-色彩配置-文字顏色第二種：黑色
+	.btn-text-color2{
+		color: $txt-main-color; 
+		&:after{
+		    background: url(pic/icon_flow_arrow_right_black.png) no-repeat center/100% auto;
+		}
+		&:hover{
+			color: #fff;
+		}
+		&:hover::after{
+		    background: url(pic/icon_flow_arrow_right_white.png) no-repeat center/100% auto;
+		}
+	}
+
+
+
+
+
+
+
+
+// 按紐-01-外型-選項item用
+	.button-select{
+		background-color: #f0f000;
+	}
+
+// 按紐-01-外型-專人諮詢
+	.button-contact{
+		position: relative;
+		display: inline-block;
+		text-decoration: none;
+		border-radius:999px;
+		color: #fff;
+		background-color: #f0f000;
+		overflow: hidden;
+
+	}
+
+
+
+
+
+
+
+
 
 
 
@@ -552,7 +519,6 @@ body {
 // =========================
 // 置頂選單 Nav
 // =========================
-
 .CTBC-logo a {
 	@media screen and (min-width:768px){
 	    // width: 12.1429%;
@@ -563,25 +529,26 @@ body {
 }
 
 
+// =========================
+// 專人諮詢區域
+// =========================
+.section.advisory{
+	padding: 0;
 
-
-
-
-
-// Footer區域
-.main-footer{
-	border-top:10px solid $main-color1D;
-	padding: 6.6666667vw 0 13.3333333vw;
-	// 25 / 375 = 0.066666667
-	// 50 / 375 = 0.133333333
-	@media screen and (min-width:768px){
-	    padding: 1.7857143vw 0 3.5714286vw;
-	    // 25 / 1400 = 0.017857143
-	    // 50 / 1400 = 0.035714286
+	>.container{
+		padding: 6.6666667vw 0 13.3333333vw;
+		// 25 / 375 = 0.066666667
+		// 50 / 375 = 0.133333333
+		@media screen and (min-width:768px){
+		    padding: 3.5714286vw 10.7142857vw;
+		    // 50 / 1400 = 0.035714286
+		    // 150 / 1400 = 0.107142857
+		}
+		@media screen and (min-width:1400px){
+		    padding: 50px 150px;
+		}	
 	}
-	@media screen and (min-width:1400px){
-	    padding: 25px 0 50px;
-	}
+
 
 	.subscribe p{
 		margin-top: -4vw;
@@ -593,16 +560,46 @@ body {
 		    margin-top: -15px;
 		}
 	}
-
-
 }
 
 
 
 
 
+// =========================
+// Footer區域
+// =========================
+.main-footer{
+	border-top:10px solid $main-color1D;
+	padding: 0;
+
+	>.container{
+		padding: 6.6666667vw 0 13.3333333vw;
+		// 25 / 375 = 0.066666667
+		// 50 / 375 = 0.133333333
+		@media screen and (min-width:768px){
+		    padding: 1.0714286vw 10.7142857vw 3.5714286vw;
+		    //15 / 1400 = 0.010714286
+		    // 50 / 1400 = 0.035714286
+		    // 150 / 1400 = 0.107142857
+		}
+		@media screen and (min-width:1400px){
+		    padding: 15px 150px 50px;
+		}	
+	}
 
 
+	.subscribe p{
+		margin-top: -4vw;
+		@media screen and (min-width:768px){
+		    margin-top: 1.0714286vw;
+		    // 15 / 1400 = 0.010714286
+		}
+		@media screen and (min-width:1400px){
+		    margin-top: -15px;
+		}
+	}
+}
 
 
 
@@ -619,6 +616,8 @@ body {
 		// 首頁-Banner- 第一則 標題文字
 		.kv-title,
 		.kv-title span:first-child{
+			font-family: "Roboto Condensed",  "Noto Sans TC", "Microsoft JhengHei", PingFang, STHeiti, sans-serif, serif;
+			font-weight: bold;
 			line-height: 1.2;
 			font-size: 10.1333333vw;
 			// 38 / 375 = 0.101333333
@@ -663,9 +662,19 @@ body {
 
 
 	// 問卷區
+	.mv iframe{
+		text-align: center;
+	}	
 	.mv img{
 		border-radius: 10px;
+		width: calc( 100% - 12vw);
+		height: auto;
+		margin: 0 6.6666667vw;
+		//  25 /375 = 0.066666667
+		
+
 	}
+
 	.issue .main-content{
 		@media screen and (min-width:768px){
 		    margin-top:  -5.7142857vw;
@@ -695,11 +704,11 @@ body {
 	}
 	.issue .step-item-list li{
 		@media screen and (min-width:768px){
-		    margin: 0 .07142857vw .07142857vw 0;
+		    margin: 0;
 		    // 10 / 1400 = 0.007142857
 		}
 		@media screen and (min-width:1400px){
-		    margin: 0 10px 10px 0;
+		    // margin: 0 10px 10px 0;
 		}
 	}
 
@@ -830,6 +839,25 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+// =========================
+// 表單頁
+// =========================
+.section.contact{
+	>.container{
+		max-width: 1100px;
+	}
+}
+
+
+
 // =========================
 // 獎項頁
 // =========================
@@ -855,6 +883,10 @@ body {
 
 
 
+
+
+
+
 // 條款頁
 .page-regulation{
 	padding-top: 60px;
@@ -862,8 +894,6 @@ body {
 		padding-top: 120px;
 	}
 }
-
-
 
 
 

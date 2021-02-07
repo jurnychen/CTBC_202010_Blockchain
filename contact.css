@@ -5,6 +5,7 @@
 @media screen and (max-width: 767px) {
   .main-title h1 span {
     display: inline; } }
+
 @media screen and (min-width: 768px) {
   .main-title p br {
     display: none; } }
@@ -34,136 +35,135 @@
 .reminder__message {
   display: none;
   color: #e03757;
-  font-size: 14px;
-  font-weight: bold; }
+  font-size: 14px; }
   .reminder__message.show {
     display: block;
     padding-bottom: 10px; }
 
 .form__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
   padding: 20px 15px; }
   .form__box:not([class^="final__box"]) {
-    border-bottom: 2px solid #D9D9D9; }
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
   @media only screen and (min-width: 768px) {
     .form__box {
+      -ms-flex-wrap: nowrap;
       flex-wrap: nowrap; } }
   .form__box h2 {
     color: #1cbfa5;
     font-size: 22px;
-    font-weight: bold;
+    font-weight: 400;
     margin: 0;
     padding: 0 0 15px 0; }
   .form__box .form__box-title {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     padding: 0 0 15px 0; }
     @media only screen and (min-width: 768px) {
       .form__box .form__box-title {
-        flex: 0 0 15%; } }
-  .form__box .sendBtn {
-    display: inline-block;
-    margin: 20px auto;
-    padding: 10px 40px;
-    border: none;
-    border-radius: 1000px;
-    outline: none;
-    background-color: #1cbfa5;
-    text-decoration: none;
-    position: relative;
-    overflow: hidden;
-    left: 50%;
-    transform: translateX(-50%); }
-    @media only screen and (min-width: 768px) {
-      .form__box .sendBtn {
-        margin: 20px 0;
-        left: 0;
-        transform: none; } }
-    .form__box .sendBtn span {
-      font-size: 22px;
-      font-weight: bold;
-      color: #FFFFFF;
-      position: relative;
-      z-index: 10; }
-    .form__box .sendBtn:before {
-      content: '';
-      position: absolute;
-      left: -60px;
-      top: 0;
-      width: 50px;
-      height: 100%;
-      background-color: #e03757;
-      border-radius: 100px;
-      transition: .3s;
-      z-index: 1; }
-    .form__box .sendBtn:hover:before {
-      width: 100%;
-      left: 0; }
-  .form__box .form__box-items {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%; } }
+  .form__box .form__box-itemgroup {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     padding: 0 0 30px 0; }
     @media only screen and (min-width: 768px) {
-      .form__box .form__box-items {
+      .form__box .form__box-itemgroup {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 0 0px;
         flex: 1 0 0; } }
-    .form__box .form__box-items .form__box-item {
+    .form__box .form__box-itemgroup .form__box-item {
       width: 100%;
       margin-bottom: 25px; }
-      .form__box .form__box-items .form__box-item .inputtitle {
+      .form__box .form__box-itemgroup .form__box-item .inputtitle {
         display: block;
         width: 100%;
         color: #1A1A1A;
         font-size: 18px;
-        font-weight: bold;
         margin: 0 0 10px 0; }
-      .form__box .form__box-items .form__box-item input[type='text'] {
+      .form__box .form__box-itemgroup .form__box-item input[type='text'] {
+        -webkit-box-sizing: border-box;
         box-sizing: border-box;
         display: block;
         width: 100%;
         padding: 10px;
         margin-bottom: 8px;
         color: #1A1A1A;
-        font-size: 16px;
-        border: 1px solid #D9D9D9;
+        border: 1px solid rgba(0, 0, 0, 0.3);
         border-radius: 0.3em; }
-        .form__box .form__box-items .form__box-item input[type='text'].valid__error {
+        .form__box .form__box-itemgroup .form__box-item input[type='text'].valid__error {
           border: 2px solid #e03757; }
-      .form__box .form__box-items .form__box-item .valid__error ~ .checkmark {
+      .form__box .form__box-itemgroup .form__box-item .valid__error ~ .checkmark {
         border: 2px solid #e03757; }
-      .form__box .form__box-items .form__box-item input[type='text']::placeholder,
-      .form__box .form__box-items .form__box-item textarea::placeholder {
-        color: #D9D9D9;
-        font-size: 16px; }
-      .form__box .form__box-items .form__box-item textarea {
+      .form__box .form__box-itemgroup .form__box-item input[type='text']::-webkit-input-placeholder,
+      .form__box .form__box-itemgroup .form__box-item textarea::-webkit-input-placeholder {
+        color: rgba(0, 0, 0, 0.3); }
+      .form__box .form__box-itemgroup .form__box-item input[type='text']:-ms-input-placeholder,
+      .form__box .form__box-itemgroup .form__box-item textarea:-ms-input-placeholder {
+        color: rgba(0, 0, 0, 0.3); }
+      .form__box .form__box-itemgroup .form__box-item input[type='text']::-ms-input-placeholder,
+      .form__box .form__box-itemgroup .form__box-item textarea::-ms-input-placeholder {
+        color: rgba(0, 0, 0, 0.3); }
+      .form__box .form__box-itemgroup .form__box-item input[type='text']::placeholder,
+      .form__box .form__box-itemgroup .form__box-item textarea::placeholder {
+        color: rgba(0, 0, 0, 0.3); }
+      .form__box .form__box-itemgroup .form__box-item textarea {
         resize: none;
+        -webkit-box-sizing: border-box;
         box-sizing: border-box;
-        border: 1px solid #D9D9D9;
+        border: 1px solid rgba(0, 0, 0, 0.3);
         border-radius: 0.3em;
         width: 100%;
-        padding: 15px 20px;
-        font-size: 16px; }
-      .form__box .form__box-items .form__box-item .required::after {
+        padding: 15px 20px; }
+      .form__box .form__box-itemgroup .form__box-item .required::after {
         content: '*';
         color: #e03757;
         padding-left: 0.2em; }
-      .form__box .form__box-items .form__box-item.captcha-item {
+      .form__box .form__box-itemgroup .form__box-item.captcha-item {
         width: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
         flex-flow: row wrap;
+        -ms-flex-line-pack: center;
         align-content: center; }
         @media only screen and (min-width: 768px) {
-          .form__box .form__box-items .form__box-item.captcha-item {
+          .form__box .form__box-itemgroup .form__box-item.captcha-item {
+            -ms-flex-wrap: nowrap;
             flex-wrap: nowrap;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center; } }
-        .form__box .form__box-items .form__box-item.captcha-item .inputtitle.label-captcha {
+        .form__box .form__box-itemgroup .form__box-item.captcha-item .inputtitle.label-captcha {
           width: 4em;
           margin: 0; }
-        .form__box .form__box-items .form__box-item.captcha-item .pic-captcha {
+        .form__box .form__box-itemgroup .form__box-item.captcha-item .pic-captcha {
+          -webkit-box-flex: 0;
+          -ms-flex: 0 0 auto;
           flex: 0 0 auto;
           height: 29px;
           margin-right: 5px; }
-        .form__box .form__box-items .form__box-item.captcha-item .btn-refreshcaptcha {
+        .form__box .form__box-itemgroup .form__box-item.captcha-item .btn-refreshcaptcha {
+          -webkit-box-flex: 0;
+          -ms-flex: 0 0 auto;
           flex: 0 0 auto;
           padding: 0 5px;
           -webkit-appearance: none;
@@ -171,36 +171,52 @@
           outline: none;
           background-color: transparent;
           cursor: pointer; }
-        .form__box .form__box-items .form__box-item.captcha-item .input-captcha {
+        .form__box .form__box-itemgroup .form__box-item.captcha-item .input-captcha {
           margin-top: 5px;
           margin-left: 4.5em;
-          max-width: 8em; }
+          max-width: 70vw; }
           @media only screen and (min-width: 768px) {
-            .form__box .form__box-items .form__box-item.captcha-item .input-captcha {
+            .form__box .form__box-itemgroup .form__box-item.captcha-item .input-captcha {
+              -webkit-box-flex: 1;
+              -ms-flex: 1 0 0px;
               flex: 1 0 0;
-              margin: 0; } }
-    .form__box .form__box-items + .form__box .form__box-items {
+              margin: 0;
+              max-width: 150px; } }
+    .form__box .form__box-itemgroup + .form__box .form__box-itemgroup {
       margin-top: 20px; }
   .form__box .checkbox__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
     padding: 15px 0 0 0; }
   .form__box .checkbox__item {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     position: relative;
     padding-left: 30px;
     margin-bottom: 20px;
     cursor: pointer;
-    font-size: 18px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none; }
     @media only screen and (min-width: 768px) {
       .form__box .checkbox__item {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
         flex: 0 0 20%; } }
     .form__box .checkbox__item input {
       position: absolute;
@@ -243,15 +259,17 @@
 
 .agree__box.checkbox__item {
   display: inline-block; }
+
 .agree__box.checkbox__item .checkmark {
   border-radius: 0; }
+
 .agree__box .agree__box-text {
   display: inline-block;
   vertical-align: top;
   width: calc(100% - 2em);
-  font-size: 18px;
   line-height: 1.5;
   padding-left: 0; }
+
 .agree__box a {
   display: inline-block;
   color: #1cbfa5;
@@ -261,21 +279,26 @@
 #popupTips .privacylink {
   color: #20a09a;
   padding: 15px 0; }
+
 #popupTips .highlight {
   color: red;
   text-decoration: underline;
+  -webkit-text-decoration-color: #000000;
   text-decoration-color: #000000; }
 
 @media only screen and (min-width: 768px) {
   .companyphone__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex; }
     .companyphone__box .companyphonenum {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
       flex: 1 0 0; }
     .companyphone__box .companyphoneext {
       margin-left: 1em;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 9em;
       flex: 0 0 9em; }
-
   .final__box {
     margin-left: 15%; } }
-
-/*# sourceMappingURL=contact.css.map */

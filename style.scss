@@ -1,5 +1,5 @@
 @import 'color';
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
 // 共用設定
 body {
     font-family: "Noto Sans TC", "Microsoft JhengHei", PingFang, STHeiti, sans-serif, serif;
@@ -848,40 +848,40 @@ p {
     .step-item-list li {
         position: relative;
         display: inline-block;
-        border: 1px solid #000;
-        border-radius: 100px;
+        // border: 1px solid #000;
+        // border-radius: 100px;
         overflow: hidden;
         @media screen and (max-width: 767px) {
             min-width: calc(100% / 3 - 10px);
-            margin: 0 4px 10px;
+            // margin: 0 4px 10px;
         }
         @media screen and (min-width: 768px) {
             min-width: calc(100% / 4 - 20px);
-            margin: 0 10px 10px;
+            // margin: 0 10px 10px;
         }
     }
     .step-item-list li:before {
-        content: '';
-        position: absolute;
-        left: -60px;
-        top: 0;
-        width: 50px;
-        height: 100%;
-        background-color: $main-color3;
-        border-radius: 100px;
-        transition: .3s;
+        // content: '';
+        // position: absolute;
+        // left: -60px;
+        // top: 0;
+        // width: 50px;
+        // height: 100%;
+        // background-color: $main-color3;
+        // border-radius: 100px;
+        // transition: .3s;
     }
     .step-item-list a {
         display: block;
         position: relative;
         z-index: 1;
         color: $main-color1D;
-        padding: 6px 1em;
-        font-size: 20px;
+        // padding: 6px 1em;
+        // font-size: 20px;
         text-align: center;
         text-decoration: none;
         @media screen and (min-width: 768px) {
-            font-size: 26px;
+            // font-size: 26px;
         }
     }
     .step-item-list li:hover:before {
@@ -1296,7 +1296,7 @@ p {
     background-color: #1A1A1A;
     height: 133.3333333vw;
     @media screen and (min-width: 450px) {
-        height: 90vw;
+        // height: 90vw;
     }
     @media screen and (min-width:768px) {
         height: 50vw;
@@ -1504,7 +1504,7 @@ p {
         background-position: right center;
     }
     @media screen and (min-width: 450px) {
-        height: 90vw;
+        // height: 90vw;
     }
     @media screen and (min-width:768px) {
         height: 60vw;
@@ -1521,7 +1521,7 @@ p {
 }
 
 .kv-title {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 10.001vw;
     // 38 / 375 = 0.101333333
     color: #fff;
@@ -2359,11 +2359,11 @@ p {
         padding: 0;
     }
     li {
-        margin: 0 .1em;
-        padding: 0;
+        // margin: 0 .1em;
+        // padding: 0;
         list-style: none;
         @media screen and (min-width: 768px) {
-            margin: 0 .7em;
+            // margin: 0 .7em;
         }
     }
     li.active a {
@@ -2377,13 +2377,13 @@ p {
         border: 1px solid #377E7F;
         border-radius: 100px;
         color: #068080;
-        font-size: 16px;
+        // font-size: 16px;
         @media screen and (max-width: 767px) {
-            padding: 10px;
+            // padding: 10px;
         }
         @media screen and (min-width: 768px) {
-            font-size: 22px;
-            padding: 10px 20px;
+            // font-size: 22px;
+            // padding: 10px 20px;
         }
     }
 }

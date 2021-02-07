@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap");
 body {
   font-family: "Noto Sans TC", "Microsoft JhengHei", PingFang, STHeiti, sans-serif, serif;
   overflow-x: hidden;
@@ -833,43 +833,21 @@ p {
 .issue .step-item-list li {
   position: relative;
   display: inline-block;
-  border: 1px solid #000;
-  border-radius: 100px;
   overflow: hidden; }
   @media screen and (max-width: 767px) {
     .issue .step-item-list li {
-      min-width: calc(100% / 3 - 10px);
-      margin: 0 4px 10px; } }
+      min-width: calc(100% / 3 - 10px); } }
   @media screen and (min-width: 768px) {
     .issue .step-item-list li {
-      min-width: calc(100% / 4 - 20px);
-      margin: 0 10px 10px; } }
-
-.issue .step-item-list li:before {
-  content: '';
-  position: absolute;
-  left: -60px;
-  top: 0;
-  width: 50px;
-  height: 100%;
-  background-color: #e03757;
-  border-radius: 100px;
-  -webkit-transition: .3s;
-  -o-transition: .3s;
-  transition: .3s; }
+      min-width: calc(100% / 4 - 20px); } }
 
 .issue .step-item-list a {
   display: block;
   position: relative;
   z-index: 1;
   color: #068080;
-  padding: 6px 1em;
-  font-size: 20px;
   text-align: center;
   text-decoration: none; }
-  @media screen and (min-width: 768px) {
-    .issue .step-item-list a {
-      font-size: 26px; } }
 
 .issue .step-item-list li:hover:before {
   width: 100%;
@@ -1264,9 +1242,6 @@ p {
   padding: 0;
   background-color: #1A1A1A;
   height: 133.3333333vw; }
-  @media screen and (min-width: 450px) {
-    .kv {
-      height: 90vw; } }
   @media screen and (min-width: 768px) {
     .kv {
       height: 50vw; } }
@@ -1451,10 +1426,6 @@ p {
   background-image: url("pic/index/banner_bgimage_index_left.png");
   background-position: right center; }
 
-@media screen and (min-width: 450px) {
-  .page-index .kv {
-    height: 90vw; } }
-
 @media screen and (min-width: 768px) {
   .page-index .kv {
     height: 60vw; } }
@@ -1469,7 +1440,7 @@ p {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75); }
 
 .kv-title {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 10.001vw;
   color: #fff;
   margin-bottom: 20px; }
@@ -1990,8 +1961,8 @@ p {
     -webkit-transform: translateY(50%);
     -ms-transform: translateY(50%);
     transform: translateY(50%);
-    -webkit-box-shadow: -6px 6px 0px #246465;
-    box-shadow: -6px 6px 0px #246465; }
+    -webkit-box-shadow: -6px 6px 0px #007d7d;
+    box-shadow: -6px 6px 0px #007d7d; }
   .feedback .txt {
     margin-top: -30px;
     padding: 80px 30px 30px;
@@ -2268,12 +2239,7 @@ p {
     justify-content: center;
     padding: 0; }
   .tab-group li {
-    margin: 0 .1em;
-    padding: 0;
     list-style: none; }
-    @media screen and (min-width: 768px) {
-      .tab-group li {
-        margin: 0 .7em; } }
   .tab-group li.active a {
     background-color: #e03757;
     color: #fff; }
@@ -2282,15 +2248,7 @@ p {
     text-decoration: none;
     border: 1px solid #377E7F;
     border-radius: 100px;
-    color: #068080;
-    font-size: 16px; }
-    @media screen and (max-width: 767px) {
-      .tab-group a {
-        padding: 10px; } }
-    @media screen and (min-width: 768px) {
-      .tab-group a {
-        font-size: 22px;
-        padding: 10px 20px; } }
+    color: #068080; }
 
 .headline-list {
   position: relative; }
