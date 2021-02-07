@@ -954,17 +954,34 @@
                 kvCount = 100;
                 $('.slider-kv').slick('slickPause')
             });
+
+            // 隊長0205改寫：直接點擊「X」同時關閉影片播放
+
+
+            $('.issue .mv').click(function() {
+                $('.light-box')
+                    .css("display", "flex")
+                    .hide()
+                    .fadeIn();
+            })
+
+            $('.light-box .btn-close').click(function() {
+                $('.light-box').fadeOut();
+                if (playerSatus !== YT.PlayerState.PAUSED)  {
+                    player.stopVideo();
+                }
+            })
         })
-        // 隊長0205改寫：直接點擊「X」同時關閉影片播放
+
         //Youtube API
-        var tag = document.createElement('script');
+        let tag = document.createElement('script');
         tag.id = 'iframe-demo';
         tag.src = 'https://www.youtube.com/iframe_api';
-        var firstScriptTag = document.getElementsByTagName('script')[0];
+        let firstScriptTag = document.getElementsByTagName('script')[0];
         firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-        var player;
-        var playerSatus;
+        let player;
+        let playerSatus;
         function onYouTubeIframeAPIReady() {
             player = new YT.Player('player', {
                 events: {
@@ -977,19 +994,7 @@
             playerSatus = event.data;
         }
 
-        $('.issue .mv').click(function() {
-            $('.light-box')
-                .css("display", "flex")
-                .hide()
-                .fadeIn();
-        })
 
-        $('.light-box .btn-close').click(function() {
-            $('.light-box').fadeOut();
-            if (playerSatus !== 2)  {
-                player.stopVideo();
-            }
-        })
     </script>
 </body>
 

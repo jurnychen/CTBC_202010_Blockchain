@@ -118,22 +118,22 @@ $(function() {
     }
     svgAni();
 
-})
-
-// 訂閱成功視窗-了解按鈕
-function showSubscribeSuccessBox() {
-    if ($('.box-success').length) {
-        $('.box-success').remove();
+    // 訂閱成功視窗-了解按鈕
+    function showSubscribeSuccessBox() {
+        if ($('.box-success').length) {
+            $('.box-success').remove();
+        }
+        $('.subscribe form').after('<div class="box-success"><p>您已經完成訂閱</p><button class="btn-success-close">了解</button></div>');
     }
-    $('.subscribe form').after('<div class="box-success"><p>您已經完成訂閱</p><button class="btn-success-close">了解</button></div>');
-}
 
-$('.subscribe .btn-subscribe').on('click', function(e) {
-    e.preventDefault();
-    showSubscribeSuccessBox();
-});
+    $('.subscribe .btn-subscribe').on('click', function(e) {
+        e.preventDefault();
+        showSubscribeSuccessBox();
+    });
 
-$('.subscribe').on('click', '.box-success .btn-success-close', function(e) {
-    e.preventDefault();
-    $('.box-success').fadeOut();
+    $('.subscribe').on('click', '.box-success .btn-success-close', function(e) {
+        e.preventDefault();
+        $('.box-success').fadeOut();
+    });
 })
+
