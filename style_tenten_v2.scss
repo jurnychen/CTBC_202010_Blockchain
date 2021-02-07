@@ -11,11 +11,9 @@ body {
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 大區塊-主要間距
 .section{
-	padding: 20vw 0;
-	// 75 / 375 = 0.2
+	padding: $xxs-vw-75-vw 0;
 	@media screen and (min-width:768px){
-	    padding: 7.1428571vw 0;
-	    // 100 / 1400 = 0.071428571
+	    padding: $lg-vw-100-vw 0;
 	}
 	@media screen and (min-width:1400px){
 	    padding: 100px 0;
@@ -23,8 +21,7 @@ body {
 
 	// 控制內容寬度內距
 	> .container{
-		width: calc(100% - 4vw);
-		// 15 / 375 = 0.04
+		width: calc(100% - $xxs-vw-15-vw);
 		max-width: 1400px;
 		@media screen and (min-width:768px){
 		    width: 90%;
@@ -42,11 +39,9 @@ body {
 
 // 大區塊-主要標題
 .main-title{
-	margin-bottom:  6.6666667vw;
-	// 25 / 375 = 0.066666667
+	margin-bottom:  $xxs-vw-25-vw;
 	@media screen and (min-width:768px){
-	    margin-bottom:  3.5714286vw;
-	    // 50 / 1400 = 0.035714286
+	    margin-bottom:  $lg-vw-50-vw;
 	}
 	@media screen and (min-width:1400px){
 	    margin-bottom:  50px;
@@ -201,19 +196,13 @@ body {
 // 按紐-02-尺寸-小型:h40
 	.btn-small
 	{
-		height: 10.6666667vw;
-		// 40 / 375 = 0.106666667
-		padding: 0 6.6666667vw;
-		// 25 / 375 = 0.066666667
-		margin: 1.3333333vw 4vw 1.3333333vw 0;
-		// 5 / 375 = 0.013333333
+		height: $xxs-vw-40-vw;
+		padding: 0 $xxs-vw-25-vw;
+		margin: $xxs-vw-5-vw 4vw $xxs-vw-5-vw 0;
 		@media screen and (min-width:768px){
-		    height: 2.8571429vw;
-		    // 40 / 1400 = 0.028571429
-			padding: 0 1.7857143vw;
-			// 25 / 1400 = 0.017857143
-			margin: 0.3571429vw 1.0714286vw 0.3571429vw 0;
-			// 5 / 1400 = 0.003571429
+		    height: $lg-vw-40-vw;
+			padding: 0 $lg-vw-25-vw;
+			margin: $lg-vw-5-vw  $lg-vw-25-vw  $lg-vw-5-vw  0;
 
 		}
 		@media screen and (min-width:1400px){
@@ -224,17 +213,15 @@ body {
 
 		// 箭頭的尺寸
 		&::after{
-		    width: 4vw;
-		    height: 4vw;
+		    width: $xxs-vw-15-vw;
+		    height: $xxs-vw-15-vw;
 		    // 15 / 375 = 0.04
 			top: -0.4vw;
 		    // 1 / 375 = 0.002666667
 		    @media screen and (min-width:768px){
-			    width: 1.0714286vw;
-			    height: 1.0714286vw;
-			    // 15 / 1400 = 0.010714286
-				top: -0.0714286vw;
-			    // 1 / 1400 = 0.000714286
+			    width: $lg-vw-15-vw;
+			    height: $lg-vw-15-vw;
+				top: -$lg-vw-1-vw;
 		    }
 		    @media screen and (min-width:1400px){
 			    width: 15px;
@@ -245,15 +232,11 @@ body {
 
 		// 內容
 		span{
-			line-height: 10.6666667vw;
-			// 40 / 375 = 0.106666667
-			font-size: 4.8vw;
-			// 18 / 375 = 0.048
+			line-height: $xxs-vw-40-vw;
+			font-size: $xxs-vw-18-vw;
 			@media screen and (min-width:768px){
-			    line-height: 2.8571429vw;
-			    // 40 / 1400 = 0.028571429
-		    	font-size: 1.2857143vw;
-		    	// 18 / 1400 = 0.012857143
+			    line-height: $lg-vw-40-vw;
+		    	font-size: $lg-vw-18-vw;
 			}
 			@media screen and (min-width:1400px){
 			    line-height: 40px;
@@ -268,19 +251,13 @@ body {
 	.btn-size3, // 變型:桌h55 /手h30
 	.btn-size4 // 變型:桌h55 /手h40
 	{	
-		height: 14.6666667vw;
-		// 55 / 375 = 0.146666667
-		padding: 0 13.3333333vw;
-		// 50 / 375 = 0.133333333
-		margin: 1vw 1.3vw 1vw 0;
-		// 5 / 375 = 0.013333333
+		height: $xxs-vw-55-vw;
+		padding: 0 $xxs-vw-50-vw;
+		margin: $xxs-vw-1-vw $xxs-vw-5-vw $xxs-vw-1-vw 0;
 		@media screen and (min-width:768px){
-		    height: 3.9285714vw;
-		    // 55 / 1400 = 0.039285714
-			padding: 0 3.5714286vw;
-			// 50 / 1400 = 0.035714286
-			margin: 0.3571429vw 1.0714286vw 0.3571429vw 0;
-			// 5 / 1400 = 0.003571429
+		    height: $lg-vw-55-vw;
+			padding: 0 $lg-vw-50-vw;
+			margin: $lg-vw-5-vw $lg-vw-15-vw $lg-vw-5-vw 0;
 		}
 		@media screen and (min-width:1400px){
 		    height: 55px;
@@ -292,15 +269,11 @@ body {
 		}
 
 		span{
-			line-height: 14.6666667vw;
-			// 55 / 375 = 0.146666667
-			font-size: 5.8666667vw;
-			// 22 / 375 = 0.058666667
+			line-height: $xxs-vw-55-vw;
+			font-size: $xxs-vw-22-vw;
 			@media screen and (min-width:768px){
-			    line-height: 3.9285714vw;
-			    // 55 / 1400 = 0.039285714
-			    font-size: 1.5714286vw;
-			    // 22 / 1400 = 0.015714286
+			    line-height: $lg-vw-55-vw;
+			    font-size: $lg-vw-22-vw;
 			}
 			@media screen and (min-width:1400px){
 			    line-height: 55px;
@@ -314,24 +287,19 @@ body {
 	.btn-size3
 	{	
 		@media screen and (max-width:767px){
-			height: 8vw;
-			// 30 / 375 = 0.08
-			padding: 0 2.6666667vw;
-			// 10 / 375 = 0.026666667
+			height: $xxs-vw-30-vw;
+			padding: 0 $xxs-vw-10-vw;
 		}
 		@media screen and (min-width:768px){
-			padding: 0 1.7857143vw;
-			// 25 / 1400 = 0.017857143
+			padding: 0 $lg-vw-25-vw;
 		}
 		@media screen and (min-width:1400px){
 			padding: 0 25px;
 		}
 		span{
 			@media screen and (max-width:767px){
-				line-height: 8vw;
-				// 30 / 375 = 0.08
-				font-size: 4.2666667vw;
-				// 16 / 375 = 0.042666667
+				line-height: $xxs-vw-30-vw;
+				font-size: $xxs-vw-16-vw;
 			}
 		}
 	}
@@ -342,30 +310,22 @@ body {
 // 按紐-02-尺寸-變型:桌h55 /手h40  / 文字26/20
 	.btn-size4
 	{	
-		height: 10.6666667vw;
-		// 40 / 375 = 0.106666667
-		padding: 0 4vw;
-		// 15 / 375 = 0.04
+		height: $xxs-vw-40-vw;
+		padding: 0 $xxs-vw-15-vw;
 		@media screen and (min-width:768px){
-			height: 3.9285714vw;
-			// 55 / 1400 = 0.039285714
-			padding: 0 1.7857143vw;
-			// 25 / 1400 = 0.017857143
+			height: $lg-vw-55-vw;
+			padding: 0 $lg-vw-25-vw;
 		}
 		@media screen and (min-width:1400px){
 			height: 55px;
 			padding: 0 25px;
 		}
 		span{
-			line-height: 10.6666667vw;
-			// 40 / 375 = 0.106666667
-			font-size: 4.55vw;
-			// 20 / 375 = 0.053333333
+			line-height: $xxs-vw-40-vw;
+			font-size: $xxs-vw-20-vw;
 			@media screen and (min-width:768px){
-			    line-height: 3.9285714vw;
-			    // 55 / 1400 = 0.039285714
-			    font-size: 1.8571429vw;
-			    // 26 / 1400 = 0.018571429
+			    line-height: $lg-vw-55-vw;
+			    font-size: $lg-vw-26-vw;
 			}
 			@media screen and (min-width:1400px){
 			    line-height: 55px;
@@ -484,14 +444,12 @@ body {
     display: inline-block;
     position: relative;
     z-index: 1;
-    width: 4.2666667vw;
-    height: 4.2666667vw;
+    width: $xxs-vw-16-vw;
+    height: $xxs-vw-16-vw;
     background: url(pic/icon_flow_arrow_right_white.png) no-repeat center/100% auto;
-    // 16 / 375 ＝ 0.042666667
     @media screen and (min-width:768px){
-	    width: 1.1428571vw;
-	    height: 1.1428571vw;
-    	// 16 / 1400 ＝ 0.011428571
+	    width: $lg-vw-16-vw;
+	    height: $lg-vw-16-vw;
     }
     @media screen and (min-width:1400px){
 	    width: 16px;
@@ -521,7 +479,6 @@ body {
 // =========================
 .CTBC-logo a {
 	@media screen and (min-width:768px){
-	    // width: 12.1429%;
 	    width: auto;
 	    height: 60px;
 	}
@@ -536,13 +493,9 @@ body {
 	padding: 0;
 
 	>.container{
-		padding: 6.6666667vw 0 13.3333333vw;
-		// 25 / 375 = 0.066666667
-		// 50 / 375 = 0.133333333
+		padding: $xxs-vw-25-vw 0 $xxs-vw-50-vw;
 		@media screen and (min-width:768px){
-		    padding: 3.5714286vw 10.7142857vw;
-		    // 50 / 1400 = 0.035714286
-		    // 150 / 1400 = 0.107142857
+		    padding: $lg-vw-50-vw $lg-vw-150-vw;
 		}
 		@media screen and (min-width:1400px){
 		    padding: 50px 150px;
@@ -553,8 +506,7 @@ body {
 	.subscribe p{
 		margin-top: -4vw;
 		@media screen and (min-width:768px){
-		    margin-top: 1.0714286vw;
-		    // 15 / 1400 = 0.010714286
+		    margin-top: $lg-vw-15-vw;
 		}
 		@media screen and (min-width:1400px){
 		    margin-top: -15px;
@@ -574,14 +526,9 @@ body {
 	padding: 0;
 
 	>.container{
-		padding: 6.6666667vw 0 13.3333333vw;
-		// 25 / 375 = 0.066666667
-		// 50 / 375 = 0.133333333
+		padding: $xxs-vw-25-vw 0 $xxs-vw-50-vw;
 		@media screen and (min-width:768px){
-		    padding: 1.0714286vw 10.7142857vw 3.5714286vw;
-		    //15 / 1400 = 0.010714286
-		    // 50 / 1400 = 0.035714286
-		    // 150 / 1400 = 0.107142857
+		    padding: $lg-vw-15-vw $lg-vw-150-vw $lg-vw-50-vw;
 		}
 		@media screen and (min-width:1400px){
 		    padding: 15px 150px 50px;
@@ -592,8 +539,7 @@ body {
 	.subscribe p{
 		margin-top: -4vw;
 		@media screen and (min-width:768px){
-		    margin-top: 1.0714286vw;
-		    // 15 / 1400 = 0.010714286
+		    margin-top: $lg-vw-15-vw;
 		}
 		@media screen and (min-width:1400px){
 		    margin-top: -15px;
@@ -619,11 +565,9 @@ body {
 			font-family: "Roboto Condensed",  "Noto Sans TC", "Microsoft JhengHei", PingFang, STHeiti, sans-serif, serif;
 			font-weight: bold;
 			line-height: 1.2;
-			font-size: 10.1333333vw;
-			// 38 / 375 = 0.101333333
+			font-size: $xxs-vw-38-vw;
 			@media screen and (min-width:768px){
-			    font-size: 5vw;
-			    // 45 / 1400 = 0.005
+			    font-size: $lg-vw-45-vw;
 			}
 			@media screen and (min-width:1400px){
 			    font-size: 45px;
@@ -632,11 +576,9 @@ body {
 		// 首頁-Banner- 第一則 標題文字-大的
 		.kv-title span:nth-child(2){
 			line-height: 1.2;
-			font-size: 10.1333333vw;
-			// 38 / 375 = 0.101333333
+			font-size: $xxs-vw-38-vw;
 			@media screen and (min-width:768px){
-			    font-size: 5vw;
-			    // 70 / 1400 = 0.005
+			    font-size: $lg-vw-70-vw;
 			}
 			@media screen and (min-width:1400px){
 			    font-size: 70px;
@@ -645,13 +587,11 @@ body {
 
 		.kv-txt // 首頁-Banner-次級標題
 		{	
-			margin-top: -10px;
+			margin-top: -$xxs-vw-10-vw;
 			line-height: 1.5;
-			font-size: 5.5vw;
-			// 22 / 375 = 0.058666667
+			font-size: $xxs-vw-21-vw;
 			@media screen and (min-width:768px){
-			    font-size: 2.8571429vw;
-			    // 40 / 1400 = 0.028571429
+			    font-size: $lg-vw-40-vw;
 			}
 			@media screen and (min-width:1400px){
 			    font-size: 40px;
@@ -667,9 +607,9 @@ body {
 	}	
 	.mv img{
 		border-radius: 10px;
-		width: calc( 100% - 12vw);
+		width: calc( 100% - $xxs-vw-12-vw);
 		height: auto;
-		margin: 0 6.6666667vw;
+		margin: 0 $xxs-vw-25-vw;
 		//  25 /375 = 0.066666667
 		
 
@@ -677,8 +617,7 @@ body {
 
 	.issue .main-content{
 		@media screen and (min-width:768px){
-		    margin-top:  -5.7142857vw;
-		    // 80 / 1400 = 0.057142857
+		    margin-top:  -$lg-vw-80-vw;
 		}
 		@media screen and (min-width:1400px){
 		    margin-top:  -80px;
@@ -686,8 +625,7 @@ body {
 	}
 	.issue .step-group{
 		@media screen and (min-width:768px){
-		    padding: 0 1.0714286vw;
-		    // 15 / 1400 = 0.010714286
+		    padding: $lg-vw-15-vw;
 		}
 		@media screen and (min-width:1400px){
 		    padding: 0 15px;
@@ -695,8 +633,7 @@ body {
 	}
 	.issue .step-item-list{
 		@media screen and (min-width:768px){
-		    margin-top: -.07142857vw;
-		    // 10 / 1400 = 0.007142857
+		    margin-top: -$lg-vw-10-vw;
 		}
 		@media screen and (min-width:1400px){
 		    margin-top: -10px;
@@ -705,10 +642,6 @@ body {
 	.issue .step-item-list li{
 		@media screen and (min-width:768px){
 		    margin: 0;
-		    // 10 / 1400 = 0.007142857
-		}
-		@media screen and (min-width:1400px){
-		    // margin: 0 10px 10px 0;
 		}
 	}
 
@@ -738,7 +671,7 @@ body {
 	// 解決方案
 	.solution .main-content .col:nth-child(odd){
 		@media screen and (min-width:768px){
-		    padding-top:  7.1428571vw;
+		    padding-top:  $lg-vw-100-vw;
 		    // 100 / 1400 = 0.057142857
 		}
 		@media screen and (min-width:1400px){
@@ -746,10 +679,9 @@ body {
 		}
 	}
 	.solution-item .txt{ 
-		max-height: 9.0666667vw;
-		// 34 / 375 = 0.090666667
+		max-height: $xxs-vw-35-vw;
 		@media screen and (min-width:768px){
-		    max-height: 3.5714286vw;
+		    max-height: $lg-vw-50-vw;
 		    // 50 / 1400 = 0.035714286
 		}
 		@media screen and (min-width:1400px){
@@ -867,12 +799,11 @@ body {
 	// 獎項年度文字
 	.awards-content .year span{
 		line-height: 1.2;
-		font-size: 26.6666667vw;
 		font-weight: bold;
+		font-size: $xxs-vw-100-vw;
 		// 100 / 375 = 0.266666667
 		@media screen and (min-width:768px){
-		    font-size: 7.1428571vw;
-		    // 100 / 1400 = 0.071428571
+		    font-size: $lg-vw-100-vw;
 		}
 		@media screen and (min-width:1400px){
 		    font-size: 100px;
@@ -889,8 +820,11 @@ body {
 
 // 條款頁
 .page-regulation{
-	padding-top: 60px;
+	padding-top: $xxs-vw-60-vw;
 	@media screen and (min-width:768px){
+		padding-top: $lg-vw-120-vw;
+	}
+	@media screen and (min-width:1400px){
 		padding-top: 120px;
 	}
 }

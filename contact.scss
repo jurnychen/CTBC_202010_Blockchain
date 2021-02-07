@@ -1,4 +1,5 @@
 @import 'color';
+@import 'vw.scss';
 
 .contact {
   .main-content {
@@ -65,30 +66,43 @@
   }
 }
 
+// 表單-區域-大類
 .form__box {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 20px 15px;
+  padding:  $xxs-vw-15-vw  $xxs-vw-5-vw;
   &:not([class^="final__box"]) {
     border-bottom: 1px solid $line-border-color;
   }
   @media only screen and (min-width: 768px) {
     flex-wrap: nowrap;
+    padding:  $lg-vw-50-vw  0;
+  }
+  @media only screen and (min-width: 1400px) {
+    padding:  50px  0;
   }
 
+  // 表單-區域-大類標題文字
   h2 {
     color: $main-color1;
-    font-size: 22px;
     font-weight: 400;
     margin: 0;
-    padding: 0 0 15px 0;
+    padding: 0 0 $xxs-vw-10-vw 0;
+    @media only screen and (min-width: 768px) {
+      padding:  0 0 $lg-vw-10-vw 0;
+    }
+    @media only screen and (min-width: 1400px) {
+      padding:  0 0 10px 0;
+    }
+
   }
 
+
+  // 表單-區域-標題文字
   .form__box-title {
     flex: 0 0 100%;
-    padding: 0 0 15px 0;
     @media only screen and (min-width: 768px) {
       flex: 0 0 20%;
     }
@@ -137,26 +151,45 @@
     // }
   }
 
+
+  // 表單-區域-欄位項目組合
   .form__box-itemgroup {
     flex: 0 0 100%;
-    padding: 0 0 30px 0;
+      padding: 0;
     @media only screen and (min-width: 768px) {
       flex: 1 0 0;
     }
 
+    // 表單-單項輸入欄位組
     .form__box-item {
-      width: 100%;
-      margin-bottom: 25px;
+      position: relative;
+      padding: 0 0 $xxs-vw-15-vw 0;
+      @media only screen and (min-width: 768px) {
+        width: calc(100% - $lg-vw-30-vw);
+        padding: 0 0 $lg-vw-15-vw;
+      }
+      @media only screen and (min-width: 1400px) {
+        width: calc(100% - 30px);
+        padding: 0 0 15px;
+      }
 
+      // 表單-欄位說明標題
       .inputtitle {
         display: block;
         width: 100%;
         color: $txt-main-color;
-        font-size: 18px;
-        // font-weight: bold;
-        margin: 0 0 10px 0;
+        padding-bottom: $xxs-vw-5-vw;
+        margin-top: 0px;
+        // outline: 1px solid #f00;
+        @media only screen and (min-width: 768px) {
+          padding-bottom: $lg-vw-10-vw;
+        }
+        @media only screen and (min-width: 1400px) {
+          padding-bottom: 10px;
+        }
       }
 
+      // 表單-欄位本體-輸入
       input[type='text'] {
         box-sizing: border-box;
         display: block;
@@ -173,15 +206,12 @@
         }
       }
 
+      // 表單-欄位本體-單選
       .valid__error ~ .checkmark {
-        border: 2px solid $main-color3;
+        border: 1px solid $main-color3;
       }
 
-      //&.valid__error{
-      //  .checkbox__item .checkmark{
-      //    border: 2px solid $main-color3;
-      //  }
-      //}
+
       input[type='text']::placeholder,
       textarea::placeholder {
         color: $input-border-color;
@@ -204,41 +234,72 @@
         padding-left: 0.2em;
       }
 
+      // 驗證碼組合區
       &.captcha-item {
-        width: 50%;
-        display: flex;
-        flex-flow: row wrap;
-        align-content: center;
+        width: 100%;
         @media only screen and (min-width: 768px) {
-          flex-wrap: nowrap;
-          align-items: center;
         }
+        @media only screen and (min-width: 1400px) {
+        }
+        // 驗證碼
         .inputtitle.label-captcha{
-          width: 4em;
+          display: inline-block;
+          width: 22%;
           margin: 0;
+          @media only screen and (min-width: 768px) {
+            width: $lg-vw-80-vw;
+          }
+          @media only screen and (min-width: 1400px) {
+            width: 80px;
+          }
         }
+        // 驗證用圖
         .pic-captcha {
-          flex: 0 0 auto;
-          height: 29px;
-          margin-right: 5px;
+          display: inline-block;
+          height: $xxs-vw-40-vw;
+          margin-right: $xxs-vw-5-vw;
+          @media only screen and (min-width: 768px) {
+            height: $lg-vw-48-vw;
+            margin-right: $lg-vw-5-vw;
+          }
+          @media only screen and (min-width: 1400px) {
+            height: 48px;
+            margin-right: 5px;
+          }
         }
+        // 驗證重整ICON
         .btn-refreshcaptcha{
-          flex: 0 0 auto;
-          padding: 0 5px;
+          display: inline-block;
+          width: $xxs-vw-50-vw;
+          padding: 0;
+          background-color: transparent;
           -webkit-appearance: none;
           border: none;
           outline: none;
-          background-color: transparent;
           cursor: pointer;
-        }
-        .input-captcha {
-          margin-top: 5px;
-          margin-left: 4.5em;
-          max-width: 70vw;
           @media only screen and (min-width: 768px) {
-            flex: 1 0 0;
-            margin: 0;
-            max-width: 150px;
+            width: $lg-vw-50-vw;
+          }
+          @media only screen and (min-width: 1400px) {
+            width: 50px;
+          }
+
+          img{
+            width: 100%;
+          }
+        }
+        // 驗證碼填寫欄位
+        .input-captcha {
+          display: block;
+          margin: 5px auto 0 $xxs-vw-80-vw;
+          max-width: $xxs-vw-150-vw;
+          @media only screen and (min-width: 768px) {
+            display: inline-block;
+            margin: 5px auto 0 $lg-vw-10-vw;
+            width: $lg-vw-150-vw;
+          }
+          @media only screen and (min-width: 1400px) {
+            width: 150px;
           }
         }
       }
@@ -249,28 +310,32 @@
     }
   }
 
-  .checkbox__items {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 15px 0 0 0;
+  // 表單-單個選項勾選欄位組
+  .checkbox__itemgroup {
+    box-sizing: border-box;
+    margin: -$xxs-vw-20-vw 0 $xxs-vw-10-vw;
+    @media only screen and (min-width: 768px) {
+      margin: -$lg-vw-25-vw 0 $lg-vw-10-vw;
+    }
+    @media only screen and (min-width: 1400px) {
+      margin: -25px 0 10px;
+    }
   }
 
   .checkbox__item {
-    box-sizing: border-box;
-    flex: 0 0 50%;
     position: relative;
-    padding-left: 30px;
-    margin-bottom: 20px;
+    display: inline-block;
     cursor: pointer;
-    // font-size: 18px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+    padding: $xxs-vw-5-vw $xxs-vw-25-vw;
     user-select: none;
     @media only screen and (min-width: 768px) {
-      flex: 0 0 20%;
+      padding: 0 $lg-vw-25-vw;
+    }
+    @media only screen and (min-width: 1400px) {
+      padding: 0 25px;
     }
     input {
       position: absolute;
@@ -282,27 +347,50 @@
 
     .checkmark {
       position: absolute;
-      top: 0;
+      top: 50%;
       left: 0;
-      height: 18px;
-      width: 18px;
+      transform: translateY(-42%);
       border-radius: 50%;
-      border: 2px solid #EEEEEE;
-      background-color: transparent;
-
+      border: 1px solid $input-border-color;
+      background-color: #fff;
+      height: $xxs-vw-18-vw;
+      width: $xxs-vw-18-vw;
+      @media only screen and (min-width: 768px) {
+        height: $lg-vw-20-vw;
+        width: $lg-vw-20-vw;
+      }
+      @media only screen and (min-width: 1400px) {
+        height: 20px;
+        width: 20px;
+      }
       &:after {
         content: "";
         position: absolute;
         display: none;
-        left: 5px;
-        top: 1px;
-        width: 5px;
-        height: 10px;
+        left: $xxs-vw-6-vw;
+        top: 0;
+        width: $xxs-vw-5-vw;
+        height: $xxs-vw-10-vw;
         border: solid white;
-        border-width: 0 3px 3px 0;
+        border-width: 0 $xxs-vw-2-vw $xxs-vw-2-vw 0;
         -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
         transform: rotate(45deg);
+        @media only screen and (min-width: 768px) {
+          border-width: 0 $lg-vw-2-vw $lg-vw-2-vw 0;
+          left: $lg-vw-7-vw;
+          top: 0px;
+          width: $lg-vw-6-vw;
+          height: $lg-vw-12-vw;
+        }
+        @media only screen and (min-width: 1400px) {
+          border-width: 0 2px 2px 0;
+          left: 7px;
+          top: 0px;
+          width: 6px;
+          height: 12px;
+        }
+
       }
     }
 
@@ -321,26 +409,38 @@
   }
 }
 
-.selectservice.form__box-item {
-  padding-bottom: 15px;
-}
-
+// 表單-單行條款勾選欄位組
 .agree__box {
   &.checkbox__item {
-    display: inline-block;
+    display: block;
+    position: relative;
+    // outline: 1px solid #00f;
   }
 
   &.checkbox__item .checkmark {
     border-radius: 0;
+    display: block;
+    // outline: 1px solid #f00;
+    top: 0;
+    left: 0;
+    transform: translateY(25%);
+    @media only screen and (min-width: 768px) {
+      top: 50%;
+      padding: 0;
+      transform: translateY(-75%);
+    }
   }
 
   .agree__box-text {
-    display: inline-block;
-    vertical-align: top;
-    width: calc(100% - 2em);
-    // font-size: 18px;
-    line-height: 1.5;
-    padding-left: 0;
+    display: block;
+    width: 95%;
+    padding: 0 $xxs-vw-25-vw ;
+    @media only screen and (min-width: 768px) {
+      padding: 0 $lg-vw-30-vw;
+    }
+    @media only screen and (min-width: 1400px) {
+      padding: 0 30px;
+    }
   }
 
   a {
@@ -378,6 +478,6 @@
     }
   }
   .final__box {
-    margin-left: 15%;
+    margin-left: 20%;
   }
 }

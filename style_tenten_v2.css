@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap");
 .main-title h1 {
   line-height: 1.5;
-  font-size: 10.1333333vw; }
+  font-size: 10.13333vw; }
   @media screen and (min-width: 768px) {
     .main-title h1 {
       font-size: 5vw; } }
@@ -12,20 +12,20 @@
 
 .main-title h1 {
   line-height: 1.5;
-  font-size: 7.4666667vw; }
+  font-size: 7.46667vw; }
   @media screen and (min-width: 768px) {
     .main-title h1 {
-      font-size: 3.5714286vw; } }
+      font-size: 3.57143vw; } }
   @media screen and (min-width: 1400px) {
     .main-title h1 {
       font-size: 50px; } }
 
 .page-index .kv-title span {
   line-height: 1.5;
-  font-size: 5.5vw; }
+  font-size: 5.86667vw; }
   @media screen and (min-width: 768px) {
     .page-index .kv-title span {
-      font-size: 2.8571429vw; } }
+      font-size: 2.85714vw; } }
   @media screen and (min-width: 1400px) {
     .page-index .kv-title span {
       font-size: 40px; } }
@@ -35,27 +35,27 @@
   font-size: 6.4vw; }
   @media screen and (min-width: 768px) {
     .issue .main-content h2 {
-      font-size: 2.5714286vw; } }
+      font-size: 2.57143vw; } }
   @media screen and (min-width: 1400px) {
     .issue .main-content h2 {
       font-size: 36px; } }
 
 .issue .step-item h3 {
   line-height: 1.5;
-  font-size: 5.5vw; }
+  font-size: 5.86667vw; }
   @media screen and (min-width: 768px) {
     .issue .step-item h3 {
-      font-size: 2.1428571vw; } }
+      font-size: 2.14286vw; } }
   @media screen and (min-width: 1400px) {
     .issue .step-item h3 {
       font-size: 30px; } }
 
 .page-index .kv-txt.ly2 {
   line-height: 1.5;
-  font-size: 5.3333333vw; }
+  font-size: 5.33333vw; }
   @media screen and (min-width: 768px) {
     .page-index .kv-txt.ly2 {
-      font-size: 2.1428571vw; } }
+      font-size: 2.14286vw; } }
   @media screen and (min-width: 1400px) {
     .page-index .kv-txt.ly2 {
       font-size: 30px; } }
@@ -69,7 +69,7 @@
     .practice-item h2,
     .slider-awards .slider-item .pic span,
     .slider-awards .slider-item .txt p {
-      font-size: 2.1428571vw; } }
+      font-size: 2.14286vw; } }
   @media screen and (min-width: 1400px) {
     .practice-item h2,
     .slider-awards .slider-item .pic span,
@@ -84,7 +84,7 @@
 .issue-result-item h4 span,
 .solution-item .txt h2 {
   line-height: 1.5;
-  font-size: 5.8666667vw; }
+  font-size: 5.86667vw; }
   @media screen and (min-width: 768px) {
     .case h2,
     .feedback h3,
@@ -93,7 +93,7 @@
     .issue-result h3,
     .issue-result-item h4 span,
     .solution-item .txt h2 {
-      font-size: 2.1428571vw; } }
+      font-size: 2.14286vw; } }
   @media screen and (min-width: 1400px) {
     .case h2,
     .feedback h3,
@@ -106,10 +106,10 @@
 
 .issue-result .main-more + .block-more .btn-more {
   line-height: 1.5;
-  font-size: 5.8666667vw; }
+  font-size: 5.86667vw; }
   @media screen and (min-width: 768px) {
     .issue-result .main-more + .block-more .btn-more {
-      font-size: 1.5714286vw; } }
+      font-size: 1.57143vw; } }
   @media screen and (min-width: 1400px) {
     .issue-result .main-more + .block-more .btn-more {
       font-size: 22px; } }
@@ -139,7 +139,7 @@
     .news-list .item-group .txt h3,
     .form__box .form__box-itemgroup .form__box-item .inputtitle,
     .solution-item .txt p {
-      font-size: 1.5714286vw; } }
+      font-size: 1.57143vw; } }
   @media screen and (min-width: 1400px) {
     .main-title p,
     .case h3,
@@ -156,50 +156,50 @@
 
 .tab-group a {
   line-height: 1.5;
-  font-size: 4.2666667vw; }
+  font-size: 4.8vw; }
   @media screen and (min-width: 768px) {
     .tab-group a {
-      font-size: 1.5714286vw; } }
+      font-size: 1.57143vw; } }
   @media screen and (min-width: 1400px) {
     .tab-group a {
       font-size: 22px; } }
 
 .kv .thubnail-list a {
   line-height: 1.5;
-  font-size: 3.7333333vw; }
+  font-size: 3.73333vw; }
   @media screen and (min-width: 768px) {
     .kv .thubnail-list a {
-      font-size: 1.5714286vw; } }
+      font-size: 1.57143vw; } }
   @media screen and (min-width: 1400px) {
     .kv .thubnail-list a {
       font-size: 22px; } }
 
 .main-footer .subscribe h2 {
   line-height: 1.5;
-  font-size: 5.3333333vw; }
+  font-size: 5.33333vw; }
   @media screen and (min-width: 768px) {
     .main-footer .subscribe h2 {
-      font-size: 1.4285714vw; } }
+      font-size: 1.42857vw; } }
   @media screen and (min-width: 1400px) {
     .main-footer .subscribe h2 {
       font-size: 20px; } }
 
 .awards-content .award {
   line-height: 1.5;
-  font-size: 4.2666667vw; }
+  font-size: 4.26667vw; }
   @media screen and (min-width: 768px) {
     .awards-content .award {
-      font-size: 1.4285714vw; } }
+      font-size: 1.42857vw; } }
   @media screen and (min-width: 1400px) {
     .awards-content .award {
       font-size: 20px; } }
 
 .awards-content p {
   line-height: 1.5;
-  font-size: 3.7333333vw; }
+  font-size: 3.73333vw; }
   @media screen and (min-width: 768px) {
     .awards-content p {
-      font-size: 1.4285714vw; } }
+      font-size: 1.42857vw; } }
   @media screen and (min-width: 1400px) {
     .awards-content p {
       font-size: 20px; } }
@@ -227,7 +227,7 @@
     .issue-result-item .txt p,
     .slider-client-item li p,
     .slider-awards .slider-item .txt h3 {
-      font-size: 1.2857143vw; } }
+      font-size: 1.28571vw; } }
   @media screen and (min-width: 1400px) {
     .kv .kv-btn,
     .main-footer .subscribe p,
@@ -248,7 +248,7 @@ textarea::-webkit-input-placeholder,
 .reminder__message,
 textarea {
   line-height: 1.5;
-  font-size: 4.2666667vw; }
+  font-size: 4.26667vw; }
 
 .news-list .item-group .txt p,
 .form__box .form__box-itemgroup .form__box-item input[type='text'],
@@ -257,7 +257,7 @@ textarea:-ms-input-placeholder,
 .reminder__message,
 textarea {
   line-height: 1.5;
-  font-size: 4.2666667vw; }
+  font-size: 4.26667vw; }
 
 .news-list .item-group .txt p,
 .form__box .form__box-itemgroup .form__box-item input[type='text'],
@@ -266,7 +266,7 @@ textarea::-ms-input-placeholder,
 .reminder__message,
 textarea {
   line-height: 1.5;
-  font-size: 4.2666667vw; }
+  font-size: 4.26667vw; }
 
 .news-list .item-group .txt p,
 .form__box .form__box-itemgroup .form__box-item input[type='text'],
@@ -275,7 +275,7 @@ textarea::placeholder,
 .reminder__message,
 textarea {
   line-height: 1.5;
-  font-size: 4.2666667vw; }
+  font-size: 4.26667vw; }
   @media screen and (min-width: 768px) {
     .news-list .item-group .txt p,
     .form__box .form__box-itemgroup .form__box-item input[type='text'],
@@ -283,28 +283,28 @@ textarea {
     textarea::-webkit-input-placeholder,
     .reminder__message,
     textarea {
-      font-size: 1.1428571vw; }
+      font-size: 1.14286vw; }
     .news-list .item-group .txt p,
     .form__box .form__box-itemgroup .form__box-item input[type='text'],
     input[type='text']:-ms-input-placeholder,
     textarea:-ms-input-placeholder,
     .reminder__message,
     textarea {
-      font-size: 1.1428571vw; }
+      font-size: 1.14286vw; }
     .news-list .item-group .txt p,
     .form__box .form__box-itemgroup .form__box-item input[type='text'],
     input[type='text']::-ms-input-placeholder,
     textarea::-ms-input-placeholder,
     .reminder__message,
     textarea {
-      font-size: 1.1428571vw; }
+      font-size: 1.14286vw; }
     .news-list .item-group .txt p,
     .form__box .form__box-itemgroup .form__box-item input[type='text'],
     input[type='text']::placeholder,
     textarea::placeholder,
     .reminder__message,
     textarea {
-      font-size: 1.1428571vw; } }
+      font-size: 1.14286vw; } }
   @media screen and (min-width: 1400px) {
     .news-list .item-group .txt p,
     .form__box .form__box-itemgroup .form__box-item input[type='text'],
@@ -338,7 +338,7 @@ textarea {
 .news-list .category,
 .news-list .date {
   line-height: 1.5;
-  font-size: 3.7333333vw; }
+  font-size: 3.73333vw; }
   @media screen and (min-width: 768px) {
     .news-list .category,
     .news-list .date {
@@ -355,7 +355,7 @@ textarea {
   @media screen and (min-width: 768px) {
     .footer-list,
     .copyright {
-      font-size: 1.1428571vw; } }
+      font-size: 1.14286vw; } }
   @media screen and (min-width: 1400px) {
     .footer-list,
     .copyright {
@@ -368,12 +368,12 @@ body {
   padding: 20vw 0; }
   @media screen and (min-width: 768px) {
     .section {
-      padding: 7.1428571vw 0; } }
+      padding: 7.14286vw 0; } }
   @media screen and (min-width: 1400px) {
     .section {
       padding: 100px 0; } }
   .section > .container {
-    width: calc(100% - 4vw);
+    width: calc(100% - $xxs-vw-15-vw);
     max-width: 1400px; }
     @media screen and (min-width: 768px) {
       .section > .container {
@@ -383,10 +383,10 @@ body {
   padding: 0; }
 
 .main-title {
-  margin-bottom: 6.6666667vw; }
+  margin-bottom: 6.66667vw; }
   @media screen and (min-width: 768px) {
     .main-title {
-      margin-bottom: 3.5714286vw; } }
+      margin-bottom: 3.57143vw; } }
   @media screen and (min-width: 1400px) {
     .main-title {
       margin-bottom: 50px; } }
@@ -470,14 +470,14 @@ body {
   display: none; }
 
 .btn-small {
-  height: 10.6666667vw;
-  padding: 0 6.6666667vw;
-  margin: 1.3333333vw 4vw 1.3333333vw 0; }
+  height: 10.66667vw;
+  padding: 0 6.66667vw;
+  margin: 1.33333vw 4vw 1.33333vw 0; }
   @media screen and (min-width: 768px) {
     .btn-small {
-      height: 2.8571429vw;
-      padding: 0 1.7857143vw;
-      margin: 0.3571429vw 1.0714286vw 0.3571429vw 0; } }
+      height: 2.85714vw;
+      padding: 0 1.78571vw;
+      margin: 0.35714vw 1.78571vw 0.35714vw 0; } }
   @media screen and (min-width: 1400px) {
     .btn-small {
       height: 40px;
@@ -489,21 +489,21 @@ body {
     top: -0.4vw; }
     @media screen and (min-width: 768px) {
       .btn-small::after {
-        width: 1.0714286vw;
-        height: 1.0714286vw;
-        top: -0.0714286vw; } }
+        width: 1.07143vw;
+        height: 1.07143vw;
+        top: -0.07143vw; } }
     @media screen and (min-width: 1400px) {
       .btn-small::after {
         width: 15px;
         height: 15px;
         top: -1px; } }
   .btn-small span {
-    line-height: 10.6666667vw;
+    line-height: 10.66667vw;
     font-size: 4.8vw; }
     @media screen and (min-width: 768px) {
       .btn-small span {
-        line-height: 2.8571429vw;
-        font-size: 1.2857143vw; } }
+        line-height: 2.85714vw;
+        font-size: 1.28571vw; } }
     @media screen and (min-width: 1400px) {
       .btn-small span {
         line-height: 40px;
@@ -512,16 +512,16 @@ body {
 .btn-big,
 .btn-size3,
 .btn-size4 {
-  height: 14.6666667vw;
-  padding: 0 13.3333333vw;
-  margin: 1vw 1.3vw 1vw 0; }
+  height: 14.66667vw;
+  padding: 0 13.33333vw;
+  margin: 0.26667vw 1.33333vw 0.26667vw 0; }
   @media screen and (min-width: 768px) {
     .btn-big,
     .btn-size3,
     .btn-size4 {
-      height: 3.9285714vw;
-      padding: 0 3.5714286vw;
-      margin: 0.3571429vw 1.0714286vw 0.3571429vw 0; } }
+      height: 3.92857vw;
+      padding: 0 3.57143vw;
+      margin: 0.35714vw 1.07143vw 0.35714vw 0; } }
   @media screen and (min-width: 1400px) {
     .btn-big,
     .btn-size3,
@@ -536,14 +536,14 @@ body {
   .btn-big span,
   .btn-size3 span,
   .btn-size4 span {
-    line-height: 14.6666667vw;
-    font-size: 5.8666667vw; }
+    line-height: 14.66667vw;
+    font-size: 5.86667vw; }
     @media screen and (min-width: 768px) {
       .btn-big span,
       .btn-size3 span,
       .btn-size4 span {
-        line-height: 3.9285714vw;
-        font-size: 1.5714286vw; } }
+        line-height: 3.92857vw;
+        font-size: 1.57143vw; } }
     @media screen and (min-width: 1400px) {
       .btn-big span,
       .btn-size3 span,
@@ -554,11 +554,11 @@ body {
 @media screen and (max-width: 767px) {
   .btn-size3 {
     height: 8vw;
-    padding: 0 2.6666667vw; } }
+    padding: 0 2.66667vw; } }
 
 @media screen and (min-width: 768px) {
   .btn-size3 {
-    padding: 0 1.7857143vw; } }
+    padding: 0 1.78571vw; } }
 
 @media screen and (min-width: 1400px) {
   .btn-size3 {
@@ -567,26 +567,26 @@ body {
 @media screen and (max-width: 767px) {
   .btn-size3 span {
     line-height: 8vw;
-    font-size: 4.2666667vw; } }
+    font-size: 4.26667vw; } }
 
 .btn-size4 {
-  height: 10.6666667vw;
+  height: 10.66667vw;
   padding: 0 4vw; }
   @media screen and (min-width: 768px) {
     .btn-size4 {
-      height: 3.9285714vw;
-      padding: 0 1.7857143vw; } }
+      height: 3.92857vw;
+      padding: 0 1.78571vw; } }
   @media screen and (min-width: 1400px) {
     .btn-size4 {
       height: 55px;
       padding: 0 25px; } }
   .btn-size4 span {
-    line-height: 10.6666667vw;
-    font-size: 4.55vw; }
+    line-height: 10.66667vw;
+    font-size: 5.33333vw; }
     @media screen and (min-width: 768px) {
       .btn-size4 span {
-        line-height: 3.9285714vw;
-        font-size: 1.8571429vw; } }
+        line-height: 3.92857vw;
+        font-size: 1.85714vw; } }
     @media screen and (min-width: 1400px) {
       .btn-size4 span {
         line-height: 55px;
@@ -646,13 +646,13 @@ body {
   display: inline-block;
   position: relative;
   z-index: 1;
-  width: 4.2666667vw;
-  height: 4.2666667vw;
+  width: 4.26667vw;
+  height: 4.26667vw;
   background: url(pic/icon_flow_arrow_right_white.png) no-repeat center/100% auto; }
   @media screen and (min-width: 768px) {
     .solution-item .txt h2::after {
-      width: 1.1428571vw;
-      height: 1.1428571vw; } }
+      width: 1.14286vw;
+      height: 1.14286vw; } }
   @media screen and (min-width: 1400px) {
     .solution-item .txt h2::after {
       width: 16px;
@@ -666,10 +666,10 @@ body {
 .section.advisory {
   padding: 0; }
   .section.advisory > .container {
-    padding: 6.6666667vw 0 13.3333333vw; }
+    padding: 6.66667vw 0 13.33333vw; }
     @media screen and (min-width: 768px) {
       .section.advisory > .container {
-        padding: 3.5714286vw 10.7142857vw; } }
+        padding: 3.57143vw 10.71429vw; } }
     @media screen and (min-width: 1400px) {
       .section.advisory > .container {
         padding: 50px 150px; } }
@@ -677,7 +677,7 @@ body {
     margin-top: -4vw; }
     @media screen and (min-width: 768px) {
       .section.advisory .subscribe p {
-        margin-top: 1.0714286vw; } }
+        margin-top: 1.07143vw; } }
     @media screen and (min-width: 1400px) {
       .section.advisory .subscribe p {
         margin-top: -15px; } }
@@ -686,10 +686,10 @@ body {
   border-top: 10px solid #068080;
   padding: 0; }
   .main-footer > .container {
-    padding: 6.6666667vw 0 13.3333333vw; }
+    padding: 6.66667vw 0 13.33333vw; }
     @media screen and (min-width: 768px) {
       .main-footer > .container {
-        padding: 1.0714286vw 10.7142857vw 3.5714286vw; } }
+        padding: 1.07143vw 10.71429vw 3.57143vw; } }
     @media screen and (min-width: 1400px) {
       .main-footer > .container {
         padding: 15px 150px 50px; } }
@@ -697,7 +697,7 @@ body {
     margin-top: -4vw; }
     @media screen and (min-width: 768px) {
       .main-footer .subscribe p {
-        margin-top: 1.0714286vw; } }
+        margin-top: 1.07143vw; } }
     @media screen and (min-width: 1400px) {
       .main-footer .subscribe p {
         margin-top: -15px; } }
@@ -707,11 +707,11 @@ body {
   font-family: "Roboto Condensed",  "Noto Sans TC", "Microsoft JhengHei", PingFang, STHeiti, sans-serif, serif;
   font-weight: bold;
   line-height: 1.2;
-  font-size: 10.1333333vw; }
+  font-size: 10.13333vw; }
   @media screen and (min-width: 768px) {
     .page-index .onlyfirst .kv-title,
     .page-index .onlyfirst .kv-title span:first-child {
-      font-size: 5vw; } }
+      font-size: 3.21429vw; } }
   @media screen and (min-width: 1400px) {
     .page-index .onlyfirst .kv-title,
     .page-index .onlyfirst .kv-title span:first-child {
@@ -719,7 +719,7 @@ body {
 
 .page-index .onlyfirst .kv-title span:nth-child(2) {
   line-height: 1.2;
-  font-size: 10.1333333vw; }
+  font-size: 10.13333vw; }
   @media screen and (min-width: 768px) {
     .page-index .onlyfirst .kv-title span:nth-child(2) {
       font-size: 5vw; } }
@@ -728,12 +728,12 @@ body {
       font-size: 70px; } }
 
 .page-index .onlyfirst .kv-txt {
-  margin-top: -10px;
+  margin-top: -2.66667vw;
   line-height: 1.5;
-  font-size: 5.5vw; }
+  font-size: 5.6vw; }
   @media screen and (min-width: 768px) {
     .page-index .onlyfirst .kv-txt {
-      font-size: 2.8571429vw; } }
+      font-size: 2.85714vw; } }
   @media screen and (min-width: 1400px) {
     .page-index .onlyfirst .kv-txt {
       font-size: 40px; } }
@@ -743,13 +743,13 @@ body {
 
 .page-index .mv img {
   border-radius: 10px;
-  width: calc( 100% - 12vw);
+  width: calc( 100% - $xxs-vw-12-vw);
   height: auto;
-  margin: 0 6.6666667vw; }
+  margin: 0 6.66667vw; }
 
 @media screen and (min-width: 768px) {
   .page-index .issue .main-content {
-    margin-top: -5.7142857vw; } }
+    margin-top: -5.71429vw; } }
 
 @media screen and (min-width: 1400px) {
   .page-index .issue .main-content {
@@ -757,7 +757,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .page-index .issue .step-group {
-    padding: 0 1.0714286vw; } }
+    padding: 1.07143vw; } }
 
 @media screen and (min-width: 1400px) {
   .page-index .issue .step-group {
@@ -765,7 +765,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .page-index .issue .step-item-list {
-    margin-top: -.07142857vw; } }
+    margin-top: -0.71429vw; } }
 
 @media screen and (min-width: 1400px) {
   .page-index .issue .step-item-list {
@@ -789,17 +789,17 @@ body {
 
 @media screen and (min-width: 768px) {
   .page-index .solution .main-content .col:nth-child(odd) {
-    padding-top: 7.1428571vw; } }
+    padding-top: 7.14286vw; } }
 
 @media screen and (min-width: 1400px) {
   .page-index .solution .main-content .col:nth-child(odd) {
     padding-top: 100px; } }
 
 .page-index .solution-item .txt {
-  max-height: 9.0666667vw; }
+  max-height: 9.33333vw; }
   @media screen and (min-width: 768px) {
     .page-index .solution-item .txt {
-      max-height: 3.5714286vw; } }
+      max-height: 3.57143vw; } }
   @media screen and (min-width: 1400px) {
     .page-index .solution-item .txt {
       max-height: 50px; } }
@@ -862,17 +862,20 @@ body {
   background-color: #f2f2f2; }
   .page-awards .awards-content .year span {
     line-height: 1.2;
-    font-size: 26.6666667vw;
-    font-weight: bold; }
+    font-weight: bold;
+    font-size: 26.66667vw; }
     @media screen and (min-width: 768px) {
       .page-awards .awards-content .year span {
-        font-size: 7.1428571vw; } }
+        font-size: 7.14286vw; } }
     @media screen and (min-width: 1400px) {
       .page-awards .awards-content .year span {
         font-size: 100px; } }
 
 .page-regulation {
-  padding-top: 60px; }
+  padding-top: 16vw; }
   @media screen and (min-width: 768px) {
+    .page-regulation {
+      padding-top: 8.57143vw; } }
+  @media screen and (min-width: 1400px) {
     .page-regulation {
       padding-top: 120px; } }

@@ -1,13 +1,15 @@
 
 
+@import 'vw.scss';
+
 // 共用設定 - 各種文字
 // 手機 38px / 桌機70px  ======================
 .main-title h1{// 各區主標題
 	line-height: 1.5;
-	font-size: 10.1333333vw;
+	font-size: $xxs-vw-38-vw;
 	// 38 / 375 = 0.101333333
 	@media screen and (min-width:768px){
-	    font-size: 5vw;
+	    font-size: $lg-vw-70-vw;
 	    // 70 / 1400 = 0.05
 	}
 	@media screen and (min-width:1400px){
@@ -19,10 +21,10 @@
 .main-title h1// 各區主標題
 {
 	line-height: 1.5;
-	font-size: 7.4666667vw;
+	font-size: $xxs-vw-28-vw;
 	// 28 / 375 = 0.074666667
 	@media screen and (min-width:768px){
-	    font-size: 3.5714286vw;
+	    font-size: $lg-vw-50-vw;
 	    // 50 / 1400 = 0.035714286
 	}
 	@media screen and (min-width:1400px){
@@ -34,10 +36,10 @@
 .page-index .kv-title span // 首頁-Banner-次級標題
 {	
 	line-height: 1.5;
-	font-size: 5.5vw;
+	font-size: $xxs-vw-22-vw;
 	// 22 / 375 = 0.058666667
 	@media screen and (min-width:768px){
-	    font-size: 2.8571429vw;
+	    font-size: $lg-vw-40-vw;
 	    // 40 / 1400 = 0.028571429
 	}
 	@media screen and (min-width:1400px){
@@ -51,10 +53,10 @@
 .issue .main-content h2  // 首頁-數位浪潮-次標題文字(問題說明)
 {
 	line-height: 1.5;
-	font-size: 6.4vw;
+	font-size: $xxs-vw-24-vw;
 	// 24 / 375 = 0.064
 	@media screen and (min-width:768px){
-	    font-size: 2.5714286vw;
+	    font-size: $lg-vw-36-vw;
 	    // 36 / 1400 = 0.025714286
 	}
 	@media screen and (min-width:1400px){
@@ -67,10 +69,10 @@
 .issue .step-item h3 // 首頁-數位浪潮-問題項目文字
 {
 	line-height: 1.5;
-	font-size: 5.5vw;
+	font-size: $xxs-vw-22-vw;
 	// 22 / 375 = 0.058666667
 	@media screen and (min-width:768px){
-	    font-size: 2.1428571vw;
+	    font-size: $lg-vw-30-vw;
 	    // 30 / 1400 = 0.021428571
 	}
 	@media screen and (min-width:1400px){
@@ -83,10 +85,10 @@
 .page-index .kv-txt.ly2 // 首頁-Banner-綠色說明文字
 {
 	line-height: 1.5;
-	font-size: 5.3333333vw;
+	font-size: $xxs-vw-20-vw;
 	// 20 / 375 = 0.053333333
 	@media screen and (min-width:768px){
-	    font-size: 2.1428571vw;
+	    font-size: $lg-vw-30-vw;
 	    // 30 / 1400 = 0.021428571
 	}
 	@media screen and (min-width:1400px){
@@ -100,10 +102,10 @@
 .slider-awards .slider-item .txt p  // 首頁-獎項-年度數字
 {
 	line-height: 1.5;
-	font-size: 8vw;
+	font-size: $xxs-vw-30-vw;;
 	// 30 / 375 = 0.08
 	@media screen and (min-width:768px){
-	    font-size: 2.1428571vw;
+	    font-size: $lg-vw-30-vw;
 	    // 30 / 1400 = 0.021428571
 	}
 	@media screen and (min-width:1400px){
@@ -122,10 +124,10 @@
 .solution-item .txt h2  // 首頁-解決方案-方案名稱
 {
 	line-height: 1.5;
-	font-size: 5.8666667vw;
+	font-size: $xxs-vw-22-vw;
 	// 22 / 375 = 0.058666667
 	@media screen and (min-width:768px){
-	    font-size: 2.1428571vw;
+	    font-size: $lg-vw-30-vw;
 	    // 30 / 1400 = 0.021428571
 	}
 	@media screen and (min-width:1400px){
@@ -134,20 +136,6 @@
 }
 
 
-// 手機 20px / 桌機26px  ======================
-.issue .step-item-list a  // 首頁-數位浪潮-答案項目文字
-{
-	// line-height: 1.5;
-	// font-size: 5.1vw;
-	// 20 / 375 = 0.053333333
-	@media screen and (min-width:768px){
-	    // font-size: 1.8571429vw;
-	    // 26 / 1400 = 0.018571429
-	}
-	@media screen and (min-width:1400px){
-	    // font-size: 26px;
-	}
-}
 
 
 
@@ -157,10 +145,10 @@
 .issue-result .main-more + .block-more .btn-more // // 首頁-數位浪潮-答案-按紐-專人諮詢解決方案
 {
 	line-height: 1.5;
-	font-size: 5.8666667vw;
+	font-size: $xxs-vw-22-vw;
 	// 22 / 375 = 0.058666667
 	@media screen and (min-width:768px){
-	    font-size: 1.5714286vw;
+	    font-size: $lg-vw-22-vw;
 	    // 22 / 1400 = 0.015714286
 	}
 	@media screen and (min-width:1400px){
@@ -185,10 +173,10 @@
 .solution-item .txt p  // 首頁-解決方案-方案說明文字
 {
 	line-height: 1.5;
-	font-size: 4.8vw;
+	font-size: $xxs-vw-18-vw;
 	// 18 / 375 = 0.048
 	@media screen and (min-width:768px){
-	    font-size: 1.5714286vw;
+	    font-size: $lg-vw-22-vw;
 	    // 22 / 1400 = 0.015714286
 	}
 	@media screen and (min-width:1400px){
@@ -201,10 +189,10 @@
 .tab-group a// 媒體-列表-按紐項目文字
 {
 	line-height: 1.5;
-	font-size: 4.2666667vw;
+	font-size: $xxs-vw-18-vw;
 	// 16 / 375 = 0.042666667
 	@media screen and (min-width:768px){
-	    font-size: 1.5714286vw;
+	    font-size: $lg-vw-22-vw;
 	    // 22 / 1400 = 0.015714286
 	}
 	@media screen and (min-width:1400px){
@@ -217,10 +205,10 @@
 .kv .thubnail-list a// 首頁-Banner-Dots標題
 {
 	line-height: 1.5;
-	font-size: 3.7333333vw;
+	font-size: $xxs-vw-14-vw;
 	// 14 / 375 = 0.037333333
 	@media screen and (min-width:768px){
-	    font-size: 1.5714286vw;
+	    font-size: $lg-vw-22-vw;
 	    // 22 / 1400 = 0.015714286
 	}
 	@media screen and (min-width:1400px){
@@ -235,10 +223,10 @@
 .main-footer .subscribe h2 // Footer-標題(訂閱)
 {
 	line-height: 1.5;
-	font-size: 5.3333333vw;
+	font-size: $xxs-vw-20-vw;
 	// 20 / 375 = 0.053333333
 	@media screen and (min-width:768px){
-	    font-size: 1.4285714vw;
+	    font-size: $lg-vw-20-vw;
 	    // 20 / 1400 = 0.014285714
 	}
 	@media screen and (min-width:1400px){
@@ -251,10 +239,10 @@
 .awards-content .award // 獎項-列表-機構名稱
 {
 	line-height: 1.5;
-	font-size: 4.2666667vw;
+	font-size: $xxs-vw-16-vw;
 	// 16 / 375 = 0.042666667
 	@media screen and (min-width:768px){
-	    font-size: 1.4285714vw;
+	    font-size: $lg-vw-20-vw;
 	    // 20 / 1400 = 0.014285714
 	}
 	@media screen and (min-width:1400px){
@@ -267,10 +255,10 @@
 .awards-content p // 獎項-列表-英文名稱文字
 {
 	line-height: 1.5;
-	font-size: 3.7333333vw;
+	font-size: $xxs-vw-14-vw;
 	// 14 / 375 = 0.037333333
 	@media screen and (min-width:768px){
-	    font-size: 1.4285714vw;
+	    font-size: $lg-vw-20-vw;
 	    // 20 / 1400 = 0.014285714
 	}
 	@media screen and (min-width:1400px){
@@ -297,10 +285,10 @@
 // .main-more .btn-more span  按紐-首頁-獎項-瞭解更多
 {
 	line-height: 1.5;
-	font-size: 4.8vw;
+	font-size: $xxs-vw-18-vw;
 	// 18 / 375 = 0.048
 	@media screen and (min-width:768px){
-	    font-size: 1.2857143vw;
+	    font-size: $lg-vw-18-vw;
 	    // 18 / 1400 = 0.012857143
 	}
 	@media screen and (min-width:1400px){
@@ -322,10 +310,10 @@ textarea::placeholder, // 表單頁-多行欄位提示文字
 textarea // 表單頁-多行欄位本體文字
 {
 	line-height: 1.5;
-	font-size: 4.2666667vw;
+	font-size: $xxs-vw-16-vw;
 	// 16 / 375 = 0.042666667
 	@media screen and (min-width:768px){
-	    font-size: 1.1428571vw;
+	    font-size: $lg-vw-16-vw;
 	    // 16 / 1400 = 0.011428571
 	}
 	@media screen and (min-width:1400px){
@@ -338,10 +326,10 @@ textarea // 表單頁-多行欄位本體文字
 .news-list .date  // 媒體-卡片-Tag、Time
 {
 	line-height: 1.5;
-	font-size: 3.7333333vw;
+	font-size: $xxs-vw-14-vw;
 	// 14 / 375 = 0.037333333
 	@media screen and (min-width:768px){
-	    font-size: 1vw;
+	    font-size: $lg-vw-14-vw;
 	    // 14 / 1400 = 0.01
 	}
 	@media screen and (min-width:1400px){
@@ -355,10 +343,10 @@ textarea // 表單頁-多行欄位本體文字
 .copyright // Footer-copyright
 {
 	line-height: 1.5;
-	font-size: 3.2vw;
+	font-size: $xxs-vw-12-vw;
 	// 12 / 375 = 0.032
 	@media screen and (min-width:768px){
-	    font-size: 1.1428571vw;
+	    font-size: $lg-vw-16-vw;
 	    // 16 / 1400 = 0.011428571
 	}
 	@media screen and (min-width:1400px){
