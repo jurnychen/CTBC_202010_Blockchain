@@ -1,4 +1,5 @@
 @import 'color';
+@import 'vw.scss';
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
 // 共用設定
 body {
@@ -2262,6 +2263,7 @@ p {
     .pic img {
         width: 100%;
         vertical-align: top;
+        border-radius: 0 0 7px 0;
     }
     .item:hover .pic {
         @media screen and (max-width: 767px) {}
@@ -2315,10 +2317,17 @@ p {
         }
     }
     .category {
-        background-color: $main-color1;
-        padding: 10px 20px 10px 1em;
-        color: #fff;
         position: relative;
+        background-color: $main-color1;
+        padding: $xxs-vw-5-vw $xxs-vw-10-vw;
+        margin-top: $xxs-vw-15-vw;
+        color: #fff;
+        @media screen and (min-width: 768px) {
+            padding: 10px 20px 10px 1em;
+        }
+        @media screen and (min-width: 1400px) {
+            padding: 10px 20px 10px 1em;
+        }
     }
     .category:after {
         content: '';
@@ -2327,13 +2336,13 @@ p {
         height: 0;
         top: 0;
         right: 0;
-        border-top: 36px solid $main-color1;
-        border-right: 36px solid transparent;
+        border-top: $xxs-vw-32-vw solid $main-color1;
+        border-right: $xxs-vw-32-vw solid transparent;
         transform: translateX(99%);
     }
     .date {
         padding-right: 1em;
-        color: $main-color1L;
+        color: $main-color1;
         margin-left: 1em;
         @media screen and (max-width: 767px) {
             width: 100%;
@@ -2510,7 +2519,7 @@ p {
     .item:hover .txt svg .cls-3,
     .active .txt svg .cls-2,
     .active .txt svg .cls-3 {
-        stroke: #418966!important;
+        stroke: $main-color1!important;
     }
     .txt .title {
         display: block;
@@ -2520,6 +2529,7 @@ p {
     .item:hover .title,
     .active .txt .title {
         padding-left: 0;
+        font-weight: 700;
     }
 }
 
