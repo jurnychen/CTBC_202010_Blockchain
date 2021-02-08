@@ -1911,13 +1911,13 @@ p {
         width: 80%;
         padding: $lg-vw-15-vw;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1400px) {
         padding: 15px;
     }
     img {
         position: relative;
         z-index: 1;
-        width: 100%;
+        width: 90%;
     }
 }
 
