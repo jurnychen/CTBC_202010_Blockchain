@@ -84,7 +84,7 @@ p {
             color: #fff;
         }
     }
-    .link-contact a span{
+    .link-contact a span {
         position: relative;
         z-index: 2;
     }
@@ -376,11 +376,10 @@ p {
     display: flex;
     justify-content: center;
     padding: 0 $xxs-vw-5-vw;
-    @media screen and (min-width:768px){
-     padding: 0;
+    @media screen and (min-width: 768px) {
+        padding: 0;
     }
-    @media screen and (min-width:1400px){
-    }
+    @media screen and (min-width:1400px) {}
     li {
         margin: 0;
         padding: 0;
@@ -395,11 +394,11 @@ p {
         padding: $xxs-vw-5-vw $xxs-vw-15-vw;
         border: 1px solid $input-border-color;
         color: #707070;
-        @media screen and (min-width:768px){
-         padding: $lg-vw-10-vw $lg-vw-25-vw;
+        @media screen and (min-width: 768px) {
+            padding: $lg-vw-10-vw $lg-vw-25-vw;
         }
-        @media screen and (min-width:1400px){
-         padding: 10px 25px;
+        @media screen and (min-width:1400px) {
+            padding: 10px 25px;
         }
     }
     li.active a,
@@ -1089,7 +1088,7 @@ p {
         box-sizing: border-box;
         overflow: hidden;
         border-radius: 5px;
-        @media screen and (max-width:767px){
+        @media screen and (max-width: 767px) {
             width: 80%;
             height: $xxs-vw-200-vw;
             margin: 0 auto $xxs-vw-20-vw;
@@ -1114,7 +1113,7 @@ p {
     }
     .txt {
         box-sizing: border-box;
-        @media screen and (max-width:767px){
+        @media screen and (max-width: 767px) {
             width: 80%;
             margin: 0 auto;
         }
@@ -1129,12 +1128,12 @@ p {
     }
 }
 
-.issue-result-item + .issue-result-item{
-    @media screen and (max-width:767px){
+.issue-result-item+.issue-result-item {
+    @media screen and (max-width: 767px) {
         padding-top: $xxs-vw-100-vw;
         padding-bottom: $xxs-vw-20-vw;
     }
-    @media screen and (max-width:767px){
+    @media screen and (max-width:767px) {
         padding-left: $lg-vw-100-vw;
     }
 }
@@ -1188,11 +1187,11 @@ p {
 .awards .main-more {
     display: flex;
     justify-content: flex-end;
-    @media screen and (min-width:768px){
+    @media screen and (min-width: 768px) {
         justify-content: center;
         padding-left: $lg-vw-50-vw;
     }
-    @media screen and (min-width:768px){
+    @media screen and (min-width:768px) {
         justify-content: center;
         padding-left: 50px;
     }
@@ -1268,10 +1267,12 @@ p {
 .btn-round:before {
     background-color: $main-color3;
 }
-.btn-round span{
+
+.btn-round span {
     position: relative;
     z-index: 2;
 }
+
 // 幻燈片區
 .slick-dots {
     li {
@@ -1291,15 +1292,15 @@ p {
 }
 
 .slider-awards {
-        @media screen and (max-width: 767px) {
-            margin-bottom: $xxs-vw-100-vw!important;
-        }
-        @media (min-width: 768px) and (max-width: 1399px) {
-            margin-bottom: $lg-vw-60-vw!important;
-        } 
-        @media screen and (min-width: 1400px) {
-            margin-bottom: 60px!important;
-        } 
+    @media screen and (max-width: 767px) {
+        margin-bottom: $xxs-vw-100-vw!important;
+    }
+    @media (min-width: 768px) and (max-width: 1399px) {
+        margin-bottom: $lg-vw-60-vw!important;
+    }
+    @media screen and (min-width: 1400px) {
+        margin-bottom: 60px!important;
+    }
     /*增加權重蓋掉幻燈片套件的CSS*/
     .slider-item {
         margin: 0 15px;
@@ -1530,10 +1531,10 @@ p {
     }
     .btn-group {
         margin: $xxs-vw-15-vw 0 0;
-        @media screen and (min-width:768px){
+        @media screen and (min-width: 768px) {
             margin: $lg-vw-20-vw 0 0;
         }
-        @media screen and (min-width:1400px){
+        @media screen and (min-width:1400px) {
             margin: 20px 0 0;
         }
     }
@@ -1586,21 +1587,20 @@ p {
 }
 
 .page-index .kv {
-    @media screen and (min-width:768px) {
+    @media screen and (min-width: 768px) {
         height: 57.1428571vw;
     }
     @media screen and (min-width:1400px) {
         height: 800px;
     }
     .container {
-        @media screen and (min-width:768px) {
+        @media screen and (min-width: 768px) {
             padding: 0 10.7142857vw;
         }
         @media screen and (min-width:1400px) {
             padding: 0 150px;
         }
     }
-
     .container:before {
         @media screen and (min-width: 768px) {
             background-image: url('pic/index/banner_bgimage_index_right.png');
@@ -1615,7 +1615,7 @@ p {
             transform: translateX(-90%);
         }
     }
-    .kv-group-text{
+    .kv-group-text {
         @media screen and (min-width: 768px) {
             transform: translateX(15%);
         }
@@ -1623,9 +1623,7 @@ p {
             transform: translateX(5%);
         }
     }
-
 }
-
 
 .kv-title,
 .kv-txt {
@@ -1802,13 +1800,13 @@ p {
         left: 96px;
     }
     .pic {
-        @media screen and (max-width:767px){
+        @media screen and (max-width: 767px) {
             height: $xxs-vw-300-vw;
             overflow: hidden;
         }
         img {
             width: 100%;
-            @media screen and (max-width:767px){
+            @media screen and (max-width: 767px) {
                 transform: translateY(-20%);
             }
         }
@@ -1828,8 +1826,7 @@ p {
             font-weight: 400;
             margin: 0;
             color: #fff;
-            @media screen and (min-width: 768px) {
-            }
+            @media screen and (min-width: 768px) {}
         }
         p {
             color: $txt-sub-color;
@@ -1851,7 +1848,7 @@ p {
         display: flex;
         flex-wrap: wrap;
         background-color: #e7f8f6;
-        padding: $xxs-vw-25-vw; 
+        padding: $xxs-vw-25-vw;
         @media screen and (min-width: 768px) {
             padding: 20px 5%;
         }
@@ -1898,7 +1895,7 @@ p {
 }
 
 .practice-item {
-    margin: 0 ;
+    margin: 0;
     text-align: center;
     @media screen and (max-width: 767px) {
         display: flex;
@@ -1908,14 +1905,14 @@ p {
 .practice-item .pic {
     position: relative;
     text-align: center;
-    padding:  $xxs-vw-15-vw;
+    padding: $xxs-vw-15-vw;
     width: 40%;
     @media screen and (min-width: 768px) {
         width: 80%;
-        padding:  $lg-vw-15-vw;
+        padding: $lg-vw-15-vw;
     }
     @media screen and (min-width: 768px) {
-        padding:  15px;
+        padding: 15px;
     }
     img {
         position: relative;
@@ -1927,7 +1924,7 @@ p {
 .practice-item .pic:before {
     content: '';
     position: absolute;
-    top:25%;
+    top: 25%;
     left: 25%;
     width: 50%;
     height: 0;
@@ -1953,20 +1950,20 @@ p {
 .practice-item h2 {
     color: $main-color1;
     @media screen and (min-width: 768px) {
-        margin-top: -$lg-vw-15-vw ;
+        margin-top: -$lg-vw-15-vw;
     }
     @media screen and (min-width: 1400px) {
-        margin-top: -15px ;
+        margin-top: -15px;
     }
 }
 
 .practice-item p {
-    margin-top: -$xxs-vw-15-vw ;
+    margin-top: -$xxs-vw-15-vw;
     @media screen and (min-width: 768px) {
-        margin-top: -$lg-vw-15-vw ;
+        margin-top: -$lg-vw-15-vw;
     }
     @media screen and (min-width: 1400px) {
-        margin-top: -15px ;
+        margin-top: -15px;
     }
 }
 
@@ -2025,7 +2022,6 @@ p {
         width: calc(100% - 30px);
         height: 0;
         padding-bottom: calc(100% - 30px);
-
         width: 55%;
         padding-bottom: 55%;
         background-color: #fff;
@@ -2114,13 +2110,13 @@ p {
         color: $main-color1L;
     }
     .txt:hover {
-        a{
+        a {
             transform: scale(1.5);
             // background-color: #f00;
         }
         &:after {
             transform: scaleX(14);
-            @media screen and (min-width:768px) {
+            @media screen and (min-width: 768px) {
                 transform: scaleX(8);
             }
             @media screen and (min-width:1400px) {
@@ -2218,10 +2214,9 @@ p {
 
 .feedback {
     position: relative;
-
-    @media screen and (max-width:767px){
+    @media screen and (max-width: 767px) {
         width: 90%;
-        margin:0 auto; 
+        margin: 0 auto;
     }
     .pic {
         position: relative;
@@ -2452,23 +2447,29 @@ p {
     .pic {
         @media screen and (max-width: 767px) {
             width: 35%;
-
         }
         @media screen and (min-width: 768px) {
-            max-height: 400px;
+            // max-height: 400px;
+            position: relative;
+            padding-bottom: 75.996875%;
             overflow: hidden;
-            transition: 1s;
+            transition: .5s linear;
         }
     }
     .pic img {
         width: 100%;
         vertical-align: top;
         border-radius: 0 0 7px 0;
+        @media screen and (min-width: 768px) {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
     }
     .item:hover .pic {
         @media screen and (max-width: 767px) {}
         @media screen and (min-width: 768px) {
-            max-height: 0px;
+            padding-bottom: 0;
         }
     }
     .item-group .txt {
@@ -2478,11 +2479,20 @@ p {
         justify-content: flex-start;
         box-sizing: border-box;
         @media screen and (min-width: 768px) {
-            flex-grow: 1;
+            flex-grow: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+            transition: .5s linear;
         }
     }
     .item-group .item:hover .txt {
         justify-content: center;
+        @media screen and (min-width: 768px) {
+            flex-grow: 1;
+            //圖片高度換算成百分比後分成上下
+            padding-top: 37.9984375%;
+            padding-bottom: 37.9984375%;
+        }
     }
     .item-group .txt h3 {
         margin: 1em 0 .3em;
@@ -2496,14 +2506,10 @@ p {
         color: $txt-sub-color;
         font-weight: 400;
     }
-
-
-
-
     .item-group .txt a,
     .item-group .txt a:hover,
-    .item-group .txt a:active{
-        color:#fff;
+    .item-group .txt a:active {
+        color: #fff;
         text-decoration: none;
     }
     .category_date {
@@ -2572,14 +2578,14 @@ p {
         margin: -$xxs-vw-10-vw 0 0 $xxs-vw-10-vw;
         @media screen and (min-width: 768px) {
             position: absolute;
-            top:$lg-vw-15-vw;
+            top: $lg-vw-15-vw;
             right: 0;
-            margin:0;
+            margin: 0;
             // padding-top:$lg-vw-5-vw;
             text-align: right;
         }
         @media screen and (min-width: 1400px) {
-            top:15px;
+            top: 15px;
         }
     }
     .content-group {}
@@ -2609,7 +2615,7 @@ p {
     li.active a {
         background-color: $main-color3;
         color: #fff;
-        border:0;
+        border: 0;
         ;
     }
     a {
@@ -2637,8 +2643,7 @@ p {
         padding: 1.5em 0;
         margin: 0 15px;
         border-bottom: 1px solid #d9d9d9;
-        @media screen and (max-width: 767px) {
-        }
+        @media screen and (max-width: 767px) {}
         @media screen and (min-width: 768px) {
             width: 50%;
             margin-left: auto;
@@ -2653,7 +2658,8 @@ p {
     .pic {
         position: relative;
         width: 100%;
-        box-shadow: 2px 2px 10px 2px rgba(0,0,0,0.2);
+        display: none;
+        box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.2);
         @media screen and (max-width: 767px) {
             display: none;
             margin-bottom: 1em;
@@ -2690,17 +2696,6 @@ p {
         transform-origin: center top;
         transform: rotate(45deg);
     }
-    .pic .number {
-        position: absolute;
-        top: 0;
-        left: 40px;
-        width: 100px;
-        text-align: center;
-        color: #fff;
-        line-height: 36px;
-        z-index: 2;
-        font-size: 30px;
-    }
     .active .pic {
         display: block;
         border-radius: 6px;
@@ -2712,6 +2707,21 @@ p {
             width: calc(50% - 65px);
         }
     }
+    .pic .number {
+        position: absolute;
+        top: 0;
+        left: 40px;
+        width: 100px;
+        text-align: center;
+        color: #fff;
+        line-height: 36px;
+        z-index: 2;
+        font-size: 30px;
+        display: none;
+    }
+    .active .pic .number {
+        display: block;
+    }
     .pic img {
         width: 100%;
         vertical-align: top;
@@ -2722,6 +2732,9 @@ p {
         color: #00345A;
         display: flex;
         line-height: 1.5;
+        @media screen and (max-width: 767px) {
+            flex-wrap: wrap;
+        }
         @media screen and (min-width: 768px) {
             font-size: 22px;
         }
@@ -2735,7 +2748,6 @@ p {
         width: 2em;
         flex-shrink: 0;
         padding-left: 10px;
-
         @media screen and (min-width: 768px) {
             width: $lg-vw-35-vw;
             padding-left: $lg-vw-10-vw;
@@ -2744,7 +2756,6 @@ p {
             width: 35px;
             padding-left: 10px;
         }
-
     }
     .txt .count {
         opacity: 1;
@@ -2782,12 +2793,35 @@ p {
     .txt .title {
         display: block;
         padding-left: 1em;
+        padding-right: 0;
         transition: .5s;
+        @media screen and (max-width: 767px) {
+            width: calc(100% - 4em);
+        }
+    }
+    .txt .title a {
+        text-decoration: none;
+        color: inherit;
+        @media screen and (max-width: 767px) {
+            pointer-events: none;
+        }
     }
     .item:hover .title,
     .active .txt .title {
         padding-left: 0;
+        padding-right: 1em;
         font-weight: 700;
+    }
+    .block-more {
+        width: 100%;
+        text-align: right;
+        margin-top: 0.8em;
+        display: none;
+    }
+    .active .block-more {
+        @media screen and (max-width: 767px) {
+            display: block;
+        }
     }
 }
 
