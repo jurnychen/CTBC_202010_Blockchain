@@ -740,10 +740,12 @@ body {
   font-size: 10.13333vw; }
   @media screen and (min-width: 768px) {
     .page-index .onlyfirst .kv-title span:nth-child(2) {
-      font-size: 5vw; } }
+      font-size: 5vw;
+      margin-bottom: 5vw; } }
   @media screen and (min-width: 1400px) {
     .page-index .onlyfirst .kv-title span:nth-child(2) {
-      font-size: 70px; } }
+      font-size: 70px;
+      margin-bottom: 70px; } }
 
 .page-index .onlyfirst .kv-txt {
   margin-top: -2.66667vw;
@@ -764,6 +766,9 @@ body {
   width: calc( 100% - $xxs-vw-12-vw);
   height: auto;
   margin: 0 6.66667vw; }
+  @media screen and (min-width: 768px) {
+    .page-index .mv img {
+      margin: 0; } }
 
 @media screen and (min-width: 768px) {
   .page-index .issue .main-content {
@@ -951,6 +956,9 @@ body {
 
 .headline-list .txt {
   line-height: 1.25; }
+
+.news-list .category, .news-list .date {
+  line-height: 1; }
 
 .page-awards {
   background-color: #f2f2f2; }

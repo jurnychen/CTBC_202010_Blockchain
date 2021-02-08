@@ -593,9 +593,11 @@ body {
 			font-size: $xxs-vw-38-vw;
 			@media screen and (min-width:768px){
 			    font-size: $lg-vw-70-vw;
+			    margin-bottom: $lg-vw-70-vw;
 			}
 			@media screen and (min-width:1400px){
 			    font-size: 70px;
+			    margin-bottom: 70px;
 			}
 		}
 
@@ -625,7 +627,11 @@ body {
 		height: auto;
 		margin: 0 $xxs-vw-25-vw;
 		//  25 /375 = 0.066666667
-		
+		@media screen and (min-width:768px){
+		    margin:  0;
+		}
+		@media screen and (min-width:1400px){
+		}
 
 	}
 
@@ -896,6 +902,10 @@ body {
 // =========================
 .headline-list .txt{
 	line-height: 1.25;
+}
+
+.news-list .category, .news-list .date {
+	line-height: 1;
 }
 
 

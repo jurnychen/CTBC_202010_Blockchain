@@ -154,7 +154,7 @@ var handleOpenLightBox = function (href, e) {
     } else {
         var isSkipLightBox = false;
         // check if the link is in external link list
-        var whitelistUrl = [{"url":"localhost"},{"url":"www.tentenplus.com.tw"},{"url":"mailto"},{"url":"ctbcbank.com"}];
+        var whitelistUrl = [{"url":"localhost"},{"url":"www.tentenplus.com.tw"},{"url":"mailto"},{"url":"ctbcbank.com"},{"url":"javascript:;"}];
         if (whitelistUrl != null) {
             for (var i in whitelistUrl) {
                 if (hasString(href, whitelistUrl[i]['url'])) {
