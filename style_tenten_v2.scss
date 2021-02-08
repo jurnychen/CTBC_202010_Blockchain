@@ -57,8 +57,8 @@ body {
 .section.awards,
 .section.advantage,
 .solution {
-  background-image: radial-gradient(circle at 1.5px, rgba(169, 231, 221, 0.8) 1.5px, transparent 1.5px);
-  background-size: 14px 14px; 
+  background-image: radial-gradient(circle at 1px, rgba(169, 231, 221, 0.8) 1px, transparent 1.5px);
+  background-size: 12px 12px; 
 }
 
 
@@ -507,12 +507,12 @@ body {
 	padding: 0;
 
 	>.container{
-		padding: $xxs-vw-25-vw 0 $xxs-vw-50-vw;
+		padding: $xxs-vw-75-vw $xxs-vw-25-vw;
 		@media screen and (min-width:768px){
-		    padding: $lg-vw-50-vw $lg-vw-150-vw;
+		    padding: $lg-vw-75-vw $lg-vw-150-vw;
 		}
 		@media screen and (min-width:1400px){
-		    padding: 50px 150px;
+		    padding: 75px 150px;
 		}	
 	}
 
@@ -540,7 +540,7 @@ body {
 	padding: 0;
 
 	>.container{
-		padding: $xxs-vw-25-vw 0 $xxs-vw-50-vw;
+		padding: $xxs-vw-25-vw $xxs-vw-25-vw $xxs-vw-50-vw;
 		@media screen and (min-width:768px){
 		    padding: $lg-vw-15-vw $lg-vw-150-vw $lg-vw-50-vw;
 		}
@@ -666,6 +666,16 @@ body {
 	.issue-result {
 
 		.issue-result-item{
+			h4{
+				line-height: 1;
+				margin-top: -$xxs-vw-5-vw;
+				@media screen and (min-width:768px){
+				    margin-top: -$lg-vw-10-vw;
+				}
+				@media screen and (min-width:1400px){
+				    margin-top: -10px;
+				}
+			}
 			.btn-more{
 				background-color: $main-color3;
 			}
@@ -680,6 +690,7 @@ body {
 				margin-right: auto;
 			}
 		}
+
 	}
 
 	// 解決方案
@@ -788,8 +799,70 @@ body {
 
 
 
+// 輪撥
+.slick-dots{
+	li,
+	li button,
+	li button::before
+	{
+		width: $xxs-vw-25-vw;
+		height: $xxs-vw-25-vw;
+		@media screen and (min-width: 768px) {
+			width: $lg-vw-25-vw;
+			height: $lg-vw-25-vw;
+		} 
+		@media screen and (min-width: 1400px) {
+			width: 25px;
+			height: 25px;
+		} 
+	}
+	li{
+		margin:0 $xxs-vw-10-vw;
+		@media screen and (min-width: 768px) {
+			margin:0 $lg-vw-10-vw;
+		} 
+		@media screen and (min-width: 1400px) {
+			margin:0 10px;
+		} 
+	}
+	li button:before{
+		font-size: $xxs-vw-25-vw;
+		top: $xxs-vw-5-vw;
+		@media screen and (min-width: 768px) {
+			font-size: $lg-vw-25-vw;
+			top: $lg-vw-25-vw;
+		} 
+		@media screen and (min-width: 1400px) {
+			font-size: 25px;
+			top: 25px;
+		} 
+	}
+	li button:before,
+	li.slick-active button:before{
+		opacity: 1;
+	}
+}
 
 
+// 苜頁-夥伴-輪撥-左右方向鍵
+.page-index {
+	.section.client{
+		.slick-prev:before, 
+		.slick-next:before{
+			opacity: 0;
+
+		}
+	}
+	.slick-slider .slick-list {
+		padding-bottom: $xxs-vw-50-vw;
+		@media screen and (min-width: 768px) {
+			padding-bottom: $lg-vw-20-vw;
+		} 
+		@media screen and (min-width: 1400px) {
+			padding-bottom: 20px;
+		} 
+	}
+}
 
 
 
@@ -803,7 +876,27 @@ body {
 }
 
 
+// =========================
+// 服務頁
+// =========================
+.case h2,
+.case h3{
+	margin: 0;
+}
 
+
+.page-service{
+	.slider-item p{
+		color:$main-color2D;
+	}
+}
+
+// =========================
+// 新聞頁
+// =========================
+.headline-list .txt{
+	line-height: 1.25;
+}
 
 
 

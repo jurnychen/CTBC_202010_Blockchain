@@ -40,14 +40,17 @@
     .issue .main-content h2 {
       font-size: 36px; } }
 
-.issue .step-item h3 {
+.issue .step-item h3,
+.case .txt h3 {
   line-height: 1.5;
   font-size: 5.86667vw; }
   @media screen and (min-width: 768px) {
-    .issue .step-item h3 {
+    .issue .step-item h3,
+    .case .txt h3 {
       font-size: 2.14286vw; } }
   @media screen and (min-width: 1400px) {
-    .issue .step-item h3 {
+    .issue .step-item h3,
+    .case .txt h3 {
       font-size: 30px; } }
 
 .page-index .kv-txt.ly2 {
@@ -81,7 +84,7 @@
 .awards-content .title,
 .form__box h2,
 .issue-result h3,
-.issue-result-item h4 span,
+.issue-result-item h4,
 .solution-item .txt h2 {
   line-height: 1.5;
   font-size: 5.86667vw; }
@@ -91,7 +94,7 @@
     .awards-content .title,
     .form__box h2,
     .issue-result h3,
-    .issue-result-item h4 span,
+    .issue-result-item h4,
     .solution-item .txt h2 {
       font-size: 2.14286vw; } }
   @media screen and (min-width: 1400px) {
@@ -100,7 +103,7 @@
     .awards-content .title,
     .form__box h2,
     .issue-result h3,
-    .issue-result-item h4 span,
+    .issue-result-item h4,
     .solution-item .txt h2 {
       font-size: 30px; } }
 
@@ -123,8 +126,7 @@
 .practice-item p,
 .headline-list .txt,
 .news-list .item-group .txt h3,
-.form__box .form__box-itemgroup .form__box-item .inputtitle,
-.solution-item .txt p {
+.form__box .form__box-itemgroup .form__box-item .inputtitle {
   line-height: 1.5;
   font-size: 4.8vw; }
   @media screen and (min-width: 768px) {
@@ -137,8 +139,7 @@
     .practice-item p,
     .headline-list .txt,
     .news-list .item-group .txt h3,
-    .form__box .form__box-itemgroup .form__box-item .inputtitle,
-    .solution-item .txt p {
+    .form__box .form__box-itemgroup .form__box-item .inputtitle {
       font-size: 1.57143vw; } }
   @media screen and (min-width: 1400px) {
     .main-title p,
@@ -150,8 +151,7 @@
     .practice-item p,
     .headline-list .txt,
     .news-list .item-group .txt h3,
-    .form__box .form__box-itemgroup .form__box-item .inputtitle,
-    .solution-item .txt p {
+    .form__box .form__box-itemgroup .form__box-item .inputtitle {
       font-size: 22px; } }
 
 .tab-group a {
@@ -239,6 +239,16 @@
     .issue-result-item .txt p,
     .slider-client-item li p,
     .slider-awards .slider-item .txt h3 {
+      font-size: 18px; } }
+
+.solution-item .txt p {
+  line-height: 1.5;
+  font-size: 4.26667vw; }
+  @media screen and (min-width: 768px) {
+    .solution-item .txt p {
+      font-size: 1.28571vw; } }
+  @media screen and (min-width: 1400px) {
+    .solution-item .txt p {
       font-size: 18px; } }
 
 .news-list .item-group .txt p,
@@ -394,10 +404,10 @@ body {
 .section.awards,
 .section.advantage,
 .solution {
-  background-image: -webkit-radial-gradient(1.5px, circle, rgba(169, 231, 221, 0.8) 1.5px, transparent 1.5px);
-  background-image: -o-radial-gradient(1.5px, circle, rgba(169, 231, 221, 0.8) 1.5px, transparent 1.5px);
-  background-image: radial-gradient(circle at 1.5px, rgba(169, 231, 221, 0.8) 1.5px, transparent 1.5px);
-  background-size: 14px 14px; }
+  background-image: -webkit-radial-gradient(1px, circle, rgba(169, 231, 221, 0.8) 1px, transparent 1.5px);
+  background-image: -o-radial-gradient(1px, circle, rgba(169, 231, 221, 0.8) 1px, transparent 1.5px);
+  background-image: radial-gradient(circle at 1px, rgba(169, 231, 221, 0.8) 1px, transparent 1.5px);
+  background-size: 12px 12px; }
 
 @media screen and (min-width: 768px) {
   .visible-xs {
@@ -674,13 +684,13 @@ body {
 .section.advisory {
   padding: 0; }
   .section.advisory > .container {
-    padding: 6.66667vw 0 13.33333vw; }
+    padding: 20vw 6.66667vw; }
     @media screen and (min-width: 768px) {
       .section.advisory > .container {
-        padding: 3.57143vw 10.71429vw; } }
+        padding: 5.35714vw 10.71429vw; } }
     @media screen and (min-width: 1400px) {
       .section.advisory > .container {
-        padding: 50px 150px; } }
+        padding: 75px 150px; } }
   .section.advisory .subscribe p {
     margin-top: -4vw; }
     @media screen and (min-width: 768px) {
@@ -694,7 +704,7 @@ body {
   border-top: 10px solid #068080;
   padding: 0; }
   .main-footer > .container {
-    padding: 6.66667vw 0 13.33333vw; }
+    padding: 6.66667vw 6.66667vw 13.33333vw; }
     @media screen and (min-width: 768px) {
       .main-footer > .container {
         padding: 1.07143vw 10.71429vw 3.57143vw; } }
@@ -783,6 +793,16 @@ body {
   .page-index .issue .step-item-list li {
     margin: 0; } }
 
+.page-index .issue-result .issue-result-item h4 {
+  line-height: 1;
+  margin-top: -1.33333vw; }
+  @media screen and (min-width: 768px) {
+    .page-index .issue-result .issue-result-item h4 {
+      margin-top: -0.71429vw; } }
+  @media screen and (min-width: 1400px) {
+    .page-index .issue-result .issue-result-item h4 {
+      margin-top: -10px; } }
+
 .page-index .issue-result .issue-result-item .btn-more {
   background-color: #e03757; }
 
@@ -863,8 +883,74 @@ body {
     .practice .service-banner video {
       width: 70%; } }
 
+.slick-dots li,
+.slick-dots li button,
+.slick-dots li button::before {
+  width: 6.66667vw;
+  height: 6.66667vw; }
+  @media screen and (min-width: 768px) {
+    .slick-dots li,
+    .slick-dots li button,
+    .slick-dots li button::before {
+      width: 1.78571vw;
+      height: 1.78571vw; } }
+  @media screen and (min-width: 1400px) {
+    .slick-dots li,
+    .slick-dots li button,
+    .slick-dots li button::before {
+      width: 25px;
+      height: 25px; } }
+
+.slick-dots li {
+  margin: 0 2.66667vw; }
+  @media screen and (min-width: 768px) {
+    .slick-dots li {
+      margin: 0 0.71429vw; } }
+  @media screen and (min-width: 1400px) {
+    .slick-dots li {
+      margin: 0 10px; } }
+
+.slick-dots li button:before {
+  font-size: 6.66667vw;
+  top: 1.33333vw; }
+  @media screen and (min-width: 768px) {
+    .slick-dots li button:before {
+      font-size: 1.78571vw;
+      top: 1.78571vw; } }
+  @media screen and (min-width: 1400px) {
+    .slick-dots li button:before {
+      font-size: 25px;
+      top: 25px; } }
+
+.slick-dots li button:before,
+.slick-dots li.slick-active button:before {
+  opacity: 1; }
+
+.page-index .section.client .slick-prev:before,
+.page-index .section.client .slick-next:before {
+  opacity: 0; }
+
+.page-index .slick-slider .slick-list {
+  padding-bottom: 13.33333vw; }
+  @media screen and (min-width: 768px) {
+    .page-index .slick-slider .slick-list {
+      padding-bottom: 1.42857vw; } }
+  @media screen and (min-width: 1400px) {
+    .page-index .slick-slider .slick-list {
+      padding-bottom: 20px; } }
+
 .section.contact > .container {
   max-width: 1100px; }
+
+.case h2,
+.case h3 {
+  margin: 0; }
+
+.page-service .slider-item p {
+  color: #136098; }
+
+.headline-list .txt {
+  line-height: 1.25; }
 
 .page-awards {
   background-color: #f2f2f2; }

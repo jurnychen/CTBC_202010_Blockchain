@@ -66,7 +66,8 @@
 
 
 // 手機 22px / 桌機30px  ===================
-.issue .step-item h3 // 首頁-數位浪潮-問題項目文字
+.issue .step-item h3, // 首頁-數位浪潮-問題項目文字
+.case .txt h3,
 {
 	line-height: 1.5;
 	font-size: $xxs-vw-22-vw;
@@ -120,7 +121,7 @@
 .awards-content .title,// 獎項-列表-中文名稱文字
 .form__box h2,// 表單頁-資訊分區標題
 .issue-result h3,  // 首頁-數位浪潮-結果標題
-.issue-result-item h4 span,  // 首頁-數位浪潮-結果-方案名稱
+.issue-result-item h4,  // 首頁-數位浪潮-結果-方案名稱
 .solution-item .txt h2  // 首頁-解決方案-方案名稱
 {
 	line-height: 1.5;
@@ -169,8 +170,7 @@
 .practice-item p, // 服務-創新-ICON說明文字
 .headline-list .txt, // 媒體-熱門-項目說明文字
 .news-list .item-group .txt h3, // 媒體-卡片-標題文字
-.form__box .form__box-itemgroup .form__box-item .inputtitle, // 表單頁-欄位名稱文字
-.solution-item .txt p  // 首頁-解決方案-方案說明文字
+.form__box .form__box-itemgroup .form__box-item .inputtitle // 表單頁-欄位名稱文字
 {
 	line-height: 1.5;
 	font-size: $xxs-vw-18-vw;
@@ -298,7 +298,18 @@
 
 
 
-
+// 手機 16px / 桌機18px  ===================
+.solution-item .txt p  // 首頁-解決方案-方案說明文字
+{
+	line-height: 1.5;
+	font-size: $xxs-vw-16-vw;
+	@media screen and (min-width:768px){
+	    font-size: $lg-vw-18-vw;
+	}
+	@media screen and (min-width:1400px){
+	    font-size: 18px;
+	}
+}
 
 
 // 手機 16px / 桌機16px  ===================
