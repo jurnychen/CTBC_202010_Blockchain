@@ -6,6 +6,7 @@ document.addEventListener('click', function (e) {
 }, false);
 
 var handleExtUrl = function (e) {
+    extralinkRemovePopWindows();
 
     var href = '';
     if ($(e.target).closest('a') != null) {
@@ -33,6 +34,11 @@ var handleExtUrl = function (e) {
 
         // check if the link is tel
         else if (hasString(href, 'tel:')) {
+            return;
+        }
+
+        // check if the link is javascript:;
+        else if (hasString(href, 'javascript:;')) {
             return;
         }
 
@@ -154,7 +160,7 @@ var handleOpenLightBox = function (href, e) {
     } else {
         var isSkipLightBox = false;
         // check if the link is in external link list
-        var whitelistUrl = [{"url":"localhost"},{"url":"www.tentenplus.com.tw"},{"url":"mailto"},{"url":"ctbcbank.com"},{"url":"javascript:;"}];
+        var whitelistUrl = [{"url":"localhost"},{"url":"www.tentenplus.com.tw"},{"url":"mailto"},{"url":"ctbcbank.com"}];
         if (whitelistUrl != null) {
             for (var i in whitelistUrl) {
                 if (hasString(href, whitelistUrl[i]['url'])) {
@@ -168,6 +174,7 @@ var handleOpenLightBox = function (href, e) {
             //window.open(href);
             window.location.href = href;
         } else {
+            extralinkShowPopWindows();
             $("#outlink a:first-child").attr("exturl", href);
             $.fancybox.open({
                 src: '#outlink',
@@ -262,4 +269,23 @@ var isInsideAEM = function (href) {
 
 var hasString = function (content, key) {
     return content.indexOf(key) > -1;
+}
+
+function extralinkShowPopWindows() {
+    $('body').append('<div id="outlink" class="extralink__popup extralink__popup--md">\n' +
+        '        <div class="extralink__popup-title">確認訊息</div>\n' +
+        '        <div class="extralink__popup-content" data-element="scrollbar">\n' +
+        '            <p>您即將離開中國信託官網/網路銀行，請確認是否執行？</p>\n' +
+        '        </div>\n' +
+        '        <div class="extralink__popup-actions">\n' +
+        '            <a exturl="" onclick="toggleExternalLink(event)" target="_blank" href="javascript:;" class="actions__btn actions__btn-primary">確認</a>\n' +
+        '            <button onclick="closeFancybox()" class="actions__btn actions__btn-secondary">取消</button>\n' +
+        '        </div>\n' +
+        '    </div>');
+}
+
+function extralinkRemovePopWindows() {
+    if ($('#outlink').length) {
+        $('#outlink').remove();
+    }
 }

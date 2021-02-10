@@ -48,7 +48,8 @@
 
 .extralink__popup-actions .actions__btn {
     flex: 0 0 50%;
-    border-radius: 0
+    border-radius: 0;
+    text-decoration: none;
 }
 
 .extralink__popup-actions .actions__btn:first-child {
