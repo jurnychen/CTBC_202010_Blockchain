@@ -2450,6 +2450,28 @@ p {
   .news-list .item-group .txt a:active {
     color: #fff;
     text-decoration: none; }
+  .news-list .item-group .item {
+    display: none; }
+  .news-list .p1 .item:nth-child(n+0):nth-child(-n+8) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .news-list .p2 .item:nth-child(n+9):nth-child(-n+16) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .news-list .p3 .item:nth-child(n+17):nth-child(-n+24) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .news-list .p4 .item:nth-child(n+25):nth-child(-n+32) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .news-list .p5 .item:nth-child(n+33):nth-child(-n+40) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   .news-list .category_date {
     font-size: 14px;
     display: -webkit-box;

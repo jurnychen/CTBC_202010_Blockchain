@@ -118,6 +118,81 @@ $(function() {
     }
     svgAni();
 
+
+    function newsListPagi() {
+        let _pice = 8; //預設每頁顯示數量
+        let _pages = 0; //預設頁數為0
+        let _nowPageIndex = 1; //目前頁面索引
+        let _liHTML = '';
+        let _prevHTML = '<li class="prev"><a href="javascript:;">«</a></li>'
+        let _nextHTML = '<li class="next"><a href="javascript:;">»</a></li>'
+        let showClass = 'p' + 1;
+        if ($('.news-list').length) {
+            let _contentLength = $('.content-group .content').length;
+            for (let i = 0; i < _contentLength; i++) {
+                _liHTML = '';
+                let _itemLength = $('.content-group .content')
+                    .eq(i)
+                    .find('.item')
+                    .length;
+                // console.log(i);
+                // console.log(itemLength);
+
+                //判斷item數量，若為0則頁數等於商數
+                if (_itemLength % _pice === 0) {
+                    _pages = parseInt(_itemLength / 8);
+                    // console.log('頁數剛好是' + _pages + '頁');
+                } else {
+                    //判斷item數量，不為0則頁數等於商數+1
+                    _pages = parseInt(_itemLength / 8 + 1);
+                    // console.log('頁數是' + _pages + '頁，最後一頁不滿8個項目');
+                }
+                //產出頁碼HTML
+                for (let j = 0; j < _pages; j++) {
+                    _liHTML += '<li><a href="javascript:;">' + (j + 1) + '</a></li>'
+                        // console.log(j);
+                }
+                _liHTML = _prevHTML + _liHTML + _nextHTML;
+                console.log(_liHTML);
+                // console.log(i);
+                //分頁HTML寫入
+                $('.news-list .content-group .content')
+                    .eq(i).find('.pagination')
+                    .html(_liHTML);
+                $('.news-list .content-group .content')
+                    .eq(i).addClass('p1');
+                $('.news-list .content-group .content')
+                    .eq(i).find('.pagination li:nth-child(2)').addClass('active');
+            }
+            // 頁碼按鈕按了的動作
+            $('.news-list .content-group .content .pagination li:nth-child(n+2):nth-last-child(n+2)').click(function() {
+                    _nowPageIndex = $(this).index();
+                    showClass = 'p' + _nowPageIndex;
+                    $(this).addClass('active').siblings('.active').removeClass('active');
+                    $(this).parents('.content').removeClass('p1 p2 p3 p4').addClass(showClass);
+                    // console.log(_nowPageIndex);
+                })
+                // 上一頁的動作
+            $('.news-list .content-group .content .pagination .prev').click(function() {
+                _nowPageIndex = $(this).siblings('.active').index();
+                if (_nowPageIndex > 1) {
+                    $(this).siblings('.active').prev().click();
+                }
+            })
+            $('.news-list .content-group .content .pagination .next').click(function() {
+                _nowPageIndex = $(this).siblings('.active').index();
+                _myIndex = $(this).index();
+                // console.log(_myIndex);
+                if (_nowPageIndex < _myIndex - 1) {
+                    $(this).siblings('.active').next().click();
+                }
+            })
+
+        }
+    }
+    newsListPagi();
+
+
     // 訂閱成功視窗-了解按鈕
     function showSubscribeSuccessBox() {
         if ($('.box-success').length) {
@@ -136,4 +211,3 @@ $(function() {
         $('.box-success').fadeOut();
     });
 })
-
