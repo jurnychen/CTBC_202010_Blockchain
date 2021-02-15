@@ -122,7 +122,8 @@
 .form__box h2,// 表單頁-資訊分區標題
 .issue-result h3,  // 首頁-數位浪潮-結果標題
 .issue-result-item h4,  // 首頁-數位浪潮-結果-方案名稱
-.solution-item .txt h2  // 首頁-解決方案-方案名稱
+.solution-item .txt h2,  // 首頁-解決方案-方案名稱
+.case .cooperation h3 // 服務-案例-台灣人壽合作醫院-標題
 {
 	line-height: 1.5;
 	font-size: $xxs-vw-22-vw;
@@ -170,7 +171,8 @@
 .practice-item p, // 服務-創新-ICON說明文字
 .headline-list .txt, // 媒體-熱門-項目說明文字
 .news-list .item-group .txt h3, // 媒體-卡片-標題文字
-.form__box .form__box-itemgroup .form__box-item .inputtitle // 表單頁-欄位名稱文字
+.form__box .form__box-itemgroup .form__box-item .inputtitle, // 表單頁-欄位名稱文字
+.cooperation h3 small // 服務-案例-台灣人壽合作醫院-說明文字
 {
 	line-height: 1.5;
 	font-size: $xxs-vw-18-vw;

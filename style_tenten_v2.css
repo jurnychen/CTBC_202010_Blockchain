@@ -85,7 +85,8 @@
 .form__box h2,
 .issue-result h3,
 .issue-result-item h4,
-.solution-item .txt h2 {
+.solution-item .txt h2,
+.case .cooperation h3 {
   line-height: 1.5;
   font-size: 5.86667vw; }
   @media screen and (min-width: 768px) {
@@ -95,7 +96,8 @@
     .form__box h2,
     .issue-result h3,
     .issue-result-item h4,
-    .solution-item .txt h2 {
+    .solution-item .txt h2,
+    .case .cooperation h3 {
       font-size: 2.14286vw; } }
   @media screen and (min-width: 1400px) {
     .case h2,
@@ -104,7 +106,8 @@
     .form__box h2,
     .issue-result h3,
     .issue-result-item h4,
-    .solution-item .txt h2 {
+    .solution-item .txt h2,
+    .case .cooperation h3 {
       font-size: 30px; } }
 
 .issue-result .main-more + .block-more .btn-more {
@@ -126,7 +129,8 @@
 .practice-item p,
 .headline-list .txt,
 .news-list .item-group .txt h3,
-.form__box .form__box-itemgroup .form__box-item .inputtitle {
+.form__box .form__box-itemgroup .form__box-item .inputtitle,
+.cooperation h3 small {
   line-height: 1.5;
   font-size: 4.8vw; }
   @media screen and (min-width: 768px) {
@@ -139,7 +143,8 @@
     .practice-item p,
     .headline-list .txt,
     .news-list .item-group .txt h3,
-    .form__box .form__box-itemgroup .form__box-item .inputtitle {
+    .form__box .form__box-itemgroup .form__box-item .inputtitle,
+    .cooperation h3 small {
       font-size: 1.57143vw; } }
   @media screen and (min-width: 1400px) {
     .main-title p,
@@ -151,7 +156,8 @@
     .practice-item p,
     .headline-list .txt,
     .news-list .item-group .txt h3,
-    .form__box .form__box-itemgroup .form__box-item .inputtitle {
+    .form__box .form__box-itemgroup .form__box-item .inputtitle,
+    .cooperation h3 small {
       font-size: 22px; } }
 
 .tab-group a {

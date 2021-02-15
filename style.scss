@@ -969,13 +969,27 @@ p {
         right: 0;
         bottom: 0;
         margin: auto;
-        $size: 50px;
+        $size: 10vw;
         width: $size;
         height: $size;
         line-height: $size;
+        transform: translateX(50%);
         border-radius: 50%;
         background-color: rgba($main-color1, .8);
         box-shadow: 0 0 0 8px rgba($main-color1, .5);
+        @media screen and (min-width:768px){
+            $size: 5vw;
+            width: $size;
+            height: $size;
+            line-height: $size;
+        }
+        @media screen and (min-width:1400px){
+            $size: 50px;
+            width: $size;
+            height: $size;
+            line-height: $size;
+        }
+
     }
     .mv:hover:after {
         background-color: rgba($main-color3, .8);
@@ -986,7 +1000,7 @@ p {
 .mv {
     position: relative;
     @media screen and (max-width: 767px) {
-        width: 100%;
+        width: 86%;
         border: -1;
     }
     @media screen and (min-width:768px) {
