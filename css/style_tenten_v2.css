@@ -453,7 +453,7 @@ body {
     display: inline-block;
     position: relative;
     z-index: 1;
-    background: url(pic/icon_flow_arrow_right_white.png) no-repeat center/100% auto; }
+    background: url(../pic/icon_flow_arrow_right_white.png) no-repeat center/100% auto; }
   .btn-basic:hover::before {
     width: 100%; }
 
@@ -623,13 +623,13 @@ body {
     width: 40%;
     background-color: #1cbfa5; }
   .button-half:after {
-    background: url(pic/icon_flow_arrow_right_black.png) no-repeat center/100% auto; }
+    background: url(../pic/icon_flow_arrow_right_black.png) no-repeat center/100% auto; }
   .button-half:hover {
     color: #fff; }
   .button-half:hover::before {
     background-color: #e03757; }
   .button-half:hover:after {
-    background: url(pic/icon_flow_arrow_right_white.png) no-repeat center/100% auto; }
+    background: url(../pic/icon_flow_arrow_right_white.png) no-repeat center/100% auto; }
 
 .btn-full-bgcolor2 {
   background-color: #e03757; }
@@ -647,11 +647,11 @@ body {
 .btn-text-color2 {
   color: #1A1A1A; }
   .btn-text-color2:after {
-    background: url(pic/icon_flow_arrow_right_black.png) no-repeat center/100% auto; }
+    background: url(../pic/icon_flow_arrow_right_black.png) no-repeat center/100% auto; }
   .btn-text-color2:hover {
     color: #fff; }
   .btn-text-color2:hover::after {
-    background: url(pic/icon_flow_arrow_right_white.png) no-repeat center/100% auto; }
+    background: url(../pic/icon_flow_arrow_right_white.png) no-repeat center/100% auto; }
 
 .button-select {
   background-color: #f0f000; }
@@ -672,7 +672,7 @@ body {
   z-index: 1;
   width: 4.26667vw;
   height: 4.26667vw;
-  background: url(pic/icon_flow_arrow_right_white.png) no-repeat center/100% auto; }
+  background: url(../pic/icon_flow_arrow_right_white.png) no-repeat center/100% auto; }
   @media screen and (min-width: 768px) {
     .solution-item .txt h2::after {
       width: 1.14286vw;
@@ -867,7 +867,7 @@ body {
 
 .kv .container:after {
   left: 0;
-  background-image: url("pic/banner_bgimage_left.png");
+  background-image: url("../pic/banner_bgimage_left.png");
   -webkit-transform: translateX(0%);
   -ms-transform: translateX(0%);
   transform: translateX(0%);
