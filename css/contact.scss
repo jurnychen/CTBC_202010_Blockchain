@@ -423,11 +423,11 @@
     // outline: 1px solid #f00;
     top: 0;
     left: 0;
-    transform: translateY(25%);
+    transform: translateY(10%);
     @media only screen and (min-width: 768px) {
-      top: 50%;
+      // top: 50%;
       padding: 0;
-      transform: translateY(-75%);
+      // transform: translateY(-75%);
     }
   }
 

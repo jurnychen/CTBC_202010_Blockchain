@@ -317,8 +317,9 @@ p {
         background-color: #fff;
         margin: 10px auto 0;
         @media screen and (max-width: 767px) {
-            width: 90%;
+            width: 80%;
             border-radius: 6px;
+            margin: 10px 0 0 auto;
         }
         @media screen and (min-width:768px) {
             position: absolute;
@@ -918,7 +919,7 @@ p {
         left: 0;
     }
     .step-item-list li:hover a {
-        color: #fff;
+        // color: #fff;
         ;
     }
     .step-dot {}
@@ -1492,7 +1493,7 @@ p {
     // 輪播下方小點 縮圖
     .thubnail-list {
         position: absolute;
-        bottom: 60px;
+        bottom: $xxs-vw-20-vw;
         width: 90%;
         max-width: 1100px;
         left: 0;
