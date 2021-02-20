@@ -304,7 +304,7 @@ p {
         z-index: 1;
         width: 15px;
         height: 15px;
-        background: url('pic/icon_flow_arrow_right_white.png') no-repeat center / 100% auto;
+        background: url('../pic/icon_flow_arrow_right_white.png') no-repeat center / 100% auto;
     }
     li a.active {
         border-radius: 100px;
@@ -521,7 +521,7 @@ p {
         right: 0;
         top: 0;
         // background: url('pic/index/banner_bgimage_index_right.png') no-repeat left top / cover;
-        background: url('pic/section_bgimage_big.svg') no-repeat left top / cover;
+        background: url('../pic/section_bgimage_big.svg') no-repeat left top / cover;
         @media screen and (min-width: 768px) {
             transform: translateX(50%);
         }
@@ -533,7 +533,7 @@ p {
         left: 0;
         bottom: 0;
         // background: url('pic/index/banner_bgimage_index_right.png') no-repeat left top / cover;
-        background: url('pic/section_bgimage_small.svg') no-repeat right top / cover;
+        background: url('../pic/section_bgimage_small.svg') no-repeat right top / cover;
         @media screen and (min-width: 768px) {
             transform: translateX(-50%);
         }
@@ -718,7 +718,7 @@ p {
                 font-size: 22px;
             }
         }
-        // 訂閱成功的視窗
+        //訂閱成功的視窗
         .box-success {
             max-width: 315px;
             position: absolute;
@@ -935,13 +935,13 @@ p {
         padding: 0;
         width: 50px;
         list-style: none;
-        background: url('pic/index/icon_qa_step_bg_normal.png') center center / 100%;
+        background: url('../pic/index/icon_qa_step_bg_normal.png') center center / 100%;
     }
     .step-dot li.visited {
-        background-image: url('pic/index/icon_qa_step_bg_visited.png');
+        background-image: url('../pic/index/icon_qa_step_bg_visited.png');
     }
     .step-dot li.active {
-        background-image: url('pic/index/icon_qa_step_bg_active.png');
+        background-image: url('../pic/index/icon_qa_step_bg_active.png');
     }
     .step-dot li+li {
         margin-left: 20px;
@@ -1077,7 +1077,7 @@ p {
 
 .issue-result-item {
     @media screen and (min-width: 768px) {
-        width: calc(50% - $lg-vw-80-vw);
+        width: calc(50% - #{$lg-vw-80-vw});
         display: flex;
         flex-wrap: wrap;
     }
@@ -1446,14 +1446,14 @@ p {
             display: none;
         }
         @media screen and (min-width: 768px) {
-            background-image: url('pic/banner_bgimage_right.png');
+            background-image: url('../pic/banner_bgimage_right.png');
             transform: translateX(90%);
             background-position: center left;
         }
     }
     .container:after {
         left: 0;
-        background-image: url('pic/banner_bgimage_left.png');
+        background-image: url('../pic/banner_bgimage_left.png');
         transform: translateX(-75%);
         background-position: right center;
         @media screen and (min-width: 768px) {
@@ -1586,7 +1586,7 @@ p {
     .kv-btn-arrow {}
     .kv-btn-arrow span {
         display: block;
-        background-image: url('pic/icon_flow_arrow_right_white.png');
+        background-image: url('../pic/icon_flow_arrow_right_white.png');
         background-repeat: no-repeat;
         background-size: 1em auto;
         background-position: right center;
@@ -1618,12 +1618,12 @@ p {
     }
     .container:before {
         @media screen and (min-width: 768px) {
-            background-image: url('pic/index/banner_bgimage_index_right.png');
+            background-image: url('../pic/index/banner_bgimage_index_right.png');
             transform: translateX(90%);
         }
     }
     .container:after {
-        background-image: url('pic/index/banner_bgimage_index_left.png');
+        background-image: url('../pic/index/banner_bgimage_index_left.png');
         transform: translateX(-40%);
         width: 100%;
         @media screen and (min-width: 768px) {
@@ -2055,7 +2055,7 @@ p {
 }
 
 .advisory {
-    background: url('pic/bgimage_actionbox.jpg') no-repeat center center/ auto 100%, #164D83;
+    background: url('../pic/bgimage_actionbox.jpg') no-repeat center center/ auto 100%, #164D83;
     * {
         box-sizing: border-box;
     }
@@ -2071,7 +2071,7 @@ p {
         transform: translateY(-40%) translateX(-20%);
         width: 8vw;
         height: 8vw;
-        background: url('pic/icon_arrow_green.png') no-repeat center center / 100% auto;
+        background: url('../pic/icon_arrow_green.png') no-repeat center center / 100% auto;
         @media screen and (min-width: 768px) {
             width: 4vw;
             height: 4vw;
@@ -2158,7 +2158,7 @@ p {
         position: relative;
         padding-bottom: 50%;
         margin: auto;
-        background: url('pic/service/iconbg_benefit.png') no-repeat center center / contain;
+        background: url('../pic/service/iconbg_benefit.png') no-repeat center center / contain;
     }
     .pic img,
     .pic svg {
@@ -2180,12 +2180,12 @@ p {
 
 .slider-advantage .slick-prev {
     left: 10px;
-    background: url('pic/icon_arrow_left.png') no-repeat center center / contain;
+    background: url('../pic/icon_arrow_left.png') no-repeat center center / contain;
 }
 
 .slider-advantage .slick-next {
     right: 10px;
-    background: url('pic/icon_arrow_right.png') no-repeat center center / contain;
+    background: url('../pic/icon_arrow_right.png') no-repeat center center / contain;
 }
 
 .slider-advantage .slick-prev::before,
@@ -2689,7 +2689,6 @@ p {
         @media screen and (max-width: 767px) {}
         @media screen and (min-width: 768px) {
             width: 50%;
-            margin-left: auto;
             padding: $lg-vw-15-vw 0;
             margin: 0 $lg-vw-15-vw 0 auto;
         }
@@ -3001,7 +3000,7 @@ p {
         list-style: none;
         margin: 2em;
         padding-left: 50px;
-        background-image: url("pic/awards/iconbg_award_forList.svg");
+        background-image: url('../pic/awards/iconbg_award_forList.svg');
         background-repeat: no-repeat;
         background-size: 48px auto;
         @media screen and (max-width: 767px) {
@@ -3081,7 +3080,7 @@ p {
     z-index: 1;
     width: 15px;
     height: 15px;
-    background: url(pic/icon_flow_arrow_right_white.png) no-repeat center/100% auto;
+    background: url('../pic/icon_flow_arrow_right_white.png') no-repeat center/100% auto;
 }
 
 .issue-result-item .btn-more span {
@@ -3098,7 +3097,7 @@ p {
     z-index: 1;
     width: 15px;
     height: 15px;
-    background: url(pic/icon_flow_arrow_right_black.png) no-repeat center/100% auto;
+    background: url('../pic/icon_flow_arrow_right_black.png') no-repeat center/100% auto;
 }
 
 // SVG 描圖動畫控制===========
