@@ -89,6 +89,10 @@ $(function() {
             $('.issue-step').removeClass('hide');
             $('.issue .mv').removeClass('hide');
             $($ir).removeClass('show');
+            if( $(window).width() < 768 ){
+                let xx = $('.issue-step').offset().top;
+                $('html,body').scrollTop(xx);
+            }
             return false;
         })
         let st = 0;
