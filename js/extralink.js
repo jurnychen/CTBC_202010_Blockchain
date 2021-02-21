@@ -1,16 +1,17 @@
-var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
 // Handle open external URL
 document.addEventListener('click', function (e) {
     handleExtUrl(e);
 }, false);
 
-var handleExtUrl = function (e) {
+let handleExtUrl = function (e) {
     extralinkRemovePopWindows();
 
-    var href = '';
+    let href = '', target = '';
     if ($(e.target).closest('a') != null) {
         href = $(e.target).closest('a').prop('href');
+        target = $(e.target).closest('a').prop('target');
     }
 
     if (href && href != '') {
@@ -44,7 +45,7 @@ var handleExtUrl = function (e) {
 
         e.preventDefault();
 
-        var isSkipLeaveMessage = true;
+        let isSkipLeaveMessage = true;
 
         // check if the IB has showLeaveMessage
         if (typeof (showLeaveMessage) != 'undefined') {
@@ -62,7 +63,7 @@ var handleExtUrl = function (e) {
             $("#leavemessage a").attr("exturl", href);
             
             handleOpenLeaveMessage(function (e) {
-                var href = $(e.target).attr("exturl");
+                let href = $(e.target).attr("exturl");
 
                 // callback, clear showLeaveMessage status
                 showLeaveMessage = false;
@@ -70,17 +71,17 @@ var handleExtUrl = function (e) {
                 // logout session
                 doSimpleIdentityLogout(function () {
                     $.fancybox.close();
-                    handleOpenLightBox(href, e);
+                    handleOpenLightBox(href, target, e);
 
                 });
             });
         } else {
-            handleOpenLightBox(href, e);
+            handleOpenLightBox(href, target, e);
         }
     }
 }
 
-var handleOpenLeaveMessage = function (callback) {
+let handleOpenLeaveMessage = function (callback) {
     $.fancybox.open({
         src: '#leavemessage',
         type: 'inline',
@@ -105,7 +106,7 @@ var handleOpenLeaveMessage = function (callback) {
     toggleLeaveMessage = callback;
 }
 
-var handleOpenLightBox = function (href, e) {
+let handleOpenLightBox = function (href, target, e) {
     // check if the link is in CBK
     if (isInsideCBK(href)) {
         top.window.location.href = href;
@@ -118,14 +119,13 @@ var handleOpenLightBox = function (href, e) {
         }
 
         // check if the link is in external link list
-        var isOpenBlank = false;
-        var whitelistUrl = [{"url":"www.tentenplus.com.tw"},{"url":"ctbcbank.com"}];
+        let isOpenBlank = false;
+        let whitelistUrl = [{"url":"www.tentenplus.com.tw"},{"url":"ctbcbank.com"}];
         if (whitelistUrl != null) {
-            for (var i in whitelistUrl) {
+            for (let i in whitelistUrl) {
                 if (hasString(href, whitelistUrl[i]['url'])) {
-                    console.log('this');
+                    //console.log('this');
                     isOpenBlank = false;
-
                 }
             }
         }
@@ -136,33 +136,34 @@ var handleOpenLightBox = function (href, e) {
         }
 
         if (isOpenBlank) {
-            console.log('135');
-            //window.open(href);
+            //console.log('line:139');
+            window.open(href);
         } else {
             // check if the page is in iframe
             if (window.self != window.top && !(window.frameElement && window.frameElement.id == 'ContentFrame')) {
                 href = href.replace("\/content\/twrbo\/", "/web/content/twrbo/");
             }
+            //console.log('line:146');
             window.location.href = href;
         }
 
         // check if the link is an ib link
     } else if (hasString(href, 'twrbc')) {
-
         // if the link is /twrbc-general/ot006/, open external url
         if (hasString(href, '\/twrbc-general\/ot006\/')) {
+            //console.log('line:155');
             window.open(href)
         } else {
-            var taskId = href.split(location.origin)[1];
-            console.log('開啟網銀交易，連結： ' + taskId);
+            let taskId = href.split(location.origin)[1];
+            //console.log('line:159,開啟網銀交易，連結： ' + taskId);
             switchToIBByUrl(taskId);
         }
     } else {
-        var isSkipLightBox = false;
+        let isSkipLightBox = false;
         // check if the link is in external link list
-        var whitelistUrl = [{"url":"localhost"},{"url":"www.tentenplus.com.tw"},{"url":"mailto"},{"url":"ctbcbank.com"}];
+        let whitelistUrl = [{"url":"localhost"},{"url":"www.tentenplus.com.tw"},{"url":"mailto"},{"url":"ctbcbank.com"}];
         if (whitelistUrl != null) {
-            for (var i in whitelistUrl) {
+            for (let i in whitelistUrl) {
                 if (hasString(href, whitelistUrl[i]['url'])) {
                     isSkipLightBox = true;
                 }
@@ -170,9 +171,12 @@ var handleOpenLightBox = function (href, e) {
         }
 
         if (isSkipLightBox) {
-            //console.log('170');
-            //window.open(href);
-            window.location.href = href;
+            //console.log('line:175');
+            if (target==='_blank') {
+                window.open(href);
+            } else {
+                window.location.href = href;
+            }
         } else {
             extralinkShowPopWindows();
             $("#outlink a:first-child").attr("exturl", href);
@@ -203,8 +207,8 @@ var handleOpenLightBox = function (href, e) {
 
 
 // click button on external link light box
-var toggleExternalLink = function (e) {
-    var exturl = $(e.target).attr("exturl");
+let toggleExternalLink = function (e) {
+    let exturl = $(e.target).attr("exturl");
     if (exturl != null) {
         window.open(exturl);
         closeFancybox();
@@ -212,7 +216,7 @@ var toggleExternalLink = function (e) {
 }
 
 // close all the fancyboxs opened
-var closeFancybox = function (e) {
+let closeFancybox = function (e) {
     // force close all fancybox mask
     $.fancybox.close();
 
@@ -223,9 +227,9 @@ var closeFancybox = function (e) {
 }
 
 // Menu L0 back to IB
-var backToIB = function () {
+let backToIB = function () {
 
-    var isSkipLeaveMessage = true;
+    let isSkipLeaveMessage = true;
 
     // check if the IB has showLeaveMessage
     if (typeof (showLeaveMessage) != 'undefined') {
@@ -255,19 +259,19 @@ var backToIB = function () {
     }
 }
 
-var isInsideCBK = function (href) {
+let isInsideCBK = function (href) {
     return hasString(href, '/content/twcbo/');
 }
 
-var isInsideIB = function (e) {
+let isInsideIB = function (e) {
     return $(e.target).parents('app').length > 0 || $(e.target).attr('appopen');
 }
 
-var isInsideAEM = function (href) {
+let isInsideAEM = function (href) {
     return hasString(href, '/content/twrbo/') || hasString(href, window.location.origin + '/twrbo') ;
 }
 
-var hasString = function (content, key) {
+let hasString = function (content, key) {
     return content.indexOf(key) > -1;
 }
 
