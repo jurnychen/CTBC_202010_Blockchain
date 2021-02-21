@@ -2579,39 +2579,47 @@ p {
     }
     .category {
         position: relative;
-        background-color: $main-color1;
-        padding: $xxs-vw-5-vw $xxs-vw-10-vw;
         margin: $xxs-vw-20-vw 0 0;
-        color: #fff;
+        background-color: $main-color1;
         @media screen and (min-width: 768px) {
-            padding: $lg-vw-10-vw $lg-vw-20-vw;
             margin: 0;
         }
         @media screen and (min-width: 1400px) {
-            padding: 10px 20px;
         }
     }
-    .category:after {
+    .category span{
+        height: $xxs-vw-35-vw;
+        line-height: $xxs-vw-35-vw;
+        color: #fff;
+        padding: $xxs-vw-5-vw $xxs-vw-10-vw;
+        @media screen and (min-width: 768px) {
+            height: $lg-vw-40-vw;
+            line-height: $lg-vw-40-vw;
+            padding: $lg-vw-5-vw $lg-vw-10-vw;
+        }
+        @media screen and (min-width: 1400px) {
+            height: 40px;
+            line-height: 40px;
+            padding: 5px 10px;
+        }
+    }
+    .category span::after {
         content: '';
         position: absolute;
         width: 0;
         height: 0;
         top: 0;
         right: 0;
-        border-top: $xxs-vw-32-vw solid $main-color1;
-        border-right: $xxs-vw-32-vw solid transparent;
-        transform: translateX(95%);
+        border-top: $xxs-vw-35-vw solid $main-color1;
+        border-right: $xxs-vw-35-vw solid transparent;
+        transform: translateX(98%);
         @media screen and (min-width: 768px) {
             border-top: $lg-vw-40-vw solid $main-color1;
             border-right: $lg-vw-40-vw solid transparent;
         }
-        @media screen and (min-width: 1000px) {
-            border-top: $lg-vw-35-vw solid $main-color1;
-            border-right: $lg-vw-35-vw solid transparent;
-        }
         @media screen and (min-width: 1400px) {
-            border-top: 35px solid $main-color1;
-            border-right: 35px solid transparent;
+            border-top: 40px solid $main-color1;
+            border-right: 40px solid transparent;
         }
     }
     .date {

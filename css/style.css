@@ -2515,41 +2515,46 @@ p {
         display: flex; } }
   .news-list .category {
     position: relative;
-    background-color: #1cbfa5;
-    padding: 1.33333vw 2.66667vw;
     margin: 5.33333vw 0 0;
-    color: #fff; }
+    background-color: #1cbfa5; }
     @media screen and (min-width: 768px) {
       .news-list .category {
-        padding: 0.71429vw 1.42857vw;
         margin: 0; } }
+  .news-list .category span {
+    height: 9.33333vw;
+    line-height: 9.33333vw;
+    color: #fff;
+    padding: 1.33333vw 2.66667vw; }
+    @media screen and (min-width: 768px) {
+      .news-list .category span {
+        height: 2.85714vw;
+        line-height: 2.85714vw;
+        padding: 0.35714vw 0.71429vw; } }
     @media screen and (min-width: 1400px) {
-      .news-list .category {
-        padding: 10px 20px; } }
-  .news-list .category:after {
+      .news-list .category span {
+        height: 40px;
+        line-height: 40px;
+        padding: 5px 10px; } }
+  .news-list .category span::after {
     content: '';
     position: absolute;
     width: 0;
     height: 0;
     top: 0;
     right: 0;
-    border-top: 8.53333vw solid #1cbfa5;
-    border-right: 8.53333vw solid transparent;
-    -webkit-transform: translateX(95%);
-    -ms-transform: translateX(95%);
-    transform: translateX(95%); }
+    border-top: 9.33333vw solid #1cbfa5;
+    border-right: 9.33333vw solid transparent;
+    -webkit-transform: translateX(98%);
+    -ms-transform: translateX(98%);
+    transform: translateX(98%); }
     @media screen and (min-width: 768px) {
-      .news-list .category:after {
+      .news-list .category span::after {
         border-top: 2.85714vw solid #1cbfa5;
         border-right: 2.85714vw solid transparent; } }
-    @media screen and (min-width: 1000px) {
-      .news-list .category:after {
-        border-top: 2.5vw solid #1cbfa5;
-        border-right: 2.5vw solid transparent; } }
     @media screen and (min-width: 1400px) {
-      .news-list .category:after {
-        border-top: 35px solid #1cbfa5;
-        border-right: 35px solid transparent; } }
+      .news-list .category span::after {
+        border-top: 40px solid #1cbfa5;
+        border-right: 40px solid transparent; } }
   .news-list .date {
     padding-right: 1em;
     color: #1cbfa5;
