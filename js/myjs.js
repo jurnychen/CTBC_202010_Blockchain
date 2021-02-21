@@ -52,31 +52,28 @@ $(function() {
     })
 
     // 首頁問券，第三步驟結果顯示判斷
+    // 用問題一跟問題三的編號組合數值來當作查詢條件
     $('.step3 li').click(function() {
         _step3 = $(this).attr('data-value');
         // console.log(_step3);
         let i = '' + _step1 + _step3;
         let $ir = '';
-        if (i >= 11 && i <= 17) {
+        if (i >= 11 && i <= 17 || i >= 31 && i <= 37) {
             $ir = '.ir-1';
-            irShow($ir)
         }
         if (i >= 21 && i <= 23) {
             $ir = '.ir-2';
-            irShow($ir)
         }
-        if (i >= 24 && i <= 27 || i >= 41 && i <= 47 || i >= 51 && i <= 57 || i >= 71 && i <= 77) {
+        if (i >= 24 && i <= 27 || i >= 51 && i <= 57 || i >= 71 && i <= 77) {
             $ir = '.ir-3';
-            irShow($ir)
         }
         if (i >= 61 && i <= 67) {
             $ir = '.ir-4';
-            irShow($ir)
         }
-        if (i >= 31 && i <= 37 || i >= 81 && i <= 87) {
+        if (i >= 41 && i <= 47 || i >= 81 && i <= 87) {
             $ir = '.ir-5';
-            irShow($ir);
         }
+        irShow($ir);
         return false;
     })
 
@@ -92,6 +89,7 @@ $(function() {
             $('.issue-step').removeClass('hide');
             $('.issue .mv').removeClass('hide');
             $($ir).removeClass('show');
+            return false;
         })
         let st = 0;
         changeStep(st);

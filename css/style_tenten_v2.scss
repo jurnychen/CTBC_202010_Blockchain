@@ -21,7 +21,7 @@ body {
 
 	// 控制內容寬度內距
 	> .container{
-		width: calc(100% - $xxs-vw-15-vw);
+		width: calc(100% - 4vw);
 		max-width: 1400px;
 		@media screen and (min-width:768px){
 		    width: 90%;
@@ -151,7 +151,7 @@ body {
 		    display: inline-block;
 		    position: relative;
 		    z-index: 1;
-		    background: url(pic/icon_flow_arrow_right_white.png) no-repeat center/100% auto;
+		    background: url('../pic/icon_flow_arrow_right_white.png') no-repeat center/100% auto;
 		}
 		&:hover::before{
 			width: 100%;
@@ -359,7 +359,7 @@ body {
 			background-color: $main-color1;
 		}
 		&:after{
-		    background: url(pic/icon_flow_arrow_right_black.png) no-repeat center/100% auto;
+		    background: url('../pic/icon_flow_arrow_right_black.png') no-repeat center/100% auto;
 		}
 		&:hover{
 			color:#fff;
@@ -368,7 +368,7 @@ body {
 			background-color: $main-color3;
 		}
 		&:hover:after{
-			background: url(pic/icon_flow_arrow_right_white.png) no-repeat center/100% auto;
+			background: url('../pic/icon_flow_arrow_right_white.png') no-repeat center/100% auto;
 		}
 	}
 
@@ -399,13 +399,13 @@ body {
 	.btn-text-color2{
 		color: $txt-main-color; 
 		&:after{
-		    background: url(pic/icon_flow_arrow_right_black.png) no-repeat center/100% auto;
+		    background: url('../pic/icon_flow_arrow_right_black.png') no-repeat center/100% auto;
 		}
 		&:hover{
 			color: #fff;
 		}
 		&:hover::after{
-		    background: url(pic/icon_flow_arrow_right_white.png) no-repeat center/100% auto;
+		    background: url('../pic/icon_flow_arrow_right_white.png') no-repeat center/100% auto;
 		}
 	}
 
@@ -460,7 +460,7 @@ body {
     z-index: 1;
     width: $xxs-vw-16-vw;
     height: $xxs-vw-16-vw;
-    background: url(pic/icon_flow_arrow_right_white.png) no-repeat center/100% auto;
+    background: url('../pic/icon_flow_arrow_right_white.png') no-repeat center/100% auto;
     @media screen and (min-width:768px){
 	    width: $lg-vw-16-vw;
 	    height: $lg-vw-16-vw;
@@ -623,7 +623,7 @@ body {
 	}	
 	.mv img{
 		border-radius: 10px;
-		width: calc( 100% - $xxs-vw-12-vw);
+		width: calc( 100% - 3.2vw);
 		height: auto;
 		margin: 0 $xxs-vw-25-vw;
 		//  25 /375 = 0.066666667
@@ -762,7 +762,7 @@ body {
 
     .container:after {
         left: 0;
-        background-image: url('pic/banner_bgimage_left.png');
+        background-image: url('../pic/banner_bgimage_left.png');
         transform: translateX(0%);
         background-position: right center;
         @media screen and (min-width: 768px) {

@@ -105,7 +105,7 @@ body {
 //     z-index: 1;
 //     width: 15px;
 //     height: 15px;
-//     background: url('pic/icon_flow_arrow_right_white.png') no-repeat center / 100% auto;
+//     background: url('../pic/icon_flow_arrow_right_white.png') no-repeat center / 100% auto;
 // }
 
 
@@ -285,13 +285,13 @@ body {
     }
     .container:before {
         @media screen and (min-width:768px){
-            // background-image: url(pic/banner_bgimage_right.png);
+            // background-image: url('../pic/banner_bgimage_right.png);
             // transform: translateX(90%);
             // background-position: center left;
         }
     }
     .container:after {
-        // background-image: url(pic/banner_bgimage_left.png);
+        // background-image: url('../pic/banner_bgimage_left.png);
         // transform: translateX(-75%);
         // background-position: center right;
         @media screen and (min-width:768px){
@@ -644,7 +644,7 @@ body {
 // 進一步諮詢解決方案 section advisory
 // =========================
 .section.advisory{
-    background: url('pic/bgimage_actionbox.jpg') no-repeat center center/ auto 100%, #164D83;
+    background: url('../pic/bgimage_actionbox.jpg') no-repeat center center/ auto 100%, #164D83;
     *{
         box-sizing: border-box;
     }
@@ -700,7 +700,7 @@ body {
         transform: translateY(-40%) translateX(-110%);
         width: 8vw;
         height: 8vw;
-        background: url('pic/icon_arrow_green.png') no-repeat center center / 100% auto;
+        background: url('../pic/icon_arrow_green.png') no-repeat center center / 100% auto;
         @media screen and (min-width:768px){
             width: 4vw;
             height: 4vw;

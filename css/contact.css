@@ -100,7 +100,7 @@
       padding: 0 0 4vw 0; }
       @media only screen and (min-width: 768px) {
         .form__box .form__box-itemgroup .form__box-item {
-          width: calc(100% - $lg-vw-30-vw);
+          width: calc(100% - 2.142857vw);
           padding: 0 0 1.07143vw; } }
       @media only screen and (min-width: 1400px) {
         .form__box .form__box-itemgroup .form__box-item {

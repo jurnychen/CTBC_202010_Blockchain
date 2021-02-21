@@ -147,8 +147,8 @@
                             本行持續協助各產業創新，<br>電商零售解決方案獲國際肯定
                         </div>
                         <div class="btn-group">
-                            <a href="https://www.libf.ac.uk/news-and-insights/news/detail/2019/11/22/financial-innovation-awards-the-winners" target="_blank" rel="noreferrer noopener"  class="btn-basic btn-small btn-arrow-not"><span>獲獎訊息</span></a>
-                            <a href="service_3.html" target="_blank" rel="noreferrer noopener"  class="btn-basic btn-small"><span>電商零售解決方案</span></a>
+                            <a href="https://www.libf.ac.uk/news-and-insights/news/detail/2019/11/22/financial-innovation-awards-the-winners" target="_blank" rel="noreferrer noopener" class="btn-basic btn-small btn-arrow-not"><span>獲獎訊息</span></a>
+                            <a href="service_3.html" target="_blank" rel="noreferrer noopener" class="btn-basic btn-small"><span>電商零售解決方案</span></a>
                         </div>
                     </div>
                 </div>
@@ -615,31 +615,31 @@
                             <div class="client-logo"><img src="pic/index/logo_index_partner_02.png" alt=""></div>
                             <p>CryptoBLK</p>
                         </li>
-                        
+
                         <!-- 桌機版Logo 03 -->
                         <li>
                             <div class="client-logo"><img src="pic/index/logo_index_partner_03.png" alt=""></div>
                             <p>Contour</p>
                         </li>
-                        
+
                         <!-- 桌機版Logo 04 -->
                         <li>
                             <div class="client-logo"><img src="pic/index/logo_index_partner_04.png" alt=""></div>
                             <p>資策會</p>
                         </li>
-                        
+
                         <!-- 桌機版Logo 05 -->
                         <li>
                             <div class="client-logo"><img src="pic/index/logo_index_partner_05.png" alt=""></div>
                             <p>R3</p>
                         </li>
-                        
+
                         <!-- 桌機版Logo 06 -->
                         <li>
                             <div class="client-logo"><img src="pic/index/logo_index_partner_01.png" alt=""></div>
                             <p>Soocker</p>
                         </li>
-                        
+
                         <!-- 桌機版Logo 07 -->
                         <li>
                             <div class="client-logo"><img src="pic/index/logo_index_partner_03.png" alt=""></div>
@@ -913,12 +913,21 @@
                 adaptiveHeight: false
             })
             $('.slider-client').slick({
-                dots: true,
-                infinite: true,
-                speed: 300,
-                slidesToShow: 1,
-                adaptiveHeight: true
-            })
+                    dots: true,
+                    infinite: true,
+                    speed: 300,
+                    slidesToShow: 1,
+                    adaptiveHeight: true
+                })
+                // 當數量小於12個時隱藏導覽紅點
+            function sliderClientDot() {
+                let _conunt = $('.slider-client.for-desktop .slick-slide li').length;
+                console.log(_conunt);
+                if (_conunt <= 12) {
+                    $('.slider-client.for-desktop .slick-dots').hide();
+                }
+            }
+            sliderClientDot();
             $('.slider-awards').slick({
                 centerMode: true,
                 slidesToShow: 3,
@@ -986,7 +995,7 @@
 
             $('.light-box .btn-close').click(function() {
                 $('.light-box').fadeOut();
-                if (playerSatus !== YT.PlayerState.PAUSED)  {
+                if (playerSatus !== YT.PlayerState.PAUSED) {
                     player.stopVideo();
                 }
             })
@@ -1001,6 +1010,7 @@
 
         let player;
         let playerSatus;
+
         function onYouTubeIframeAPIReady() {
             player = new YT.Player('player', {
                 events: {
@@ -1009,11 +1019,9 @@
             });
         }
 
-        function onPlayerStateChange(event){
+        function onPlayerStateChange(event) {
             playerSatus = event.data;
         }
-
-
     </script>
 </body>
 

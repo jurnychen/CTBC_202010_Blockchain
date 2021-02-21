@@ -165,7 +165,7 @@
       position: relative;
       padding: 0 0 $xxs-vw-15-vw 0;
       @media only screen and (min-width: 768px) {
-        width: calc(100% - $lg-vw-30-vw);
+        width: calc(100% - 2.142857vw);// $lg-vw-30-vw
         padding: 0 0 $lg-vw-15-vw;
       }
       @media only screen and (min-width: 1400px) {
