@@ -155,10 +155,11 @@ p {
         top: 0%;
         font-size: 18px;
         left: -100%;
-        width: 82%;
+        width: 100%;
         height: 100%;
         padding-top: 50px;
-        background-color: $main-color2DD;
+        // background-color: $main-color2DD;
+        background: linear-gradient(90deg, #1c3e57 0%, #1c3e57 82%, rgba(0,0,0,0) 82.1%);
         transition: .5s;
     }
     @media screen and (min-width:768px) {
@@ -170,7 +171,7 @@ p {
         width: 40px;
         height: 40px;
         top: 10px;
-        right: -50px;
+        right: 20vw;
         background-color: $main-color1;
         z-index: 2;
         border-radius: 50%;
@@ -203,8 +204,8 @@ p {
 .nav-list {
     padding: 0;
     @media screen and (max-width: 767px) {
-        width: 80%;
-        margin: 0 auto;
+        width: 70%;
+        margin: 0 auto 0 5vw;
     }
     @media screen and (min-width: 768px) {
         width: 100%;
@@ -257,11 +258,15 @@ p {
     }
     li.dropdown:hover::after,
     li.dropdown:active::after {
-        transform: rotate(-45deg);
+        @media screen and (min-width:768px){
+         transform: rotate(-45deg);
+        }
     }
     li.dropdown:hover::before,
     li.dropdown:active::before {
-        transform: rotate(45deg);
+        @media screen and (min-width:768px){
+            transform: rotate(45deg);
+        }
     }
     li a {
         display: block;
@@ -879,16 +884,15 @@ p {
     .step-item-list li {
         position: relative;
         display: inline-block;
-        // border: 1px solid #000;
-        // border-radius: 100px;
         overflow: hidden;
-        @media screen and (max-width: 767px) {
-            min-width: calc(100% / 3 - 10px);
-            // margin: 0 4px 10px;
-        }
+        margin: 0 0  $xxs-vw-10-vw 0;
+        // outline: 1px solid #f00;
         @media screen and (min-width: 768px) {
-            min-width: calc(100% / 4 - 20px);
-            // margin: 0 10px 10px;
+            margin: 0 0  $lg-vw-5-vw 0;
+        }
+        @media screen and (min-width: 1400px) {
+            margin: 0 0  5px 0;
+            // 
         }
     }
     .step-item-list li:before {
@@ -963,24 +967,23 @@ p {
     }
     .mv:after {
         content: '▶';
-        color: #fff;
-        text-align: center;
+        display: block;
         position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
+        top: 50%;
+        left: 50%;
         margin: auto;
         $size: 10vw;
         width: $size;
         height: $size;
         line-height: $size;
-        transform: translateX(50%);
+        color: #fff;
+        text-align: center;
+        transform: translate(-50%, -50%);
         border-radius: 50%;
         background-color: rgba($main-color1, .8);
         box-shadow: 0 0 0 8px rgba($main-color1, .5);
         @media screen and (min-width: 768px) {
-            $size: 5vw;
+            $size: 3.571429vw;// $lg-vw-50-vw: 
             width: $size;
             height: $size;
             line-height: $size;
@@ -1000,6 +1003,7 @@ p {
 
 .mv {
     position: relative;
+    margin: 0 auto;
     @media screen and (max-width: 767px) {
         width: 86%;
         border: -1;

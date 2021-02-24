@@ -7,31 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no">
     <meta name="distribution" content="Taiwan">
     <meta name="format-detection" content="telephone=no">
-
     <title>獲獎資訊 ｜ 中國信託銀行</title>
     <meta name="description" content="中國信託區塊鏈">
     <meta name="keywords" content="區塊鏈、中信、中國信託">
-
     <!-- Open Graph data -->
     <meta property="og:title" content="中國信託區塊鏈｜獲獎資訊">
     <meta property="og:image" content="https://www.tentenplus.com.tw/demos/CTBC/CTBC_Blockchain_2021.jpg">
     <meta property="og:description" content="中國信託區塊鏈｜獲獎資訊">
     <meta property="og:site_name" content="中國信託區塊鏈">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="assets/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style_tenten_v2.css">
-
 </head>
 
 <body class="page-awards">
-
     <input type="checkbox" name="" id="menu-check">
-
     <div class="main-header">
         <div class="container">
             <div class="logo CTBC-logo">
@@ -42,18 +36,18 @@
                     <a href="contact.html" class="btn-round"><span>聯絡我們</span></a>
                 </div>
                 <label for="menu-check" class="hb">
-				<span class="sr-only">手機選單切換</span>
-				<span></span>
-				<span></span>
-				<span></span>
-			</label>
+                    <span class="sr-only">手機選單切換</span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
             </div>
             <nav class="main-nav">
                 <label for="menu-check" class="hb">
-				<span class="sr-only">手機選單切換</span>
-				<span></span>
-				<span></span>
-			</label>
+                    <span class="sr-only">手機選單切換</span>
+                    <span></span>
+                    <span></span>
+                </label>
                 <ul class="nav-list">
                     <li class="link-marketplace">
                         <a href="index.html" class="active">Marketplace首頁</a>
@@ -85,8 +79,6 @@
             </nav>
         </div>
     </div>
-
-
     <!-- KV -->
     <div class="section kv">
         <div class="slider-kv">
@@ -96,7 +88,6 @@
                     <img src="pic/awards/banner_bgimage_awards-lg.jpg" alt="">
                     <img src="pic/awards/banner_bgimage_awards-xs.jpg" alt="">
                 </div>
-
                 <div class="container">
                     <!-- 添加class Jurny -->
                     <div class="kv-group-text">
@@ -108,16 +99,9 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
-
-
-
-
-
-
     <!-- 獲獎資料 -->
     <section class="section section-awards">
         <article class="container">
@@ -139,7 +123,6 @@
                         <img src="pic/service/icon_flow_arrow_right.svg" alt="">
                     </a>
                 </div>
-
                 <!-- 內容 -->
                 <div class="awards-list">
                     <div class="awards-content active">
@@ -174,12 +157,6 @@
                             </li>
                         </ul>
                     </div>
-
-
-
-
-
-
                     <div class="awards-content">
                         <div class="year">
                             <span>2019</span>
@@ -218,10 +195,6 @@
             </div>
         </article>
     </section>
-
-
-
-
     <!-- 專人諮詢 -->
     <div class="section advisory">
         <div class="container">
@@ -232,10 +205,6 @@
             </div>
         </div>
     </div>
-
-
-
-
     <!-- 頁尾 -->
     <footer class="main-footer">
         <div class="container">
@@ -245,9 +214,9 @@
                 <form>
                     <input type="email" class="input-subscribe" id="subscribe-email" placeholder="請輸入您的聯絡郵件">
                     <label for="accept-subscribe" class="check-accept">我已詳閱並同意<a href="privacypolicy.html">隱私權保護政策</a>
-					<input type="checkbox" name="accept-subscribe" id="accept-subscribe">
-					<span class="checkmark"></span>
-				</label>
+                        <input type="checkbox" name="accept-subscribe" id="accept-subscribe">
+                        <span class="checkmark"></span>
+                    </label>
                     <button class="btn-subscribe">確定送出</button>
                 </form>
             </div>
@@ -267,63 +236,59 @@
             </div>
         </div>
     </footer>
-
-
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery-migrate.min.js"></script>
     <script type="text/javascript" src="assets/slick.min.js"></script>
     <script type="text/javascript" src="js/myjs.js"></script>
-
-
     <script>
-        $(function() {
-            $('.slider-kv').slick({
-                dots: false,
-                infinite: false,
-                speed: 0,
-                slidesToShow: 1
-            })
-            $('.thubnail-list li').click(function() {
-                $(this).addClass('active').siblings('.active').removeClass('active');
-                $('.slider-kv .slick-dots li').eq($(this).index()).click();
-            })
-
-            let _tab_year_index = 0;
-            let _tab_length = $('.tab-years li').length;
-            $('.tab-years li').click(function() {
-                _tab_year_index = $(this).index();
-                changeAward();
-                return false;
-            })
-            $('.prev').click(function() {
-                if (_tab_year_index !== 0) {
-                    _tab_year_index--;
-                }
-                changeAward();
-                return false;
-            })
-            $('.next').click(function() {
-                if (_tab_year_index !== _tab_length - 1) {
-                    _tab_year_index++;
-                }
-                changeAward();
-                return false;
-            })
-
-            function changeAward() {
-                $('.tab-years li')
-                    .eq(_tab_year_index)
-                    .addClass('active')
-                    .siblings('.active')
-                    .removeClass('active');
-                $('.awards-list .awards-content')
-                    .eq(_tab_year_index)
-                    .addClass('active')
-                    .siblings('.active')
-                    .removeClass('active');
-                return false;
-            }
+    $(function() {
+        $('.slider-kv').slick({
+            dots: false,
+            infinite: false,
+            speed: 0,
+            slidesToShow: 1
         })
+        $('.thubnail-list li').click(function() {
+            $(this).addClass('active').siblings('.active').removeClass('active');
+            $('.slider-kv .slick-dots li').eq($(this).index()).click();
+        })
+
+        let _tab_year_index = 0;
+        let _tab_length = $('.tab-years li').length;
+        $('.tab-years li').click(function() {
+            _tab_year_index = $(this).index();
+            changeAward();
+            return false;
+        })
+        $('.prev').click(function() {
+            if (_tab_year_index !== 0) {
+                _tab_year_index--;
+            }
+            changeAward();
+            return false;
+        })
+        $('.next').click(function() {
+            if (_tab_year_index !== _tab_length - 1) {
+                _tab_year_index++;
+            }
+            changeAward();
+            return false;
+        })
+
+        function changeAward() {
+            $('.tab-years li')
+                .eq(_tab_year_index)
+                .addClass('active')
+                .siblings('.active')
+                .removeClass('active');
+            $('.awards-list .awards-content')
+                .eq(_tab_year_index)
+                .addClass('active')
+                .siblings('.active')
+                .removeClass('active');
+            return false;
+        }
+    })
     </script>
 </body>
 

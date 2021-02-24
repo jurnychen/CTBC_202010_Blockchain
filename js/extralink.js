@@ -279,7 +279,7 @@ function extralinkShowPopWindows() {
     $('body').append('<div id="outlink" class="extralink__popup extralink__popup--md">\n' +
         '        <div class="extralink__popup-title">確認訊息</div>\n' +
         '        <div class="extralink__popup-content" data-element="scrollbar">\n' +
-        '            <p>您即將前往非中國信託之網頁，請確認是否執行?</p>\n' +
+        '            <p><span>您即將前往非中國信託之網頁</span><span class="visible-lg">，</span><span>請確認是否執行?</span></p>\n' +
         '        </div>\n' +
         '        <div class="extralink__popup-actions">\n' +
         '            <a exturl="" onclick="toggleExternalLink(event)" target="_blank" href="javascript:;" class="actions__btn actions__btn-primary">確認</a>\n' +

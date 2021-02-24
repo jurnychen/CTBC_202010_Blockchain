@@ -90,7 +90,7 @@ $(function() {
             $('.issue .mv').removeClass('hide');
             $($ir).removeClass('show');
             if( $(window).width() < 768 ){
-                let xx = $('.issue-step').offset().top;
+                let xx = $('.issue-topic').offset().top;
                 $('html,body').scrollTop(xx);
             }
             return false;

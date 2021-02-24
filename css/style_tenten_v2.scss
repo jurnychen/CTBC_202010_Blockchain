@@ -47,13 +47,10 @@ body {
 	    margin-bottom:  50px;
 	}
 }
-.kv-title {
-    // font-weight: 700;
- }
 
 
 
-// 背景-點點
+// 背景：點點
 .section.awards,
 .section.advantage,
 .solution {
@@ -64,7 +61,7 @@ body {
 
 
 
-// 特調-斷行控制
+// 特調：斷行控制
 .visible-xs{
 	@media screen and (min-width:768px){
 		display: none;
@@ -76,6 +73,7 @@ body {
 		display: none;
 	}
 }
+
 
 
 
@@ -271,12 +269,12 @@ body {
 		@media screen and (min-width:768px){
 		    height: $lg-vw-55-vw;
 			padding: 0 $lg-vw-50-vw;
-			margin: $lg-vw-5-vw $lg-vw-15-vw $lg-vw-5-vw 0;
+			margin: $lg-vw-5-vw $lg-vw-10-vw $lg-vw-5-vw 0;
 		}
 		@media screen and (min-width:1400px){
 		    height: 55px;
 			padding: 0 50px;
-			margin: 5px 15px 5px 0;
+			margin: 5px 10px 5px 0;
 		}
 		&::after{
 			display: none;
@@ -325,7 +323,7 @@ body {
 	.btn-size4
 	{	
 		height: $xxs-vw-40-vw;
-		padding: 0 $xxs-vw-15-vw;
+		padding: 0 $xxs-vw-13-vw;
 		@media screen and (min-width:768px){
 			height: $lg-vw-55-vw;
 			padding: 0 $lg-vw-25-vw;
@@ -336,7 +334,7 @@ body {
 		}
 		span{
 			line-height: $xxs-vw-40-vw;
-			font-size: $xxs-vw-20-vw;
+			font-size: $xxs-vw-19-vw;
 			@media screen and (min-width:768px){
 			    line-height: $lg-vw-55-vw;
 			    font-size: $lg-vw-26-vw;
@@ -432,22 +430,6 @@ body {
 		overflow: hidden;
 
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -565,6 +547,151 @@ body {
 
 
 
+
+
+// =========================
+// KV Banner
+// =========================
+	.kv{
+		.container {
+	        @media screen and (max-width: 767px) {
+	            $pd_value: 7.5vw;
+	            padding-left: $pd_value;
+	            padding-right: $pd_value;
+	        }
+	    }
+
+	    .container:after {
+	        left: 0;
+	        background-image: url('../pic/banner_bgimage_left.png');
+	        transform: translateX(0%);
+	        background-position: right center;
+	        @media screen and (min-width: 768px) {
+	            transform: translateX(-90%);
+	        }
+	    }
+
+
+	}
+
+
+// =========================
+// 表單
+// =========================
+	.main-footer .subscribe .check-accept .checkmark {
+	    background-color: #fff;
+	}
+
+
+
+	.practice .service-banner{
+
+	  background-color: #fff;
+	}
+
+
+	.practice .service-banner video {
+	  display: block;
+	  margin: 0 auto 50px;
+	  width: calc(100% - 30px);
+	  height: auto; 
+	  background-color: rgba(0, 0, 0, 0);
+	  @media screen and (min-width: 768px) {
+	      width: 70%; 
+	  } 
+	}
+
+
+
+
+
+
+// 輪撥
+	.slick-dots{
+		li,
+		li button,
+		li button::before
+		{
+			width: $xxs-vw-25-vw;
+			height: $xxs-vw-25-vw;
+			@media screen and (min-width: 768px) {
+				width: $lg-vw-25-vw;
+				height: $lg-vw-25-vw;
+			} 
+			@media screen and (min-width: 1400px) {
+				width: 25px;
+				height: 25px;
+			} 
+		}
+		li{
+			margin:0 $xxs-vw-10-vw;
+			@media screen and (min-width: 768px) {
+				margin:0 $lg-vw-10-vw;
+			} 
+			@media screen and (min-width: 1400px) {
+				margin:0 10px;
+			} 
+		}
+		li button:before{
+			font-size: $xxs-vw-25-vw;
+			top: $xxs-vw-5-vw;
+			@media screen and (min-width: 768px) {
+				font-size: $lg-vw-25-vw;
+				top: $lg-vw-25-vw;
+			} 
+			@media screen and (min-width: 1400px) {
+				font-size: 25px;
+				top: 25px;
+			} 
+		}
+		li button:before,
+		li.slick-active button:before{
+			opacity: 1;
+		}
+	}
+
+
+	// 首頁-夥伴-輪撥-左右方向鍵
+	.page-index {
+		.section.client{
+			.slick-prev:before, 
+			.slick-next:before{
+				opacity: 0;
+
+			}
+		}
+		.slick-slider .slick-list {
+			padding-bottom: $xxs-vw-50-vw;
+			@media screen and (min-width: 768px) {
+				padding-bottom: $lg-vw-20-vw;
+			} 
+			@media screen and (min-width: 1400px) {
+				padding-bottom: 20px;
+			} 
+		}
+	}
+
+
+
+
+
+
+// 外連提示框
+.extralink__popup-content{
+	text-align: center;
+	p span{
+		@media screen and (max-width:767px){
+			display: block;
+		}
+	}
+	p span.visible-lg{
+		@media screen and (max-width:767px){
+			display: none;
+		}
+	}
+}
+
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // =========================
 // 首頁
@@ -622,11 +749,9 @@ body {
 		text-align: center;
 	}	
 	.mv img{
+
 		border-radius: 10px;
-		width: calc( 100% - 3.2vw);
 		height: auto;
-		margin: 0 $xxs-vw-25-vw;
-		//  25 /375 = 0.066666667
 		@media screen and (min-width:768px){
 		    margin:  0;
 		}
@@ -658,11 +783,6 @@ body {
 		@media screen and (min-width:1400px){
 		    margin-top: -10px;
 		}		
-	}
-	.issue .step-item-list li{
-		@media screen and (min-width:768px){
-		    margin: 0;
-		}
 	}
 
 
@@ -745,157 +865,30 @@ body {
 
 
 
-
-
-
-// =========================
-// KV Banner
-// =========================
-.kv{
-	.container {
-        @media screen and (max-width: 767px) {
-            $pd_value: 7.5vw;
-            padding-left: $pd_value;
-            padding-right: $pd_value;
-        }
-    }
-
-    .container:after {
-        left: 0;
-        background-image: url('../pic/banner_bgimage_left.png');
-        transform: translateX(0%);
-        background-position: right center;
-        @media screen and (min-width: 768px) {
-            transform: translateX(-90%);
-        }
-    }
-
-
-}
-
-
-// =========================
-// 表單
-// =========================
-.main-footer .subscribe .check-accept .checkmark {
-    background-color: #fff;
-}
-
-
-
-.practice .service-banner{
-
-  background-color: #fff;
-}
-
-
-.practice .service-banner video {
-  display: block;
-  margin: 0 auto 50px;
-  width: calc(100% - 30px);
-  height: auto; 
-  background-color: rgba(0, 0, 0, 0);
-  @media screen and (min-width: 768px) {
-      width: 70%; 
-  } 
-}
-
-
-
-
-
-
-// 輪撥
-.slick-dots{
-	li,
-	li button,
-	li button::before
-	{
-		width: $xxs-vw-25-vw;
-		height: $xxs-vw-25-vw;
-		@media screen and (min-width: 768px) {
-			width: $lg-vw-25-vw;
-			height: $lg-vw-25-vw;
-		} 
-		@media screen and (min-width: 1400px) {
-			width: 25px;
-			height: 25px;
-		} 
-	}
-	li{
-		margin:0 $xxs-vw-10-vw;
-		@media screen and (min-width: 768px) {
-			margin:0 $lg-vw-10-vw;
-		} 
-		@media screen and (min-width: 1400px) {
-			margin:0 10px;
-		} 
-	}
-	li button:before{
-		font-size: $xxs-vw-25-vw;
-		top: $xxs-vw-5-vw;
-		@media screen and (min-width: 768px) {
-			font-size: $lg-vw-25-vw;
-			top: $lg-vw-25-vw;
-		} 
-		@media screen and (min-width: 1400px) {
-			font-size: 25px;
-			top: 25px;
-		} 
-	}
-	li button:before,
-	li.slick-active button:before{
-		opacity: 1;
-	}
-}
-
-
-// 苜頁-夥伴-輪撥-左右方向鍵
-.page-index {
-	.section.client{
-		.slick-prev:before, 
-		.slick-next:before{
-			opacity: 0;
-
-		}
-	}
-	.slick-slider .slick-list {
-		padding-bottom: $xxs-vw-50-vw;
-		@media screen and (min-width: 768px) {
-			padding-bottom: $lg-vw-20-vw;
-		} 
-		@media screen and (min-width: 1400px) {
-			padding-bottom: 20px;
-		} 
-	}
-}
-
-
-
 // =========================
 // 表單頁
 // =========================
-.section.contact{
-	>.container{
-		max-width: 1100px;
+	.section.contact{
+		>.container{
+			max-width: 1100px;
+		}
 	}
-}
 
 
 // =========================
 // 服務頁
 // =========================
-.case h2,
-.case h3{
-	margin: 0;
-}
-
-
-.page-service{
-	.slider-item p{
-		color:$main-color2D;
+	.case h2,
+	.case h3{
+		margin: 0;
 	}
-}
+
+
+	.page-service{
+		.slider-item p{
+			color:$main-color2D;
+		}
+	}
 
 // =========================
 // 新聞頁

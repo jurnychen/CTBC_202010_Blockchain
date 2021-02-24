@@ -7,31 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no">
     <meta name="distribution" content="Taiwan">
     <meta name="format-detection" content="telephone=no">
-
     <title>媒體報導 ｜ 中國信託銀行</title>
     <meta name="description" content="中國信託區塊鏈">
     <meta name="keywords" content="區塊鏈、中信、中國信託">
-
     <!-- Open Graph data -->
     <meta property="og:title" content="中國信託區塊鏈｜媒體報導">
     <meta property="og:image" content="https://www.tentenplus.com.tw/demos/CTBC/CTBC_Blockchain_2021.jpg">
     <meta property="og:description" content="中國信託區塊鏈｜媒體報導">
     <meta property="og:site_name" content="中國信託區塊鏈">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="assets/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style_tenten_v2.css">
-
 </head>
 
 <body class="page-reviews">
-
     <input type="checkbox" name="" id="menu-check">
-
     <div class="main-header">
         <div class="container">
             <div class="logo CTBC-logo">
@@ -42,18 +36,18 @@
                     <a href="contact.html" class="btn-round"><span>聯絡我們</span></a>
                 </div>
                 <label for="menu-check" class="hb">
-                <span class="sr-only">手機選單切換</span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
+                    <span class="sr-only">手機選單切換</span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
             </div>
             <nav class="main-nav">
                 <label for="menu-check" class="hb">
-                <span class="sr-only">手機選單切換</span>
-                <span></span>
-                <span></span>
-            </label>
+                    <span class="sr-only">手機選單切換</span>
+                    <span></span>
+                    <span></span>
+                </label>
                 <ul class="nav-list">
                     <li class="link-marketplace">
                         <a href="index.html" class=" ">Marketplace首頁</a>
@@ -85,11 +79,7 @@
             </nav>
         </div>
     </div>
-
-
     </div>
-
-
     <!-- KV -->
     <div class="section kv">
         <div class="slider-kv">
@@ -99,7 +89,6 @@
                     <img src="pic/news/banner_bgimage_news-lg.jpg" alt="">
                     <img src="pic/news/banner_bgimage_news-xs.jpg" alt="">
                 </div>
-
                 <div class="container">
                     <!-- 添加class Jurny -->
                     <div class="kv-group-text">
@@ -111,16 +100,9 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
-
-
-
-
-
-
     <!-- 按紐列表 -->
     <section class="section">
         <article class="container">
@@ -128,45 +110,31 @@
                 <h1>按紐<span>列表</span></h1>
             </div>
             <div class="main-content">
-
                 <a href="javascrip:;" class="btn-basic btn-small">
-                <span>基本＋小型</span>
+                    <span>基本＋小型</span>
                 </a>
-
                 <a href="javascrip:;" class="btn-basic btn-small btn-text-color2">
-                <span>基本＋小型＋黑字</span>
+                    <span>基本＋小型＋黑字</span>
                 </a>
-
                 <a href="javascrip:;" class="btn-basic btn-big btn-full-bgcolor2">
-                <span>基本＋大型</span>
+                    <span>基本＋大型</span>
                 </a>
-
                 <a href="javascrip:;" class="btn-basic btn-small button-half btn-falf-bgcolor2">
-                <span>基本＋小型＋半型</span>
+                    <span>基本＋小型＋半型</span>
                 </a>
-<br>
+                <br>
                 <a href="javascrip:;" class="btn-outline btn-size3">
-                <span>瞭解更多</span>
+                    <span>瞭解更多</span>
                 </a>
                 <a href="javascrip:;" class="btn-outline btn-size4">
-                <span>瞭解更多</span>
+                    <span>瞭解更多</span>
                 </a>
-
-
                 <div class="text-box">
                     深試變數
                 </div>
             </div>
         </article>
     </section>
-
-
-
-
-
-
-
-
     <!-- 頁尾 -->
     <footer class="main-footer">
         <div class="container">
@@ -198,43 +166,38 @@
             </div>
         </div>
     </footer>
-
-
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery-migrate.min.js"></script>
     <script type="text/javascript" src="assets/slick.min.js"></script>
     <script type="text/javascript" src="js/myjs.js"></script>
-
-
-
     <script>
-        $(function() {
-            $('.slider-kv').slick({
-                dots: false,
-                infinite: false,
-                speed: 0,
-                slidesToShow: 1
-            })
-            $('.thubnail-list li').click(function() {
-                // let li_index = $(this).index();
-                $(this).addClass('active').siblings('.active').removeClass('active');
-                $('.slider-kv .slick-dots li').eq($(this).index()).click();
-            })
-
-            let _tab_index = 0;
-            let $tab = $('.tab-group li')
-            $tab.click(function() {
-                _tab_index = $(this).index();
-                $(this).addClass('active').siblings('.active').removeClass('active');
-                $('.content-group .content').eq(_tab_index).addClass('active').siblings('.active').removeClass('active');
-                return false;
-            })
-
-            $('.headline-list .item').click(function() {
-                $(this).addClass('active').siblings('.active').removeClass('active');
-                return false;
-            })
+    $(function() {
+        $('.slider-kv').slick({
+            dots: false,
+            infinite: false,
+            speed: 0,
+            slidesToShow: 1
         })
+        $('.thubnail-list li').click(function() {
+            // let li_index = $(this).index();
+            $(this).addClass('active').siblings('.active').removeClass('active');
+            $('.slider-kv .slick-dots li').eq($(this).index()).click();
+        })
+
+        let _tab_index = 0;
+        let $tab = $('.tab-group li')
+        $tab.click(function() {
+            _tab_index = $(this).index();
+            $(this).addClass('active').siblings('.active').removeClass('active');
+            $('.content-group .content').eq(_tab_index).addClass('active').siblings('.active').removeClass('active');
+            return false;
+        })
+
+        $('.headline-list .item').click(function() {
+            $(this).addClass('active').siblings('.active').removeClass('active');
+            return false;
+        })
+    })
     </script>
 </body>
 
