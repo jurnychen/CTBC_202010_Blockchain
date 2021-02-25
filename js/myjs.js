@@ -73,33 +73,37 @@ $(function() {
         if (i >= 41 && i <= 47 || i >= 81 && i <= 87) {
             $ir = '.ir-5';
         }
-        irShow($ir);
+        let st = 0;
+        irShow($ir);// 顯示解決方案，關閉問題
+        changeStep(st);// 重新設定問題到步驟1
+        changeStepDot(st);// 重新設定問題到步驟1
+        goIssueTop();//控制視窗捲軸位置
         return false;
     })
-
+    // 顯示解決方案，關閉問題
     function irShow($ir) {
         $('.issue-step').addClass('hide');
         $('.issue .mv').addClass('hide');
         $($ir).addClass('show');
         irHide($ir);
     }
-
+    // 解決方案關閉鈕作用
     function irHide($ir) {
         $('.issue-result .main-more .btn-basic').click(function() {
             $('.issue-step').removeClass('hide');
             $('.issue .mv').removeClass('hide');
             $($ir).removeClass('show');
-            if( $(window).width() < 768 ){
-                let xx = $('.issue-topic').offset().top;
-                $('html,body').scrollTop(xx);
-            }
+            goIssueTop();
             return false;
         })
-        let st = 0;
-        changeStep(st);
-        changeStepDot(st);
     }
-
+    //控制手機捲軸位置
+    function goIssueTop(xx){
+        if( $(window).width() < 768 ){
+            let xx = $('.issue-topic').offset().top;
+            $('html,body').scrollTop(xx);
+        }
+    }
 
     // SVG 圖示撥放控制
     function svgAni() {
