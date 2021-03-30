@@ -982,6 +982,13 @@ body {
       .page-awards .awards-content .year span {
         font-size: 100px; } }
 
+body.page-regulation {
+  background-color: #1A1A1A; }
+
+section.section.contact {
+  background-color: #fff;
+  min-height: 50vh; }
+
 .page-regulation {
   padding-top: 16vw; }
   @media screen and (min-width: 768px) {

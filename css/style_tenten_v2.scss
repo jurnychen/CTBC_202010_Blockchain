@@ -98,9 +98,6 @@ body {
 
 
 
-
-
-
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 按紐 設定
 // 01-外型-基本實心  .btn-basic
@@ -934,6 +931,14 @@ body {
 
 
 // 條款頁
+
+body.page-regulation{background-color: #1A1A1A;}
+section.section.contact{
+	background-color: #fff;
+	min-height: 50vh;
+}
+
+
 .page-regulation{
 	padding-top: $xxs-vw-60-vw;
 	@media screen and (min-width:768px){

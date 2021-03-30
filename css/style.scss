@@ -2025,12 +2025,13 @@ p {
         list-style: none;
         box-sizing: border-box;
         text-align: center;
+        // outline: 1px solid #f00;
         @media screen and (max-width: 767px) {
             width: 50%;
             padding-bottom: $xxs-vw-40-vw;
         }
         @media screen and (min-width:768px) {
-            width: 16.666666%;
+            width: calc(100% / 5 );
             padding-bottom: $lg-vw-30-vw;
         }
         @media screen and (min-width:1400px) {
@@ -2038,16 +2039,18 @@ p {
         }
     }
     .client-logo {
+        // outline: 1px solid #f0f;
         width: calc(100% - 30px);
         height: 0;
         padding-bottom: calc(100% - 30px);
-        width: 55%;
-        padding-bottom: 55%;
+        width: 75%;
+        padding-bottom: 45%;
         background-color: #fff;
         border-radius: 50%;
-        margin: 15px auto 0;
+        margin: 0px auto -10px;
         position: relative;
         img {
+            // outline: 1px solid #00f;
             position: absolute;
             width: 90%;
             height: auto;
@@ -2295,7 +2298,7 @@ p {
     blockquote {
         position: relative;
         margin: $xxs-vw-10-vw 0 0;
-        padding-bottom: $xxs-vw-30-vw;
+        padding-bottom: $xxs-vw-50-vw;
         @media screen and (min-width: 768px) {
             width: calc(66.666666% - 3vw);
             margin: $lg-vw-10-vw 0 0;
@@ -2333,7 +2336,7 @@ p {
     }
     blockquote:after {
         right: -$xxs-vw-20-vw;
-        bottom: -$xxs-vw-20-vw;
+        bottom: -$xxs-vw-25-vw;
         @media screen and (min-width: 768px) {
             right: -$lg-vw-35-vw;
             bottom: -$lg-vw-25-vw;
