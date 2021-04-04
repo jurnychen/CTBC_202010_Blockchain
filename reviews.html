@@ -44,7 +44,7 @@
                     <img src="pic/CTBC_logo_green.png" alt="中國信託銀行-Logo">
                 </a>
                 <div class="link-contact">
-                    <a href="contact.html" class="btn-round"><span>聯絡我們</span></a>
+                    <a href="contact.html" class="btn-round" id="track-nav-contact-mobile"><span>聯絡我們</span></a>
                 </div>
                 <label for="menu-check" class="hb">
                     <span class="sr-only">手機選單切換</span>
@@ -61,30 +61,30 @@
                 </label>
                 <ul class="nav-list">
                     <li class="link-marketplace">
-                        <a href="index.html" class=" ">Marketplace首頁</a>
+                        <a href="index.html" class="" id="track-nav-index">Marketplace首頁</a>
                     </li>
                     <li class="dropdown">
                         <a href="javascript:;">解決方案</a>
                         <ul class="sub-menu">
                             <li>
-                                <a href="service_1.html">供應鏈</a>
+                                <a href="service_1.html" id="track-nav-service01">供應鏈</a>
                             </li>
                             <li>
-                                <a href="service_2.html">電商零售</a>
+                                <a href="service_2.html" id="track-nav-service02">電商零售</a>
                             </li>
                             <li>
-                                <a href="service_3.html">醫療健康</a>
+                                <a href="service_3.html" id="track-nav-service03">醫療健康</a>
                             </li>
                             <li>
-                                <a href="service_4.html">客製化服務</a>
+                                <a href="service_4.html" id="track-nav-service04">客製化服務</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="reviews.html" class="active">媒體報導</a>
+                        <a href="reviews.html" class="active" id="track-nav-reviews">媒體報導</a>
                     </li>
                     <li class="link-contact">
-                        <a href="contact.html" class="btn-round"><span>聯絡我們</span></a>
+                        <a href="contact.html" class="btn-round" id="track-nav-contact-desktop"><span>聯絡我們</span></a>
                     </li>
                 </ul>
             </nav>
@@ -159,7 +159,7 @@
             <div class="main-content">
                 <div class="headline-list">
                     <!-- 熱門消息 第1則 -->
-                    <div class="item active">
+                    <div class="item active" id="track-reviews-headline01">
                         <div class="pic">
                             <img src="pic/news/photo_headline_01.jpg" alt="中信銀跨足區塊鏈有成，助3大領域加速創新">
                             <div class="number">1</div>
@@ -187,7 +187,7 @@
                         </div>
                     </div>
                     <!-- 熱門消息 第2則 -->
-                    <div class="item">
+                    <div class="item" id="track-reviews-headline02">
                         <div class="pic">
                             <img src="pic/news/photo_headline_02.jpg" alt="區塊鏈金融，迎新生力軍 Contour">
                             <div class="number">2</div>
@@ -214,7 +214,7 @@
                         </div>
                     </div>
                     <!-- 熱門消息 第3則 -->
-                    <div class="item">
+                    <div class="item" id="track-reviews-headline03">
                         <div class="pic">
                             <img src="pic/news/photo_headline_03.jpg" alt="中信金控揭露未來區塊鏈戰略，連手兩大國際組織，力推雙平台...">
                             <div class="number">3</div>
@@ -241,7 +241,7 @@
                         </div>
                     </div>
                     <!-- 熱門消息 第4則 -->
-                    <div class="item">
+                    <div class="item" id="track-reviews-headline04">
                         <div class="pic">
                             <img src="pic/news/photo_headline_04.jpg" alt="幫導購報酬卻龜速入帳?電商揪中信金、微軟用區塊鏈搞定">
                             <div class="number">4</div>
@@ -268,7 +268,7 @@
                         </div>
                     </div>
                     <!-- 熱門消息 第5則 -->
-                    <div class="item">
+                    <div class="item" id="track-reviews-headline05">
                         <div class="pic">
                             <img src="pic/news/photo_headline_05.jpg" alt="區塊鏈助攻，保險理賠更輕鬆">
                             <div class="number">5</div>
@@ -340,10 +340,10 @@
             <div class="main-content">
                 <div class="tab-group">
                     <ul>
-                        <li class="active"><a href="javascript:;" class="btn-outline btn-size3"><span>全類別</span></a></li>
-                        <li><a href="javascript:;" class="btn-outline btn-size3"><span>供應鏈</span></a></li>
-                        <li><a href="javascript:;" class="btn-outline btn-size3"><span>電商零售</span></a></li>
-                        <li><a href="javascript:;" class="btn-outline btn-size3"><span>醫療健康</span></a></li>
+                        <li class="active"><a href="javascript:;" class="btn-outline btn-size3" id="track-reviews-panel01"><span>全類別</span></a></li>
+                        <li><a href="javascript:;" class="btn-outline btn-size3" id="track-reviews-panel02"><span>供應鏈</span></a></li>
+                        <li><a href="javascript:;" class="btn-outline btn-size3" id="track-reviews-panel03"><span>電商零售</span></a></li>
+                        <li><a href="javascript:;" class="btn-outline btn-size3" id="track-reviews-panel04"><span>醫療健康</span></a></li>
                     </ul>
                 </div>
                 <div class="content-group">
@@ -369,7 +369,7 @@
                         <div class="item-group">
 
                             <!-- 新聞項目-01 -->
-                            <div class="item">
+                            <div class="item" id="track-reviews-panel01-item01">
                                 <div class="pic">
                                     <img src="pic/news/photo_news_01.jpg" alt="台灣人壽獲獎連連　再奪國際7大獎肯定...">
                                 </div>
@@ -390,7 +390,7 @@
                             </div>
 
                             <!-- 新聞項目-02 -->
-                            <div class="item">
+                            <div class="item" id="track-reviews-panel01-item02">
                                 <div class="pic">
                                     <img src="pic/news/photo_news_02.jpg" alt="區塊鏈助攻 保險理賠更輕鬆...">
                                 </div>
@@ -412,7 +412,7 @@
 
 
                             <!-- 新聞項目-03 -->
-                            <div class="item">
+                            <div class="item" id="track-reviews-panel01-item03">
                                 <div class="pic">
                                     <img src="pic/news/photo_news_03.jpg" alt="台灣人壽 新增理賠區塊鏈醫院...">
                                 </div>
@@ -434,7 +434,7 @@
 
 
                             <!-- 新聞項目-04 -->
-                            <div class="item">
+                            <div class="item" id="track-reviews-panel01-item04">
                                 <div class="pic">
                                     <img src="pic/news/photo_news_04.jpg" alt="區塊鏈金融 迎新生力軍Contour...">
                                 </div>
@@ -456,7 +456,7 @@
 
 
                             <!-- 新聞項目-05 -->
-                            <div class="item">
+                            <div class="item" id="track-reviews-panel01-item05">
                                 <div class="pic">
                                     <img src="pic/news/photo_news_05.jpg" alt="中信金控號召產業共創 搶攻區塊鏈生態圈商機...">
                                 </div>
@@ -478,7 +478,7 @@
 
 
                             <!-- 新聞項目-06 -->
-                            <div class="item">
+                            <div class="item" id="track-reviews-panel01-item06">
                                 <div class="pic">
                                     <img src="pic/news/photo_news_06.jpg" alt="中信銀跨足區塊鏈有成，助3大領域加速創新...">
                                 </div>
@@ -500,7 +500,7 @@
 
 
                             <!-- 新聞項目-07 -->
-                            <div class="item">
+                            <div class="item" id="track-reviews-panel01-item07">
                                 <div class="pic">
                                     <img src="pic/news/photo_news_07.jpg" alt="中信金控揭露未來區塊鏈戰略，聯手兩大國際組織，力推雙平臺瞄準內部...">
                                 </div>
@@ -522,7 +522,7 @@
 
 
                             <!-- 新聞項目-08 -->
-                            <div class="item">
+                            <div class="item" id="track-reviews-panel01-item08">
                                 <div class="pic">
                                     <img src="pic/news/photo_news_08.jpg" alt="中信區塊鏈「應用趨勢論壇」現場：Voltron信用狀明年釋出，國際貿易...">
                                 </div>
@@ -544,7 +544,7 @@
 
 
                             <!-- 新聞項目-09 -->
-                            <div class="item">
+                            <div class="item" id="track-reviews-panel01-item09">
                                 <div class="pic">
                                     <img src="pic/news/photo_news_09.jpg" alt="區塊鏈商轉新時代 中信銀推秘密武器...">
                                 </div>
@@ -566,7 +566,7 @@
 
 
                             <!-- 新聞項目-10 -->
-                            <div class="item">
+                            <div class="item" id="track-reviews-panel01-item10">
                                 <div class="pic">
                                     <img src="pic/news/photo_news_10.jpg" alt="中信金攻區塊鏈 三箭齊發...">
                                 </div>
@@ -588,7 +588,7 @@
 
 
                             <!-- 新聞項目-11 -->
-                            <div class="item">
+                            <div class="item" id="track-reviews-panel01-item11">
                                 <div class="pic">
                                     <img src="pic/news/photo_news_11.jpg" alt="網訊電通、新竹物流、資策會合組「新零售大聯盟」未來掀零售業的區塊鏈...">
                                 </div>
@@ -610,7 +610,7 @@
 
 
                             <!-- 新聞項目-12 -->
-                            <div class="item">
+                            <div class="item" id="track-reviews-panel01-item12">
                                 <div class="pic">
                                     <img src="pic/news/photo_news_12.jpg" alt="金融小學堂／區塊鏈創新 提升交易意願...">
                                 </div>
@@ -632,7 +632,7 @@
 
 
                             <!-- 新聞項目-13 -->
-                            <div class="item">
+                            <div class="item" id="track-reviews-panel01-item13">
                                 <div class="pic">
                                     <img src="pic/news/photo_news_13.jpg" alt="深入解讀｜「中國信託」和 7 家國際銀行的「Voltron 貿易金融區塊鏈...">
                                 </div>
@@ -654,7 +654,7 @@
 
 
                             <!-- 新聞項目-14 -->
-                            <div class="item">
+                            <div class="item" id="track-reviews-panel01-item14">
                                 <div class="pic">
                                     <img src="pic/news/photo_news_14.jpg" alt="區塊鏈應用突破，中國信託完成歐亞信用狀交易...">
                                 </div>
@@ -676,7 +676,7 @@
 
 
                             <!-- 新聞項目-15 -->
-                            <div class="item">
+                            <div class="item" id="track-reviews-panel01-item15">
                                 <div class="pic">
                                     <img src="pic/news/photo_news_15.jpg" alt="中信奇美實 創區塊鏈交易首例...">
                                 </div>
@@ -698,7 +698,7 @@
 
 
                             <!-- 新聞項目-16 -->
-                            <div class="item">
+                            <div class="item" id="track-reviews-panel01-item16">
                                 <div class="pic">
                                     <img src="pic/news/photo_news_16.jpg" alt="全台首例！中信區塊鏈信用狀交易開通...">
                                 </div>
@@ -720,7 +720,7 @@
 
 
                             <!-- 新聞項目-17 -->
-                            <div class="item">
+                            <div class="item" id="track-reviews-panel01-item17">
                                 <div class="pic">
                                     <img src="pic/news/photo_news_17.jpg" alt="幫導購報酬卻龜速入賬？電商揪中信金、微軟用區塊鏈搞定網紅分潤痛點...">
                                 </div>
@@ -742,7 +742,7 @@
 
 
                             <!-- 新聞項目-18 -->
-                            <div class="item">
+                            <div class="item" id="track-reviews-panel01-item18">
                                 <div class="pic">
                                     <img src="pic/news/photo_news_18.jpg" alt="線上就能申請理賠！台灣人壽與高雄榮總合作　打造理賠區塊鏈平台...">
                                 </div>
@@ -764,7 +764,7 @@
 
 
                             <!-- 新聞項目-19 -->
-                            <div class="item">
+                            <div class="item" id="track-reviews-panel01-item19">
                                 <div class="pic">
                                     <img src="pic/news/photo_news_19.jpg" alt="中信銀攜手陽明海運 區塊鏈加速國際貿易...">
                                 </div>
@@ -786,7 +786,7 @@
 
 
                             <!-- 新聞項目-20 -->
-                            <div class="item">
+                            <div class="item" id="track-reviews-panel01-item20">
                                 <div class="pic">
                                     <img src="pic/news/photo_news_20.jpg" alt="KKFARM推出區塊鏈技術架構Muzeum，要將內容授權代幣化和分潤自動化，...">
                                 </div>
@@ -808,7 +808,7 @@
 
 
                             <!-- 新聞項目-21 -->
-                            <div class="item">
+                            <div class="item" id="track-reviews-panel01-item21">
                                 <div class="pic">
                                     <img src="pic/news/photo_news_21.jpg" alt="音樂人的希望！台灣首個區塊鏈音樂發行平台Soundscape上線...">
                                 </div>
@@ -830,7 +830,7 @@
 
 
                             <!-- 新聞項目-22 -->
-                            <div class="item">
+                            <div class="item" id="track-reviews-panel01-item22">
                                 <div class="pic">
                                     <img src="pic/news/photo_news_22.jpg" alt="台灣首家！中信宣布成立區塊鏈實驗室，加入 R3 國際聯盟...">
                                 </div>
@@ -883,7 +883,7 @@
                         <div class="item-group">
 
                             <!-- 新聞項目-01 -->
-                            <div class="item">
+                            <div class="item" id="track-reviews-panel02-item01">
                                 <div class="pic">
                                     <img src="pic/news/photo_news_04.jpg" alt="區塊鏈金融 迎新生力軍Contour...">
                                 </div>
@@ -904,7 +904,7 @@
                             </div>
 
                             <!-- 新聞項目-02 -->
-                            <div class="item">
+                            <div class="item" id="track-reviews-panel02-item02">
                                 <div class="pic">
                                     <img src="pic/news/photo_news_08.jpg" alt="中信區塊鏈「應用趨勢論壇」現場：Voltron信用狀明年釋出，國際貿易...">
                                 </div>
@@ -925,7 +925,7 @@
                             </div>
 
                             <!-- 新聞項目-03 -->
-                            <div class="item">
+                            <div class="item" id="track-reviews-panel02-item03">
                                 <div class="pic">
                                     <img src="pic/news/photo_news_13.jpg" alt="深入解讀｜「中國信託」和 7 家國際銀行的「Voltron 貿易金融區塊鏈...">
                                 </div>
@@ -946,7 +946,7 @@
                             </div>
 
                             <!-- 新聞項目-04 -->
-                            <div class="item">
+                            <div class="item" id="track-reviews-panel02-item04">
                                 <div class="pic">
                                     <img src="pic/news/photo_news_14.jpg" alt="區塊鏈應用突破，中國信託完成歐亞信用狀交易...">
                                 </div>
@@ -967,7 +967,7 @@
                             </div>
 
                             <!-- 新聞項目-05 -->
-                            <div class="item">
+                            <div class="item" id="track-reviews-panel02-item05">
                                 <div class="pic">
                                     <img src="pic/news/photo_news_15.jpg" alt="中信奇美實 創區塊鏈交易首例...">
                                 </div>
@@ -988,7 +988,7 @@
                             </div>
 
                             <!-- 新聞項目-06 -->
-                            <div class="item">
+                            <div class="item" id="track-reviews-panel02-item06">
                                 <div class="pic">
                                     <img src="pic/news/photo_news_16.jpg" alt="全台首例！中信區塊鏈信用狀交易開通...">
                                 </div>
@@ -1009,7 +1009,7 @@
                             </div>
 
                             <!-- 新聞項目-07 -->
-                            <div class="item">
+                            <div class="item" id="track-reviews-panel02-item07">
                                 <div class="pic">
                                     <img src="pic/news/photo_news_19.jpg" alt="中信銀攜手陽明海運 區塊鏈加速國際貿易...">
                                 </div>
@@ -1061,7 +1061,7 @@
                         <div class="item-group">
 
                             <!-- 新聞項目-01 -->
-                            <div class="item">
+                            <div class="item" id="track-reviews-panel03-item01">
                                 <div class="pic">
                                     <img src="pic/news/photo_news_11.jpg" alt="網訊電通、新竹物流、資策會合組「新零售大聯盟」未來掀零售業的區塊鏈...">
                                 </div>
@@ -1082,7 +1082,7 @@
                             </div>
 
                             <!-- 新聞項目-02 -->
-                            <div class="item">
+                            <div class="item" id="track-reviews-panel03-item02">
                                 <div class="pic">
                                     <img src="pic/news/photo_news_12.jpg" alt="金融小學堂／區塊鏈創新 提升交易意願...">
                                 </div>
@@ -1103,7 +1103,7 @@
                             </div>
 
                             <!-- 新聞項目-03 -->
-                            <div class="item">
+                            <div class="item" id="track-reviews-panel03-item03">
                                 <div class="pic">
                                     <img src="pic/news/photo_news_17.jpg" alt="幫導購報酬卻龜速入賬？電商揪中信金、微軟用區塊鏈搞定網紅分潤痛點...">
                                 </div>
@@ -1124,7 +1124,7 @@
                             </div>
 
                             <!-- 新聞項目-04 -->
-                            <div class="item">
+                            <div class="item" id="track-reviews-panel03-item04">
                                 <div class="pic">
                                     <img src="pic/news/photo_news_20.jpg" alt="KKFARM推出區塊鏈技術架構Muzeum，要將內容授權代幣化和分潤自動化，...">
                                 </div>
@@ -1145,7 +1145,7 @@
                             </div>
 
                             <!-- 新聞項目-05 -->
-                            <div class="item">
+                            <div class="item" id="track-reviews-panel03-item05">
                                 <div class="pic">
                                     <img src="pic/news/photo_news_21.jpg" alt="音樂人的希望！台灣首個區塊鏈音樂發行平台Soundscape上線...">
                                 </div>
@@ -1195,7 +1195,7 @@
                         <div class="item-group">
 
                             <!-- 新聞項目-01 -->
-                            <div class="item">
+                            <div class="item" id="track-reviews-panel04-item01">
                                 <div class="pic">
                                     <img src="pic/news/photo_news_01.jpg" alt="台灣人壽獲獎連連　再奪國際7大獎肯定...">
                                 </div>
@@ -1216,7 +1216,7 @@
                             </div>
 
                             <!-- 新聞項目-02 -->
-                            <div class="item">
+                            <div class="item" id="track-reviews-panel04-item02">
                                 <div class="pic">
                                     <img src="pic/news/photo_news_02.jpg" alt="區塊鏈助攻 保險理賠更輕鬆...">
                                 </div>
@@ -1237,7 +1237,7 @@
                             </div>
 
                             <!-- 新聞項目-03 -->
-                            <div class="item">
+                            <div class="item" id="track-reviews-panel04-item03">
                                 <div class="pic">
                                     <img src="pic/news/photo_news_03.jpg" alt="台灣人壽 新增理賠區塊鏈醫院...">
                                 </div>
@@ -1258,7 +1258,7 @@
                             </div>
 
                             <!-- 新聞項目-04 -->
-                            <div class="item">
+                            <div class="item" id="track-reviews-panel04-item04">
                                 <div class="pic">
                                     <img src="pic/news/photo_news_18.jpg" alt="線上就能申請理賠！台灣人壽與高雄榮總合作　打造理賠區塊鏈平台...">
                                 </div>

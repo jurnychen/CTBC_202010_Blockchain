@@ -44,7 +44,7 @@
                     <img src="pic/CTBC_logo_green.png" alt="中國信託銀行-Logo">
                 </a>
                 <div class="link-contact">
-                    <a href="contact.html" class="btn-round"><span>聯絡我們</span></a>
+                    <a href="contact.html" class="btn-round" id="track-nav-contact-mobile"><span>聯絡我們</span></a>
                 </div>
                 <label for="menu-check" class="hb">
                     <span class="sr-only">手機選單切換</span>
@@ -61,30 +61,30 @@
                 </label>
                 <ul class="nav-list">
                     <li class="link-marketplace">
-                        <a href="index.html" class="active">Marketplace首頁</a>
+                        <a href="index.html" class="active" id="track-nav-index">Marketplace首頁</a>
                     </li>
                     <li class="dropdown">
                         <a href="javascript:;">解決方案</a>
                         <ul class="sub-menu">
                             <li>
-                                <a href="service_1.html">供應鏈</a>
+                                <a href="service_1.html" id="track-nav-service01">供應鏈</a>
                             </li>
                             <li>
-                                <a href="service_2.html">電商零售</a>
+                                <a href="service_2.html" id="track-nav-service02">電商零售</a>
                             </li>
                             <li>
-                                <a href="service_3.html">醫療健康</a>
+                                <a href="service_3.html" id="track-nav-service03">醫療健康</a>
                             </li>
                             <li>
-                                <a href="service_4.html">客製化服務</a>
+                                <a href="service_4.html" id="track-nav-service04">客製化服務</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="reviews.html">媒體報導</a>
+                        <a href="reviews.html" id="track-nav-reviews">媒體報導</a>
                     </li>
                     <li class="link-contact">
-                        <a href="contact.html" class="btn-round"><span>聯絡我們</span></a>
+                        <a href="contact.html" class="btn-round" id="track-nav-contact-desktop"><span>聯絡我們</span></a>
                     </li>
                 </ul>
             </nav>
@@ -125,8 +125,8 @@
                             本行持續推動創新落地應用，並衍伸供應鏈解決方案
                         </div>
                         <div class="btn-group">
-                            <a href="https://www.wto.org/english/res_e/booksp_e/blockchainrev19_e.pdf" target="_blank" rel="noreferrer noopener" class="btn-basic btn-small btn-arrow-not"><span>報告原檔</span></a>
-                            <a href="service_1.html" target="_blank" rel="noreferrer noopener" class="btn-basic btn-small"><span>供應鏈解決方案</span></a>
+                            <a href="https://www.wto.org/english/res_e/booksp_e/blockchainrev19_e.pdf" target="_blank" rel="noreferrer noopener" class="btn-basic btn-small btn-arrow-not" id="track-banner-content2-link"><span>報告原檔</span></a>
+                            <a href="service_1.html" target="_blank" rel="noreferrer noopener" class="btn-basic btn-small" id="track-banner-content2-service"><span>供應鏈解決方案</span></a>
                         </div>
                     </div>
                 </div>
@@ -147,8 +147,8 @@
                             本行持續協助各產業創新，<br>電商零售解決方案獲國際肯定
                         </div>
                         <div class="btn-group">
-                            <a href="https://www.libf.ac.uk/news-and-insights/news/detail/2019/11/22/financial-innovation-awards-the-winners" target="_blank" rel="noreferrer noopener" class="btn-basic btn-small btn-arrow-not"><span>獲獎訊息</span></a>
-                            <a href="service_2.html" target="_blank" rel="noreferrer noopener" class="btn-basic btn-small"><span>電商零售解決方案</span></a>
+                            <a href="https://www.libf.ac.uk/news-and-insights/news/detail/2019/11/22/financial-innovation-awards-the-winners" target="_blank" rel="noreferrer noopener" class="btn-basic btn-small btn-arrow-not" id="track-banner-content3-link"><span>獲獎訊息</span></a>
+                            <a href="service_2.html" target="_blank" rel="noreferrer noopener" class="btn-basic btn-small" id="track-banner-content3-service"><span>電商零售解決方案</span></a>
                         </div>
                     </div>
                 </div>
@@ -156,17 +156,17 @@
         </div>
         <ul class="thubnail-list">
             <li class="active">
-                <a href="javascript:;">
+                <a href="javascript:;" id="track-banner-dot01">
                     <span>Marketplace生態圈</span>
                 </a>
             </li>
             <li>
-                <a href="javascript:;">
+                <a href="javascript:;" id="track-banner-dot02">
                     <span>獲WTO區塊鏈報告列名</span>
                 </a>
             </li>
             <li>
-                <a href="javascript:;">
+                <a href="javascript:;" id="track-banner-dot03">
                     <span>解決方案獲國際肯定</span>
                 </a>
             </li>
@@ -183,7 +183,7 @@
                 </h1>
             </div>
             <div class="main-content">
-                <div class="mv">
+                <div class="mv" id="track-yt-player">
                     <img src="pic/index/photo_videio_790x450.jpg" alt="決策者">
                 </div>
                 <h2 class="issue-topic">回答3個問題，讓我們提供適合您的創新解決方案</h2>
@@ -194,14 +194,14 @@
                             <h3>1：您對哪個產業感興趣?</h3>
                             <ul class="step-item-list">
                                 <!-- data-value本身要帶給下一個的值，data-related跟上一個項目有關聯的值 -->
-                                <li data-value="1"><a href="javascript:;" class="btn-outline btn-size4"><span>製造</span></a></li>
-                                <li data-value="2"><a href="javascript:;" class="btn-outline btn-size4"><span>零售</span></a></li>
-                                <li data-value="3"><a href="javascript:;" class="btn-outline btn-size4"><span>國貿</span></a></li>
-                                <li data-value="4"><a href="javascript:;" class="btn-outline btn-size4"><span>物流</span></a></li>
-                                <li data-value="5"><a href="javascript:;" class="btn-outline btn-size4"><span>電商</span></a></li>
-                                <li data-value="6"><a href="javascript:;" class="btn-outline btn-size4"><span>醫療</span></a></li>
-                                <li data-value="7"><a href="javascript:;" class="btn-outline btn-size4"><span>服務</span></a></li>
-                                <li data-value="8"><a href="javascript:;" class="btn-outline btn-size4"><span>其他</span></a></li>
+                                <li data-value="1"><a href="javascript:;" class="btn-outline btn-size4" id="track-issue-q1-select01"><span>製造</span></a></li>
+                                <li data-value="2"><a href="javascript:;" class="btn-outline btn-size4" id="track-issue-q1-select02"><span>零售</span></a></li>
+                                <li data-value="3"><a href="javascript:;" class="btn-outline btn-size4" id="track-issue-q1-select03"><span>國貿</span></a></li>
+                                <li data-value="4"><a href="javascript:;" class="btn-outline btn-size4" id="track-issue-q1-select04"><span>物流</span></a></li>
+                                <li data-value="5"><a href="javascript:;" class="btn-outline btn-size4" id="track-issue-q1-select05"><span>電商</span></a></li>
+                                <li data-value="6"><a href="javascript:;" class="btn-outline btn-size4" id="track-issue-q1-select06"><span>醫療</span></a></li>
+                                <li data-value="7"><a href="javascript:;" class="btn-outline btn-size4" id="track-issue-q1-select07"><span>服務</span></a></li>
+                                <li data-value="8"><a href="javascript:;" class="btn-outline btn-size4" id="track-issue-q1-select08"><span>其他</span></a></li>
                             </ul>
                         </div>
                         <div class="step-item step2">
@@ -209,16 +209,16 @@
                             <ul class="step-item-list">
                                 <!-- data-value本身要帶給下一個的值，data-related跟上一個項目有關聯的值 -->
                                 <li data-value="1" data-related="">
-                                    <a href="javascript:;" class="btn-outline btn-size4"><span>縮短作業時間、提升作業效率</span></a>
+                                    <a href="javascript:;" class="btn-outline btn-size4" id="track-issue-q2-select01"><span>縮短作業時間、提升作業效率</span></a>
                                 </li>
                                 <li data-value="2" data-related="">
-                                    <a href="javascript:;" data-related="c1" class="btn-outline btn-size4"><span>增加合作方之間的信任，創造雙贏</span></a>
+                                    <a href="javascript:;" data-related="c1" class="btn-outline btn-size4" id="track-issue-q2-select02"><span>增加合作方之間的信任，創造雙贏</span></a>
                                 </li>
                                 <li data-value="3" data-related="">
-                                    <a href="javascript:;" class="btn-outline btn-size4"><span>有效提升資料安全，避免糾紛</span></a>
+                                    <a href="javascript:;" class="btn-outline btn-size4" id="track-issue-q2-select03"><span>有效提升資料安全，避免糾紛</span></a>
                                 </li>
                                 <li data-value="4" data-related="">
-                                    <a href="javascript:;" class="btn-outline btn-size4"><span>打造新的商業模式，創造競爭優勢</span></a>
+                                    <a href="javascript:;" class="btn-outline btn-size4" id="track-issue-q2-select04"><span>打造新的商業模式，創造競爭優勢</span></a>
                                 </li>
                             </ul>
                         </div>
@@ -227,38 +227,38 @@
                             <ul class="step-item-list">
                                 <!-- data-value本身要帶給下一個的值，data-related跟上一個項目有關聯的值 -->
                                 <li data-value="1" data-related="">
-                                    <a href="javascript:;" class="btn-outline btn-size4"><span>財務管理</span></a>
+                                    <a href="javascript:;" class="btn-outline btn-size4" id="track-issue-q3-select01"><span>財務管理</span></a>
                                 </li>
                                 <li data-value="2" data-related="">
-                                    <a href="javascript:;" class="btn-outline btn-size4"><span>採購管理</span></a>
+                                    <a href="javascript:;" class="btn-outline btn-size4" id="track-issue-q3-select02"><span>採購管理</span></a>
                                 </li>
                                 <li data-value="3" data-related="">
-                                    <a href="javascript:;" class="btn-outline btn-size4"><span>業務行銷</span></a>
+                                    <a href="javascript:;" class="btn-outline btn-size4" id="track-issue-q3-select03"><span>業務行銷</span></a>
                                 </li>
                                 <li data-value="4" data-related="">
-                                    <a href="javascript:;" class="btn-outline btn-size4"><span>技術研發</span></a>
+                                    <a href="javascript:;" class="btn-outline btn-size4" id="track-issue-q3-select04"><span>技術研發</span></a>
                                 </li>
                                 <li data-value="5" data-related="">
-                                    <a href="javascript:;" class="btn-outline btn-size4"><span>客戶體驗</span></a>
+                                    <a href="javascript:;" class="btn-outline btn-size4" id="track-issue-q3-select05"><span>客戶體驗</span></a>
                                 </li>
                                 <li data-value="6" data-related="">
-                                    <a href="javascript:;" class="btn-outline btn-size4"><span>創新規畫</span></a>
+                                    <a href="javascript:;" class="btn-outline btn-size4" id="track-issue-q3-select06"><span>創新規畫</span></a>
                                 </li>
                                 <li data-value="7" data-related="">
-                                    <a href="javascript:;" class="btn-outline btn-size4"><span>其他</span></a>
+                                    <a href="javascript:;" class="btn-outline btn-size4" id="track-issue-q3-select07"><span>其他</span></a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="step-dot">
                         <ul>
-                            <li class="active">
+                            <li class="active" id="track-issue-dot01">
                                 <img src="pic/index/icon_qa_step_01.png" alt="Step-01">
                             </li>
-                            <li>
+                            <li id="track-issue-dot02">
                                 <img src="pic/index/icon_qa_step_02.png" alt="Step-02">
                             </li>
-                            <li>
+                            <li id="track-issue-dot03">
                                 <img src="pic/index/icon_qa_step_03.png" alt="Step-03">
                             </li>
                         </ul>
@@ -276,7 +276,7 @@
                         <div class="txt">
                             <p>當供應鏈數位化成為趨勢，藉由區塊鏈技術使供應鏈更高效且安全的運行，進而創造競爭優勢。</p>
                             <div class="block-more">
-                                <a href="service_1.html" target="_blank" rel="noreferrer noopener" class="btn-basic btn-small btn-full-bgcolor2">
+                                <a href="service_1.html" target="_blank" rel="noreferrer noopener" class="btn-basic btn-small btn-full-bgcolor2" id="track-issue-a1-service01">
                                     <span>瞭解更多</span>
                                 </a>
                             </div>
@@ -290,19 +290,19 @@
                         <div class="txt">
                             <p>您所需要的服務也許是業界首創，正如同我們多數的解決方案皆是量身打造，提出需求讓區塊鏈專家團隊協助您實踐創新。</p>
                             <div class="block-more">
-                                <a href="service_4.html" target="_blank" rel="noreferrer noopener" class="btn-basic btn-small btn-full-bgcolor2">
+                                <a href="service_4.html" target="_blank" rel="noreferrer noopener" class="btn-basic btn-small btn-full-bgcolor2" id="track-issue-a1-service04">
                                     <span>瞭解更多</span>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="main-more">
-                        <a href="#" class="btn-basic btn-small button-half">
+                        <a href="#" class="btn-basic btn-small button-half" id="track-issue-a1-reselect">
                             <span>重新選擇</span>
                         </a>
                     </div>
                     <div class="block-more">
-                        <a href="contact.html" class="btn-more button-contact">
+                        <a href="contact.html" class="btn-more button-contact" id="track-issue-a1-button">
                             <span> <img src="pic/icon_arrow_green.png" alt=""> 專人諮詢解決方案</span>
                         </a>
                     </div>
@@ -360,7 +360,7 @@
                         <div class="txt">
                             <p>透過區塊鏈技術強化信任並打造新的商業模式，將有機會創造產業競爭優勢。</p>
                             <div class="block-more">
-                                <a href="service_2.html" target="_blank" rel="noreferrer noopener" class="btn-basic btn-small btn-full-bgcolor2">
+                                <a href="service_2.html" target="_blank" rel="noreferrer noopener" class="btn-basic btn-small btn-full-bgcolor2" id="track-issue-a3-service02">
                                     <span>瞭解更多</span>
                                 </a>
                             </div>
@@ -374,19 +374,19 @@
                         <div class="txt">
                             <p>您所需要的服務也許是業界首創，正如同我們多數的解決方案皆是量身打造，提出需求讓區塊鏈專家團隊協助您實踐創新。</p>
                             <div class="block-more">
-                                <a href="service_4.html" target="_blank" rel="noreferrer noopener" class="btn-basic btn-small btn-full-bgcolor2">
+                                <a href="service_4.html" target="_blank" rel="noreferrer noopener" class="btn-basic btn-small btn-full-bgcolor2" id="track-issue-a3-service04">
                                     <span>瞭解更多</span>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="main-more">
-                        <a href="#" class="btn-basic btn-small button-half">
+                        <a href="#" class="btn-basic btn-small button-half" id="track-issue-a3-reselect">
                             <span>重新選擇</span>
                         </a>
                     </div>
                     <div class="block-more">
-                        <a href="contact.html" class="btn-more button-contact">
+                        <a href="contact.html" class="btn-more button-contact" id="track-issue-a3-button">
                             <span><img src="pic/icon_arrow_green.png" alt="">專人諮詢解決方案</span>
                         </a>
                     </div>
@@ -483,7 +483,7 @@
                             <h2>供應鏈</h2>
                             <p>當供應鏈數位化成為趨勢，藉由區塊鏈技術使供應鏈更高效且安全…</p>
                             <div class="block-more">
-                                <a href="service_1.html" class="btn-basic btn-small">
+                                <a href="service_1.html" class="btn-basic btn-small" id="track-solution-service01">
                                     <span>瞭解更多</span>
                                 </a>
                             </div>
@@ -499,7 +499,7 @@
                             <h2>電商零售</h2>
                             <p>透過區塊鏈技術強化信任並打造新的商業模式，將有機會…</p>
                             <div class="block-more">
-                                <a href="service_2.html" class="btn-basic btn-small">
+                                <a href="service_2.html" class="btn-basic btn-small" id="track-solution-service02">
                                     <span>瞭解更多</span>
                                 </a>
                             </div>
@@ -515,7 +515,7 @@
                             <h2>醫療健康</h2>
                             <p>為了確保敏感資料不外洩，醫療資訊需要以更安全的方式傳輸…</p>
                             <div class="block-more">
-                                <a href="service_3.html" class="btn-basic btn-small">
+                                <a href="service_3.html" class="btn-basic btn-small" id="track-solution-service03">
                                     <span>瞭解更多</span>
                                 </a>
                             </div>
@@ -531,7 +531,7 @@
                             <h2>客製化服務</h2>
                             <p>您所需要的服務也許是業界首創，正如同我們多數的解決方案…</p>
                             <div class="block-more">
-                                <a href="service_4.html" class="btn-basic btn-small">
+                                <a href="service_4.html" class="btn-basic btn-small" id="track-solution-service04">
                                     <span>瞭解更多</span>
                                 </a>
                             </div>
@@ -712,7 +712,7 @@
                 </div>
             </div>
             <div class="main-more">
-                <a href="awards.html" class="btn-basic btn-small button-half btn-falf-bgcolor2">
+                <a href="awards.html" class="btn-basic btn-small button-half btn-falf-bgcolor2" id="track-awards-link">
                     <span>瞭解更多</span>
                 </a>
             </div>
