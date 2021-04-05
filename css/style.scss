@@ -456,6 +456,7 @@ p {
         background-color: $main-color1;
         border: none;
         overflow: hidden;
+        z-index: 1000;
     }
     .btn-close:before {
         content: '';
