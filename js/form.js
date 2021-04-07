@@ -75,7 +75,7 @@ function apply(){
         $(this).parent().addClass('disabled');
     });
     //送出成功導頁至首頁
-    alert('導至首頁');
+    $('#contact__form').submit();
     //將所有input、checkbox disabled設為false
 }
 
