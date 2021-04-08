@@ -38,8 +38,9 @@ let handleExtUrl = function (e) {
             return;
         }
 
-        // check if the link is javascript:;
+        // check if the link is javascript:; 並停止在瀏覽器預設開啟空白視窗
         else if (hasString(href, 'javascript:;')) {
+            e.preventDefault();
             return;
         }
 
