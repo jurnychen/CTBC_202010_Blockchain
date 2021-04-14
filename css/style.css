@@ -311,35 +311,38 @@ p {
     width: 15px;
     height: 15px;
     background: url("../pic/icon_flow_arrow_right_white.png") no-repeat center/100% auto; }
-  .nav-list li a.active {
-    border-radius: 100px;
-    border: 1px solid #fff; }
   .nav-list .sub-menu {
     display: none;
     margin: 10px auto 0;
     padding: 0;
-    background-color: #fff;
     margin: 10px auto 0; }
     @media screen and (max-width: 767px) {
       .nav-list .sub-menu {
         display: block;
         width: 80%;
         border-radius: 6px;
-        margin: 10px 0 0 auto; } }
+        margin: 0 0 0 auto;
+        padding-top: 10px; } }
     @media screen and (min-width: 768px) {
       .nav-list .sub-menu {
         position: absolute;
         top: 99%;
         left: 0;
         border-radius: 5px;
-        margin-top: 2px;
+        margin-top: 0;
+        padding-top: 5px;
         width: 100%; } }
   .nav-list .sub-menu li {
     padding: 5px 20px;
-    margin: 0; }
+    margin: 0;
+    background-color: #fff; }
     @media screen and (min-width: 768px) {
       .nav-list .sub-menu li {
         padding: 5px 15px; } }
+  .nav-list .sub-menu li:first-child {
+    border-radius: 6px 6px 0px 0px; }
+  .nav-list .sub-menu li:last-child {
+    border-radius: 0px 0px 6px 6px; }
   .nav-list .sub-menu a {
     background: rgba(239, 49, 57, 0);
     border-radius: 5px;
@@ -445,7 +448,8 @@ p {
     height: 40px;
     background-color: #1cbfa5;
     border: none;
-    overflow: hidden; }
+    overflow: hidden;
+    z-index: 1000; }
   .light-box .btn-close:before {
     content: '';
     width: 100%;

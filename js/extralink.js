@@ -121,7 +121,7 @@ let handleOpenLightBox = function (href, target, e) {
 
         // check if the link is in external link list
         let isOpenBlank = false;
-        let whitelistUrl = [{"url":"www.tentenplus.com.tw"},{"url":"ctbcbank.com"}];
+        let whitelistUrl = [{"url":"www.tentenplus.com.tw"},{"url":"tentenplus.com.tw"},{"url":"ctbcbank.com"}];
         if (whitelistUrl != null) {
             for (let i in whitelistUrl) {
                 if (hasString(href, whitelistUrl[i]['url'])) {
@@ -162,7 +162,7 @@ let handleOpenLightBox = function (href, target, e) {
     } else {
         let isSkipLightBox = false;
         // check if the link is in external link list
-        let whitelistUrl = [{"url":"localhost"},{"url":"www.tentenplus.com.tw"},{"url":"mailto"},{"url":"ctbcbank.com"}];
+        let whitelistUrl = [{"url":"localhost"},{"url":"www.tentenplus.com.tw"},{"url":"tentenplus.com.tw"},{"url":"mailto"},{"url":"ctbcbank.com"}];
         if (whitelistUrl != null) {
             for (let i in whitelistUrl) {
                 if (hasString(href, whitelistUrl[i]['url'])) {

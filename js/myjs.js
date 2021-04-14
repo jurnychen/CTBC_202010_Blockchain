@@ -16,15 +16,19 @@ $(function() {
 
         if (_pIndex < _pLength) {
             // 跳到下一個頁簽
-            $('.issue-step .step-dot li').eq(_pIndex + 1).click();
+            // $('.issue-step .step-dot li').eq(_pIndex + 1).click();
+            changeStep(_pIndex + 1);
+            changeStepDot(_pIndex + 1);
             return false;
         }
     })
-    $('.issue-step .step-dot li').click(function() {
-        let _dotIndex = $(this).index();
-        changeStep(_dotIndex);
-        changeStepDot(_dotIndex);
-    })
+
+    // 點擊dot，顯示對應的題目內容
+    // $('.issue-step .step-dot li').click(function() {
+    //     let _dotIndex = $(this).index();
+    //     changeStep(_dotIndex);
+    //     changeStepDot(_dotIndex);
+    // })
 
     function changeStep(st) {
         $('.issue-step .step-item')
