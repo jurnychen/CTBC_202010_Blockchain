@@ -76,7 +76,7 @@ fabric.properties
 
 
 # 忽略的檔案類型
-*.mp4
+
 *.mov
 .DS_Store
 Thumbs.db
