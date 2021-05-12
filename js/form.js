@@ -46,11 +46,15 @@
         }
     });
 
-    $('#sendBtn').on('click', function(){
+    $('#track-button-contact').on('click', function(){
+
        if(validateUserForm()){
-           apply();
+                $body = $("body");
+                $body.addClass("loading");
+                apply();
        }
     });
+
 })(jQuery);
 
 function resetall(){
@@ -63,6 +67,17 @@ function resetall(){
     $('#contact__form :input[type="checkbox"]').each(function(){
         $(this).prop('checked', false);
     });
+    refreshCaptchaImage();
+    $('#contact__form :input[type="text"], #contact__form textarea').each(function(){
+            $(this).prop('disabled', false);
+    });
+    $('#contact__form :input[type="checkbox"]').each(function(){
+            $(this).prop('disabled', false);
+            $(this).parent().addClass('enable');
+    });
+    $body = $("body");
+    $body.removeClass("loading");
+    location.href="/";
 }
 
 function apply(){
@@ -74,9 +89,66 @@ function apply(){
         $(this).prop('disabled', true);
         $(this).parent().addClass('disabled');
     });
+    sendData();
     //送出成功導頁至首頁
-    $('#contact__form').submit();
+    //alert('導至首頁');
     //將所有input、checkbox disabled設為false
+    $('#track-button-contact-hide').attr('disabled', false);
+    $('#contact__form :input[type="text"], #contact__form textarea').each(function(){
+            $(this).prop('disabled', false);
+    });
+    $('#contact__form :input[type="checkbox"]').each(function(){
+            $(this).prop('disabled', false);
+            $(this).parent().addClass('enable');
+    });
+
+}
+
+
+function sendData() {
+        var user = {
+            name        : $.base64.btoa(unescape(encodeURIComponent($("#name").val()))),
+            companyName : $('#companyname').val(),
+            title1      : $('#companydept').val(),
+            phone       : $.base64.btoa($("#companyphone").val()),
+            email       : $.base64.btoa(unescape(encodeURIComponent($("#email").val()))),
+            receive     : $('#agreereceivemail').is(":checked"),
+            message     : $('#message').val(),
+            captcha     : $('#captcha').val()
+        };
+        if ($('input[name=selectservice]').is(":checked")) {
+            var selectService = $("input[name=selectservice]:checked").map(function(){
+                  return $(this).attr('id');
+            }).get();
+            user["selectService"] = selectService;
+        }
+        $.ajax({
+             url : '/api/send',
+             type: 'POST',
+             contentType: 'application/json',
+             data: JSON.stringify(user),
+             dataType: 'text',
+             cache: false,
+             complete: function(data){
+                console.log(data);
+             },
+             success: function(data) {
+                alert('資料已送出，後續將由專人與您聯繫 ');
+                resetall();
+             },
+             error: function(data,type,err) {
+                alert('申請有誤 ' + data.responseText);
+                refreshCaptchaImage();
+             },
+             timeout: 15000
+        });
+    }
+
+function refreshCaptchaImage() {
+    $('#captchaImage').attr('src', '/api/image');
+    $('#captcha').val('');
+    $body = $("body");
+    $body.removeClass("loading");
 }
 
 function validErrorDOMHandle(targetDom){

@@ -8,7 +8,7 @@ $(function() {
     let _step3 = 0;
 
 
-    $('.step-item-list li').click(function() {
+ $('.step-item-list li').click(function() {
         let _dataValue = $(this).attr('data-value');
         let _pIndex = $(this).parents('.step-item').index();
         let _pLength = $(this).parents('.step-group').children('.step-item').length - 1;
@@ -211,13 +211,117 @@ $(function() {
         $('.subscribe form').after('<div class="box-success"><p>您已經完成訂閱</p><button class="btn-success-close">了解</button></div>');
     }
 
+    // 訂閱成功視窗-了解按鈕 檢核失敗
+    function showSubscribeFailBox() {
+        if ($('.box-success').length) {
+            $('.box-success').remove();
+        }
+        $('.subscribe form').after('<div class="box-success"><p>請確認閱讀並同意個資運用聲明書</p><button class="btn-success-close">了解</button></div>');
+    }
+
+    // 訂閱成功視窗-了解按鈕 送出失敗
+    function showSubscribeSendFailBox() {
+         if ($('.box-success').length) {
+             $('.box-success').remove();
+         }
+         $('.subscribe form').after('<div class="box-success"><p>請輸入您的聯絡郵件</p><button class="btn-success-close">了解</button></div>');
+    }
+
+    // 訂閱成功視窗-了解按鈕 送出失敗
+        function showSubscribeValidatorFail() {
+             if ($('.box-success').length) {
+                 $('.box-success').remove();
+             }
+             $('.subscribe form').after('<div class="box-success"><p>您輸入的聯絡郵件格式有誤</p><button class="btn-success-close">了解</button></div>');
+        }
+
     $('.subscribe .btn-subscribe').on('click', function(e) {
-        e.preventDefault();
-        showSubscribeSuccessBox();
+        let inputEmail = $('#subscribe-email').val();
+
+        if(!$('#accept-subscribe').is(":checked")) {
+            e.preventDefault();
+            showSubscribeFailBox();
+        }else if($('#subscribe-email').val()==""){
+            e.preventDefault();
+            showSubscribeSendFailBox();
+        }else if(validateByReg('email', inputEmail) === false){
+            //檢核E-mail須符合E-mail XXX@OOO格式
+            e.preventDefault();
+            showSubscribeValidatorFail();
+        }else{
+            subscribe();
+            e.preventDefault();
+            showSubscribeSuccessBox();
+        }
     });
+
+    function validateByReg(validField, validText) {
+        let filter;
+        if (validField === 'email'){
+            // ^\w+：@ 之前必須以一個以上的文字&數字開頭，例如 abc
+            // ((-\w+)：@ 之前可以出現 1 個以上的文字、數字或「-」的組合，例如 -abc-
+            // (\.\w+))：@ 之前可以出現 1 個以上的文字、數字或「.」的組合，例如 .abc.
+            // ((-\w+)|(\.\w+))*：以上兩個規則以 or 的關係出現，並且出現 0 次以上 (所以不能 –. 同時出現)
+            // @：中間一定要出現一個 @
+            // [A-Za-z0-9]+：@ 之後出現 1 個以上的大小寫英文及數字的組合
+            // (\.|-)：@ 之後只能出現「.」或是「-」，但這兩個字元不能連續時出現
+            // ((\.|-)[A-Za-z0-9]+)*：@ 之後出現 0 個以上的「.」或是「-」配上大小寫英文及數字的組合
+            // \.[A-Za-z]+$/：@ 之後出現 1 個以上的「.」配上大小寫英文及數字的組合，結尾需為大小寫英文
+            filter = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z]+$/;
+        }
+        if (filter.test(validText)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
     $('.subscribe').on('click', '.box-success .btn-success-close', function(e) {
         e.preventDefault();
         $('.box-success').fadeOut();
+        resetSubscribe();
     });
+
+    function resetSubscribe(){
+        Array.prototype.forEach.call(document.querySelectorAll('.subscribe input'), function (x) {
+            x.value = '';
+            x.checked = false;
+          });
+    }
+
+    function subscribe(){
+
+            var edata = {
+                epaper  : $.base64.btoa(unescape(encodeURIComponent($("#subscribe-email").val())))
+            };
+            $.ajax({
+                     url : '/api/subscription',
+                     type: 'POST',
+                     contentType: 'application/json',
+                     data: JSON.stringify(edata),
+                     dataType: 'text',
+                     cache: false,
+                     complete: function(data){
+                        console.log(data);
+                     },
+                     success: function(data) {
+                        console.log(data);
+//                        alert('申請成功 ');
+                     },
+                     error: function(data,type,err) {
+                        console.log(data);
+//                        alert('申請有誤 ' + data.responseText);
+                     },
+                     timeout: 15000
+                });
+    }
+
+    $('.captcha-item .fa-redo').on('click', function(e) {
+           refreshCaptchaImageOnLoad();
+    });
+
+    function refreshCaptchaImageOnLoad() {
+         $('#captchaImage').attr('src', '/api/image?' + new Date().getTime());
+         $('#captcha').val('');
+    }
 })
