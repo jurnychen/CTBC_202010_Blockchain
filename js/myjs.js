@@ -163,7 +163,7 @@ $(function() {
                         // console.log(j);
                 }
                 _liHTML = _prevHTML + _liHTML + _nextHTML;
-                console.log(_liHTML);
+                // console.log(_liHTML);
                 // console.log(i);
                 //分頁HTML寫入
                 $('.news-list .content-group .content')
@@ -302,15 +302,15 @@ $(function() {
                      dataType: 'text',
                      cache: false,
                      complete: function(data){
-                        console.log(data);
+                        // console.log(data);
                      },
                      success: function(data) {
-                        console.log(data);
-//                        alert('申請成功 ');
+                        // console.log(data);
+                        // alert('申請成功 ');
                      },
                      error: function(data,type,err) {
-                        console.log(data);
-//                        alert('申請有誤 ' + data.responseText);
+                        // console.log(data);
+                        // alert('申請有誤 ' + data.responseText);
                      },
                      timeout: 15000
                 });

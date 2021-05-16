@@ -130,7 +130,7 @@ function sendData() {
              dataType: 'text',
              cache: false,
              complete: function(data){
-                console.log(data);
+                // console.log(data);
              },
              success: function(data) {
                 alert('資料已送出，後續將由專人與您聯繫 ');
