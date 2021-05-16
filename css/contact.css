@@ -64,7 +64,7 @@
       padding: 3.57143vw 0; } }
   @media only screen and (min-width: 1400px) {
     .form__box {
-      padding: 50px  0; } }
+      padding: 50px 0; } }
   .form__box h2 {
     color: #1cbfa5;
     font-weight: 400;
@@ -356,21 +356,21 @@
       flex: 0 0 9em; }
   .final__box {
     margin-left: 20%; } }
+
 body.loading {
-    overflow: hidden;
-}
+  overflow: hidden; }
+
 body.loading .modal {
-    display: block;
-}
+  display: block; }
+
 .modal {
-    display:    none;
-    position:   fixed;
-    z-index:    1000;
-    top:        0;
-    left:       0;
-    height:     100%;
-    width:      100%;
-   color: 		#000000;
-   text-align:	center;
-   background: rgba( 255, 255, 255, .8 );
-}
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: #000000;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8); }

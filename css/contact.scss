@@ -2,482 +2,544 @@
 @import 'vw.scss';
 
 .contact {
-  .main-content {
-    @media screen and (max-width: 767px) {
-      padding: 0 15px;
+    .main-content {
+        @media screen and (max-width: 767px) {
+            padding: 0 15px;
+        }
     }
-  }
 }
 
 .main-title {
-  h1 span {
-    @media screen and (max-width: 767px) {
-      display: inline;
+    h1 span {
+        @media screen and (max-width: 767px) {
+            display: inline;
+        }
     }
-  }
-  p br{
-    @media screen and (min-width: 768px){
-      display: none;
+
+    p br {
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
     }
-  }
 }
 
 .form {
-  padding-bottom: 75px;
+    padding-bottom: 75px;
 
-  input:focus {
-    outline-color: $main-color1D;
-  }
-
-  input:disabled,
-  textarea:disabled,
-  .disabled {
-    cursor: not-allowed !important;
-  }
-
-  form {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-  }
-
-  @media only screen and (min-width: 768px) {
-    width: 100%;
-    margin: 0 auto;
-    max-width: 1000px;
-    padding: 0 25px;
-  }
-  @media only screen and (min-width: 768px) {
-    .form .wrap {
-      max-width: 1300px;
+    input:focus {
+        outline-color: $main-color1D;
     }
-  }
+
+    input:disabled,
+    textarea:disabled,
+    .disabled {
+        cursor: not-allowed !important;
+    }
+
+    form {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    @media only screen and (min-width: 768px) {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1000px;
+        padding: 0 25px;
+    }
+
+    @media only screen and (min-width: 768px) {
+        .form .wrap {
+            max-width: 1300px;
+        }
+    }
 }
 
 .reminder__message {
-  display: none;
-  color: $main-color3;
-  font-size: 14px;
-  // font-weight: bold;
+    display: none;
+    color: $main-color3;
+    font-size: 14px;
+    // font-weight: bold;
 
-  &.show {
-    display: block;
-    padding-bottom: 10px;
-  }
+    &.show {
+        display: block;
+        padding-bottom: 10px;
+    }
 }
 
 // 表單-區域-大類
 .form__box {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding:  $xxs-vw-15-vw  $xxs-vw-5-vw;
-  &:not([class^="final__box"]) {
-    border-bottom: 1px solid $line-border-color;
-  }
-  @media only screen and (min-width: 768px) {
-    flex-wrap: nowrap;
-    padding:  $lg-vw-50-vw  0;
-  }
-  @media only screen and (min-width: 1400px) {
-    padding:  50px  0;
-  }
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: $xxs-vw-15-vw $xxs-vw-5-vw;
 
-  // 表單-區域-大類標題文字
-  h2 {
-    color: $main-color1;
-    font-weight: 400;
-    margin: 0;
-    padding: 0 0 $xxs-vw-10-vw 0;
-    @media only screen and (min-width: 768px) {
-      padding:  0 0 $lg-vw-10-vw 0;
+    &:not([class^="final__box"]) {
+        border-bottom: 1px solid $line-border-color;
     }
+
+    @media only screen and (min-width: 768px) {
+        flex-wrap: nowrap;
+        padding: $lg-vw-50-vw 0;
+    }
+
     @media only screen and (min-width: 1400px) {
-      padding:  0 0 10px 0;
+        padding: 50px 0;
     }
 
-  }
+    // 表單-區域-大類標題文字
+    h2 {
+        color: $main-color1;
+        font-weight: 400;
+        margin: 0;
+        padding: 0 0 $xxs-vw-10-vw 0;
 
-
-  // 表單-區域-標題文字
-  .form__box-title {
-    flex: 0 0 100%;
-    @media only screen and (min-width: 768px) {
-      flex: 0 0 20%;
-    }
-  }
-
-  .sendBtn {
-    // display: inline-block;
-    // margin: 20px auto;
-    // padding: 10px 40px;
-    // border: none;
-    // border-radius: 1000px;
-    // outline: none;
-    // background-color: $main-color1;
-    // text-decoration: none;
-    // position: relative;
-    // overflow: hidden;
-    // left: 50%;
-    // transform: translateX(-50%);
-    // @media only screen and (min-width: 768px) {
-    //   margin: 20px 0;
-    //   left: 0;
-    //   transform: none;
-    // }
-    // span{
-    //   font-size: 22px;
-    //   font-weight: bold;
-    //   color: #FFFFFF;
-    //   position: relative;
-    //   z-index: 10;
-    // }
-    // &:before{
-    //   content:'';
-    //   position: absolute;
-    //   left: -60px;
-    //   top: 0;
-    //   width: 50px;
-    //   height: 100%;
-    //   background-color: $main-color3;
-    //   border-radius: 100px;
-    //   transition: .3s;
-    //   z-index: 1;
-    // }
-    // &:hover:before{
-    //   width: 100%;
-    //   left: 0;
-    // }
-  }
-
-
-  // 表單-區域-欄位項目組合
-  .form__box-itemgroup {
-    flex: 0 0 100%;
-      padding: 0;
-    @media only screen and (min-width: 768px) {
-      flex: 1 0 0;
-    }
-
-    // 表單-單項輸入欄位組
-    .form__box-item {
-      position: relative;
-      padding: 0 0 $xxs-vw-15-vw 0;
-      @media only screen and (min-width: 768px) {
-        width: calc(100% - 2.142857vw);// $lg-vw-30-vw
-        padding: 0 0 $lg-vw-15-vw;
-      }
-      @media only screen and (min-width: 1400px) {
-        width: calc(100% - 30px);
-        padding: 0 0 15px;
-      }
-
-      // 表單-欄位說明標題
-      .inputtitle {
-        display: block;
-        width: 100%;
-        color: $txt-main-color;
-        padding-bottom: $xxs-vw-5-vw;
-        margin-top: 0px;
-        // outline: 1px solid #f00;
         @media only screen and (min-width: 768px) {
-          padding-bottom: $lg-vw-10-vw;
+            padding: 0 0 $lg-vw-10-vw 0;
         }
-        @media only screen and (min-width: 1400px) {
-          padding-bottom: 10px;
-        }
-      }
 
-      // 表單-欄位本體-輸入
-      input[type='text'] {
+        @media only screen and (min-width: 1400px) {
+            padding: 0 0 10px 0;
+        }
+
+    }
+
+
+    // 表單-區域-標題文字
+    .form__box-title {
+        flex: 0 0 100%;
+
+        @media only screen and (min-width: 768px) {
+            flex: 0 0 20%;
+        }
+    }
+
+    .sendBtn {
+        // display: inline-block;
+        // margin: 20px auto;
+        // padding: 10px 40px;
+        // border: none;
+        // border-radius: 1000px;
+        // outline: none;
+        // background-color: $main-color1;
+        // text-decoration: none;
+        // position: relative;
+        // overflow: hidden;
+        // left: 50%;
+        // transform: translateX(-50%);
+        // @media only screen and (min-width: 768px) {
+        //   margin: 20px 0;
+        //   left: 0;
+        //   transform: none;
+        // }
+        // span{
+        //   font-size: 22px;
+        //   font-weight: bold;
+        //   color: #FFFFFF;
+        //   position: relative;
+        //   z-index: 10;
+        // }
+        // &:before{
+        //   content:'';
+        //   position: absolute;
+        //   left: -60px;
+        //   top: 0;
+        //   width: 50px;
+        //   height: 100%;
+        //   background-color: $main-color3;
+        //   border-radius: 100px;
+        //   transition: .3s;
+        //   z-index: 1;
+        // }
+        // &:hover:before{
+        //   width: 100%;
+        //   left: 0;
+        // }
+    }
+
+
+    // 表單-區域-欄位項目組合
+    .form__box-itemgroup {
+        flex: 0 0 100%;
+        padding: 0;
+
+        @media only screen and (min-width: 768px) {
+            flex: 1 0 0;
+        }
+
+        // 表單-單項輸入欄位組
+        .form__box-item {
+            position: relative;
+            padding: 0 0 $xxs-vw-15-vw 0;
+
+            @media only screen and (min-width: 768px) {
+                width: calc(100% - 2.142857vw); // $lg-vw-30-vw
+                padding: 0 0 $lg-vw-15-vw;
+            }
+
+            @media only screen and (min-width: 1400px) {
+                width: calc(100% - 30px);
+                padding: 0 0 15px;
+            }
+
+            // 表單-欄位說明標題
+            .inputtitle {
+                display: block;
+                width: 100%;
+                color: $txt-main-color;
+                padding-bottom: $xxs-vw-5-vw;
+                margin-top: 0px;
+
+                // outline: 1px solid #f00;
+                @media only screen and (min-width: 768px) {
+                    padding-bottom: $lg-vw-10-vw;
+                }
+
+                @media only screen and (min-width: 1400px) {
+                    padding-bottom: 10px;
+                }
+            }
+
+            // 表單-欄位本體-輸入
+            input[type='text'] {
+                box-sizing: border-box;
+                display: block;
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 8px;
+                color: $txt-main-color;
+                // font-size: 16px;
+                border: 1px solid $input-border-color;
+                border-radius: 0.3em;
+
+                &.valid__error {
+                    border: 2px solid $main-color3;
+                }
+            }
+
+            // 表單-欄位本體-單選
+            .valid__error~.checkmark {
+                border: 1px solid $main-color3;
+            }
+
+
+            input[type='text']::placeholder,
+            textarea::placeholder {
+                color: $input-border-color;
+                // font-size: 16px;
+            }
+
+            textarea {
+                resize: none;
+                box-sizing: border-box;
+                border: 1px solid $input-border-color;
+                border-radius: 0.3em;
+                width: 100%;
+                padding: 15px 20px;
+                // font-size: 16px;
+            }
+
+            .required::after {
+                content: '*';
+                color: $main-color3;
+                padding-left: 0.2em;
+            }
+
+            // 驗證碼組合區
+            &.captcha-item {
+                width: 100%;
+
+                @media only screen and (min-width: 768px) {}
+
+                @media only screen and (min-width: 1400px) {}
+
+                // 驗證碼
+                .inputtitle.label-captcha {
+                    display: inline-block;
+                    width: 22%;
+                    margin: 0;
+
+                    @media only screen and (min-width: 768px) {
+                        width: $lg-vw-80-vw;
+                    }
+
+                    @media only screen and (min-width: 1400px) {
+                        width: 80px;
+                    }
+                }
+
+                // 驗證用圖
+                .pic-captcha {
+                    display: inline-block;
+                    height: $xxs-vw-40-vw;
+                    margin-right: $xxs-vw-5-vw;
+
+                    @media only screen and (min-width: 768px) {
+                        height: $lg-vw-48-vw;
+                        margin-right: $lg-vw-5-vw;
+                    }
+
+                    @media only screen and (min-width: 1400px) {
+                        height: 48px;
+                        margin-right: 5px;
+                    }
+                }
+
+                // 驗證重整ICON
+                .btn-refreshcaptcha {
+                    display: inline-block;
+                    width: $xxs-vw-50-vw;
+                    padding: 0;
+                    background-color: transparent;
+                    -webkit-appearance: none;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+
+                    @media only screen and (min-width: 768px) {
+                        width: $lg-vw-50-vw;
+                    }
+
+                    @media only screen and (min-width: 1400px) {
+                        width: 50px;
+                    }
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                // 驗證碼填寫欄位
+                .input-captcha {
+                    display: block;
+                    margin: 5px auto 0 $xxs-vw-80-vw;
+                    max-width: $xxs-vw-150-vw;
+
+                    @media only screen and (min-width: 768px) {
+                        display: inline-block;
+                        margin: 5px auto 0 $lg-vw-10-vw;
+                        width: $lg-vw-150-vw;
+                    }
+
+                    @media only screen and (min-width: 1400px) {
+                        width: 150px;
+                    }
+                }
+            }
+        }
+
+        &+& {
+            margin-top: 20px;
+        }
+    }
+
+    // 表單-單個選項勾選欄位組
+    .checkbox__itemgroup {
         box-sizing: border-box;
-        display: block;
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 8px;
-        color: $txt-main-color;
-        // font-size: 16px;
-        border: 1px solid $input-border-color;
-        border-radius: 0.3em;
+        margin: -$xxs-vw-20-vw 0 $xxs-vw-10-vw;
 
-        &.valid__error {
-          border: 2px solid $main-color3;
-        }
-      }
-
-      // 表單-欄位本體-單選
-      .valid__error ~ .checkmark {
-        border: 1px solid $main-color3;
-      }
-
-
-      input[type='text']::placeholder,
-      textarea::placeholder {
-        color: $input-border-color;
-        // font-size: 16px;
-      }
-
-      textarea {
-        resize: none;
-        box-sizing: border-box;
-        border: 1px solid $input-border-color;
-        border-radius: 0.3em;
-        width: 100%;
-        padding: 15px 20px;
-        // font-size: 16px;
-      }
-
-      .required::after {
-        content: '*';
-        color: $main-color3;
-        padding-left: 0.2em;
-      }
-
-      // 驗證碼組合區
-      &.captcha-item {
-        width: 100%;
         @media only screen and (min-width: 768px) {
+            margin: -$lg-vw-25-vw 0 $lg-vw-10-vw;
         }
+
         @media only screen and (min-width: 1400px) {
+            margin: -25px 0 10px;
         }
-        // 驗證碼
-        .inputtitle.label-captcha{
-          display: inline-block;
-          width: 22%;
-          margin: 0;
-          @media only screen and (min-width: 768px) {
-            width: $lg-vw-80-vw;
-          }
-          @media only screen and (min-width: 1400px) {
-            width: 80px;
-          }
-        }
-        // 驗證用圖
-        .pic-captcha {
-          display: inline-block;
-          height: $xxs-vw-40-vw;
-          margin-right: $xxs-vw-5-vw;
-          @media only screen and (min-width: 768px) {
-            height: $lg-vw-48-vw;
-            margin-right: $lg-vw-5-vw;
-          }
-          @media only screen and (min-width: 1400px) {
-            height: 48px;
-            margin-right: 5px;
-          }
-        }
-        // 驗證重整ICON
-        .btn-refreshcaptcha{
-          display: inline-block;
-          width: $xxs-vw-50-vw;
-          padding: 0;
-          background-color: transparent;
-          -webkit-appearance: none;
-          border: none;
-          outline: none;
-          cursor: pointer;
-          @media only screen and (min-width: 768px) {
-            width: $lg-vw-50-vw;
-          }
-          @media only screen and (min-width: 1400px) {
-            width: 50px;
-          }
-
-          img{
-            width: 100%;
-          }
-        }
-        // 驗證碼填寫欄位
-        .input-captcha {
-          display: block;
-          margin: 5px auto 0 $xxs-vw-80-vw;
-          max-width: $xxs-vw-150-vw;
-          @media only screen and (min-width: 768px) {
-            display: inline-block;
-            margin: 5px auto 0 $lg-vw-10-vw;
-            width: $lg-vw-150-vw;
-          }
-          @media only screen and (min-width: 1400px) {
-            width: 150px;
-          }
-        }
-      }
     }
 
-    & + & {
-      margin-top: 20px;
-    }
-  }
+    .checkbox__item {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        padding: $xxs-vw-5-vw $xxs-vw-25-vw;
+        user-select: none;
 
-  // 表單-單個選項勾選欄位組
-  .checkbox__itemgroup {
-    box-sizing: border-box;
-    margin: -$xxs-vw-20-vw 0 $xxs-vw-10-vw;
-    @media only screen and (min-width: 768px) {
-      margin: -$lg-vw-25-vw 0 $lg-vw-10-vw;
-    }
-    @media only screen and (min-width: 1400px) {
-      margin: -25px 0 10px;
-    }
-  }
-
-  .checkbox__item {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    padding: $xxs-vw-5-vw $xxs-vw-25-vw;
-    user-select: none;
-    @media only screen and (min-width: 768px) {
-      padding: 0 $lg-vw-25-vw;
-    }
-    @media only screen and (min-width: 1400px) {
-      padding: 0 25px;
-    }
-    input {
-      position: absolute;
-      opacity: 0;
-      cursor: pointer;
-      height: 0;
-      width: 0;
-    }
-
-    .checkmark {
-      position: absolute;
-      top: 50%;
-      left: 0;
-      transform: translateY(-42%);
-      border-radius: 50%;
-      border: 1px solid $input-border-color;
-      background-color: #fff;
-      height: $xxs-vw-18-vw;
-      width: $xxs-vw-18-vw;
-      @media only screen and (min-width: 768px) {
-        height: $lg-vw-20-vw;
-        width: $lg-vw-20-vw;
-      }
-      @media only screen and (min-width: 1400px) {
-        height: 20px;
-        width: 20px;
-      }
-      &:after {
-        content: "";
-        position: absolute;
-        display: none;
-        left: $xxs-vw-6-vw;
-        top: 0;
-        width: $xxs-vw-5-vw;
-        height: $xxs-vw-10-vw;
-        border: solid white;
-        border-width: 0 $xxs-vw-2-vw $xxs-vw-2-vw 0;
-        -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        transform: rotate(45deg);
         @media only screen and (min-width: 768px) {
-          border-width: 0 $lg-vw-2-vw $lg-vw-2-vw 0;
-          left: $lg-vw-7-vw;
-          top: 0px;
-          width: $lg-vw-6-vw;
-          height: $lg-vw-12-vw;
+            padding: 0 $lg-vw-25-vw;
         }
+
         @media only screen and (min-width: 1400px) {
-          border-width: 0 2px 2px 0;
-          left: 7px;
-          top: 0px;
-          width: 6px;
-          height: 12px;
+            padding: 0 25px;
         }
 
-      }
-    }
+        input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
 
-    &:hover input ~ .checkmark {
-      background-color: #EEEEEE;
-    }
+        .checkmark {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-42%);
+            border-radius: 50%;
+            border: 1px solid $input-border-color;
+            background-color: #fff;
+            height: $xxs-vw-18-vw;
+            width: $xxs-vw-18-vw;
 
-    input:checked ~ .checkmark {
-      border: 2px solid $main-color1D;
-      background-color: $main-color1D;
-    }
+            @media only screen and (min-width: 768px) {
+                height: $lg-vw-20-vw;
+                width: $lg-vw-20-vw;
+            }
 
-    input:checked ~ .checkmark:after {
-      display: block;
+            @media only screen and (min-width: 1400px) {
+                height: 20px;
+                width: 20px;
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                display: none;
+                left: $xxs-vw-6-vw;
+                top: 0;
+                width: $xxs-vw-5-vw;
+                height: $xxs-vw-10-vw;
+                border: solid white;
+                border-width: 0 $xxs-vw-2-vw $xxs-vw-2-vw 0;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+
+                @media only screen and (min-width: 768px) {
+                    border-width: 0 $lg-vw-2-vw $lg-vw-2-vw 0;
+                    left: $lg-vw-7-vw;
+                    top: 0px;
+                    width: $lg-vw-6-vw;
+                    height: $lg-vw-12-vw;
+                }
+
+                @media only screen and (min-width: 1400px) {
+                    border-width: 0 2px 2px 0;
+                    left: 7px;
+                    top: 0px;
+                    width: 6px;
+                    height: 12px;
+                }
+
+            }
+        }
+
+        &:hover input~.checkmark {
+            background-color: #EEEEEE;
+        }
+
+        input:checked~.checkmark {
+            border: 2px solid $main-color1D;
+            background-color: $main-color1D;
+        }
+
+        input:checked~.checkmark:after {
+            display: block;
+        }
     }
-  }
 }
 
 // 表單-單行條款勾選欄位組
 .agree__box {
-  &.checkbox__item {
-    display: block;
-    position: relative;
-    // outline: 1px solid #00f;
-  }
-
-  &.checkbox__item .checkmark {
-    border-radius: 0;
-    display: block;
-    // outline: 1px solid #f00;
-    top: 0;
-    left: 0;
-    transform: translateY(10%);
-    @media only screen and (min-width: 768px) {
-      // top: 50%;
-      padding: 0;
-      // transform: translateY(-75%);
+    &.checkbox__item {
+        display: block;
+        position: relative;
+        // outline: 1px solid #00f;
     }
-  }
 
-  .agree__box-text {
-    display: block;
-    width: 95%;
-    padding: 0 $xxs-vw-25-vw ;
-    @media only screen and (min-width: 768px) {
-      padding: 0 $lg-vw-30-vw;
-    }
-    @media only screen and (min-width: 1400px) {
-      padding: 0 30px;
-    }
-  }
+    &.checkbox__item .checkmark {
+        border-radius: 0;
+        display: block;
+        // outline: 1px solid #f00;
+        top: 0;
+        left: 0;
+        transform: translateY(10%);
 
-  a {
-    display: inline-block;
-    color: $main-color1;
-    border-bottom: 1px solid $main-color1;
-    text-decoration: none;
-  }
+        @media only screen and (min-width: 768px) {
+            // top: 50%;
+            padding: 0;
+            // transform: translateY(-75%);
+        }
+    }
+
+    .agree__box-text {
+        display: block;
+        width: 95%;
+        padding: 0 $xxs-vw-25-vw;
+
+        @media only screen and (min-width: 768px) {
+            padding: 0 $lg-vw-30-vw;
+        }
+
+        @media only screen and (min-width: 1400px) {
+            padding: 0 30px;
+        }
+    }
+
+    a {
+        display: inline-block;
+        color: $main-color1;
+        border-bottom: 1px solid $main-color1;
+        text-decoration: none;
+    }
 }
 
 #popupTips {
-  .privacylink {
-    color: #20a09a;
-    padding: 15px 0;
-  }
+    .privacylink {
+        color: #20a09a;
+        padding: 15px 0;
+    }
 
-  .highlight {
-    color: rgb(255, 0, 0);
-    text-decoration: underline;
-    text-decoration-color: #000000;
-  }
+    .highlight {
+        color: rgb(255, 0, 0);
+        text-decoration: underline;
+        text-decoration-color: #000000;
+    }
 }
 
 @media only screen and (min-width: 768px) {
-  .companyphone__box {
-    display: flex;
+    .companyphone__box {
+        display: flex;
 
-    .companyphonenum {
-      flex: 1 0 0;
+        .companyphonenum {
+            flex: 1 0 0;
+        }
+
+        .companyphoneext {
+            margin-left: 1em;
+            flex: 0 0 9em;
+        }
     }
 
-    .companyphoneext {
-      margin-left: 1em;
-      flex: 0 0 9em;
+    .final__box {
+        margin-left: 20%;
     }
-  }
-  .final__box {
-    margin-left: 20%;
-  }
+}
+
+
+
+body.loading {
+    overflow: hidden;
+}
+
+body.loading .modal {
+    display: block;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color: #000000;
+    text-align: center;
+    background: rgba(255, 255, 255, .8);
 }
