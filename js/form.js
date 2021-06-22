@@ -133,6 +133,8 @@ function sendData() {
                 // console.log(data);
              },
              success: function(data) {
+                dataLayer.push({
+                    'event': 'ajaxSuccess'});
                 alert('資料已送出，後續將由專人與您聯繫 ');
                 resetall();
              },
